@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WebrentedApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(WebrentedApplication.class, args);
+
 	}
 
 }

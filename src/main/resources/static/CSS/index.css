@@ -8048,7 +8048,7 @@
     object-fit: contain;
     object-position: 0 0;
     margin-right: -124px;
-    height: 30px;
+    height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -13509,6 +13509,8 @@ main {
     border-radius: 2px;
     width: 100px;
     height: 100px
+    margin-right: 10px /* Khoảng cách giữa hình ảnh và các phần tử còn lại */
+    flex-shrink: 0 /* Đảm bảo rằng hình ảnh không bị co lại */
 }
 
 .AdThumbnail_AdThumbnail__WQgS0 .AdThumbnail_IntersectBox__vC3LO {
@@ -16421,6 +16423,16 @@ main {
         min-height: 124px
     }
 }
+.AdItem_wrapperAdItem__S6qPH {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn các phần tử theo chiều dọc */
+}
+
+.ad-info {
+    display: flex;
+    flex-direction: column; /* Xắp xếp theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+}
 
 .AdItem_wrapperAdItem__S6qPH:last-child,.AdItem_wrapperOwnerAdItem__Cfy5_:last-child {
     margin-bottom: 0
@@ -16448,6 +16460,7 @@ main {
 .AdItem_wrapperAdItem__S6qPH .AdItem_adItem__gDDQT,.AdItem_wrapperOwnerAdItem__Cfy5_ .AdItem_adItem__gDDQT {
     background: transparent;
     display: flex;
+ 
     position: relative;
     box-sizing: border-box;
     cursor: pointer;
