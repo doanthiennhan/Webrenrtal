@@ -161,10 +161,10 @@
                                         d="M12.0001 16.2008C10.8829 16.2008 9.78747 16.5102 8.83528 17.0946C7.88309 17.6791 7.11134 18.5158 6.60557 19.512C6.43056 19.8567 6.00923 19.9943 5.66452 19.8193C5.3198 19.6443 5.18222 19.2229 5.35723 18.8782C5.98004 17.6515 6.93038 16.6211 8.10291 15.9014C9.27544 15.1817 10.6244 14.8008 12.0001 14.8008C13.3759 14.8008 14.7249 15.1817 15.8974 15.9014C17.0699 16.6211 18.0203 17.6515 18.6431 18.8782C18.8181 19.2229 18.6805 19.6443 18.3358 19.8193C17.9911 19.9943 17.5697 19.8567 17.3947 19.512C16.889 18.5158 16.1172 17.6791 15.165 17.0946C14.2128 16.5102 13.1174 16.2008 12.0001 16.2008Z"
                                         fill="curentColor"></path>
                                 </svg><span class="show-desktop aw__szp9uz0" color="#8C8C8C"
-                                    style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;" th:if="${session.account != null}" 
-                                    th:text="${session.account.phone}" ></span><svg width="1rem"
-                                    height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="aw__dvoj89e">
+                                    style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;"
+                                    th:if="${session.account != null}" th:text="${session.account.phone}"></span><svg
+                                    width="1rem" height="1rem" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="aw__dvoj89e">
                                     <path
                                         d="M4.67154 5.99959C4.9323 5.74067 5.35336 5.74141 5.6132 6.00125L8.19653 8.58458L10.7863 6.00048C11.0461 5.74125 11.4668 5.74148 11.7263 6.00099C11.986 6.26071 11.986 6.68179 11.7263 6.94151L8.90364 9.76414C8.51312 10.1547 7.87995 10.1547 7.48943 9.76414L4.66987 6.94459C4.40872 6.68344 4.40947 6.25981 4.67154 5.99959Z"
                                         fill="currentColor"></path>
@@ -248,6 +248,15 @@
                                             <div class="aw__r1o9ejq6">Lịch sử giao dịch</div>
                                             <div class="clearfix"></div>
                                         </a></div>
+                                    <div class="aw__l1txzw95"><a class="aw__iys36jq"
+                                            href="/logout"
+                                            target="_self" rel="noreferrer">
+                                            <div class="aw__l1uq3g0v"><img class="aw__i1x7vrum"
+                                                    src="https://static.chotot.com/storage/icons/svg/logout.svg"
+                                                    alt="Đăng xuất"></div>
+                                            <div class="aw__r1o9ejq6">Đăng xuất</div>
+                                            <div class="clearfix"></div>
+                                        </a></div>
 
                                     <div label="Ưu đãi, khuyến mãi" class="aw__d15qd39x"
                                         style="--d15qd39x-0: 38px; --d15qd39x-1: #f5f5f5; --d15qd39x-2: 10px 0 10px 12px; --d15qd39x-3: 0;">
@@ -322,7 +331,7 @@
                 content.style.display = 'none'; // Hide the content
             }
         });
-       
+
 
     </script>
 
