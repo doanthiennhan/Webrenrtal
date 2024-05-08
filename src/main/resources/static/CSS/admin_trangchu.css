@@ -1,0 +1,170 @@
+/* Group 103 */
+.narvar{
+    position: absolute;
+    width: 173px;
+    height: 500px;
+    left: 95px;
+    top: 200px;
+    background-color: #90EE90;
+}
+
+.btn{
+    width: 100%;
+    height: 43px;
+    margin-top: 25px;
+    background-color: #D9D9D9;
+    border: 2spx solid #000; /* Màu và độ dày của viền */
+    border-radius: 10px; /* Độ cong của góc viền */
+}
+.btn:hover{
+    background-color: #FFD361;
+}
+.chon{
+    background-color: #FFD361;
+}
+
+
+.accont-link {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    flex-grow: 1;
+}
+.accont{
+    position: absolute;
+    width: 260px;
+    height: 100px;
+    left: 450px;
+    top: 200px;
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1)
+}
+.sotaikhaong{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50%;
+    font-size: 50px;
+    color: #cc1010 ;
+    font-weight: bold;
+}
+.anhtaikhaong{
+    display: inline-flex;
+    height: 50%;
+    width: 50%;
+}
+.anhtaikhaong1{
+    margin-left: 25px;
+    height: 80%;
+    width: 80%;
+}
+.chartaccount {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        yellow 0% var(--design),
+        red var(--design) calc(var(--frond-end) + var(--design)),
+        blue calc(var(--frond-end) + var(--design))
+    );
+    position: absolute;
+    left: 450px;
+    top: 320px;
+}
+
+
+.chutichchar {
+    margin-top: 20px;
+    position: absolute;
+    left: 450px;
+    top: 600px;
+}
+
+/* Màu sắc */
+.color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+
+/* bài viết */
+
+.baiviet-link {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    flex-grow: 1;
+}
+.baiviet{
+    position: absolute;
+    width: 260px;
+    height: 100px;
+    left: 950px;
+    top: 200px;
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1)
+}
+.sobaiviet{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50%;
+    font-size: 50px;
+    color: #cc1010 ;
+    font-weight: bold;
+}
+.anhbaiviet{
+    display: inline-flex;
+    height: 50%;
+    width: 50%;
+}
+.anhbaiviet1{
+    margin-left: 25px;
+    height: 80%;
+    width: 80%;
+}
+.chartbaiviet {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        yellow 0% var(--design),
+        red var(--design) calc(var(--frond-end) + var(--design)),
+        blue calc(var(--frond-end) + var(--design))
+    );
+    position: absolute;
+    left: 950px;
+    top: 320px;
+}
+
+
+.chutichcharbaiviet {
+    margin-top: 20px;
+    position: absolute;
+    left: 950px;
+    top: 600px;
+}
+
+/* Màu sắc */
+.color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

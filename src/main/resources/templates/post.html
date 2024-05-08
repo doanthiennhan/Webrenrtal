@@ -1,72 +1,74 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/post.css">
     <link rel="stylesheet" href="CSS/header.css">
-    <link href="./css/post.css" rel="stylesheet" />
-    <title>ĐĂng Bài</title>
+    <script></script>
+    <title>Document</title>
 </head>
-
 <body>
-    <div style="position:relative">
+    <th:block th:include="header :: header"></th:block>
+    <div class="tieudevsnoidung">
+    <h3 class="tieude">tiêu đều</h3>
+    <input type="text" class = "tieude1">
+    <h3 class="noidung">nội dung</h3>
+    <textarea style="height: 500px; width: 500px;">
+        Viết nội dung cụ thể  ở đây...
+    </textarea>
     
-    <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 999; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <th:block th:include="header :: header"></th:block>
     </div>
-    <div class="v4269_2">
-        <div class="v4085_680">
-            <div class="v4085_677"></div>
-            <div class="v4085_681"></div><span class="v4085_678">cho thuê trọ giá cực sốc tại trung tâm thành phố
-                !!!</span>
-        </div>
-        <div class="v4085_683">
-            <div class="v4085_685"></div><span class="v4085_686"> - không chung chủ
+    <div class="tieudevsnoidung2">
+        <h3 class="">giá</h3>
+        <input class="custom-input" type="text" >
+        <span class="end-text">VNĐ</span>
+        
+        <h3 class="">diện tích</h3>
+        <input class="custom-input" type="text" >
+        <span class="end-text">m2</span>
 
-                - giá cả hợp lí
+        <h3 class="">đường</h3>
+        <input  class="" type="text">
 
-                - gần trung tâm thành phố, bệnh viện , vinmax, gần chợ cồn,
+        <h3 class="">phường</h3>
+        <input  class="" type="text">
 
-                - wifi : 50k/tháng
+        <h3 class="">quận</h3>
+        <input  class="" type="text">
 
-                - nước 50k/người
-
-                - điện 300k/tháng</span>
-        </div>
-        <div class="v4085_697"><span class="v4085_687">giá </span>
-            <div class="v4085_692"></div><span class="v4085_693">2000000 vnđ</span>
-        </div>
-        <div class="v4085_698"><span class="v4085_699">diện tích</span>
-            <div class="v4085_700"></div><span class="v4085_701">200 m2</span>
-        </div>
-        <div class="v4085_702"><span class="v4085_703">đường</span>
-            <div class="v4085_704"></div><span class="v4085_705">136 phùng hừng</span>
-        </div>
-        <div class="v4085_706"><span class="v4085_707">phường</span>
-            <div class="v4085_708"></div><span class="v4085_709">hòa minh</span>
-        </div>
-        <div class="v4085_710"><span class="v4085_711">quận</span>
-            <div class="v4085_712"></div><span class="v4085_713">liên chiểu</span>
-        </div>
-        <div class="v4085_714"></div><span class="v4085_715">Đăng bài</span>
-        <div class="v4085_717"></div><span class="v4085_718">thêm ảnh </span>
-        <div class="v4085_721"></div>
-        <div class="v4085_723"></div>
-        <div class="v4085_725"></div>
-        <div class="v4085_726"></div>
     </div>
-</div>
+    <div class="tieudevsnoidung3">
+        <input type="file" id="fileInput" multiple>
+        <div class="image-container" id="imageContainer">
+            <!-- Các thẻ img sẽ được thêm vào đây -->
+        </div>
+    </div>
+    <button class="dangtin">ĐĂNG TIN</button>
 </body>
+
 <script>
-    // JavaScript to toggle the content when button is clicked
-    // document.getElementById('btnundefinedundefined').addEventListener('click', function () {
-    //     var content = document.getElementById('openn');
-    //     if (content.style.display === 'none') {
-    //         content.style.display = 'block'; // Show the content
-    //     } else {
-    //         content.style.display = 'none'; // Hide the content
-    //     }
-    // });
+document.getElementById('fileInput').addEventListener('change', function(event) {
+    var files = event.target.files; // Lấy danh sách các file ảnh từ máy chọn
+
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i]; // Lấy mỗi file ảnh
+        var reader = new FileReader(); // Tạo một đối tượng FileReader
+
+        reader.onload = (function(file) {
+            return function(e) {
+                // Khi FileReader đã đọc file thành công
+                var image = new Image(); // Tạo một phần tử hình ảnh mới
+                image.src = e.target.result; // Gán đường dẫn của ảnh cho phần tử hình ảnh
+                document.getElementById('imageContainer').appendChild(image); // Thêm phần tử hình ảnh vào phần tử container
+            };
+        })(file);
+
+        // Đọc file ảnh
+        reader.readAsDataURL(file);
+    }
+});
+
     document.addEventListener('click', function (event) {
         var content = document.getElementById('openn');
         var button = document.getElementById('btnundefinedundefined');

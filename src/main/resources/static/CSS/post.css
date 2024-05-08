@@ -1,428 +1,60 @@
-* {
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 14px;
-  }
-  .v4269_2 {
-    width: 100%;
-    height: 711px;
-    background: url("../images/v4269_2.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_680 {
-    width: 790px;
-    height: 29px;
-    background: url("../images/v4085_680.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 36px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_677 {
-    width: 790px;
-    height: 29px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_681 {
-    width: 790px;
-    height: 29px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_678 {
-    width: 783px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 7px;
-    font-family: Inter;
-    font-weight: Extra Light;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v4085_683 {
-    width: 794px;
-    height: 507px;
-    background: url("../images/v4085_683.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 117px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_685 {
-    width: 794px;
-    height: 507px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-  }
-  .v4085_686 {
-    width: 782px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 10px;
-    left: 8px;
-    font-family: Inter;
-    font-weight: Extra Light;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-  }
-  .v4085_697 {
-    width: 320px;
-    height: 42px;
-    background: url("../images/v4085_697.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 76px;
-    left: 817px;
-    overflow: hidden;
-  }
-  .v4085_687 {
-    width: 64px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_692 {
-    width: 248px;
-    height: 34px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 5px;
-    left: 72px;
-    overflow: hidden;
-  }
-  .v4085_693 {
-    width: 248px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 9px;
-    left: 72px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_698 {
-    width: 343px;
-    height: 42px;
-    background: url("../images/v4085_698.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 190px;
-    left: 797px;
-    overflow: hidden;
-  }
-  .v4085_699 {
-    width: 87px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_700 {
-    width: 248px;
-    height: 34px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 5px;
-    left: 95px;
-    overflow: hidden;
-  }
-  .v4085_701 {
-    width: 248px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 9px;
-    left: 95px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_702 {
-    width: 343px;
-    height: 42px;
-    background: url("../images/v4085_702.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 304px;
-    left: 800px;
-    overflow: hidden;
-  }
-  .v4085_703 {
-    width: 87px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_704 {
-    width: 248px;
-    height: 34px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 5px;
-    left: 95px;
-    overflow: hidden;
-  }
-  .v4085_705 {
-    width: 248px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 9px;
-    left: 95px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_706 {
-    width: 343px;
-    height: 42px;
-    background: url("../images/v4085_706.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 418px;
-    left: 803px;
-    overflow: hidden;
-  }
-  .v4085_707 {
-    width: 87px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_708 {
-    width: 248px;
-    height: 34px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 5px;
-    left: 95px;
-    overflow: hidden;
-  }
-  .v4085_709 {
-    width: 248px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 9px;
-    left: 95px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_710 {
-    width: 343px;
-    height: 42px;
-    background: url("../images/v4085_710.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 532px;
-    left: 806px;
-    overflow: hidden;
-  }
-  .v4085_711 {
-    width: 87px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_712 {
-    width: 248px;
-    height: 34px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 5px;
-    left: 95px;
-    overflow: hidden;
-  }
-  .v4085_713 {
-    width: 248px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 9px;
-    left: 95px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_714 {
-    width: 235px;
-    height: 54px;
-    background: rgba(255,81,81,1);
-    opacity: 1;
-    position: absolute;
-    top: 657px;
-    left: 1343px;
-    overflow: hidden;
-  }
-  .v4085_715 {
-    width: 237px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 657px;
-    left: 1341px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 36px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_717 {
-    width: 148px;
-    height: 24px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 1344px;
-    overflow: hidden;
-  }
-  .v4085_718 {
-    width: 144px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 0px;
-    left: 1344px;
-    font-family: Inter;
-    font-weight: Bold;
-    font-size: 16px;
-    opacity: 1;
-    text-align: center;
-  }
-  .v4085_721 {
-    width: 297px;
-    height: 560px;
-    background: rgba(217,217,217,1);
-    opacity: 1;
-    position: absolute;
-    top: 61px;
-    left: 1268px;
-    overflow: hidden;
-  }
-  .v4085_723 {
-    width: 276px;
-    height: 149px;
-    background: url("../images/v4085_723.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 72px;
-    left: 1278px;
-    overflow: hidden;
-  }
-  .v4085_725 {
-    width: 276px;
-    height: 149px;
-    background: url("../images/v4085_725.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 265px;
-    left: 1278px;
-    overflow: hidden;
-  }
-  .v4085_726 {
-    width: 276px;
-    height: 149px;
-    background: url("../images/v4085_726.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 458px;
-    left: 1278px;
-    overflow: hidden;
-  }
-  
+.tieudevsnoidung,
+.tieudevsnoidung2,
+.tieudevsnoidung3 {
+    display: inline-block;
+    vertical-align: top; /* Đảm bảo các div nằm cùng hàng */
+    margin-right: 20px ; /* Khoảng cách giữa các div */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+.tieude1{
+    width: 500px;
+}
+.noidung1{
+    
+    height: 500px;
+    width: 500px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block; /* Đảm bảo chiều rộng của container chỉ bằng chiều rộng của input */
+}
+
+.custom-input {
+    width: 120px; /* Độ rộng của input */
+}
+
+.input-container::after {
+    content: "End Text"; /* Nội dung của pseudo-element */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 50%; /* Đặt phần tử ở giữa theo chiều dọc */
+    right: 5px; /* Khoảng cách từ phía bên phải */
+    transform: translateY(-50%); /* Đưa nó ra giữa chiều dọc */
+    color: gray; /* Màu chữ */
+    pointer-events: none; /* Ngăn chặn sự kiện click vào phần tử */
+}
+
+
+.tieudevsnoidung2{
+    height: 644px;
+    
+}
+.image-container img {
+    max-width: 200px; /* Đặt chiều rộng tối đa của ảnh là 100% của phần tử cha */
+    max-height: 200px; /* Đặt chiều cao tối đa của ảnh là 100% của phần tử cha */
+}
+.tieudevsnoidung3{
+    width: 400px;
+}
+.dangtin {
+    position: fixed; /* Đặt vị trí cố định */
+    bottom: 20px; /* Đặt khoảng cách từ bottom là 20px */
+    right: 20px; /* Đặt khoảng cách từ right là 20px */
+    font-size: 40px;
+    background-color: rgb(253, 253, 66);
+    border-radius: 10px; /* Thiết lập bán kính */
+    border: 5px solid #5df802;
+}
