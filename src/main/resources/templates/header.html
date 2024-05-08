@@ -9,12 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <style>
-            /* CSS styles for the content */
-            #openn {
-              display: none; /* Initially hide the content */
-            }
-          </style>
+    <style>
+        /* CSS styles for the content */
+        #openn {
+            display: none;
+            /* Initially hide the content */
+        }
+    </style>
 
 
 </head>
@@ -160,7 +161,8 @@
                                         d="M12.0001 16.2008C10.8829 16.2008 9.78747 16.5102 8.83528 17.0946C7.88309 17.6791 7.11134 18.5158 6.60557 19.512C6.43056 19.8567 6.00923 19.9943 5.66452 19.8193C5.3198 19.6443 5.18222 19.2229 5.35723 18.8782C5.98004 17.6515 6.93038 16.6211 8.10291 15.9014C9.27544 15.1817 10.6244 14.8008 12.0001 14.8008C13.3759 14.8008 14.7249 15.1817 15.8974 15.9014C17.0699 16.6211 18.0203 17.6515 18.6431 18.8782C18.8181 19.2229 18.6805 19.6443 18.3358 19.8193C17.9911 19.9943 17.5697 19.8567 17.3947 19.512C16.889 18.5158 16.1172 17.6791 15.165 17.0946C14.2128 16.5102 13.1174 16.2008 12.0001 16.2008Z"
                                         fill="curentColor"></path>
                                 </svg><span class="show-desktop aw__szp9uz0" color="#8C8C8C"
-                                    style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;"></span><svg width="1rem"
+                                    style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;" th:if="${session.account != null}" 
+                                    th:text="${session.account.phone}" ></span><svg width="1rem"
                                     height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     class="aw__dvoj89e">
                                     <path
@@ -169,9 +171,8 @@
                                 </svg></div>
                             <div>
                                 <div class="aw__m1n72bce" id="openn">
-                                    <div class="aw__ntc1674" style="--ntc1674-2: 124px;"><a
-                                            href="/login"
-                                            rel="nofollow" previewlistener="true"><span class="aw__nrouw61"
+                                    <div class="aw__ntc1674" style="--ntc1674-2: 124px;"><a href="/login" rel="nofollow"
+                                            previewlistener="true"><span class="aw__nrouw61"
                                                 style="--nrouw61-3: 48px;"></span><span class="aw__n171wcvy"
                                                 style="--n171wcvy-0: 8px; --n171wcvy-1: 14px;">Đăng nhập / Đăng
                                                 ký</span></a>
@@ -294,6 +295,25 @@
     </header>
     <script>
         // JavaScript to toggle the content when button is clicked
+        // document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+        //     var content = document.getElementById('openn');
+        //     if (content.style.display === 'none') {
+        //         content.style.display = 'block'; // Show the content
+        //     } else {
+        //         content.style.display = 'none'; // Hide the content
+        //     }
+        // });
+        document.addEventListener('click', function (event) {
+            var content = document.getElementById('openn');
+            var button = document.getElementById('btnundefinedundefined');
+
+            // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+            if (event.target !== content && event.target !== button && !content.contains(event.target)) {
+                content.style.display = 'none'; // Ẩn menu đi
+            }
+        });
+
+        // JavaScript to toggle the content when button is clicked
         document.getElementById('btnundefinedundefined').addEventListener('click', function () {
             var content = document.getElementById('openn');
             if (content.style.display === 'none') {
@@ -302,7 +322,10 @@
                 content.style.display = 'none'; // Hide the content
             }
         });
+       
+
     </script>
+
 </body>
 
 </html>

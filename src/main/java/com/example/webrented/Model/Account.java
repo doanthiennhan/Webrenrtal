@@ -14,7 +14,7 @@ import java.util.Date;
 public class Account {
     @Id
     private String id;
-    private String username;
+    private String phone;
     private String password;
     private String email;
     private String role;
@@ -25,8 +25,8 @@ public class Account {
     public Account() {
     }
 
-    public Account(String username, String password, String email, String role, Date createdAt, Date updatedAt) {
-        this.username = username;
+    public Account(String phone, String password, String email, String role, Date createdAt, Date updatedAt) {
+        this.phone = phone;
         this.password = password;
         this.email = email;
         this.role = role;
@@ -44,11 +44,11 @@ public class Account {
     }
 
     public String getUsername() {
-        return username;
+        return phone;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(String phone) {
+        this.phone = phone;
     }
 
     public String getPassword() {
@@ -95,7 +95,7 @@ public class Account {
     public String toString() {
         return "Account{" +
                 "id='" + id + '\'' +
-                ", username='" + username + '\'' +
+                ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", role='" + role + '\'' +

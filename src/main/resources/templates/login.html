@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 
@@ -12,7 +12,7 @@
     <div id="__next"><progress hidden=""></progress>
         <div class="mocked-styled-22 w1eil6in">
             <div class="mocked-styled-32 b4hnkwj" style="--b4hnkwj-0:unset">
-                <div class="logo"><img src="https://static.chotot.com/storage/marketplace/logo.png" alt="Chotot Logo">
+                <div class="logo" ><img src="/image/logo.png" alt="Logo">
                 </div>
                 <h3 class="mocked-styled-29 b13ldopu">Đăng nhập</h3>
                 <div class="mocked-styled-31 e1nrpfz9" style="--e1nrpfz9-0:0;--e1nrpfz9-1:20px"></div>
@@ -32,20 +32,23 @@
                         <p class="mocked-styled-10 p1scu4lb"></p>
                     </div>
                     <div class="mocked-styled-9 c5ntovc" style="--c5ntovc-0:100%">
-                        <div class="mocked-styled-11 i14mr5f8"><input class="ire0wc i3z0z0s hasValue" type="password"
-                                inputmode="text" name="password" value=""
-                                data-gtm-form-interact-field-id="1"><label for="">Mật khẩu</label><button
-                                class="password" tabindex="-1" type="button">Hiện</button></div>
+                        <div class="mocked-styled-11 i14mr5f8">
+                            <input class="ire0wc i3z0z0s hasValue" type="password" inputmode="text" name="password"
+                                value="" data-gtm-form-interact-field-id="1" id="passwordField">
+                            <label for="">Mật khẩu</label>
+                            <button class="password" tabindex="-1" type="button" id="showPasswordBtn">Hiện</button>
+                        </div>
                         <p class="mocked-styled-10 p1scu4lb"></p>
-                    </div><a class="forgot-password-btn" href="/forget-password" previewlistener="true">Quên mật
-                        khẩu?</a><button class="bns1dlc primary r-normal large w-bold i-left stretch login-btn">Đăng
-                        nhập</button>
+                    </div>
+                    <div class="error-message">
+                        <!-- Thêm mã HTML để hiển thị thông báo lỗi từ model -->
+                        <p th:if="${error}" th:text="${error}" class="error-text"></p>
+                    </div>
+                    <a class="forgot-password-btn" href="/forget-password" previewlistener="true">Quên mật khẩu?</a>
+                    <button class="bns1dlc primary r-normal large w-bold i-left stretch " href="/login?" previewlistener="true" >Đăng nhập</button>
                 </form>
-                <div class="mocked-styled-16 a1k9ogns">
-                    <hr><span>Hoặc đăng nhập bằng</span>
-                    <hr>
-                </div>
-               
+              
+
                 <p class="mocked-styled-33 rnv45ui">Chưa có tài khoản?<!-- --> <a href="/register"
                         previewlistener="true">Đăng ký tài khoản mới</a></p>
             </div>
@@ -55,9 +58,22 @@
                     previewlistener="true">Chính sách bảo mật</a><span>•</span><a
                     href="https://trogiup.chotot.com/lien-he" target="_blank" previewlistener="true">Liên hệ hỗ trợ</a>
             </div>
-          
+
         </div>
     </div>
+
+    <script>
+        document.getElementById('showPasswordBtn').addEventListener('click', function () {
+            var passwordField = document.getElementById('passwordField');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text'; // Hiện mật khẩu
+                this.textContent = 'Ẩn'; // Thay đổi nội dung của nút thành "Ẩn"
+            } else {
+                passwordField.type = 'password'; // Ẩn mật khẩu
+                this.textContent = 'Hiện'; // Thay đổi nội dung của nút thành "Hiện"
+            }
+        });
+    </script>
 </body>
 
 </html>

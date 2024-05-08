@@ -57,5 +57,36 @@
     </div>
 </div>
 </body>
+<script>
+    // JavaScript to toggle the content when button is clicked
+    // document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+    //     var content = document.getElementById('openn');
+    //     if (content.style.display === 'none') {
+    //         content.style.display = 'block'; // Show the content
+    //     } else {
+    //         content.style.display = 'none'; // Hide the content
+    //     }
+    // });
+    document.addEventListener('click', function (event) {
+        var content = document.getElementById('openn');
+        var button = document.getElementById('btnundefinedundefined');
+
+        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
+            content.style.display = 'none'; // Ẩn menu đi
+        }
+    });
+
+    // JavaScript to toggle the content when button is clicked
+    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+        var content = document.getElementById('openn');
+        if (content.style.display === 'none') {
+            content.style.display = 'block'; // Show the content
+        } else {
+            content.style.display = 'none'; // Hide the content
+        }
+    });
+
+</script>
 
 </html>
