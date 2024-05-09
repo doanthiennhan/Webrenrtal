@@ -132,4 +132,17 @@ public class IndexController {
         }
     }
 
+    @GetMapping("/admin")
+    public String admin(Model model) {
+
+        return "admin_trangchu";
+    }
+
+    @GetMapping("/admin_quanlibaiviet")
+    public String admin_quanlibaiviet(Model model) {
+
+        return "admin_quanlibaiviet";
+
+    }
+
 }

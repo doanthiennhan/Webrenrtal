@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/admin_trangchu.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <th:block th:include="header :: header"></th:block>
+    <div class="narvar">
+        <a href="/admin">
+            <button class="btn chon">Trang chủ</button>
+        </a>
+        <a href="/admin_quanlibaiviet">
+            <button class="btn">quản lí bài viết</button>
+        </a>
+        <a href="#">
+            <button class="btn">quản li tài khoản</button>
+        </a>
+        <a href="#">
+            <button class="btn">bài viết đã xóa</button>
+        </a>
+        <a href="#">
+            <button class="btn">bài viết đã duyệt</button>
+        </a>
+        
+    </div>
+
+    <div class="khoitaikhaon">
+    <div class="accont">
+        <a href="#" class="accont-link">
+            <div class="sotaikhaong">999</div>
+            <div class="anhtaikhaong">
+                <img class="anhtaikhaong1" src="image/taikhaon1.png" alt="">
+            </div>
+        </a>
+    </div>
+
+    <div class="chartaccount" style="
+        --design: 50%;
+        --frond-end: 25%;
+        --back-end: 25%;
+    "></div>
+
+    <div class = "solieuchar">
+        <div class="khacvanlai">
+            <div class="xanhduong"></div>
+            
+        </div>
+    </div>
+
+    <div class="chutichchar">
+        <ul>
+            <li><span class="color yellow"></span> Khách vãng lai</li>
+            <li><span class="color red"></span> Tài khoản bị cấm</li>
+            <li><span class="color blue"></span> Chủ trọ</li>
+        </ul>
+    </div>
+    </div>
+
+<div class="khoibaiviet">
+    <div class="baiviet">
+        <a href="/admin_quanlibaiviet" class="baiviet-link">
+            <div class="sobaiviet">999</div>
+            <div class="anhbaiviet">
+                <img class="anhbaiviet1" src="image/baiviet.jpg" alt="">
+            </div>
+        </a>
+    </div>
+
+
+    <div class="chartbaiviet" style="
+        --design: 30%;
+        --frond-end: 45%;
+        --back-end: 25%;
+    "></div>
+
+
+    <div class="chutichcharbaiviet">
+        <ul>
+            <li><span class="color yellow"></span> đã duyệt</li>
+            <li><span class="color red"></span> chưa duyệt</li>
+            <li><span class="color blue"></span> đã xóa</li>
+        </ul>
+    </div>
+</div>
+  
+</div>
+<script>
+    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var content = document.getElementById('openn');
+        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
+        isContentHidden = true; // Cập nhật biến isContentHidden
+    });
+
+    document.addEventListener('click', function (event) {
+        var content = document.getElementById('openn');
+        var button = document.getElementById('btnundefinedundefined');
+
+        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
+            if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+                content.style.display = 'none'; // Ẩn menu đi
+            }
+        }
+    });
+
+    // JavaScript to toggle the content when button is clicked
+    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+        var content = document.getElementById('openn');
+        if (content.style.display === 'none') {
+            content.style.display = 'block'; // Show the content
+            isContentHidden = false; // Cập nhật biến isContentHidden
+        } else {
+            content.style.display = 'none'; // Hide the content
+            isContentHidden = true; // Cập nhật biến isContentHidden
+        }
+    });
+    
+
+</script>
+</body>
+</html>
