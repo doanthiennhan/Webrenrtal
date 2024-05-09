@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <th:block th:include="header :: header"></th:block>
+    <th:block th:insert="~{header :: header}"></th:block>
     <div class="narvar">
         <a href="/admin">
             <button class="btn chon">Trang chủ</button>
@@ -80,21 +80,27 @@
                 </div>
             </div>
         </div>
-        <div class="du_lieu">
-            <button class="duyet">DUYỆT</button>
-            <button class="xoa">XÓA</button>
+        <div class="du_lieu"> 
+            <form action="/admin_quanlibaiviet"  th:id=" ${listing.id}" method="get">
+                <button class="duyet" type="submit">DUYỆT</button>
+            </form>
+            <button class="xoa" type="submit" name="action" value="buttonxoa" th:id=" ${listing.id}" previewlistener="true" >XÓA</button>
         </div>
+        
         </tr>
     </ul>
 
 </div>
 <script>
-    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
+    var isContentHidden = true; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
 
     document.addEventListener('DOMContentLoaded', function () {
         var content = document.getElementById('openn');
-        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
-        isContentHidden = true; // Cập nhật biến isContentHidden
+        if (content.style.display === 'block') {
+            isContentHidden = false; // Cập nhật biến isContentHidden
+        } else {
+            content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
+        }
     });
 
     document.addEventListener('click', function (event) {
@@ -110,18 +116,19 @@
     });
 
     // JavaScript to toggle the content when button is clicked
-    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
-        var content = document.getElementById('openn');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-            isContentHidden = false; // Cập nhật biến isContentHidden
-        } else {
-            content.style.display = 'none'; // Hide the content
-            isContentHidden = true; // Cập nhật biến isContentHidden
-        }
-    });
+    if (document.getElementById('btnundefinedundefined')) {
+        document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+            var content = document.getElementById('openn');
+            if (content.style.display === 'none') {
+                content.style.display = 'block'; // Show the content
+                isContentHidden = false; // Cập nhật biến isContentHidden
+            } else {
+                content.style.display = 'none'; // Hide the content
+                isContentHidden = true; // Cập nhật biến isContentHidden
+            }
+        });
+    }
     
-
 </script>
-    </body>
+</body>
 </html>

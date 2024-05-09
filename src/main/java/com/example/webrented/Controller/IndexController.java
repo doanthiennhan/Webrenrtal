@@ -33,7 +33,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        List<Listing> listings = listingRepository.findAll();
+        List<Listing> listings = listingRepository.findByAvailableTrue();
         model.addAttribute("listings", listings);
 
         return "index";
