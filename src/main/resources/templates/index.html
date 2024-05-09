@@ -189,7 +189,7 @@
                                                                         <picture class="webpimg-container">
                                                                             <source><img th:alt="${listing.title}"
                                                                                 th:title="${listing.title}"
-                                                                                src="image/ten_anh_3.jpg"
+                                                                                th:src="@{/image/__${listing.images[0]}__}"
                                                                                 class="AdThumbnail_thumbnailDefault__mF_DR priority"
                                                                                 loading="eager" height="128"
                                                                                 width="128">
@@ -209,7 +209,7 @@
                                                                                 th:text="${listing.title}"></h3>
                                                                             <div class="AdBody_adUpperBody__4Mt0b">
                                                                                 <span
-                                                                                    class="AdBody_adItemCondition__ppptn">40
+                                                                                    class="AdBody_adItemCondition__ppptn"><td th:text="${listing.area}"></td>
                                                                                     m²</span>
                                                                             </div>
                                                                             <div class="AdBody_adUpperBody__4Mt0b">

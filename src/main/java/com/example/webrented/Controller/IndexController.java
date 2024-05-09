@@ -3,6 +3,7 @@ package com.example.webrented.Controller;
 import java.time.LocalDateTime;
 import java.util.List;
 
+// import org.springframework.boot.autoconfigure.jms.JmsProperties.Listener.Session;
 import org.springframework.stereotype.Controller;
 
 import com.example.webrented.Model.Account;
@@ -19,13 +20,13 @@ import com.example.webrented.repository.ListingRepository;
 import com.example.webrented.repository.RenterRepository;
 
 import jakarta.servlet.http.HttpSession;
-// import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class IndexController {
     private final ListingRepository listingRepository;
     private final AccountRepository accountRepository;
     private final RenterRepository renterRepository;
+    String idAccouts = "";
 
     public IndexController(ListingRepository listingRepository, AccountRepository accountRepository,
             RenterRepository renterRepository) {
@@ -39,6 +40,11 @@ public class IndexController {
     public String index(Model model) {
         List<Listing> listings = listingRepository.findAll();
         model.addAttribute("listings", listings);
+        Renter renter = renterRepository.findByAccountId(idAccouts);
+        if (idAccouts != "") {
+
+            model.addAttribute("renter", renter);
+        }
 
         return "index";
     }
@@ -46,8 +52,11 @@ public class IndexController {
     @GetMapping("/login")
     public String Login(Model model, HttpSession session) {
         // Kiểm tra xem người dùng đã đăng nhập hay chưa
+
         if (session.getAttribute("account") != null) {
+
             // Nếu đã đăng nhập, chuyển hướng đến trang chủ
+
             return "redirect:/";
         }
 
@@ -62,17 +71,23 @@ public class IndexController {
         // khẩu được cung cấp không
         Account account = accountRepository.findByPhoneAndPassword(phone, password);
 
+        // Renter renter = renterRepository.findByAccountId(account.getId());
+        // model.addAttribute("renter", renter);
+
         if (account != null) {
             // Nếu có bản ghi khớp, đăng nhập thành công
             // Lưu thông tin Account vào session
             session.setAttribute("account", account);
+            idAccouts = account.getId();
 
             return "redirect:/"; // Chuyển hướng đến trang chủ
         } else {
             // Xử lý khi đăng nhập không thành công
             model.addAttribute("error", "Số điện thoại hoặc mật khẩu không chính xác");
+
             return "login";
         }
+
     }
 
     @GetMapping("/logout")
@@ -80,6 +95,7 @@ public class IndexController {
 
         session.removeAttribute("account");
         if (session.getAttribute("account") != null) {
+            idAccouts = "";
             System.out.println("Oke ĐĂng xuất được rồi ");
         }
         return "redirect:/login";
@@ -126,23 +142,40 @@ public class IndexController {
         } catch (Exception e) {
             // Xử lý ngoại lệ: in ra thông báo lỗi và chuyển hướng về trang đăng ký
             e.printStackTrace();
-            System.out.println("lỗi -------------------------------------------------------------------------------");
+
             model.addAttribute("errorMessage", "Đã xảy ra lỗi. Vui lòng thử lại sau.");
             return "register";
         }
     }
 
-    @GetMapping("/admin")
-    public String admin(Model model) {
+    // @GetMapping("/admin")
+    // public String admin(Model model) {
+    // @GetMapping("/admin")
+    // public String admin(Model model) {
 
-        return "admin_trangchu";
-    }
+    // return "admin_trangchu";
+    // }
 
-    @GetMapping("/admin_quanlibaiviet")
-    public String admin_quanlibaiviet(Model model) {
+    // @GetMapping("/admin_quanlibaiviet")
+    // public String admin_quanlibaiviet(Model model) {
 
-        return "admin_quanlibaiviet";
+    // return "admin_quanlibaiviet";
 
-    }
+    // }
+
+    // return "admin_quanlibaiviet";
+    // }
+
+    // @GetMapping("/admin_quanlibaiviet_daxoa")
+    // public String admin_quanlibaiviet_daxoa(Model model) {
+
+    // return "admin_quanlibaiviet_daxoa";
+    // }
+
+    // @GetMapping("/admin_quanlibaiviet_daduyet")
+    // public String admin_quanlibaiviet_daduyet(Model model) {
+
+    // return "admin_quanlibaiviet_daduyet";
+    // }
 
 }

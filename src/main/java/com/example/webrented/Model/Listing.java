@@ -23,7 +23,7 @@ public class Listing {
     private double price;
     private double area;
     private List<String> images;
-    private boolean available;
+    private Boolean available;
     private Date createdAt;
     private Date updatedAt;
 
@@ -102,7 +102,7 @@ public class Listing {
         this.images = images;
     }
 
-    public boolean isAvailable() {
+    public Boolean isAvailable() {
         return available;
     }
 
