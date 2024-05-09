@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "E:/HOC_HTML_CSS_JAVAS"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Webrenrtal"
+	}
+}
