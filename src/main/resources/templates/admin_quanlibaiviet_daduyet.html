@@ -81,8 +81,10 @@
                 </div>
             </div>
             <div class="du_lieu">
-
-                <button class="xoa">XÓA</button>
+                <form th:action="@{/admin_quanlibaiviet_daduyet}" method="post">
+                    <input type="hidden" name="id" th:value="${listing.id}">
+                    <button class="xoa" type="submit" name="action" value="xoa" th:id="${listing.id}" previewlistener="true">XÓA</button>
+            </form>
             </div>
             </tr>
         </ul>

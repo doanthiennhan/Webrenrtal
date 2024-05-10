@@ -62,10 +62,24 @@ public class adminController {
     }
 
 
-    @PostMapping("/admin_quanlibaiviet/{id}/updateAvailability/{available}")
-    public String updateListingAvailability(@PathVariable("id") String id) {
-        listingService.updateListingAvailability(id, true);
+    @PostMapping("/admin_quanlibaiviet")
+    public String handleAction(@RequestParam("id") String id, @RequestParam("action") String action) {
+        if ("duyet".equals(action)) {
+            // Nếu hành động là "duyet", thực hiện duyệt
+            listingService.updateListingAvailability(id, true);
+        } else if ("xoa".equals(action)) {
+            // Nếu hành động là "xoa", thực hiện xóa
+            
+        }
         return "redirect:/admin_quanlibaiviet";
+    }
+
+    @PostMapping("/admin_quanlibaiviet_daduyet")
+    public String updateListingAvailability(@RequestParam("id") String id) {
+        // Đảm bảo phương thức này được gọi khi form được submit
+        listingService.updateListingAvailability(id,false);
+        // Thực hiện các thao tác cần thiết
+        return "redirect:/admin_quanlibaiviet_daduyet";
     }
 }
 

@@ -81,10 +81,11 @@
             </div>
         </div>
         <div class="du_lieu"> 
-            <form action="/admin_quanlibaiviet"  th:id=" ${listing.id}" method="get">
-                <button class="duyet" type="submit">DUYỆT</button>
+            <form th:action="@{/admin_quanlibaiviet}" method="post">
+                <input type="hidden" name="id" th:value="${listing.id}">
+                <button class="duyet" type="submit" name="action" value="duyet">DUYỆT</button>
+                <button class="xoa" type="submit" name="action" value="xoa" th:id="${listing.id}" previewlistener="true">XÓA</button>
             </form>
-            <button class="xoa" type="submit" name="action" value="buttonxoa" th:id=" ${listing.id}" previewlistener="true" >XÓA</button>
         </div>
         
         </tr>

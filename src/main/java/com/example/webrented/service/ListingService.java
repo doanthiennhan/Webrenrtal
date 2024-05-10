@@ -34,10 +34,13 @@ public class ListingService {
     public void deleteListingById(String id) {
         listingRepository.deleteById(id);
     }
-    public void updateListingAvailability(String id, boolean available) {
+    public void updateListingAvailability(String id, Boolean available) {
+        System.out.println("b1");
         Optional<Listing> optionalListing = listingRepository.findById(id);
+        System.out.println("b2");
         optionalListing.ifPresent(listing -> {
             listing.setAvailable(available);
+            System.out.println("b3");
             listingRepository.save(listing);
         });
     }

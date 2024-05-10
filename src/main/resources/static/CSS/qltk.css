@@ -1,0 +1,41 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the table */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Header background color */
+  font-weight: bold;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #ddd;
+}
