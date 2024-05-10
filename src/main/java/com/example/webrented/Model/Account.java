@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 
 @EntityScan
@@ -16,7 +18,7 @@ public class Account {
     private String id;
     private String phone;
     private String password;
-    private String email;
+
     private String role;
     private Date createdAt;
     private Date updatedAt;
@@ -25,10 +27,9 @@ public class Account {
     public Account() {
     }
 
-    public Account(String phone, String password, String email, String role, Date createdAt, Date updatedAt) {
+    public Account(String phone, String password, String role, Date createdAt, Date updatedAt) {
         this.phone = phone;
         this.password = password;
-        this.email = email;
         this.role = role;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -43,11 +44,11 @@ public class Account {
         this.id = id;
     }
 
-    public String getUsername() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setUsername(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -57,14 +58,6 @@ public class Account {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getRole() {
@@ -79,16 +72,24 @@ public class Account {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
+    // public void setCreatedAt(LocalDateTime localDateTime) {
+    // this.createdAt = localDateTime;
+    // }
 
     public Date getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+    // public void setUpdatedAt(LocalDateTime localDateTime) {
+    // this.updatedAt = localDateTime;
+    // }
+
+    public void setCreatedAt(LocalDateTime localDateTime) {
+        this.createdAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
+    public void setUpdatedAt(LocalDateTime localDateTime) {
+        this.updatedAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
     @Override
@@ -97,7 +98,6 @@ public class Account {
                 "id='" + id + '\'' +
                 ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
                 ", role='" + role + '\'' +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +

@@ -80,12 +80,18 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="du_lieu"> 
             <form th:action="@{/admin_quanlibaiviet}" method="post">
                 <input type="hidden" name="id" th:value="${listing.id}">
                 <button class="duyet" type="submit" name="action" value="duyet">DUYỆT</button>
                 <button class="xoa" type="submit" name="action" value="xoa" th:id="${listing.id}" previewlistener="true">XÓA</button>
             </form>
+=======
+        <div class="du_lieu">
+            <a href="/post"><button class="duyet" >DUYỆT</button></a>
+            <button class="xoa">XÓA</button>
+>>>>>>> 7ec046ce837be8f357941efa9a9aadfe5f790434
         </div>
         
         </tr>

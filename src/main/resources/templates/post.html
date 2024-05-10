@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,38 @@
     <script></script>
     <title>Document</title>
 </head>
+
 <body>
-    <th:block th:include="header :: header"></th:block>
+    <div
+        style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 999; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <th:block th:include="header :: header"></th:block>
+    </div>
     <div class="tieudevsnoidung">
-    <h3 class="tieude">tiêu đều</h3>
-    <input type="text" class = "tieude1">
-    <h3 class="noidung">nội dung</h3>
-    <textarea style="height: 500px; width: 500px;">
+        <h3 class="tieude">tiêu đều</h3>
+        <input type="text" class="tieude1">
+        <h3 class="noidung">nội dung</h3>
+        <textarea style="height: 500px; width: 500px;">
         Viết nội dung cụ thể  ở đây...
     </textarea>
-    
+
     </div>
     <div class="tieudevsnoidung2">
         <h3 class="">giá</h3>
-        <input class="custom-input" type="text" >
+        <input class="custom-input" type="text">
         <span class="end-text">VNĐ</span>
-        
+
         <h3 class="">diện tích</h3>
-        <input class="custom-input" type="text" >
+        <input class="custom-input" type="text">
         <span class="end-text">m2</span>
 
         <h3 class="">đường</h3>
-        <input  class="" type="text">
+        <input class="" type="text">
 
         <h3 class="">phường</h3>
-        <input  class="" type="text">
+        <input class="" type="text">
 
         <h3 class="">quận</h3>
-        <input  class="" type="text">
+        <input class="" type="text">
 
     </div>
     <div class="tieudevsnoidung3">
@@ -48,26 +53,34 @@
 </body>
 
 <script>
-document.getElementById('fileInput').addEventListener('change', function(event) {
-    var files = event.target.files; // Lấy danh sách các file ảnh từ máy chọn
+    document.getElementById('fileInput').addEventListener('change', function (event) {
+        var files = event.target.files; // Lấy danh sách các file ảnh từ máy chọn
 
-    for (var i = 0; i < files.length; i++) {
-        var file = files[i]; // Lấy mỗi file ảnh
-        var reader = new FileReader(); // Tạo một đối tượng FileReader
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i]; // Lấy mỗi file ảnh
+            var reader = new FileReader(); // Tạo một đối tượng FileReader
 
-        reader.onload = (function(file) {
-            return function(e) {
-                // Khi FileReader đã đọc file thành công
-                var image = new Image(); // Tạo một phần tử hình ảnh mới
-                image.src = e.target.result; // Gán đường dẫn của ảnh cho phần tử hình ảnh
-                document.getElementById('imageContainer').appendChild(image); // Thêm phần tử hình ảnh vào phần tử container
-            };
-        })(file);
+            reader.onload = (function (file) {
+                return function (e) {
+                    // Khi FileReader đã đọc file thành công
+                    var image = new Image(); // Tạo một phần tử hình ảnh mới
+                    image.src = e.target.result; // Gán đường dẫn của ảnh cho phần tử hình ảnh
+                    document.getElementById('imageContainer').appendChild(image); // Thêm phần tử hình ảnh vào phần tử container
+                };
+            })(file);
 
-        // Đọc file ảnh
-        reader.readAsDataURL(file);
-    }
-});
+            // Đọc file ảnh
+            reader.readAsDataURL(file);
+        }
+    });
+
+    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var content = document.getElementById('openn');
+        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
+        isContentHidden = true; // Cập nhật biến isContentHidden
+    });
 
     document.addEventListener('click', function (event) {
         var content = document.getElementById('openn');
@@ -75,7 +88,9 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
 
         // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
         if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            content.style.display = 'none'; // Ẩn menu đi
+            if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+                content.style.display = 'none'; // Ẩn menu đi
+            }
         }
     });
 
@@ -84,8 +99,10 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         var content = document.getElementById('openn');
         if (content.style.display === 'none') {
             content.style.display = 'block'; // Show the content
+            isContentHidden = false; // Cập nhật biến isContentHidden
         } else {
             content.style.display = 'none'; // Hide the content
+            isContentHidden = true; // Cập nhật biến isContentHidden
         }
     });
 

@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @EntityScan
-@Document(collection = "renter")
+@Document(collection = "Renter")
 public class Renter {
     @Id
     private String id;
