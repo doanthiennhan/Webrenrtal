@@ -86,7 +86,6 @@ public class adminController {
         for (Account account : accounts) {
             idMap.put(account, listingService.accountCount(account.getId()));
         }
-        System.out.println(idMap.toString());
         model.addAttribute("accounts", idMap);
         return "qltk.html";
     }
