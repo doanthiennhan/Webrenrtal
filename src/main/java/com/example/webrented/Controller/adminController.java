@@ -1,42 +1,32 @@
 package com.example.webrented.Controller;
 
 import java.util.List;
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 import com.example.webrented.service.ListingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-<<<<<<< Updated upstream
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-=======
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
->>>>>>> Stashed changes
+import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
-
+import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 
-<<<<<<< Updated upstream
-
-
-
-=======
->>>>>>> Stashed changes
 @Controller
 public class adminController {
 
     private final ListingRepository listingRepository;
     private final ListingService listingService;
+    private final AccountRepository accountRepository;
 
-    public adminController(ListingRepository listingRepository, ListingService listingService) {
+    public adminController(ListingRepository listingRepository, ListingService listingService,
+            AccountRepository accountRepository) {
         this.listingRepository = listingRepository;
         this.listingService = listingService;
+        this.accountRepository = accountRepository;
     }
 
     @GetMapping("/admin")
@@ -84,5 +74,12 @@ public class adminController {
         listingService.updateListingAvailability(id, false);
         // Thực hiện các thao tác cần thiết
         return "redirect:/admin_quanlibaiviet_daduyet";
+    }
+
+    @GetMapping("/admin_quanlitaikhoan")
+    public String admin_quanlitk(Model model) {
+        List<Account> accounts = accountRepository.findAll();
+        model.addAttribute("accounts", accounts);
+        return "qltk.html";
     }
 }

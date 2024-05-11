@@ -15,7 +15,7 @@ import java.util.List;
 public class Listing {
     @Id
     private String id;
-    private String userId;
+    private String accountId;
     private String title;
     private String description;
     private String address;
@@ -38,12 +38,12 @@ public class Listing {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getAccountId() {
+        return accountId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
     }
 
     public String getTitle() {

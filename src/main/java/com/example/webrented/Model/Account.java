@@ -18,8 +18,9 @@ public class Account {
     private String id;
     private String phone;
     private String password;
-
+    private String name;
     private String role;
+    private String status;
     private Date createdAt;
     private Date updatedAt;
 
@@ -27,10 +28,13 @@ public class Account {
     public Account() {
     }
 
-    public Account(String phone, String password, String role, Date createdAt, Date updatedAt) {
+    public Account(String phone, String password, String name, String role, String status, Date createdAt,
+            Date updatedAt) {
         this.phone = phone;
         this.password = password;
+        this.name = name;
         this.role = role;
+        this.status = status;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
@@ -42,6 +46,22 @@ public class Account {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getStstus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPhone() {
@@ -98,7 +118,9 @@ public class Account {
                 "id='" + id + '\'' +
                 ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
                 ", role='" + role + '\'' +
+                ", status='" + status + '\'' +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +
                 '}';

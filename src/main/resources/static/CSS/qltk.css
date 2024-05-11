@@ -1,13 +1,18 @@
-/* Reset some default styles */
-body, html {
-  margin: 0;
-  padding: 0;
+.table1{
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  width: 1000px;
 }
 
-/* Style for the table */
-.table-container {
+.tieude {
+  background-color: aqua;
+
+}
+table {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  
+  border-collapse: collapse;
 }
 
 table {
@@ -16,26 +21,32 @@ table {
 }
 
 th, td {
+  border: 1px solid #ddd;
   padding: 8px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 th {
-  background-color: #f2f2f2; /* Header background color */
-  font-weight: bold;
-}
-.actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
+  background-color: #f2f2f2;
 }
 
-.actions button {
-  padding: 5px 10px;
-  cursor: pointer;
+.tieude th {
+  background-color: #333;
+  color: white;
 }
 
-.actions button:hover {
+tr:nth-child(even) {    
+  background-color: #f2f2f2;
+}
+
+tr:hover {
   background-color: #ddd;
+}
+
+.xoa{
+  background-color: #7F8BF8;
+}
+
+.cam{
+  background-color: #F75B5B;
 }

@@ -34,6 +34,7 @@ public class ListingService {
     public void deleteListingById(String id) {
         listingRepository.deleteById(id);
     }
+
     public void updateListingAvailability(String id, Boolean available) {
         System.out.println("b1");
         Optional<Listing> optionalListing = listingRepository.findById(id);
@@ -44,4 +45,5 @@ public class ListingService {
             listingRepository.save(listing);
         });
     }
+
 }
