@@ -36,14 +36,25 @@ public class ListingService {
     }
 
     public void updateListingAvailability(String id, Boolean available) {
-        System.out.println("b1");
+
         Optional<Listing> optionalListing = listingRepository.findById(id);
-        System.out.println("b2");
+
         optionalListing.ifPresent(listing -> {
             listing.setAvailable(available);
-            System.out.println("b3");
+
             listingRepository.save(listing);
         });
+    }
+
+    public int accountCount(String id) {
+        int dem = 0;
+        List<Listing> list = listingRepository.findAll();
+        for (Listing listing : list) {
+            if (listing.getAccountId().equals(id)) {
+                dem++;
+            }
+        }
+        return dem;
     }
 
 }

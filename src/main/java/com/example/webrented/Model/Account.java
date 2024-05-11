@@ -122,7 +122,6 @@ public class Account {
                 ", role='" + role + '\'' +
                 ", status='" + status + '\'' +
                 ", createdAt=" + createdAt +
-                ", updatedAt=" + updatedAt +
-                '}';
-    }
-}
+                ", updatedAt=" + updatedAt +'}';
+            }
+        }

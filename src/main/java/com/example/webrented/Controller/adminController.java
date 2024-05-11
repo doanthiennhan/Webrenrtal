@@ -1,5 +1,6 @@
 package com.example.webrented.Controller;
 
+import java.util.HashMap;
 import java.util.List;
 
 import com.example.webrented.service.ListingService;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
+
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 
@@ -24,6 +26,7 @@ public class adminController {
 
     public adminController(ListingRepository listingRepository, ListingService listingService,
             AccountRepository accountRepository) {
+
         this.listingRepository = listingRepository;
         this.listingService = listingService;
         this.accountRepository = accountRepository;
@@ -82,4 +85,12 @@ public class adminController {
         model.addAttribute("accounts", accounts);
         return "qltk.html";
     }
+
+    HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();for(
+    Account account:accounts)
+    {
+        idMap.put(account, listingService.accountCount(account.getId()));
+    }model.addAttribute("accounts",idMap);return"qltk.html";
+}
+
 }
