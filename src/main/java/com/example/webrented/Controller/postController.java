@@ -13,4 +13,9 @@ public class postController {
     public String post() {
         return "post";
     }
+
+    @GetMapping("/postDetail")
+    public String postDetail() {
+        return "postDetail";
+    }
 }

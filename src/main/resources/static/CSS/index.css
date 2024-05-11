@@ -13508,10 +13508,11 @@ main {
     overflow: hidden;
     border-radius: 2px;
     width: 100px;
-    height: 100px
-    margin-right: 10px /* Khoảng cách giữa hình ảnh và các phần tử còn lại */
-    flex-shrink: 0 /* Đảm bảo rằng hình ảnh không bị co lại */
+    height: 100px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và các phần tử còn lại */
+    flex-shrink: 0; /* Đảm bảo rằng hình ảnh không bị co lại */
 }
+
 
 .AdThumbnail_AdThumbnail__WQgS0 .AdThumbnail_IntersectBox__vC3LO {
     width: 100%;
@@ -24107,3 +24108,6081 @@ main {
     height: 100%;
     opacity: .3
 }
+.LeadManagement_inputSection__EVZxp {
+    margin-top: 8px
+}
+
+.LeadManagement_inputSection__EVZxp input::-webkit-inner-spin-button,.LeadManagement_inputSection__EVZxp input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.LeadManagement_inputSection__EVZxp input[type=number] {
+    -moz-appearance: textfield; /* Cho Firefox */
+    appearance: textfield; /* Cho các trình duyệt khác */
+}
+
+
+.LeadManagement_inputSectionDesktop__lzMJi {
+    display: flex
+}
+
+.LeadManagement_inputSectionDesktop__lzMJi input::-webkit-inner-spin-button,.LeadManagement_inputSectionDesktop__lzMJi input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.LeadManagement_inputSectionDesktop__lzMJi input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Các trình duyệt khác */
+}
+
+.LeadManagement_inputSectionDesktop__lzMJi .LeadManagement_inputItemLeft__UBdrO {
+    width: calc(50% - 8px);
+    margin-right: 8px
+}
+
+.LeadManagement_inputSectionDesktop__lzMJi .LeadManagement_inputItemRight__DhRDo {
+    width: calc(50% - 8px);
+    margin-left: 8px
+}
+
+.LeadManagement_requiredNotice__C8A9R {
+    display: block;
+    color: #777;
+    margin-bottom: 16px;
+    font-size: 12px
+}
+
+.LeadManagement_requiredNotice__C8A9R .LeadManagement_redNotice__6TBqn {
+    color: #fd213b
+}
+
+.LeadManagement_requiredNotice__C8A9R .LeadManagement_redNotice__6TBqn:before {
+    content: "(";
+    color: #777
+}
+
+.LeadManagement_requiredNotice__C8A9R .LeadManagement_redNotice__6TBqn:after {
+    content: ")";
+    color: #777
+}
+
+.LeadManagement_footerSection__ReSNf {
+    height: 52px
+}
+
+.LeadManagement_footerVEHSection__klYsT,.LeadManagement_footerWithPolicySection__tFMYP {
+    height: auto
+}
+
+.LeadManagement_headerWrapper__8cYaN {
+    display: flex;
+    justify-content: space-between
+}
+
+.LeadManagement_successDrawer__KODQf .LeadManagement_successDrawerHeader__NMuXQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.LeadManagement_dismissButton__XH3Tw {
+    font-weight: 700;
+    width: 100%;
+    color: #777;
+    background: transparent;
+    font-size: 16px
+}
+
+.LeadManagement_longForm__7z5gq {
+    min-height: 450px
+}
+
+.LeadManagement_LmsCTAWrapper__NfHwo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f1f8ee;
+    padding: 12px;
+    width: 100%;
+    color: #000!important;
+    margin: 8px 0
+}
+
+.LeadManagement_LmsCTAWrapper__NfHwo>aside {
+    margin-left: 18px;
+    text-align: left
+}
+
+.LeadManagement_LmsCTAWrapper__NfHwo aside+img {
+    margin-left: auto;
+    transform: rotate(180deg)
+}
+
+.LeadManagement_supportWrapper__hOj8Z {
+    padding: 16px;
+    background-color: #fff7ea;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+.LeadManagement_supportWrapper__hOj8Z .LeadManagement_supportLeft__j5SOl {
+    display: flex;
+    flex-direction: column
+}
+
+.LeadManagement_supportWrapper__hOj8Z .LeadManagement_supportLeft__j5SOl .LeadManagement_supportHeader__7wunt {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fe9900
+}
+
+@media(min-width: 992px) {
+    .LeadManagement_supportWrapper__hOj8Z .LeadManagement_supportLeft__j5SOl .LeadManagement_supportHeader__7wunt {
+        font-size:18px
+    }
+}
+
+.LeadManagement_supportFormIcon__AKPxM {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 16px
+}
+
+.LeadManagement_policySection__RVu1m {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px
+}
+
+.LeadManagement_policySection__RVu1m>p {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8c8c8c
+}
+
+.c1i6o3zw {
+    display: table;
+    position: relative;
+    width: var(--c1i6o3zw-0)
+}
+
+.tzd64ni {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid silver;
+    height: var(--tzd64ni-0);
+    min-height: 48px;
+    background-color: #fff
+}
+
+.tzd64ni.resize-both {
+    resize: both;
+    overflow: auto
+}
+
+.tzd64ni.resize-vertical {
+    resize: vertical;
+    overflow: auto
+}
+
+.tzd64ni.resize-horizontal {
+    resize: horizontal;
+    overflow: auto
+}
+
+.tzd64ni>.focus-capture {
+    cursor: text;
+    height: 30px
+}
+
+.tzd64ni.disabled>.focus-capture {
+    cursor: auto
+}
+
+.tzd64ni>label {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    cursor: text;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transform-origin: top left;
+    transition: transform .1s ease;
+    color: #8c8c8c;
+    font-size: .875rem
+}
+
+.tzd64ni:focus-within {
+    border-color: #f80
+}
+
+.tzd64ni.error {
+    border-color: #e5193b
+}
+
+.tzd64ni.error+p {
+    color: #e5193b
+}
+
+.tzd64ni.disabled {
+    border-color: silver;
+    background-color: #f4f4f4
+}
+
+.soh0ba3 {
+    border-radius: 4px;
+    width: 100%;
+    padding: 0 12px 4px;
+    outline: none;
+    border: none;
+    line-height: 20px;
+    height: calc(100% - 30px);
+    resize: none;
+    background-color: #fff
+}
+
+.soh0ba3:disabled {
+    background-color: #f4f4f4
+}
+
+.soh0ba3::-moz-placeholder {
+    opacity: 1;
+    color: #8c8c8c;
+    padding-left: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.soh0ba3::placeholder {
+    opacity: 1;
+    color: #8c8c8c;
+    padding-left: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.soh0ba3:focus::-moz-placeholder {
+    color: transparent
+}
+
+.soh0ba3:focus::placeholder {
+    color: transparent
+}
+
+.soh0ba3.required+label:after {
+    content: "*";
+    margin-left: 4px;
+    color: #e5193b
+}
+
+.soh0ba3:not(:focus):not(.hasValue):not(:-webkit-autofill) {
+    padding-top: 7px
+}
+
+.soh0ba3.hasValue+label,.soh0ba3:-webkit-autofill+label,.soh0ba3:focus+label {
+    transform: scale(.7143) translateY(-3px);
+    font-weight: 700
+}
+
+.pc2folk {
+    color: #8c8c8c;
+    font-size: .625rem;
+    min-height: 16px;
+    margin-left: 12px;
+    line-height: 1.5;
+    text-align: left
+}
+
+.LeadManagementPty_formStyle___ZO8W {
+    background-image: url(https://static.chotot.com/storage/default_images/pty/background-real-estate.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 8px 12px 0
+}
+
+@media(max-width: 991px) {
+    .LeadManagementPty_hiddenOnTablet__4rvXb {
+        display:none
+    }
+}
+
+.LeadManagementPty_inputSection__h2mNm input::-webkit-inner-spin-button,.LeadManagementPty_inputSection__h2mNm input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.LeadManagementPty_inputSection__h2mNm input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Các trình duyệt khác */
+}
+
+.LeadManagementPty_inputSection__h2mNm p {
+    margin: 0
+}
+
+.LeadManagementPty_inputInfoSection__0Ll3k {
+    display: flex;
+    flex: 1 1;
+    gap: 8px
+}
+
+.LeadManagementPty_inputSectionDesktop__FYE5i {
+    display: flex
+}
+
+.LeadManagementPty_inputSectionDesktop__FYE5i input::-webkit-inner-spin-button,.LeadManagementPty_inputSectionDesktop__FYE5i input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.LeadManagementPty_inputSectionDesktop__FYE5i input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Các trình duyệt khác */
+}
+
+.LeadManagementPty_inputSectionDesktop__FYE5i .LeadManagementPty_inputItemLeft__w2B1s {
+    width: calc(50% - 8px);
+    margin-right: 8px
+}
+
+.LeadManagementPty_inputSectionDesktop__FYE5i .LeadManagementPty_inputItemRight__gCpfn {
+    width: calc(50% - 8px);
+    margin-left: 8px
+}
+
+.LeadManagementPty_requiredNotice__F34Y0 {
+    color: #777;
+    margin-bottom: 16px;
+    font-size: 12px
+}
+
+.LeadManagementPty_requiredNotice__F34Y0 .LeadManagementPty_redNotice__bBgnN {
+    color: #fd213b
+}
+
+.LeadManagementPty_requiredNotice__F34Y0 .LeadManagementPty_redNotice__bBgnN:before {
+    content: "(";
+    color: #777
+}
+
+.LeadManagementPty_requiredNotice__F34Y0 .LeadManagementPty_redNotice__bBgnN:after {
+    content: ")";
+    color: #777
+}
+
+.LeadManagementPty_footerSection__zigt0 {
+    height: 52px
+}
+
+.LeadManagementPty_footerVEHSection__XGZWX {
+    height: auto
+}
+
+.LeadManagementPty_headerWrapper__Ce12m {
+    display: flex;
+    justify-content: space-between
+}
+
+.LeadManagementPty_successDrawer__8XixR .LeadManagementPty_successDrawerHeader__CMlfY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.LeadManagementPty_dismissButton__AQE5j {
+    font-weight: 700;
+    width: 100%;
+    color: #777;
+    background: transparent;
+    font-size: 16px
+}
+
+.LeadManagementPty_longForm__pm7WF {
+    min-height: 450px
+}
+
+.LeadManagementPty_LmsCTAWrapper__esoxv {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f1f8ee;
+    padding: 12px;
+    width: 100%;
+    color: #000!important;
+    margin: 8px 0
+}
+
+.LeadManagementPty_LmsCTAWrapper__esoxv>aside {
+    margin-left: 18px;
+    text-align: left
+}
+
+.LeadManagementPty_LmsCTAWrapper__esoxv aside+img {
+    margin-left: auto;
+    transform: rotate(180deg)
+}
+
+.LeadManagementPty_supportWrapper__lBWil {
+    padding: 16px;
+    background-color: #fff7ea;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+.LeadManagementPty_supportWrapper__lBWil .LeadManagementPty_supportLeft__RiMeb {
+    display: flex;
+    flex-direction: column
+}
+
+.LeadManagementPty_supportWrapper__lBWil .LeadManagementPty_supportLeft__RiMeb .LeadManagementPty_supportHeader__S2M3u {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fe9900
+}
+
+@media(min-width: 992px) {
+    .LeadManagementPty_supportWrapper__lBWil .LeadManagementPty_supportLeft__RiMeb .LeadManagementPty_supportHeader__S2M3u {
+        font-size:18px
+    }
+}
+
+.LeadManagementPty_supportFormIcon__XmjUT {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 16px
+}
+
+.LeadManagementPty_legalContent__aQtDm {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px
+}
+
+.LeadManagementPty_legalText__eELaT {
+    color: #8c8c8c;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0
+}
+
+.LeadManagementPty_legalIcon__UD834 {
+    margin-top: 3px
+}
+
+.LeadManagementPty_submitFormButton__qaxSo {
+    background: #fa6819!important
+}
+
+.LeadManagementPty_titleText__AgUPC {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px
+}
+
+.styles_button__SVZnw {
+    width: 100vw;
+    transform: translateX(-12px);
+    height: 44px;
+    color: #38699f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #f4f4f4;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: -12px
+}
+
+.styles_button__SVZnw:focus {
+    outline: none
+}
+
+.styles_button__SVZnw svg {
+    margin-left: 8px
+}
+
+@media(min-width: 768px) {
+    .styles_button__SVZnw {
+        width:100%
+    }
+}
+
+.styles_isCollapse__aDymR {
+    transform: rotate(90deg)
+}
+
+.styles_isExpanse__c8Ipj {
+    transform: rotate(-90deg)
+}
+
+.styles_buttonColor2__WGVdY {
+    width: 100vw;
+    transform: translateX(-12px);
+    height: 44px;
+    color: #2a70df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #f4f4f4;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: -12px
+}
+
+.styles_buttonColor2__WGVdY:focus {
+    outline: none
+}
+
+.styles_buttonColor2__WGVdY svg {
+    margin-left: 8px;
+    color: #2a70df
+}
+
+@media(min-width: 768px) {
+    .styles_buttonColor2__WGVdY {
+        width:100%
+    }
+}
+
+.InlineShowPhoneButton_wrapper__NtHmX {
+    width: 100%
+}
+
+.InlineShowPhoneButton_linkContact__YEWbK {
+    display: block;
+    margin-bottom: 0;
+    touch-action: manipulation;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857;
+    border-radius: 4px;
+    color: #33659c;
+}
+
+
+
+.InlineShowPhoneButton_phoneHidden__GJPGi {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #33659c
+}
+
+.InlineShowPhoneButton_phoneShow__U7MC_ {
+    color: #333!important;
+    text-decoration: none!important
+}
+
+.InlineShowPhoneMobile_wrapper__GbI84 {
+    width: 100%
+}
+.InlineShowPhoneMobile_linkContact__wcZn3 {
+    display: block;
+    margin-bottom: 0;
+    touch-action: manipulation;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857;
+    border-radius: 4px; /* Loại bỏ dấu ngoặc kép */
+    color: #33659c;
+}
+
+.InlineShowPhoneMobile_phoneHidden__FhnIz {
+    -webkit-text-decoration: "underline";
+    text-decoration: "underline";
+    cursor: pointer;
+    color: #33659c
+}
+
+.InlineShowPhoneMobile_linkText__KkNJE {
+    color: #33659c;
+    text-decoration: underline
+}
+
+.styles_adBodyTitle__JrqDu {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px
+}
+
+.styles_adBody__vGW74 {
+    overflow-wrap: break-word;
+    text-align: justify;
+    white-space: pre-line;
+    font-size: 14px
+}
+
+.styles_adBodyCollapse__1Xvk7 {
+    max-height: 300px;
+    overflow: hidden
+}
+
+.styles_adBodyExpand__7S0HS {
+    max-height: 10000px
+}
+
+.styles_showPhone__HXobs a,.styles_showPhone__HXobs linkcontact {
+    color: #2a70df!important
+}
+
+.styles_showPhone__HXobs a:hover {
+    color: #4e8bef!important
+}
+
+.mgqpb9l {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1700;
+    min-height: -webkit-fill-available
+}
+
+@media screen and (min-width: 768px) {
+    .mgqpb9l {
+        display:grid;
+        place-items: center
+    }
+}
+
+.b1o30j96 {
+    background-color: #222;
+    top: 0;
+    height: 100%;
+    opacity: .3
+}
+
+.b1o30j96,.sj7m2ba {
+    position: absolute;
+    left: 0;
+    width: 100%
+}
+
+.sj7m2ba {
+    bottom: 0;
+    max-height: calc(100vh - 12px);
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    z-index: 1;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    animation: slideFromBottom-sj7m2ba .2s ease-out 0s 1;
+    overflow: hidden
+}
+
+@keyframes scaleToFull-sj7m2ba {
+    0% {
+        transform: scale(.7)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes slideFromBottom-sj7m2ba {
+    0% {
+        transform: translateY(100%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sj7m2ba {
+        position:static;
+        border-radius: 4px;
+        animation: scaleToFull-sj7m2ba .2s ease-out 0s 1;
+        max-width: 480px;
+        margin-top: 40px
+    }
+}
+
+.sj7m2ba>h5 {
+    margin: 16px 0 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 700
+}
+
+.sj7m2ba>.main-icon {
+    display: grid;
+    place-items: center;
+    height: 80px
+}
+
+.sj7m2ba>.main-icon>svg {
+    font-size: 80px;
+    height: 80px
+}
+
+.sowxpsn {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    height: 48px
+}
+
+.sowxpsn,.stikjx3 {
+    display: flex;
+    align-items: center
+}
+
+.stikjx3 {
+    padding: calc(4px + 8px) 16px;
+    width: 100%;
+    justify-content: var(--stikjx3-0);
+    gap: 8px
+}
+
+.stikjx3>button {
+    height: 40px;
+    line-height: 1.25
+}
+
+.b1080f55 {
+    justify-content: center;
+    width: 100%
+}
+
+.p1atpmp3 {
+    overflow: hidden!important
+}
+
+.c485t2p {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: transparent;
+    outline: none;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: -12px
+}
+
+.c485t2p svg {
+    color: #222;
+    width: 24px;
+    height: 24px
+}
+
+.c485t2p:focus {
+    outline: none
+}
+
+.c485t2p:hover {
+    background-color: #f4f4f4
+}
+
+.c485t2p.is-text {
+    color: #f80;
+    font-size: .875rem
+}
+
+@media screen and (min-width: 768px) {
+    .c485t2p {
+        top:16px;
+        right: 12px
+    }
+}
+
+.oa8fnqn {
+    font-size: 1.5rem;
+    position: absolute;
+    font-weight: 700;
+    line-height: 1.25;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 8px;
+    margin: -12px
+}
+
+.oa8fnqn,.oa8fnqn:focus {
+    outline: none
+}
+
+.oa8fnqn.is-text {
+    color: #306bd9;
+    font-size: .875rem;
+    padding: 12px 8px
+}
+
+.oa8fnqn.is-text:hover {
+    border-radius: 4px
+}
+
+.oa8fnqn svg {
+    width: 24px;
+    height: 24px
+}
+
+.oa8fnqn:hover {
+    background-color: #f4f4f4;
+    border-radius: 100%
+}
+
+@media screen and (min-width: 768px) {
+    .oa8fnqn {
+        top:16px;
+        right: 16px
+    }
+}
+
+.c1vyt77h {
+    position: relative;
+    margin: 0 16px
+}
+
+.c1vyt77h .shadow {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    height: 6px;
+    width: 200%;
+    margin-left: -64px
+}
+
+.c1vyt77h .shadow-top {
+    top: 0;
+    background: linear-gradient(180deg,rgba(0,0,0,.15),transparent,transparent);
+    opacity: 0
+}
+
+.c1vyt77h .shadow-bottom {
+    bottom: 0;
+    background: linear-gradient(0deg,rgba(0,0,0,.15),transparent,transparent);
+    opacity: 0
+}
+
+@media screen and (min-width: 768px) {
+    .c1vyt77h {
+        margin:0 24px
+    }
+}
+
+.cou18y8 {
+    position: relative;
+    line-height: 1.5;
+    width: calc(100% + 16px * 2);
+    max-height: calc(100vh - 120px);
+    padding: 0 16px;
+    margin: 0 -16px;
+    overflow-y: auto
+}
+
+.cou18y8.is-single-string {
+    white-space: pre-wrap;
+    text-align: center
+}
+
+.cou18y8.no-button {
+    max-height: calc(100vh - 76px)
+}
+
+@media screen and (min-width: 768px) {
+    .cou18y8 {
+        width:calc(100% + 24px * 2);
+        padding: 0 24px;
+        margin: 0 -24px
+    }
+
+    .cou18y8.cou18y8 {
+        max-height: calc(100vh - 144px)
+    }
+
+    .cou18y8.cou18y8.no-button {
+        max-height: calc(100vh - 88px)
+    }
+}
+
+.se2qgih {
+    overflow-y: visible
+}
+
+.h93yreu {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 0 0
+}
+
+.h93yreu h5 {
+    margin: 0;
+    padding: 0
+}
+
+.n103qgwy {
+    margin: 0
+}
+
+.m1jux5av {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 12px;
+    z-index: 1700
+}
+
+.s1qco230 {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    max-width: 480px;
+    max-height: 636px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    animation: scaleToFull-s1qco230 .2s ease-out 0s 1;
+    text-align: center
+}
+
+@keyframes scaleToFull-s1qco230 {
+    0% {
+        transform: scale(.7)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.s1qco230>h5 {
+    margin: 16px 0 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 700
+}
+
+.s1qco230>.main-icon {
+    display: grid;
+    place-items: center;
+    height: 80px
+}
+
+.s1qco230>.main-icon>svg {
+    font-size: 80px;
+    height: 80px
+}
+
+.s1iyd6m2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.s1iyd6m2.sm img {
+    height: 88px;
+    width: 88px;
+    margin-top: 32px;
+    border-radius: 4px
+}
+
+.s1iyd6m2.md img {
+    height: 108px
+}
+
+.s1iyd6m2.lg img,.s1iyd6m2.md img {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 8px 8px 0 0
+}
+
+.s1iyd6m2.lg img {
+    height: 200px
+}
+
+@media screen and (min-width: 768px) {
+    .s1iyd6m2.sm img {
+        height:88px;
+        width: 88px;
+        margin-top: 32px;
+        border-radius: 4px
+    }
+
+    .s1iyd6m2.md img {
+        height: 150px
+    }
+
+    .s1iyd6m2.lg img,.s1iyd6m2.md img {
+        width: 480px;
+        margin-top: 0;
+        border-radius: 8px 8px 0 0
+    }
+
+    .s1iyd6m2.lg img {
+        height: 200px
+    }
+}
+
+.s1h5zqza {
+    margin: var(--s1h5zqza-0) 40px 32px 40px
+}
+
+@media screen and (min-width: 768px) {
+    .s1h5zqza {
+        margin:var(--s1h5zqza-1) 24px
+    }
+}
+
+.s11z76ne {
+    display: flex;
+    flex-direction: var(--s11z76ne-0);
+    width: 100%;
+    justify-content: var(--s11z76ne-1);
+    align-items: center;
+    gap: 8px
+}
+
+.brj7v55 {
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.casx0k8 {
+    position: absolute;
+    padding: 0;
+    top: 16px;
+    left: 16px;
+    background-color: transparent;
+    outline: none;
+    white-space: nowrap;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 100%
+}
+
+.casx0k8 svg {
+    color: #222;
+    width: 24px;
+    height: 24px
+}
+
+.casx0k8:focus {
+    outline: none
+}
+
+.casx0k8.is-text {
+    color: #f80;
+    font-size: .875rem
+}
+
+@media screen and (min-width: 768px) {
+    .casx0k8 {
+        top:12px;
+        left: 12px
+    }
+}
+
+.cpxn85a {
+    font-size: .875rem;
+    line-height: 20px;
+    max-height: calc(100vh - 280px);
+    width: calc(100% + 12px * 2);
+    padding: 0 12px;
+    margin: 0 -12px 24px;
+    overflow-y: auto;
+    text-align: center
+}
+
+.cpxn85a.no-button {
+    max-height: calc(100vh - 224px);
+    margin-bottom: 0
+}
+
+.cpxn85a.no-button+button {
+    display: none
+}
+
+.cpxn85a.is-single-string {
+    white-space: pre-wrap;
+    text-align: center
+}
+
+@media screen and (min-width: 768px) {
+    .cpxn85a {
+        width:calc(100% + 24px * 2);
+        padding: 0 24px;
+        margin: 0 -24px 24px;
+        text-align: left;
+        max-height: calc(100vh - 248px)
+    }
+
+    .cpxn85a.no-button {
+        max-height: calc(100vh - 192px)
+    }
+}
+
+.slzukqi {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.s1y55odi {
+    overflow-y: visible
+}
+
+.b5x5vcq {
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3
+}
+
+.AdParam_adMediaParam__3epxo {
+    display: flex;
+    align-items: start
+}
+
+.AdParam_adMediaParam__3epxo .AdParam_flex__Kmpb3 {
+    display: flex
+}
+
+.AdParam_adParamItem__Yi2I0 {
+    height: 31px;
+    font-size: 13px;
+    display: table
+}
+
+@media(min-width: 992px) {
+    .AdParam_adParamItem__Yi2I0 {
+        height:45px
+    }
+}
+
+@media(max-width: 768px) {
+    .AdParam_adParamItem__Yi2I0 {
+        margin:15px 0;
+        height: 35px
+    }
+}
+
+@media(max-width: 320px) {
+    .AdParam_adParamItem__Yi2I0 {
+        height:35px
+    }
+}
+
+.AdParam_ptyAdParamItem__sW0ON {
+    font-size: 13px;
+    display: table
+}
+
+.AdParam_adParamIcon__m87Vj {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px
+}
+
+.AdParam_adParamValue__IfaYa {
+    white-space: pre-line
+}
+
+.AdParam_adParamValue__IfaYa>a {
+    color: #2275d3;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    position: relative
+}
+
+.AdParam_adParamValue__IfaYa>a .AdParam_tooltip__Hx4zD {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    padding: 12px;
+    background: rgba(34,34,34,.9);
+    border-radius: 4px;
+    z-index: 1;
+    animation: AdParam_durationShow__lmBwE 1s 5s 1 forwards
+}
+
+@keyframes AdParam_durationShow__lmBwE {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+.AdParam_adParamValue__IfaYa>a .AdParam_tooltip__Hx4zD p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    width: 256px;
+    text-align: left
+}
+
+.AdParam_adParamValue__IfaYa>a .AdParam_tooltip__Hx4zD:after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 14px;
+    border: 8px solid transparent;
+    border-bottom-color: rgba(34,34,34,.9)
+}
+
+@media(max-width: 768px) {
+    .AdParam_adParamValue__IfaYa>a .AdParam_tooltip__Hx4zD {
+        left:0
+    }
+}
+
+.AdParam_adType__pHVyJ {
+    height: 31px
+}
+
+.AdParam_legend__Vp_14 {
+    color: #8f8297;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold4;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5px
+}
+
+.AdParam_address__5wp1F:active,.AdParam_address__5wp1F:focus {
+    outline-width: 0
+}
+
+.AdParam_addressClickable__coDWA {
+    cursor: pointer
+}
+
+.AdParam_addressClickableLoadMap__FLeKT {
+    text-decoration: none;
+    color: #38699f;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center
+}
+
+.AdParam_addressClickableLoadMap__FLeKT img {
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    color: #2275d3
+}
+
+.AdParam_adMapImage__Ysu7w {
+    width: 100%
+}
+
+.AdParam_adMapImage__Ysu7w h2 {
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222
+}
+
+.AdParam_adMapImage__Ysu7w img {
+    width: 100%;
+    height: 82px;
+    margin-top: 12px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.AdParam_adMapImage__Ysu7w img:hover {
+    cursor: pointer
+}
+
+.AdParam_adParamTitle__bU__w {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 12px
+}
+
+.AdParam_adParamContainer__T6cjl {
+    overflow: hidden;
+    position: relative
+}
+
+.AdParam_adParamContainerVeh__Vz4Zt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.AdParam_adParamItemVeh__mCpPS {
+    font-size: 13px;
+    flex-basis: 50%;
+    margin: 8px 0;
+    min-height: 24px
+}
+
+.AdParam_adParamItemVeh__mCpPS span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.AdParam_customStyle__3HeQw h2 {
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 700
+}
+
+.AdParam_toolServiceStyle__O7tOI {
+    margin-bottom: 25px;
+    margin-top: 5px
+}
+
+.AdParam_toolServiceTitle__giqdw {
+    padding: 5px 5px 5px 0;
+    margin: 0!important;
+    border-bottom: 1px solid #cacaca;
+    color: #777;
+    font-size: 14px!important;
+    font-weight: 700;
+    display: block;
+    width: 100%
+}
+
+.AdParamAB_adMediaParam__NLzg5 {
+    display: flex;
+    align-items: start
+}
+
+.AdParamAB_adMediaParam__NLzg5 .AdParamAB_flex__wNh_G {
+    display: flex
+}
+
+.AdParamAB_adMediaParam__NLzg5 a {
+    color: #2a70df
+}
+
+.AdParamAB_adMediaParam__NLzg5 a:hover {
+    color: #4e8bef
+}
+
+.AdParamAB_adParamItem__mtp6_ {
+    height: 31px;
+    font-size: 13px;
+    display: table
+}
+
+@media(min-width: 992px) {
+    .AdParamAB_adParamItem__mtp6_ {
+        height:45px
+    }
+}
+
+@media(max-width: 768px) {
+    .AdParamAB_adParamItem__mtp6_ {
+        margin:15px 0;
+        height: 35px
+    }
+}
+
+@media(max-width: 320px) {
+    .AdParamAB_adParamItem__mtp6_ {
+        height:35px
+    }
+}
+
+.AdParamAB_ptyAdParamItem__3MSLF {
+    font-size: 13px;
+    display: table
+}
+
+.AdParamAB_adParamIcon__wtGsi {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px
+}
+
+.AdParamAB_adParamValue__Vqed2 {
+    white-space: pre-line
+}
+
+.AdParamAB_adParamValue__Vqed2>a {
+    color: #2a70df;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    position: relative
+}
+
+.AdParamAB_adParamValue__Vqed2>a :hover {
+    color: #4e8bef
+}
+
+.AdParamAB_adParamValue__Vqed2>a .AdParamAB_tooltip__AiHfy {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    padding: 12px;
+    background: rgba(34,34,34,.9);
+    border-radius: 4px;
+    z-index: 1;
+    animation: AdParamAB_durationShow__RQdCj 1s 5s 1 forwards
+}
+
+@keyframes AdParamAB_durationShow__RQdCj {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+.AdParamAB_adParamValue__Vqed2>a .AdParamAB_tooltip__AiHfy p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    width: 256px;
+    text-align: left
+}
+
+.AdParamAB_adParamValue__Vqed2>a .AdParamAB_tooltip__AiHfy:after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 14px;
+    border: 8px solid transparent;
+    border-bottom-color: rgba(34,34,34,.9)
+}
+
+@media(max-width: 768px) {
+    .AdParamAB_adParamValue__Vqed2>a .AdParamAB_tooltip__AiHfy {
+        left:0
+    }
+}
+
+.AdParamAB_adType__8Q6BU {
+    height: 31px
+}
+
+.AdParamAB_legend__JIxPO {
+    color: #8f8297;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold4;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5px
+}
+
+.AdParamAB_address__sco__:active,.AdParamAB_address__sco__:focus {
+    outline-width: 0
+}
+
+.AdParamAB_addressClickable__VkVbY {
+    cursor: pointer
+}
+
+.AdParamAB_addressClickableLoadMap__4hZoL {
+    text-decoration: none;
+    color: #1956b8;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center
+}
+
+.AdParamAB_addressClickableLoadMap__4hZoL img {
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    color: #2a70df
+}
+
+.AdParamAB_adMapImage__3TV_9 {
+    width: 100%
+}
+
+.AdParamAB_adMapImage__3TV_9 h2 {
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222
+}
+
+.AdParamAB_adMapImage__3TV_9 img {
+    width: 100%;
+    height: 82px;
+    margin-top: 12px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.AdParamAB_adMapImage__3TV_9 img:hover {
+    cursor: pointer
+}
+
+.AdParamAB_adParamTitle__Cc8CP {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 12px
+}
+
+.AdParamAB_adParamContainer__7e200 {
+    overflow: hidden;
+    position: relative
+}
+
+.AdParamAB_adParamContainerVeh__BQ5mS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.AdParamAB_adParamItemVeh__jh0B_ {
+    font-size: 13px;
+    flex-basis: 50%;
+    margin: 8px 0;
+    min-height: 24px
+}
+
+.AdParamAB_adParamItemVeh__jh0B_ span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.AdParamAB_customStyle__hRRDi h2 {
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 700
+}
+
+.AdParamAB_toolServiceStyle__N3rCW {
+    margin-bottom: 25px;
+    margin-top: 5px
+}
+
+.AdParamAB_toolServiceTitle__oIbG0 {
+    padding: 5px 5px 5px 0;
+    margin: 0!important;
+    border-bottom: 1px solid silver;
+    color: #595959;
+    font-size: 14px!important;
+    font-weight: 700;
+    display: block;
+    width: 100%
+}
+
+.TextLabel_textLabelContainer__4_hHE {
+    display: flex;
+    gap: 4px;
+    overflow: hidden
+}
+
+.TextLabel_textLabelContainer__4_hHE :nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.TextLabel_textLabelContainerAdview__mFDXG {
+    gap: 8px
+}
+
+.TextLabel_textLabel__lXNN2 {
+    padding: 0 4px;
+    border-radius: 4px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.TextLabel_textLabelAdview__PzOrI {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px
+}
+
+.s16jjtf {
+    flex: 1 0;
+    align-self: var(--s16jjtf-0);
+    order: var(--s16jjtf-1)
+}
+
+.s16jjtf.withSpan {
+    flex: 0 0 var(--s16jjtf-2);
+    max-width: var(--s16jjtf-2)
+}
+
+.s16jjtf.withOffset {
+    margin-left: var(--s16jjtf-3)
+}
+
+@media screen and (min-width: 576px) {
+    .s16jjtf.withSpan {
+        flex:0 0 var(--s16jjtf-4);
+        max-width: var(--s16jjtf-4)
+    }
+
+    .s16jjtf.withOffset {
+        margin-left: var(--s16jjtf-5)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .s16jjtf.withSpan {
+        flex:0 0 var(--s16jjtf-6);
+        max-width: var(--s16jjtf-6)
+    }
+
+    .s16jjtf.withOffset {
+        margin-left: var(--s16jjtf-7)
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .s16jjtf.withSpan {
+        flex:0 0 var(--s16jjtf-8);
+        max-width: var(--s16jjtf-8)
+    }
+
+    .s16jjtf.withOffset {
+        margin-left: var(--s16jjtf-9)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .s16jjtf.withSpan {
+        flex:0 0 var(--s16jjtf-10);
+        max-width: var(--s16jjtf-10)
+    }
+
+    .s16jjtf.withOffset {
+        margin-left: var(--s16jjtf-11)
+    }
+}
+
+.s7p3nhw {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: var(--s7p3nhw-0);
+    justify-content: var(--s7p3nhw-1)
+}
+
+.s7p3nhw.withRowCols .s16jjtf {
+    flex: 0 0 auto;
+    width: var(--s7p3nhw-2)
+}
+
+@media screen and (min-width: 576px) {
+    .s7p3nhw.withRowCols .s16jjtf {
+        width:var(--s7p3nhw-3)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .s7p3nhw.withRowCols .s16jjtf {
+        width:var(--s7p3nhw-4)
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .s7p3nhw.withRowCols .s16jjtf {
+        width:var(--s7p3nhw-5)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .s7p3nhw.withRowCols .s16jjtf {
+        width:var(--s7p3nhw-6)
+    }
+}
+
+.c11559zy {
+    margin-right: auto;
+    margin-left: auto
+}
+
+.c11559zy.withWidth {
+    width: var(--c11559zy-0)
+}
+
+.c11559zy.withGutter {
+    padding-left: var(--c11559zy-1);
+    padding-right: var(--c11559zy-1)
+}
+
+.c11559zy.withGutter .s7p3nhw {
+    margin-top: var(--c11559zy-2);
+    margin-right: var(--c11559zy-3);
+    margin-left: var(--c11559zy-3)
+}
+
+.c11559zy.withGutter .s7p3nhw .s16jjtf {
+    margin-top: var(--c11559zy-4);
+    padding-right: var(--c11559zy-1);
+    padding-left: var(--c11559zy-1)
+}
+
+@media screen and (min-width: 576px) {
+    .c11559zy.withWidth {
+        width:var(--c11559zy-5)
+    }
+
+    .c11559zy.withGutter {
+        padding-left: var(--c11559zy-6);
+        padding-right: var(--c11559zy-6)
+    }
+
+    .c11559zy.withGutter .s7p3nhw {
+        margin-top: var(--c11559zy-7);
+        margin-right: var(--c11559zy-8);
+        margin-left: var(--c11559zy-8)
+    }
+
+    .c11559zy.withGutter .s7p3nhw .s16jjtf {
+        margin-top: var(--c11559zy-9);
+        padding-right: var(--c11559zy-6);
+        padding-left: var(--c11559zy-6)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .c11559zy.withWidth {
+        width:var(--c11559zy-10)
+    }
+
+    .c11559zy.withGutter {
+        padding-left: var(--c11559zy-11);
+        padding-right: var(--c11559zy-11)
+    }
+
+    .c11559zy.withGutter .s7p3nhw {
+        margin-top: var(--c11559zy-12);
+        margin-right: var(--c11559zy-13);
+        margin-left: var(--c11559zy-13)
+    }
+
+    .c11559zy.withGutter .s7p3nhw .s16jjtf {
+        margin-top: var(--c11559zy-14);
+        padding-right: var(--c11559zy-11);
+        padding-left: var(--c11559zy-11)
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .c11559zy.withWidth {
+        width:var(--c11559zy-15)
+    }
+
+    .c11559zy.withGutter {
+        padding-left: var(--c11559zy-16);
+        padding-right: var(--c11559zy-16)
+    }
+
+    .c11559zy.withGutter .s7p3nhw {
+        margin-top: var(--c11559zy-17);
+        margin-right: var(--c11559zy-18);
+        margin-left: var(--c11559zy-18)
+    }
+
+    .c11559zy.withGutter .s7p3nhw .s16jjtf {
+        margin-top: var(--c11559zy-19);
+        padding-right: var(--c11559zy-16);
+        padding-left: var(--c11559zy-16)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .c11559zy.withWidth {
+        width:var(--c11559zy-20)
+    }
+
+    .c11559zy.withGutter {
+        padding-left: var(--c11559zy-21);
+        padding-right: var(--c11559zy-21)
+    }
+
+    .c11559zy.withGutter .s7p3nhw {
+        margin-top: var(--c11559zy-22);
+        margin-right: var(--c11559zy-23);
+        margin-left: var(--c11559zy-23)
+    }
+
+    .c11559zy.withGutter .s7p3nhw .s16jjtf {
+        margin-top: var(--c11559zy-24);
+        padding-right: var(--c11559zy-21);
+        padding-left: var(--c11559zy-21)
+    }
+}
+
+.s1oy2gpd {
+    border-radius: 4px;
+    max-width: var(--s1oy2gpd-0);
+    animation: fadeIn-s1oy2gpd var(--s1oy2gpd-1) ease 0s;
+    font-size: .875rem;
+    pointer-events: none;
+    z-index: var(--s1oy2gpd-2);
+    position: relative
+}
+
+@keyframes fadeIn-s1oy2gpd {
+    0% {
+        opacity: 0;
+        transform: scale(.9)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes fadeOut-s1oy2gpd {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(.9)
+    }
+}
+
+.s1oy2gpd.exit {
+    animation-name: fadeOut-s1oy2gpd;
+    opacity: 0
+}
+
+.s1oy2gpd.dark {
+    color: #fff;
+    background-color: #222
+}
+
+.s1oy2gpd.light {
+    color: #222;
+    background-color: #fff;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,.3))
+}
+
+.c1hs14ie {
+    padding: 12px;
+    display: flex;
+    align-items: flex-start
+}
+
+.t1dhkhd0 {
+    width: 56px;
+    height: 56px;
+    margin-right: 12px
+}
+
+.c1uq30ym,.t1dhkhd0 {
+    display: inline-block
+}
+
+.c1uq30ym {
+    position: relative
+}
+
+.t1nvhpx8 {
+    display: block;
+    line-height: 18px;
+    font-weight: 700;
+    margin: 0 0 4px
+}
+
+.t1nvhpx8,.tuexv3l {
+    font-size: .875rem;
+    text-align: left
+}
+
+.tuexv3l {
+    line-height: 20px;
+    margin: 0;
+    white-space: pre-wrap
+}
+
+.c1lhggjz {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer
+}
+
+.c1lhggjz svg {
+    width: 16px;
+    height: 16px
+}
+
+.styles_modal-open___NLKH {
+    overflow: hidden
+}
+
+.styles_modal__jjJfH {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    outline: 0;
+    text-align: center;
+    padding-top: 146px
+}
+
+.styles_modal-open___NLKH .styles_modal__jjJfH {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0,0,0,.5)
+}
+
+.styles_modal-dialog__2E_LM {
+    position: relative;
+    width: auto;
+    outline: none
+}
+
+.styles_modal-content__rF9IM {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    background-clip: padding-box;
+    outline: 0;
+    padding: 56px 32px 32px;
+    top: calc(50% - 220px);
+    max-width: 352px;
+    margin: auto
+}
+
+.styles_modal-title__AvEwV>p {
+    font-weight: 700;
+    font-size: 16px
+}
+
+.styles_modal-close-btn__2NH6B {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/mobile_close.svg);
+    background-size: contain;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 768px) {
+    .styles_btnShareSocial__ARzC2 img {
+        margin-right:5px
+    }
+}
+
+.styles_btnShareSocial__ARzC2 span {
+    font-size: 12px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_trustedInventory__BWc0V {
+    gap: 4px;
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_trustedInventory__BWc0V img {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_adTitle__vEuKD {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 {
+    background-color: transparent;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_saveAd__HXlG9 {
+    margin-left: 12px;
+    right: auto;
+    bottom: auto;
+    position: relative
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_price__u_N83 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+@media only screen and (max-width: 767px) {
+    .AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_price__u_N83 {
+        white-space:pre-wrap
+    }
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_price__u_N83>img {
+    margin: 4px 0
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_squareMetre__eG8lb {
+    color: #000;
+    opacity: .7;
+    line-height: 25px;
+    font-size: 14px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_labelPriceAd__pQzwf {
+    padding: 0 10px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_adPrice__UTqQV {
+    font-size: 16px;
+    color: #c90927;
+    font-weight: 700;
+    width: 100%
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_giveawayText__3QSrI {
+    font-weight: 400;
+    color: #49a2a1;
+    margin-left: 5px;
+    vertical-align: bottom
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapper__y7Aj6 .AdDecriptionVeh_giftCodeText__tIe8v {
+    font-weight: 400;
+    color: #fff;
+    margin-left: 5px;
+    vertical-align: bottom
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapperVeh__mBdrn {
+    margin-bottom: 10px
+}
+
+@media only screen and (max-width: 767px) {
+    .AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceWrapperVeh__mBdrn {
+        margin:0 0 10px
+    }
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_actionWrapper__ijwfS {
+    display: flex;
+    align-items: center
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_actionWrapperVeh__qvMzX button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_actionWrapperVeh__qvMzX button {
+        flex-direction:row
+    }
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_priceAd__dEp5z {
+    margin-left: 10px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_tilteAd__sQSez {
+    margin-right: 10px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_date__SpYR1 {
+    line-height: 22px;
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_date__SpYR1 img {
+    margin-right: 4px
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_date__SpYR1>.AdDecriptionVeh_link__t_Y_n {
+    color: #2275d3
+}
+
+.AdDecriptionVeh_adDecriptionWrapper__bleBW .AdDecriptionVeh_adBody__vPkUt {
+    padding-top: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+    white-space: pre-line;
+    overflow-wrap: break-word
+}
+
+.AdDecriptionVeh_item__s2Xo8 {
+    overflow: hidden;
+    background: #fff;
+    padding: 12px
+}
+
+@media only screen and (min-width: 768px) {
+    .AdDecriptionVeh_item__s2Xo8 {
+        border:1px solid transparent;
+        border-bottom-color: #f4f4f4
+    }
+
+    .AdDecriptionVeh_item__s2Xo8:nth-child(3n-1) {
+        border: 1px solid #f4f4f4;
+        border-top: none
+    }
+}
+
+.AdDecriptionVeh_item__s2Xo8:hover {
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.3);
+    z-index: 2
+}
+
+@media only screen and (max-width: 767px) {
+    .AdDecriptionVeh_item__s2Xo8 {
+        border:1px solid #f4f4f4;
+        border-top: none
+    }
+
+    .AdDecriptionVeh_item__s2Xo8:hover {
+        box-shadow: none
+    }
+
+    .AdDecriptionVeh_item__s2Xo8:nth-child(2n) {
+        border-left: none
+    }
+}
+
+.AdDecriptionVeh_placeholder__qTwm5 {
+    display: block;
+    height: 205px
+}
+
+.AdDecriptionVeh_placeholder__qTwm5.AdDecriptionVeh_min__fFXeH {
+    height: 44px
+}
+
+.AdDecriptionVeh_placeholder__qTwm5.AdDecriptionVeh_max__kuhuX {
+    height: 110px
+}
+
+.AdDecriptionVeh_partnerLogo__Zjx9T {
+    display: inline-block
+}
+
+.commonStyle_verticalDivider__YnD4E {
+    display: inline-block;
+    margin: 0 2px
+}
+
+.commonStyle_giveaway__ws4cA {
+    vertical-align: middle;
+    color: #49a2a1
+}
+
+.commonStyle_giftCode__7mChn {
+    width: 69px;
+    height: 20px;
+    border-radius: 2px;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    background-color: #fe9900
+}
+
+.commonStyle_giveaway_icon__TH2Vv {
+    width: 20px;
+    height: 20px;
+    background: url(https://static.chotot.com/storage/C2C_CDN_STAGING/d8d4dd03d80c145fcb0b53966ccc53f1.png) no-repeat;
+    background-size: contain
+}
+
+.commonStyle_giveawayText__QMwo6 {
+    vertical-align: bottom;
+    margin-left: 5px
+}
+
+.commonStyle_image__6q98n {
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-right: 2px;
+    display: inline-block;
+    overflow: hidden
+}
+
+.commonStyle_image__6q98n.commonStyle_round__zezFa {
+    border-radius: 50%
+}
+
+.commonStyle_deviderWrapper__mnwnv {
+    display: inline-block
+}
+
+.commonStyle_deviderWrapper__mnwnv:after {
+    content: "·";
+    display: inline-block
+}
+
+.commonStyle_adTitleGrid__ZQnBY,.commonStyle_adTitle__g520j {
+    color: #222;
+    margin: 0;
+    font-family: Helvetica,Arial,sans-serif;
+    font-display: swap;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+@media only screen and (min-width: 768px) {
+    .commonStyle_adTitleGrid__ZQnBY,.commonStyle_adTitle__g520j {
+        font-size:15px;
+        line-height: 1.33;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .commonStyle_adTitleGrid__ZQnBY,.commonStyle_adTitle__g520j {
+        font-size:14px;
+        line-height: 1.43;
+        max-height: 40px
+    }
+}
+
+.commonStyle_adTitleGrid__ZQnBY {
+    font-size: 14px!important;
+    line-height: 1.43!important;
+    white-space: inherit;
+    margin-top: 8px;
+    height: 40px!important;
+    display: block;
+    text-overflow: ellipsis
+}
+
+.commonStyle_adTitleBold__qYtxr {
+    font-weight: 700
+}
+
+.commonStyle_commonStyleLabelGrid__PaEU4,.commonStyle_commonStyleLabelPriceGrid__FbZTZ,.commonStyle_commonStyleLabelPrice__wNeoI,.commonStyle_commonStyleLabel__C_QMW {
+    font-size: 12px;
+    line-height: 1.167;
+    padding: 0 4px;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    position: relative;
+    display: inline-block
+}
+
+@media only screen and (max-width: 767px) {
+    .commonStyle_commonStyleLabelGrid__PaEU4,.commonStyle_commonStyleLabelPriceGrid__FbZTZ,.commonStyle_commonStyleLabelPrice__wNeoI,.commonStyle_commonStyleLabel__C_QMW {
+        font-size:10px;
+        line-height: 1.4;
+        padding: 0 3px;
+        margin-right: 4px
+    }
+
+    .commonStyle_commonStyleLabelGrid__PaEU4:hover span,.commonStyle_commonStyleLabelPriceGrid__FbZTZ:hover span,.commonStyle_commonStyleLabelPrice__wNeoI:hover span,.commonStyle_commonStyleLabel__C_QMW:hover span {
+        opacity: 0
+    }
+}
+
+.commonStyle_commonStyleLabelGrid__PaEU4,.commonStyle_commonStyleLabelPriceGrid__FbZTZ {
+    margin-right: 4px;
+    cursor: pointer
+}
+
+.commonStyle_commonStyleLabelPriceGrid__FbZTZ {
+    font-weight: 700
+}
+
+@media only screen and (max-width: 767px) {
+    .commonStyle_commonStyleLabelPriceGrid__FbZTZ span {
+        display:none
+    }
+}
+
+.commonStyle_commonStyleLabelPriceGrid__FbZTZ:hover span {
+    opacity: 1;
+    transform: translate(-50%)
+}
+
+.commonStyle_commonStyleLabelPriceGrid__FbZTZ span {
+    position: absolute;
+    left: calc(100% - 5px);
+    bottom: calc(100% + 5px);
+    opacity: 0;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+    background-color: rgba(0,0,0,.8);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    max-width: 208px;
+    min-width: 180px;
+    max-height: 100px;
+    transform: translate(-50%,1em);
+    transition: all .15s ease-in-out;
+    font-weight: 400;
+    border-radius: 4px;
+    color: #fff
+}
+
+.commonStyle_commonStyleLabelPriceGrid__FbZTZ span a {
+    color: #fbba00
+}
+
+.commonStyle_commonStyleLabelPriceGrid__FbZTZ span:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border: .5em solid transparent;
+    border-top-color: rgba(0,0,0,.8);
+    transform: translate(-50%)
+}
+
+.commonStyle_styleLabelPriceGridSectionEntitlement__prmtB span {
+    left: calc(100% + 30px)!important
+}
+
+.commonStyle_styleLabelPriceGridSectionEntitlement__prmtB span:before {
+    left: 23%!important
+}
+
+.commonStyle_commonStyleLabelPrice__wNeoI {
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 4px;
+    font-weight: 700;
+    z-index: 3;
+    position: relative;
+    text-transform: none
+}
+
+.commonStyle_commonStyleLabelPrice__wNeoI:hover span {
+    opacity: 1;
+    transform: translate(-50%)
+}
+
+.commonStyle_commonStyleLabelPrice__wNeoI span {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 5px);
+    opacity: 0;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+    background-color: rgba(0,0,0,.6);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    max-width: 300px;
+    min-width: 168px;
+    max-height: 100px;
+    min-height: 20px;
+    color: #fff;
+    transform: translate(-50%,1em);
+    transition: all .15s ease-in-out;
+    font-weight: 400;
+    border-radius: 4px;
+    white-space: pre-line
+}
+
+.commonStyle_commonStyleLabelPrice__wNeoI span a {
+    color: #fbba00
+}
+
+.commonStyle_commonStyleLabelPrice__wNeoI span:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: .5em solid transparent;
+    border-bottom-color: rgba(0,0,0,.6);
+    transform: translate(-50%)
+}
+
+@media only screen and (max-width: 767px) {
+    .commonStyle_commonStyleLabelPrice__wNeoI {
+        margin-left:0
+    }
+
+    .commonStyle_commonStyleLabelPrice__wNeoI span {
+        display: none
+    }
+}
+
+.commonStyle_protectLabel__DO8ea,.commonStyle_urgentJobAdLabel__Yitx2 {
+    z-index: 1;
+    width: 63px;
+    height: 16px;
+    background-size: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    top: 2px
+}
+
+.commonStyle_protectLabel__DO8ea {
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon_v2.svg) no-repeat 50%
+}
+
+.commonStyle_urgentJobAdLabel__Yitx2 {
+    width: 47px;
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/hot_job_label.svg) no-repeat 50%
+}
+
+.chotot-icons_icon__x65xl {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle
+}
+
+@media(max-width: 767px) {
+    .chotot-icons_icon__x65xl {
+        height:26px;
+        width: 26px
+    }
+}
+
+@media(max-width: 480px) {
+    .chotot-icons_icon__x65xl {
+        height:24px;
+        width: 24px
+    }
+}
+
+.chotot-icons_shop_verified_icon__zjtUC {
+    width: 25px!important;
+    height: 25px!important
+}
+
+.styles_entryPointProtectedAdBox__4va_G {
+    margin: 8px auto;
+    background: #fff;
+    padding: 4px 12px
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q .styles_titleText__IQlPr {
+    color: #fe9900;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q .styles_titleText__IQlPr img {
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    position: relative;
+    left: -4px
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q .styles_titleIcon__fd_29 {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/info_grey.svg);
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q .styles_viewMore__uR2O5 {
+    color: #fe9900;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_title__lCY4Q .styles_viewMore__uR2O5 .styles_arrowRight__ENUty {
+    border: solid #fe9900;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg)
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 767px) {
+    .styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ {
+        height:56px
+    }
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ .styles_infoItem__Iritv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-right: 12px
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ .styles_infoItem__Iritv:last-child {
+    margin-right: 0
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ .styles_infoItem__Iritv .styles_infoItemImage__Wpp7S {
+    height: 100%;
+    margin-right: 8px
+}
+
+.styles_entryPointProtectedAdBox__4va_G .styles_listDetailInfo__UhRsZ .styles_infoItem__Iritv .styles_infoItemImage__Wpp7S img {
+    height: 16px
+}
+
+.styles_entryPointOutListing__dKEbS {
+    margin-top: 0
+}
+
+.styles_entryPointOutListing__dKEbS .styles_title__lCY4Q {
+    border: none
+}
+
+.styles_entryPointOutListing__dKEbS .styles_listDetailInfo__UhRsZ {
+    display: none
+}
+
+.styles_detailView__9Lokc {
+    padding: 0
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp {
+    padding: 6px 13px 6px 8px;
+    background-color: #f8f8f8;
+    border-radius: 4px 4px 0 0
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp .styles_ctTitleTrusted__7rjjT {
+    display: flex
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp .styles_ctTitleTrusted__7rjjT .styles_titleIcon__fd_29 {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/info_grey.svg);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: 1px
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp .styles_ctTitleTrusted__7rjjT .styles_titleTrusted__n59vt {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 700
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp .styles_contentTrusted__aX7Ef {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px
+}
+
+.styles_detailView__9Lokc .styles_entryPointDetailView___Fynp .styles_moreInfo__tdGGQ {
+    color: #38699f;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px
+}
+
+.styles_trustedWrapper__MTxE_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.styles_icTrusted__ih7Yr {
+    width: 16px;
+    height: 20px;
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon.svg)
+}
+
+.styles_icPartner__mDJqq,.styles_icTrusted__ih7Yr {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 2px
+}
+
+.styles_icPartner__mDJqq {
+    width: 63px;
+    height: 16px;
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon_v2.svg);
+    position: relative;
+    top: 1px
+}
+
+.styles_titleRightIcon__WfKs4 {
+    background-image: url(https://static.chotot.com/storage/icons/svg/right-arrow.svg);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    margin-left: auto
+}
+
+.styles_expandIcon__Y1CCc {
+    transform: rotate(90deg)
+}
+
+.styles_collapseIcon__dcOW6 {
+    transform: rotate(-90deg)
+}
+
+.styles_contentTrustedVeh__ogXNR {
+    margin-top: 20px
+}
+
+.styles_contentTrustedVehShop__RLMUB {
+    display: flex;
+    justify-content: center
+}
+
+.styles_contentTrustedVehShop__RLMUB .styles_contentItem__ghrua {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    align-items: center
+}
+
+@media screen and (min-width: 767px) {
+    .styles_contentTrustedVehShop__RLMUB .styles_contentItem__ghrua {
+        border:0;
+        padding: 4px
+    }
+}
+
+.styles_contentTrustedVehShop__RLMUB .styles_contentItem__ghrua .styles_contentText__MrY2I {
+    text-align: center
+}
+
+.styles_contentItem__ghrua {
+    display: flex;
+    margin-top: 12px
+}
+
+.styles_contentIcon__8GO0J {
+    margin-right: 8px
+}
+
+.styles_contentText__MrY2I {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.styles_contentSeeMore__XCLBU {
+    margin-top: 6px;
+    text-align: center
+}
+
+@media(min-width: 768px) {
+    .styles_entryPointProtectedAdBoxVeh__MTzO4 {
+        border-top:1px solid #f4f4ff;
+        padding: 7.5px 8px!important;
+        margin: 0 0 8px
+    }
+}
+
+.styles_entryPointProtectedAdBoxVehShop__kuExR {
+    padding: 14px 12px 7px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px
+}
+
+.styles_entryPointProtectedAdBoxVehShop__kuExR .styles_entryPointDetailView___Fynp {
+    padding: 0;
+    background-color: #fff
+}
+
+.styles_entryPointProtectedAdBoxVehShop__kuExR .styles_entryPointDetailView___Fynp .styles_icTrusted__ih7Yr {
+    width: 64px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon_v2.svg)
+}
+
+.styles_entryPointProtectedAdBoxVehShop__kuExR .styles_entryPointDetailView___Fynp .styles_moreInfo__tdGGQ {
+    color: #306bd9;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px;
+    font-weight: 700
+}
+
+@media(min-width: 768px) {
+    .styles_entryPointProtectedAdBoxVehShop__kuExR {
+        margin:8px 0;
+        border: 0
+    }
+}
+
+.ImageLabel_baseOverlay__VcARR img,.ImageLabel_gridViewOverlay__di3zA img,.ImageLabel_mobileListviewJobOverlay__LfAdb img,.ImageLabel_mobileListviewOverlay__UbYOX img,.ImageLabel_webListviewJobOverlay__GuajQ img,.ImageLabel_webListviewOverlay__7RD29 img {
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none
+}
+
+.ImageLabel_gridViewOverlay__di3zA img,.ImageLabel_webListviewOverlay__7RD29 img {
+    width: auto!important;
+    height: 12.5%!important
+}
+
+.ImageLabel_webListviewJobOverlay__GuajQ img {
+    width: auto!important;
+    height: 18%!important
+}
+
+.ImageLabel_mobileListviewOverlay__UbYOX img {
+    width: auto!important;
+    height: 12.5%!important
+}
+
+.ImageLabel_mobileListviewJobOverlay__LfAdb img {
+    width: auto!important;
+    height: 18%!important
+}
+
+.ImageLabel_gridViewOverlay__di3zA img {
+    width: auto!important;
+    height: 9%!important
+}
+
+.ImageLabel_adviewBaseOverlay__thQrX img,.ImageLabel_mobileAdviewOverlay__qxobI img,.ImageLabel_webAdviewOverlay__U75T3 img {
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer
+}
+
+.ImageLabel_webAdviewOverlay__U75T3 img {
+    width: auto!important;
+    height: 6%!important
+}
+
+.ImageLabel_mobileAdviewOverlay__qxobI img {
+    width: auto!important;
+    height: 10%!important
+}
+
+.UrgentJobLabel_AdUrgentJobLabel__UPaTR {
+    position: absolute;
+    z-index: 90;
+    bottom: 0;
+    left: 0;
+    min-width: 84px
+}
+
+.UrgentJobLabel_AdUrgentJobLabel__s__Qz0UZ {
+    background: url(https://static.chotot.com/storage/ATS_STATIC_CDN/urgent_job_label_s.svg) no-repeat;
+    height: 20px
+}
+
+.UrgentJobLabel_AdUrgentJobLabel__m__dzzHd {
+    background: url(https://static.chotot.com/storage/ATS_STATIC_CDN/urgent_job_label_m.svg) no-repeat;
+    height: 26px
+}
+
+.UrgentJobLabel_AdUrgentJobLabel__l__vUR5I {
+    background: url(https://static.chotot.com/storage/ATS_STATIC_CDN/urgent_job_label_l.svg) no-repeat;
+    height: 32px;
+    min-width: 128px
+}
+
+.UrgentJobLabel_UrgentJobLabelAdview__4utuR {
+    position: absolute;
+    z-index: 4;
+    bottom: 30px;
+    left: 0;
+    min-width: 128px;
+    height: 32px;
+    background-size: contain;
+    outline: none;
+    border: none
+}
+
+.AdImage_adImageWrapper__HkN6D,.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA {
+    position: relative;
+    overflow: hidden;
+    outline: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA .AdImage_imageWrapper__j1z2m {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    outline: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA .AdImage_imageWrapper__j1z2m img {
+    cursor: zoom-in;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-color: #eee;
+    display: inline-block!important;
+    outline: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA .AdImage_imageWrapper__j1z2m .AdImage_videoWrapper__zTJFC {
+    display: inline-block!important;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 28px;
+    height: 100%
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA .AdImage_imageWrapper__j1z2m .AdImage_videoWrapper__zTJFC video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 12px
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA .AdImage_imageWrapper__j1z2m .AdImage_videoWrapper__zTJFC .AdImage_video-js__KBbyM {
+    position: relative;
+    padding-bottom: 53.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderImage__ddiFA span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderWrapper___jIpt {
+    width: 100%;
+    position: relative;
+    outline: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_sliderWrapper___jIpt:after {
+    padding-top: 75%;
+    display: block;
+    content: ""
+}
+
+@media only screen and (max-width: 767px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_sliderWrapper___jIpt {
+        display:inline-block
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageCaption__aUFNp {
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .8;
+    text-align: right;
+    padding: 4px
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageCaptionText__ScM56 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f5f5f5;
+    margin-right: 4px;
+    font-size: 14px
+}
+
+@media only screen and (max-width: 767px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_imageCaption__aUFNp {
+        display:none
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageCaptionVeh__M1UbH {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    opacity: .7;
+    text-align: right;
+    padding: 4px
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageCaptionVehText__vCGUh {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f5f5f5;
+    margin-right: 4px;
+    font-size: 14px
+}
+
+@media only screen and (max-width: 767px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_imageCaptionVeh__M1UbH {
+        display:none
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageTrusted___Ja_u {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(https://static.chotot.com/storage/icons/svg/five-tot-label-4.svg) no-repeat;
+    background-size: contain;
+    width: 28%;
+    height: 10%;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_imageTrusted___Ja_u {
+        width:17%;
+        height: 9%
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageTrustedOdo__NjIyd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(https://static.chotot.com/storage/icons/svg/five-tot-odo-label-4.svg) no-repeat;
+    background-size: contain;
+    width: 28%;
+    height: 10%;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_imageTrustedOdo__NjIyd {
+        width:17%;
+        height: 7%
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_imageNewAd__jqfS_ {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(https://static.chotot.com/storage/icons/png/new-ad-label.png) no-repeat;
+    background-size: contain;
+    width: 28%;
+    height: 10%;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .AdImage_adImageWrapper__HkN6D .AdImage_imageNewAd__jqfS_ {
+        width:17%;
+        height: 6%
+    }
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Next__TX7EW,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Prev__ciQdk {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    background: #000;
+    opacity: .3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    box-shadow: none;
+    border: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW:focus,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk:focus,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx:focus {
+    outline: none
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW:active,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk:active,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx:active {
+    opacity: .7
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW .AdImage_icon__g7L3b,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW i,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk .AdImage_icon__g7L3b,.AdImage_adImageWrapper__HkN6D .AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk i,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx .AdImage_icon__g7L3b,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Next__TX7EW i,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Prev__ciQdk i,.AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW .AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx i,.AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk .AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx i {
+    display: inline-block;
+    width: 10px;
+    height: 38px;
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+    margin-top: -2px;
+    cursor: pointer
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_Prev__ciQdk.AdImage_buttonGallery__if1rz,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Prev__ciQdk {
+    padding: 0 13px 0 10px;
+    left: 0;
+    border-radius: 0 5px 5px 0
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_Prev__ciQdk.AdImage_buttonGallery__if1rz i,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Prev__ciQdk i {
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/white-back.svg)
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_Next__TX7EW.AdImage_buttonGallery__if1rz,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Next__TX7EW {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px 0 13px
+}
+
+.AdImage_adImageWrapper__HkN6D .AdImage_Next__TX7EW.AdImage_buttonGallery__if1rz i,.AdImage_adImageWrapper__HkN6D .AdImage_button__ho9Jx.AdImage_Next__TX7EW i {
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/white-next.svg)
+}
+
+.AdImage_zeroDepositLable__VTpBi {
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+    width: 133px;
+    height: 33px;
+    background: url(https://static.chotot.com/storage/zero_deposit/label.svg) no-repeat;
+    background-size: cover
+}
+
+.AdImage_AdEscrowLabel__70ITg {
+    position: absolute;
+    z-index: 4;
+    bottom: 30px;
+    left: 0;
+    min-width: 133px;
+    height: 32px;
+    background: url(https://static.chotot.com/storage/assets/ESCROW/escrow_protected_payment_big.svg) no-repeat;
+    background-size: contain;
+    outline: none;
+    border: none
+}
+
+.AdImage_AdEscrowLabel__cod__kAePS {
+    background: url(https://static.chotot.com/storage/escrow/escrow_protected_cod_adview.svg) no-repeat
+}
+
+@media only screen and (max-width: 767px) {
+    .AdImage_AdEscrowLabel__70ITg {
+        bottom:0
+    }
+}
+
+.AdImage_buttonVeh__TKGj8 {
+    border-radius: 50%!important;
+    width: 38px;
+    margin: 0 12px;
+    background-color: #222!important;
+    opacity: .7!important
+}
+
+.AdImage_sliderImageDotVeh__Domk5 {
+    border-radius: 16px;
+    background-color: rgba(33,33,33,.706);
+    color: #fff;
+    padding: 6px 12px
+}
+
+.AdImage_galleryPreview__RGawb {
+    position: relative
+}
+
+.AdImage_galleryPreview__RGawb .AdImage_imgPosition__PIaiL {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgba(34,34,34,.7);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 16px;
+    z-index: 1
+}
+
+.AdImage_gallerySlider__QeuHQ {
+    margin-top: 8px
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC {
+    margin-bottom: 0!important;
+    padding: 0 6px
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderItem__rl6i_ {
+    width: 108px!important;
+    border: 2px solid transparent;
+    position: relative;
+    height: 108px;
+    display: table-cell!important;
+    vertical-align: middle;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderItem__rl6i_ img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: auto
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderItem__rl6i_ .AdImage_sliderCtaOverlay__3LSxM {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderItem__rl6i_ .AdImage_sliderCtaOverlay__3LSxM .AdImage_sliderCtaOverlayWrapper__6CQ9Q {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderVideo__xnV3e {
+    cursor: pointer
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderVideo__xnV3e .AdImage_sliderVideoImg__6C0K1 {
+    width: auto;
+    height: auto
+}
+
+.AdImage_gallerySlider__QeuHQ .AdImage_imageSlider__ICkDC .AdImage_sliderItemActive__BnbtB {
+    border: 2px solid #fe9900
+}
+
+.AdImage_imageJupiterLabel__dVmjl {
+    position: absolute;
+    bottom: 115px;
+    left: 0;
+    background: url(https://static.chotot.com/storage/default_images/project/labels.png) no-repeat;
+    background-size: contain;
+    width: 85px;
+    height: 40px;
+    z-index: 1
+}
+
+.AdImage_buttonGallery__if1rz {
+    border-radius: 50%!important;
+    width: 28px!important;
+    height: 28px!important;
+    padding: 0!important;
+    opacity: 1!important;
+    background: rgba(0,0,0,.3)!important
+}
+
+.AdImage_buttonGallery__if1rz i {
+    margin-top: 0!important
+}
+
+.AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk {
+    left: 5px!important
+}
+
+.AdImage_buttonGallery__if1rz.AdImage_Prev__ciQdk i {
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/white-back.svg)
+}
+
+.AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW {
+    background: rgba(0,0,0,.3)!important;
+    right: 5px!important
+}
+
+.AdImage_buttonGallery__if1rz.AdImage_Next__TX7EW i {
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/white-next.svg)
+}
+
+.styles_adTitle__uUSZG {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.styles_adTitle__uUSZG.styles_column__Wt0lG {
+    padding: 12px 16px 0 12px;
+    display: block
+}
+
+.styles_columnContainer__Rjf9_ {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    margin-top: 10px
+}
+
+.styles_toolContainer__x1L_W {
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto
+}
+
+.styles_chevronRight__twgA4 {
+    display: none
+}
+
+.styles_column__Wt0lG {
+    flex-direction: column;
+    gap: 0
+}
+
+.styles_column__Wt0lG .styles_tool__jatC8 {
+    flex-direction: row;
+    gap: 8px;
+    border-top: 1px solid #e8e8e8;
+    padding: 12px 16px;
+    text-align: left;
+    margin: 0
+}
+
+.styles_column__Wt0lG .styles_tool__jatC8 img {
+    margin-bottom: 0
+}
+
+.styles_column__Wt0lG .styles_chevronRight__twgA4 {
+    margin-left: auto;
+    display: block
+}
+
+.styles_column__Wt0lG .styles_isNew__i_oIF {
+    left: 14px;
+    right: auto
+}
+
+.styles_tool__jatC8 {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 96px;
+    font-size: 14px;
+    white-space: pre-line;
+    color: #222!important;
+    margin: 0 15px
+}
+
+.styles_tool__jatC8 img {
+    margin-bottom: 8px;
+    border-radius: 4px
+}
+
+.styles_isNew__i_oIF {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    margin-left: .5em;
+    line-height: 45px;
+    font-weight: 700
+}
+
+.styles_isNew__i_oIF span {
+    font-weight: 700;
+    background: #fe9900;
+    color: #fff;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    height: 18px;
+    width: 25px;
+    border-radius: 2px;
+    line-height: 18px
+}
+
+.styles_relative__0fyap {
+    position: relative
+}
+
+.CalFinaFloatingButton_ScrollTop__AlehK {
+    outline: none;
+    border: none;
+    min-width: 279px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #4a90e2;
+    color: #fff;
+    box-shadow: 0 1px 2px #ccc;
+    padding: 6px 16px;
+    white-space: nowrap;
+    position: fixed;
+    z-index: 99;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .2s,opacity .2s linear
+}
+
+.CalFinaFloatingButton_ScrollTop--on__a1WiZ {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s
+}
+
+.styles_container__PIsVB {
+    background: #f8f8f8;
+    padding: 7px 12px 12px;
+    margin: 0 12px 0 10px;
+    border-radius: 4px
+}
+
+.styles_container__PIsVB .styles_title__hiQQO {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    margin: 0 10px 4px 0;
+    display: flex
+}
+
+.styles_container__PIsVB .styles_title__hiQQO .styles_legalLabelInTitle__RJ7rN {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px
+}
+
+.styles_container__PIsVB .styles_content__c915c {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-right: 7px
+}
+
+@media(max-width: 768px) {
+    .styles_container__PIsVB {
+        padding-right:9px;
+        margin: 0
+    }
+
+    .styles_container__PIsVB .styles_content__c915c,.styles_container__PIsVB .styles_title__hiQQO {
+        margin-right: 0
+    }
+}
+
+.AdByUser_wrapper__PfVpq {
+    font-weight: 700!important;
+    font-size: 13px
+}
+
+@media only screen and (min-width: 769px)and (max-width:992px) {
+    .AdByUser_wrapper__PfVpq {
+        display:none
+    }
+}
+
+@media(max-width: 768px) {
+    .AdByUser_wrapper__PfVpq {
+        width:100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9
+    }
+
+    .AdByUser_wrapper__PfVpq>div {
+        display: flex!important
+    }
+
+    .AdByUser_wrapper__PfVpq>div>div {
+        border-radius: 0
+    }
+
+    .AdByUser_wrapper__PfVpq>div>div:first-child {
+        border: none
+    }
+
+    .AdByUser_wrapper__PfVpq>div>div:last-child {
+        margin: 0
+    }
+}
+
+.ShowPhoneButton_wrapper__B627I {
+    width: 100%
+}
+
+.ShowPhoneButton_phoneButton__p5Cvt {
+    display: block;
+    margin-bottom: 0;
+    text-align: center; /* Căn chỉnh văn bản trong phần tử theo chiều ngang */
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 10px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 13px;
+    transition: background-color .2s ease-in-out;
+    height: 42px;
+}
+
+
+@media(max-width: 991px) {
+    .ShowPhoneButton_phoneButton__p5Cvt {
+        height:50px;
+        border-radius: 0;
+        font-weight: 600
+    }
+}
+
+.ShowPhoneButton_phoneClicked__IxuR6 {
+    color: #333;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center
+}
+
+.ShowPhoneButton_phoneNotClicked__dlQn_ {
+    color: #fff;
+    background-color: #33a837
+}
+
+.ShowPhoneButton_phoneNotClicked__dlQn_:hover {
+    background-color: #3b8122
+}
+
+.ShowPhoneButton_flexDiv__3qpNj {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+@media(max-width: 991px) {
+    .ShowPhoneButton_flexDiv__3qpNj {
+        justify-content:center;
+        height: 100%
+    }
+}
+
+.ShowPhoneButton_icon__wsnZ5 {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+.ShowPhoneButton_spinIcon__hX6iX {
+    font-size: 18px;
+    padding: 6px
+}
+
+.ShowPhoneButton_buttonSpinnerWrapper__2NOrq {
+    position: "absolute";
+    inset: 0;
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+    pointer-events: "none"
+}
+
+.EditAdButton_buttonTextWrapper__Z00vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    white-space: nowrap;
+    background-color: #fff!important;
+    border-color: silver!important;
+    color: #000!important
+}
+
+@media(max-width: 768px) {
+    .EditAdButton_buttonTextWrapper__Z00vs {
+        width:40px;
+        height: 40px;
+        padding: 0!important
+    }
+
+    .EditAdButton_buttonTextWrapper__Z00vs svg {
+        margin: 0!important
+    }
+}
+
+.EditAdButton_buttonText__A_YFr {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.UpSellButton_buttonTextWrapper__832yH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    white-space: nowrap
+}
+
+@media(max-width: 768px) {
+    .UpSellButton_buttonTextWrapper__832yH {
+        flex:1 1
+    }
+}
+
+.UpSellButton_buttonText___RLds {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px
+}
+
+@media only screen and (min-width: 768px)and (max-width:991px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
+        position:fixed;
+        bottom: 0;
+        z-index: 9;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #e5e5e5;
+        background-color: #fff
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
+        display:none
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff!important;
+    background-color: #589f39;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz:hover {
+    background-color: #3c763d
+}
+
+@media(max-width: 992px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
+        height:50px
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #589f39;
+    background-color: #fff;
+    font-weight: 700;
+    text-align: center
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9:hover,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
+    background-color: #e6e6e6
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9>img,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw>img {
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
+    justify-content: center;
+    background: #589f39;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
+    background-color: #33a837
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl {
+    background-color: #589f39;
+    color: #fff!important
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl:hover {
+    background-color: #3b8122
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK:hover {
+    background-color: #e6e6e6
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK span {
+    font-weight: 700;
+    font-size: 14px
+}
+
+@media(max-width: 992px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
+        margin-bottom:0;
+        height: 50px;
+        width: 100%
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK div {
+    background-color: hsla(0,0%,100%,0);
+    color: #3c763d
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK img {
+    content: url(https://static.chotot.com/storage/chotot-icons/png/call-green.png)
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
+    margin-bottom: 8px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH span {
+    font-weight: 700;
+    font-size: 14px
+}
+
+@media(max-width: 992px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
+        margin:0;
+        height: 50px;
+        width: 100%
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div {
+    background-color: #589f39;
+    color: #fff!important
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div:hover {
+    background-color: #3b8122
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div>div>span>img {
+    content: url(https://static.chotot.com/storage/icons/svg/phone-call.svg)
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
+    color: #3c763d!important;
+    background-color: #fff!important;
+    border: 1px solid #cacaca!important
+}
+
+@media(max-width: 992px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
+        border-top:none!important
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div:hover {
+    background-color: #e6e6e6!important
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx {
+    margin-bottom: 12px;
+    background-color: #33a837;
+    border: 1px solid #33a837;
+    border-radius: 4px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx:hover {
+    background-color: #3b8122
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx a,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx div {
+    background-color: rgba(51,168,55,0);
+    color: #fff;
+    border: none
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx img {
+    content: url(https://static.chotot.com/storage/chotot-icons/png/apply_cv_green.png)
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
+    margin-bottom: 8px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg span {
+    font-weight: 700;
+    font-size: 14px
+}
+
+@media(max-width: 991px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
+        width:100%
+    }
+
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a {
+        border-radius: 0;
+        border: none
+    }
+
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a>div {
+        padding: 5px;
+        display: inline-block
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
+    margin-bottom: 8px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
+    font-weight: 700;
+    font-size: 14px
+}
+
+@media(max-width: 991px) {
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
+        width:100%
+    }
+
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
+        border-radius: 0;
+        border: none
+    }
+
+    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span>div {
+        padding: 5px;
+        display: inline-block
+    }
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_loanButton__Qx2zR {
+    margin-top: 4px
+}
+
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_onlyChatDesciption__JsKi4 {
+    font-style: italic;
+    color: #595959;
+    text-align: center;
+    line-height: 20px
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME,.LeadButton_wrapperLeadButtonMobileVEH__qiqML,.LeadButton_wrapperLeadButtonMobile__ZCMtI {
+    position: fixed;
+    left: 0;
+    display: none;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    background-color: #fff;
+    height: 48px
+}
+
+@media(max-width: 768px) {
+    .LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME,.LeadButton_wrapperLeadButtonMobileVEH__qiqML,.LeadButton_wrapperLeadButtonMobile__ZCMtI {
+        display:flex
+    }
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a,.LeadButton_wrapperLeadButtonMobile__ZCMtI a {
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a:active,.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a:focus,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a:active,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a:focus,.LeadButton_wrapperLeadButtonMobile__ZCMtI a:active,.LeadButton_wrapperLeadButtonMobile__ZCMtI a:focus {
+    outline: none;
+    box-shadow: none
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a img,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a img,.LeadButton_wrapperLeadButtonMobile__ZCMtI a img {
+    width: 20px;
+    vertical-align: middle;
+    height: 20px
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a.LeadButton_buttonDefault__pB0PM,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonDefault__pB0PM,.LeadButton_wrapperLeadButtonMobile__ZCMtI a.LeadButton_buttonDefault__pB0PM {
+    color: #333;
+    background-color: #fff;
+    border-right: 1px solid #cacaca
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a.LeadButton_buttonSuccess__DDMKF,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonSuccess__DDMKF,.LeadButton_wrapperLeadButtonMobile__ZCMtI a.LeadButton_buttonSuccess__DDMKF {
+    color: #fff;
+    background-color: #33a837
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME a.LeadButton_depositButtonMobile__TfStT,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_depositButtonMobile__TfStT,.LeadButton_wrapperLeadButtonMobile__ZCMtI a.LeadButton_depositButtonMobile__TfStT {
+    color: #fff;
+    background-color: #589f39;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 144px;
+    position: relative;
+    min-height: 58px
+}
+
+.LeadButton_buttonSupport__sU69v {
+    font-size: 12px
+}
+
+.LeadButton_buttonSupportMobile__JPIBr,.LeadButton_buttonSupport__sU69v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.LeadButton_buttonSupportMobile__JPIBr {
+    color: #fff!important;
+    background-color: #33a837;
+    width: 100%;
+    border: none
+}
+
+.LeadButton_buttonSupportMobile__JPIBr:active,.LeadButton_buttonSupportMobile__JPIBr:hover {
+    color: #fff;
+    background-color: #3b8122
+}
+
+.LeadButton_primaryBtnVeh__vDpgj {
+    width: 50vw;
+    background-color: #12a154!important
+}
+
+.LeadButton_secondaryBtnVeh__1wZ6_ {
+    max-width: 25vw
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML {
+    height: 48px
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonSuccess__DDMKF {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 400;
+    align-items: center
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonSuccess__DDMKF div {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonSuccess__DDMKF img {
+    margin: 0;
+    width: 16px;
+    height: 16px
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonDefault__pB0PM {
+    border: none;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    position: relative
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_buttonDefault__pB0PM img {
+    width: 20px;
+    height: 20px;
+    margin: 0
+}
+
+.LeadButton_wrapperLeadButtonMobileVEH__qiqML a.LeadButton_HozDivider__x7f0d:after,.LeadButton_wrapperLeadButtonMobileVEH__qiqML a:first-child:after {
+    content: "";
+    background: #cacaca;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    height: 32px;
+    width: 1px;
+    transform: translateY(50%)
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME {
+    height: 52px;
+    padding: 6px 12px
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME .LeadButton_chatButton__E_aMM {
+    background-color: #589f39;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 4px
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME>a.LeadButton_depositButtonMobile__TfStT {
+    height: 40px;
+    min-height: 40px;
+    border-radius: 4px;
+    min-width: 70%
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME>a.LeadButton_buttonSuccess__DDMKF {
+    justify-content: center;
+    background-color: #589f39;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME>a.LeadButton_buttonSuccess__DDMKF>span {
+    height: auto
+}
+
+.LeadButton_wrapperLeadButtonMobileHidePhone__Ei0ME .LeadButton_buttonExtra__SIiDq {
+    width: 200%
+}
+
+.LeadButton_buttonsWrapperPty__IOSoT {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 12px
+}
+
+@media only screen and (min-width: 769px)and (max-width:992px) {
+    .LeadButton_buttonsWrapperPty__IOSoT {
+        display:none
+    }
+}
+
+@media(max-width: 768px) {
+    .LeadButton_buttonsWrapperPty__IOSoT {
+        flex-direction:row;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 12px;
+        background-color: #fff;
+        left: 0;
+        z-index: 9
+    }
+
+    .LeadButton_buttonsWrapperPty__IOSoT>div {
+        display: flex!important
+    }
+
+    .LeadButton_buttonsWrapperPty__IOSoT>div>div {
+        border-radius: 0
+    }
+
+    .LeadButton_buttonsWrapperPty__IOSoT>div>div:first-child {
+        border: none
+    }
+
+    .LeadButton_buttonsWrapperPty__IOSoT>div>div:last-child {
+        margin: 0
+    }
+}
+
+.styles_adBodyTitle__ix_uh {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px
+}
+
+.styles_adBody__9x5vM {
+    overflow-wrap: break-word;
+    text-align: justify;
+    white-space: pre-line;
+    font-size: 14px
+}
+
+@media(min-width: 768px) {
+    .styles_adBody__9x5vM {
+        display:flex
+    }
+}
+
+.styles_projectInfo__W9RNk {
+    margin-top: 8px
+}
+
+.styles_projectInfo__W9RNk .styles_projectName__kPyWI {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222
+}
+
+.styles_projectInfo__W9RNk .styles_investor__Z3Hrq,.styles_projectInfo__W9RNk .styles_scale___IK6F {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
+    display: flex
+}
+
+.styles_projectInfo__W9RNk .styles_investor__Z3Hrq p,.styles_projectInfo__W9RNk .styles_scale___IK6F p {
+    margin: 0;
+    color: #777
+}
+
+.styles_projectInfo__W9RNk .styles_investor__Z3Hrq span,.styles_projectInfo__W9RNk .styles_scale___IK6F span {
+    color: #222;
+    margin-left: 4px
+}
+
+@media(min-width: 768px) {
+    .styles_projectInfo__W9RNk {
+        margin-top:0;
+        margin-left: 12px
+    }
+
+    .styles_projectInfo__W9RNk .styles_investor__Z3Hrq,.styles_projectInfo__W9RNk .styles_scale___IK6F {
+        margin-top: 8px
+    }
+}
+
+.styles_button__HLpKm {
+    width: 100vw;
+    transform: translateX(-12px);
+    height: 44px;
+    color: #38699f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #f4f4f4;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: -12px
+}
+
+.styles_button__HLpKm:focus {
+    outline: none
+}
+
+.styles_button__HLpKm svg {
+    margin-left: 8px
+}
+
+@media(min-width: 768px) {
+    .styles_button__HLpKm {
+        width:100%
+    }
+}
+
+.styles_AdThumbnail__Pl6di {
+    position: relative;
+    background: url(https://static.chotot.com/storage/default_images/c2c_ad_image.webp) 50% no-repeat;
+    background-size: cover!important;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 170px;
+    height: 100px
+}
+
+@media only screen and (max-width: 767px) {
+    .styles_AdThumbnail__Pl6di {
+        width:100%;
+        height: 152px
+    }
+}
+
+.styles_AdThumbnail__Pl6di .styles_thumbnail__2q1yn {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.styles_AdThumbnail__Pl6di .styles_imageNum__IR4tQ {
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(https://static.chotot.com/storage/chotot-icons/svg/number-image.svg) no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.styles_AdThumbnail__Pl6di .styles_projectStatus___6RS2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+    background-color: #000
+}
+
+.styles_AdThumbnail__Pl6di .styles_projectStatus___6RS2 p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    color: #fff
+}
+
+@media only screen and (max-width: 767px) {
+    .styles_AdThumbnail__Pl6di .styles_projectStatus___6RS2 {
+        height:20px
+    }
+
+    .styles_AdThumbnail__Pl6di .styles_projectStatus___6RS2 p {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px
+    }
+}
+
+.stylesAB_registerProtectedAd__KG5h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin: 8px 0;
+    width: 100%
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registerIc__1W5H3 {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protection-outline.svg);
+    height: 24px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registerText__ReNq5 {
+    color: #f80;
+    font-size: 14px;
+    margin-left: 8px
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registerBtn__fJx77 {
+    color: #fff;
+    background-color: #f80;
+    border-color: #f80;
+    border-radius: 9999px;
+    font-weight: 400;
+    width: 64px;
+    height: 24px;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    margin-left: auto;
+    cursor: pointer
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registered__DbSGQ {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registered__DbSGQ .stylesAB_registeredBg__JLkCF {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffe9c2;
+    position: relative;
+    min-width: 48px
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registered__DbSGQ .stylesAB_registeredBg__JLkCF .stylesAB_registeredIc__niz4q {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon.svg);
+    height: 24px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 12px;
+    left: 14px
+}
+
+.stylesAB_registerProtectedAd__KG5h2 .stylesAB_registered__DbSGQ .stylesAB_registeredText__URayv {
+    color: #222;
+    font-size: 14px;
+    margin-left: 12px
+}
+
+.styles_registerProtectedAd__9cBmQ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin: 8px 0;
+    width: 100%
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registerIc__Re8Ny {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protection-outline.svg);
+    height: 24px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registerText__ULqGU {
+    color: #fe9900;
+    font-size: 14px;
+    margin-left: 8px
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registerBtn__5m1ZM {
+    color: #fff;
+    background-color: #fe9900;
+    border-color: #fe9900;
+    border-radius: 9999px;
+    font-weight: 400;
+    width: 64px;
+    height: 24px;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    margin-left: auto;
+    cursor: pointer
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registered__7yoz_ {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registered__7yoz_ .styles_registeredBg__RHdph {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffefd6;
+    position: relative;
+    min-width: 48px
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registered__7yoz_ .styles_registeredBg__RHdph .styles_registeredIc__Q8KSS {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon.svg);
+    height: 24px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 12px;
+    left: 14px
+}
+
+.styles_registerProtectedAd__9cBmQ .styles_registered__7yoz_ .styles_registeredText__FTWHS {
+    color: #000;
+    font-size: 14px;
+    margin-left: 12px
+}
+
+.Styles_reportBad__4g9zg {
+    display: block;
+    color: #333!important;
+    margin: 10px 0
+}
+
+@media(max-width: 767px) {
+    .Styles_reportBad__4g9zg {
+        width:100%;
+        margin: 20px 10px
+    }
+}
+
+.Styles_reportWrapper__74GS_ {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse
+}
+
+.Styles_reportBtn__izL5E {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: -10px
+}
+
+.Styles_reportBtn__izL5E button:first-of-type {
+    margin-right: 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .Styles_reportBtn__izL5E {
+        margin:10px 0
+    }
+}
+
+.Styles_buyerProtect__5zjc4 {
+    font-size: 85%
+}
+
+@media(max-width: 767px) {
+    .Styles_buyerProtect__5zjc4 {
+        border-top:none!important
+    }
+}
+
+.Styles_buyerProtect__5zjc4 a {
+    color: #fe9900;
+    text-decoration: none
+}
+
+.Styles_insertSimilarAd__DHfAJ {
+    background-color: #fe9900;
+    color: #fff!important;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 0 10px 10px;
+    padding: 2px 5px
+}
+
+.Styles_insertSimilarAd__DHfAJ:hover {
+    background-color: #cc7a00
+}
+
+@media only screen and (max-width: 767px) {
+    .Styles_insertSimilarAd__DHfAJ {
+        display:none
+    }
+}
+
+.DetailView_ribbonAd__uFuZD {
+    position: absolute;
+    display: block;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 9;
+    height: 60px;
+    line-height: 85px;
+    top: -15px;
+    right: -50px;
+    font-size: 13px;
+    transform: rotate(45deg)
+}
+
+.DetailView_wrapperError__N39AS {
+    padding-top: 100px;
+    background: #fff;
+    margin-bottom: 12px
+}
+
+.DetailView_bankLoans__prFOu {
+    margin-top: 14px;
+    margin-bottom: 12px
+}
+
+.DetailView_bankLoans__prFOu .DetailView_titleLoans__IHyD2 {
+    color: #777
+}
+
+.DetailView_bankList__t0fRg {
+    margin-top: 5px
+}
+
+.DetailView_customHouseMovingStyle__3D5sf {
+    padding: 0
+}
+
+.DetailView_customHouseMovingStyle__3D5sf h2 {
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px solid #cacaca;
+    color: #777;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.DetailView_insertSimilarAd__W_Fuk {
+    background-color: #fe9900;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    white-space: pre;
+    display: inline-block
+}
+
+.DetailView_placeholder__5aTwV {
+    display: block;
+    height: 205px
+}
+
+.DetailView_placeholder__5aTwV.DetailView_min__WBV_0 {
+    height: 44px
+}
+
+.DetailView_placeholder__5aTwV.DetailView_max__ExBka {
+    height: 110px
+}
+
+.DetailView_adviewCointainer__rdzwn {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column
+}
+
+.DetailView_adviewCointainer__rdzwn>div {
+    order: 100
+}
+
+.DetailView_adviewItem__CMiew,.DetailView_adviewPtyItem__V_sof {
+    background-color: #fff;
+    margin: 4px 0;
+    padding: 12px
+}
+
+.DetailView_adviewSellerItem__VqRXp {
+    padding: 0
+}
+
+.DetailView_adviewTrustedInventoryItem__PcRqm {
+    background-color: #fff;
+    margin: 4px 0
+}
+
+.DetailView_adviewItem__CMiew {
+    overflow: hidden
+}
+.Avatar_imageWrapper__6tGNZ {
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    vertical-align: middle;
+    background: url(https://static.chotot.com/storage/default_images/default-avatar.webp) no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    position: relative
+}
+
+.Avatar_imageWrapper__6tGNZ .Avatar_image__HiPeb {
+    border: 2px solid #e5e5e5;
+    margin: -2px
+}
+
+.Avatar_defaultSize__a_WTh {
+    height: 46px;
+    width: 46px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.Avatar_sellerOfficial__tV4MZ {
+    background-color: #e5193b;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 10px;
+    position: absolute;
+    bottom: -10px
+}
+
+.Shop_shopVerifiedWrapper__z6oQv {
+    padding: 0 0 0 60px;
+    display: flex;
+    align-items: center
+}
+
+.Shop_shopVerifiedWrapper__z6oQv span {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-right: 5px
+}
+
+.Shop_shopVerifiedWrapper__z6oQv img {
+    margin-left: -6px;
+    height: 26px
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #f4f4f4
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_baseBtn__1KoyS,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButtonVeh__lybaq,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButton__MUgLF,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButtonVeh__Rphut,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButton__BKKE2 {
+    cursor: pointer;
+    text-align: center;
+    transition: background-color .2s ease-in-out;
+    font-size: 10px;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 20px;
+    padding: 7px 10px;
+    height: -moz-fit-content;
+    height: fit-content
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_baseBtn__1KoyS:active,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_baseBtn__1KoyS:focus,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButtonVeh__lybaq:active,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButtonVeh__lybaq:focus,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButton__MUgLF:active,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButton__MUgLF:focus,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButtonVeh__Rphut:active,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButtonVeh__Rphut:focus,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButton__BKKE2:active,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButton__BKKE2:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButton__MUgLF {
+    background-color: #222;
+    color: #fff;
+    border: none
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_primaryButton__MUgLF:hover {
+    background-color: #ffb057
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButton__BKKE2 {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_secondaryButton__BKKE2:hover {
+    background-color: #f4f4f4
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv {
+    flex: 1 1
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv:focus p,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv:focus span,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv:hover p,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv:hover span {
+    outline: none;
+    text-decoration: none
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv>p {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 5px
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv>span {
+    color: #222;
+    font-weight: 600
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv img {
+    margin-right: 0!important
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforItem__gsYBv .SellerProfileAB_inforValue__qsqKz {
+    color: #222;
+    font-weight: 600
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforWrapper__48XHD {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: #8c8c8c
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforWrapper__48XHD>a {
+    flex: 1 1;
+    color: #8c8c8c
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_inforWrapper__48XHD>a :hover {
+    color: none;
+    text-decoration: none;
+    text-decoration: initial
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_nameBounder__DjKZ4 {
+    flex: 1 1;
+    padding-left: 8px;
+    width: 100%;
+    max-width: calc(100% - 50px)
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_flexDiv__aQebx {
+    display: flex
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_nameDiv__BI_iS {
+    margin: 5px 5px 3px 0;
+    font-size: 13px;
+    flex: 1 1;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ {
+    font-size: 11px;
+    color: #8c8c8c;
+    display: flex
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ .SellerProfileAB_offlineBullet__4BS_X,.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ .SellerProfileAB_onlineBullet__0L39w {
+    font-size: 30px;
+    color: #12a154;
+    line-height: 21px;
+    margin-right: 5px
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ .SellerProfileAB_offlineBullet__4BS_X {
+    color: #8c8c8c
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_seperateLine__K5Qj_ {
+    border-left: 1px solid silver;
+    height: 20px;
+    width: 1px
+}
+
+.SellerProfileAB_rateText__fC92j {
+    text-decoration: underline;
+    margin-bottom: 5px
+}
+
+.SellerProfileAB_rateText__fC92j:focus,.SellerProfileAB_rateText__fC92j:hover {
+    text-decoration: underline!important
+}
+
+.SellerProfileAB_inforText__oSW9T {
+    text-decoration: none
+}
+
+.SellerProfileAB_sellerWrapper__2sKuD {
+    display: flex;
+    color: #222
+}
+
+.SellerProfileAB_sellerWrapper__2sKuD:focus,.SellerProfileAB_sellerWrapper__2sKuD:hover {
+    color: #222;
+    outline: none;
+    text-decoration: none
+}
+
+@media(min-width: 992px) {
+    .SellerProfileAB_sellerWrapper__2sKuD {
+        padding:0
+    }
+}
+
+.SellerProfileAB_shopVerifyWrapper__2nzso {
+    padding: 0 0 0 60px
+}
+
+.SellerProfileAB_shopVerifyWrapper__2nzso span {
+    font-size: 12px;
+    color: #8c8c8c
+}
+
+.SellerProfileAB_shopVerifyWrapper__2nzso img {
+    margin-left: -6px;
+    height: 26px
+}
+
+.SellerProfileAB_profileWrapperWithEntitlement__9uEnl {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 4px
+}
+
+.SellerProfileAB_primaryButtonVeh__lybaq {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222;
+    min-width: 96px!important;
+    height: 24px!important;
+    font-size: 12px!important;
+    line-height: 12px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center
+}
+
+.SellerProfileAB_primaryButtonVeh__lybaq:hover {
+    background-color: #f4f4f4
+}
+
+.SellerProfileAB_primaryButtonVeh__lybaq img {
+    height: 12px;
+    width: 12px;
+    margin-left: 4px
+}
+
+.SellerProfileAB_secondaryButtonVeh__Rphut {
+    background-color: #fff;
+    color: #f80;
+    border: 1px solid #f80;
+    min-width: 96px!important;
+    height: 24px!important;
+    font-size: 12px!important;
+    line-height: 12px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center
+}
+
+.SellerProfileAB_secondaryButtonVeh__Rphut:hover {
+    background-color: #ffe9c2
+}
+
+.SellerProfileAB_secondaryButtonVeh__Rphut img {
+    height: 12px;
+    width: 12px;
+    margin-left: 4px
+}
+
+.SellerProfileAB_sellerWrapperVeh__OzzJL {
+    display: flex;
+    color: #222
+}
+
+.SellerProfileAB_sellerWrapperVeh__OzzJL:focus,.SellerProfileAB_sellerWrapperVeh__OzzJL:hover {
+    color: #222;
+    outline: none;
+    text-decoration: none
+}
+
+@media(min-width: 992px) {
+    .SellerProfileAB_sellerWrapperVeh__OzzJL {
+        padding:0
+    }
+}
+
+.SellerProfileAB_nameDivVeh__oafLL {
+    margin: 5px 5px 3px 0;
+    font-size: 13px;
+    flex: 1 1;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    align-self: flex-end;
+    overflow-wrap: break-word
+}
+
+.SellerProfileAB_statusOnlineDivVeh__egW6j {
+    font-size: 12px;
+    color: #8c8c8c;
+    display: flex;
+    align-items: center;
+    line-height: 20px
+}
+
+.SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ .SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_offlineBullet__4BS_X,.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_offlineBullet__4BS_X,.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_onlineBullet__0L39w,.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_profileWrapper__0bIhQ .SellerProfileAB_statusOnlineDiv__RzNxJ .SellerProfileAB_offlineBullet__4BS_X {
+    font-size: 30px;
+    color: #12a154;
+    line-height: 21px;
+    width: 16px;
+    text-align: center
+}
+
+.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_offlineBullet__4BS_X {
+    color: #8c8c8c;
+    width: 16px;
+    text-align: center
+}
+
+.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_ratingStar__kEB29 {
+    color: #222
+}
+
+.SellerProfileAB_statusOnlineDivVeh__egW6j .SellerProfileAB_ratingText__lBwma,.SellerProfileAB_statusOnlineDivVeh__egW6j a {
+    color: #2a70df
+}
+
+.SellerProfileAB_statusOnlineDivVeh__egW6j a:hover {
+    color: #4e8bef
+}
+
+.SellerProfileAB_profileWrapperVeh__Mkr0R {
+    border: none;
+    padding: 0
+}
+
+.SellerProfileAB_profileWrapperVehShop__BahmI {
+    border-radius: 8px;
+    border-top: 0
+}
+
+@media screen and (min-width: 768px) {
+    .SellerProfileAB_profileWrapperVehShop__BahmI,.SellerProfileAB_profileWrapperVeh__Mkr0R {
+        padding:12px;
+        background-color: #fff
+    }
+}
+
+.SellerProfileAB_shopIconWrapper__LmtIY {
+    position: relative
+}
+
+.SellerProfileAB_verificationIcon__9T8kM {
+    position: absolute;
+    right: -4px;
+    top: 8px
+}
+
+.SellerProfile_profileWrapper__ubLwW {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_baseBtn__m6h0f,.SellerProfile_profileWrapper__ubLwW .SellerProfile_grayButtonVeh__hGuj2,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonPty__jtSZR,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonVeh__5s5kG,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButton__d0Zww,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonPty__DN1Sa,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonVeh__MfAIw,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButton__qJNPr {
+    cursor: pointer;
+    text-align: center;
+    transition: background-color .2s ease-in-out;
+    font-size: 10px;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 20px;
+    padding: 7px 10px;
+    height: -moz-fit-content;
+    height: fit-content
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_baseBtn__m6h0f:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_baseBtn__m6h0f:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_grayButtonVeh__hGuj2:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_grayButtonVeh__hGuj2:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonPty__jtSZR:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonPty__jtSZR:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonVeh__5s5kG:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButtonVeh__5s5kG:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButton__d0Zww:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButton__d0Zww:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonPty__DN1Sa:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonPty__DN1Sa:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonVeh__MfAIw:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButtonVeh__MfAIw:focus,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButton__qJNPr:active,.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButton__qJNPr:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButton__d0Zww {
+    background-color: #fe9900;
+    color: #fff;
+    border: none
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_primaryButton__d0Zww:hover {
+    background-color: #feb700
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButton__qJNPr {
+    background-color: #fff;
+    color: #fe9900;
+    border: 1px solid #fe9900
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_secondaryButton__qJNPr:hover {
+    background-color: #e2e6ea
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq {
+    flex: 1 1
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq:focus p,.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq:focus span,.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq:hover p,.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq:hover span {
+    outline: none;
+    text-decoration: none
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq>p {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-bottom: 5px
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq>span {
+    color: #222;
+    font-weight: 600
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq img {
+    margin-right: 0!important
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforItem__B3Pzq .SellerProfile_inforValue__hK4rb {
+    color: #222;
+    font-weight: 600
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforWrapper__KXg71 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: #9b9b9b
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforWrapper__KXg71>a {
+    flex: 1 1;
+    color: #9b9b9b
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_inforWrapper__KXg71>a :hover {
+    color: none;
+    text-decoration: none;
+    text-decoration: initial
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_nameBounder__btDeS {
+    flex: 1 1;
+    padding-left: 8px;
+    width: 100%;
+    max-width: calc(100% - 50px)
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_flexDiv__IEgQl {
+    display: flex
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_nameDiv__sjPxP {
+    margin: 5px 5px 3px 0;
+    font-size: 13px;
+    flex: 1 1;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_statusOnlineDiv__iiwUQ {
+    font-size: 11px;
+    color: #9b9b9b;
+    display: flex
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_statusOnlineDiv__iiwUQ .SellerProfile_offlineBullet__by5mZ,.SellerProfile_profileWrapper__ubLwW .SellerProfile_statusOnlineDiv__iiwUQ .SellerProfile_onlineBullet__i5v8A {
+    font-size: 30px;
+    color: #589f39;
+    line-height: 21px;
+    margin-right: 5px
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_statusOnlineDiv__iiwUQ .SellerProfile_offlineBullet__by5mZ {
+    color: #9b9b9b
+}
+
+.SellerProfile_profileWrapper__ubLwW .SellerProfile_seperateLine__H_bJa {
+    border-left: 1px solid #cacaca;
+    height: 20px;
+    width: 1px
+}
+
+.SellerProfile_rateText__fi3wS {
+    text-decoration: underline;
+    margin-bottom: 5px
+}
+
+.SellerProfile_rateText__fi3wS:focus,.SellerProfile_rateText__fi3wS:hover {
+    text-decoration: underline!important
+}
+
+.SellerProfile_inforText__D7tPA {
+    text-decoration: none
+}
+
+.SellerProfile_sellerWrapper__GlDwe {
+    display: flex;
+    color: #333
+}
+
+.SellerProfile_sellerWrapper__GlDwe:focus,.SellerProfile_sellerWrapper__GlDwe:hover {
+    color: #333;
+    outline: none;
+    text-decoration: none
+}
+
+@media(min-width: 992px) {
+    .SellerProfile_sellerWrapper__GlDwe {
+        padding:0
+    }
+}
+
+.SellerProfile_shopVerifyWrapper__NPhud {
+    padding: 0 0 0 60px
+}
+
+.SellerProfile_shopVerifyWrapper__NPhud span {
+    font-size: 12px;
+    color: #9b9b9b
+}
+
+.SellerProfile_shopVerifyWrapper__NPhud img {
+    margin-left: -6px;
+    height: 26px
+}
+
+.SellerProfile_profileWrapperWithEntitlement__BPNbB {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 4px
+}
+
+.SellerProfile_primaryButtonPty__jtSZR,.SellerProfile_primaryButtonVeh__5s5kG {
+    background-color: #fff;
+    color: #fe9900;
+    border: 1px solid #fe9900;
+    min-width: 96px!important;
+    height: 24px!important;
+    font-size: 12px!important;
+    line-height: 12px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center
+}
+
+.SellerProfile_primaryButtonPty__jtSZR:hover,.SellerProfile_primaryButtonVeh__5s5kG:hover {
+    background-color: #e2e6ea
+}
+
+.SellerProfile_primaryButtonPty__jtSZR img,.SellerProfile_primaryButtonVeh__5s5kG img {
+    height: 12px;
+    width: 12px;
+    margin-left: 4px
+}
+
+.SellerProfile_primaryButtonPty__jtSZR {
+    color: #ff6d25;
+    border: 1px solid #ff6d25
+}
+
+.SellerProfile_secondaryButtonPty__DN1Sa,.SellerProfile_secondaryButtonVeh__MfAIw {
+    background-color: #fff;
+    color: #fe9900;
+    border: 1px solid #fe9900;
+    min-width: 96px!important;
+    height: 24px!important;
+    font-size: 12px!important;
+    line-height: 12px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center
+}
+
+.SellerProfile_secondaryButtonPty__DN1Sa:hover,.SellerProfile_secondaryButtonVeh__MfAIw:hover {
+    background-color: #e2e6ea
+}
+
+.SellerProfile_secondaryButtonPty__DN1Sa img,.SellerProfile_secondaryButtonVeh__MfAIw img {
+    height: 12px;
+    width: 12px;
+    margin-left: 4px
+}
+
+.SellerProfile_secondaryButtonPty__DN1Sa {
+    color: #ff6d25;
+    border: 1px solid #ff6d25
+}
+
+.SellerProfile_grayButtonVeh__hGuj2 {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid silver;
+    width: 49%!important;
+    height: 32px!important;
+    font-size: 12px!important;
+    line-height: 12px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px!important;
+    font-weight: 700
+}
+
+.SellerProfile_grayButtonVeh__hGuj2 .SellerProfile_btnIcon__gKl7C {
+    font-size: 16px;
+    margin-right: 4px;
+    font-weight: 400
+}
+
+.SellerProfile_vehShopBtnWrapper__mFbmA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px
+}
+
+.SellerProfile_sellerWrapperVeh__UFHlO {
+    display: flex;
+    color: #333
+}
+
+.SellerProfile_sellerWrapperVeh__UFHlO:focus,.SellerProfile_sellerWrapperVeh__UFHlO:hover {
+    color: #333;
+    outline: none;
+    text-decoration: none
+}
+
+@media(min-width: 992px) {
+    .SellerProfile_sellerWrapperVeh__UFHlO {
+        padding:0
+    }
+}
+
+.SellerProfile_nameDivVeh__vE94K {
+    margin: 5px 5px 3px 0;
+    -webkit-line-clamp: 2
+}
+
+.SellerProfile_nameDivShopVeh__jW7eC,.SellerProfile_nameDivVeh__vE94K {
+    font-size: 13px;
+    flex: 1 1;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-self: flex-end;
+    overflow-wrap: break-word
+}
+
+.SellerProfile_nameDivShopVeh__jW7eC {
+    margin: 0 5px 3px 0;
+    -webkit-line-clamp: 1;
+    color: #222
+}
+
+.SellerProfile_statusOnlineDivVeh__kgmx4 {
+    font-size: 12px;
+    color: #9b9b9b;
+    display: flex;
+    align-items: center;
+    line-height: 20px
+}
+
+.SellerProfile_statusOnlineDivVehShop__Qs9F4 {
+    margin-bottom: 3px;
+    font-size: 12px;
+    display: flex;
+    align-items: center
+}
+
+.SellerProfile_offlineBullet__by5mZ,.SellerProfile_onlineBullet__i5v8A,.SellerProfile_profileWrapper__ubLwW .SellerProfile_statusOnlineDiv__iiwUQ .SellerProfile_offlineBullet__by5mZ {
+    font-size: 30px;
+    color: #589f39;
+    line-height: 16px;
+    width: 13px;
+    text-align: center;
+    display: inline-block
+}
+
+.SellerProfile_offlineBullet__by5mZ {
+    color: #9b9b9b;
+    text-align: center
+}
+
+.SellerProfile_ratingStar__v_JCT {
+    color: #222
+}
+
+.SellerProfile_profileWrapperVeh__BVDOo {
+    border: none;
+    padding: 0
+}
+
+.SellerProfile_profileWrapperVehShop__ZaghG {
+    border-radius: 8px;
+    border-top: 0
+}
+
+@media screen and (min-width: 768px) {
+    .SellerProfile_profileWrapperVehShop__ZaghG,.SellerProfile_profileWrapperVeh__BVDOo {
+        padding:12px;
+        background-color: #fff
+    }
+}
+
+.SellerProfile_shopIconWrapper__mXmWK {
+    position: relative
+}
+
+.SellerProfile_shopIconWrapperShop__anKKV {
+    padding-right: 5px
+}
+
+.SellerProfile_shopIconWrapperVerify__nbmPa {
+    position: relative;
+    padding-right: 4px
+}
+
+.SellerProfile_verificationIcon__9RGGX {
+    position: absolute;
+    right: -4px;
+    top: 8px
+}
+
+.SellerProfile_onlyChatDesciption__A6SpV {
+    font-style: italic;
+    line-height: 20px;
+    color: #595959;
+    text-align: center;
+    padding: 12px
+}
+
+.SellerProfile_loginPopup__8ESC8 h5 {
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 10px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr {
+    margin: 8px auto;
+    background: #fff;
+    padding: 4px 12px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ .stylesAB_titleText__x9ULK {
+    color: #fe9900;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ .stylesAB_titleText__x9ULK img {
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    position: relative;
+    left: -4px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ .stylesAB_titleIcon__SaP5f {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/info_grey.svg);
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ .stylesAB_viewMore__A0ahj {
+    color: #fe9900;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_title__kuzm_ .stylesAB_viewMore__A0ahj .stylesAB_arrowRight__DqlcH {
+    border: solid #fe9900;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg)
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 767px) {
+    .stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg {
+        height:56px
+    }
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg .stylesAB_infoItem__tX7oY {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-right: 12px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg .stylesAB_infoItem__tX7oY:last-child {
+    margin-right: 0
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg .stylesAB_infoItem__tX7oY .stylesAB_infoItemImage__FDQph {
+    height: 100%;
+    margin-right: 8px
+}
+
+.stylesAB_entryPointProtectedAdBox__oVosr .stylesAB_listDetailInfo__lqGQg .stylesAB_infoItem__tX7oY .stylesAB_infoItemImage__FDQph img {
+    height: 16px
+}
+
+.stylesAB_entryPointOutListing__37Rna {
+    margin-top: 0
+}
+
+.stylesAB_entryPointOutListing__37Rna .stylesAB_title__kuzm_ {
+    border: none
+}
+
+.stylesAB_entryPointOutListing__37Rna .stylesAB_listDetailInfo__lqGQg {
+    display: none
+}
+
+.stylesAB_detailView___fvVA {
+    padding: 0
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c {
+    padding: 6px 13px 6px 8px;
+    background-color: #f4f4f4;
+    border-radius: 4px 4px 0 0
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_ctTitleTrusted__EtVqX {
+    display: flex
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_ctTitleTrusted__EtVqX .stylesAB_titleIcon__SaP5f {
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/info_grey.svg);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: 1px
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_ctTitleTrusted__EtVqX .stylesAB_titleTrusted__LVjDh {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 700
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_contentTrusted__2_r1s {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_moreInfo__fKfjB {
+    color: #2a70df;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px
+}
+
+.stylesAB_detailView___fvVA .stylesAB_entryPointDetailView__Yos_c .stylesAB_moreInfo__fKfjB:hover {
+    color: #4e8bef
+}
+
+.stylesAB_icTrusted__oPSwI {
+    width: 16px;
+    height: 20px;
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon.svg)
+}
+
+.stylesAB_icPartner__S6ADr,.stylesAB_icTrusted__oPSwI {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 2px
+}
+
+.stylesAB_icPartner__S6ADr {
+    width: 63px;
+    height: 16px;
+    background-image: url(https://static.chotot.com/storage/chotot-icons/svg/protected_icon_v2.svg);
+    position: relative;
+    top: 1px
+}
+
+.stylesAB_titleRightIcon__US7ND {
+    background-image: url(https://static.chotot.com/storage/icons/svg/right-arrow.svg);
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    margin-left: auto
+}
+
+.stylesAB_expandIcon__Cnr4V {
+    transform: rotate(90deg)
+}
+
+.stylesAB_collapseIcon__P1DAf {
+    transform: rotate(-90deg)
+}
+
+.stylesAB_contentTrustedVeh__jhmC0 {
+    margin-top: 20px
+}
+
+.stylesAB_contentItem__lE0vF {
+    display: flex;
+    margin-top: 12px
+}
+
+.stylesAB_contentIcon__XSkkc {
+    margin-right: 8px
+}
+
+.stylesAB_contentText__sTuzw {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.stylesAB_contentSeeMore__ZemqG {
+    margin-top: 6px;
+    text-align: center
+}
+
+@media(min-width: 768px) {
+    .stylesAB_entryPointProtectedAdBoxVeh__oHT5k {
+        border-top:1px solid #f4f4ff;
+        padding: 7.5px 8px!important;
+        margin: 0 0 8px
+    }
+}
+
+.stylesAB_helpboxWrapper__7iHiJ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0
+}
+
+.stylesAB_helpboxWrapper__7iHiJ .stylesAB_helpboxItem__PuCIP {
+    display: flex;
+    align-items: center
+}
+
+.stylesAB_helpboxWrapper__7iHiJ .stylesAB_helpboxItem__PuCIP img {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+.stylesAB_helpboxWrapper__7iHiJ .stylesAB_helpboxItem__PuCIP a {
+    color: #595959
+}
+
+.stylesAB_helpboxWrapper__7iHiJ .stylesAB_buttonReport__Hm86B {
+    background-color: transparent;
+    color: #595959;
+    padding: 0;
+    outline: none
+}
+
+.styles_helpboxWrapper__97D4i {
+    justify-content: space-between;
+    margin: 14px 0
+}
+
+.styles_helpboxWrapper__97D4i,.styles_helpboxWrapper__97D4i .styles_helpboxItem__oJx4l {
+    display: flex;
+    align-items: center
+}
+
+.styles_helpboxWrapper__97D4i .styles_helpboxItem__oJx4l img {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+.styles_helpboxWrapper__97D4i .styles_helpboxItem__oJx4l a {
+    color: #777
+}
+
+.styles_helpboxWrapper__97D4i .styles_buttonReport__hhOIr {
+    background-color: transparent;
+    color: #777;
+    padding: 0;
+    outline: none
+}
+
+.Styles_googleDfpRight1__SFgcb,.Styles_googleDfpRight2__97Hy4 {
+    margin-bottom: 15px;
+    min-width: 300px
+}
+
+.Styles_googleDfpAdViewTop__DsrUF {
+    text-align: center;
+    margin: 12px -12px
+}
+
+.Styles_googleDfpAdViewBottom__dFofd {
+    text-align: center;
+    margin-bottom: 12px
+}
+
+.Styles_rightHandSiteAdView__O90bj {
+    margin-bottom: 130px
+}
+
+.ChatTemplateAB_templateChatToastMessage__aut5Z {
+    width: calc(100% - 20px);
+    background-color: rgba(38,38,38,.95);
+    position: fixed;
+    top: calc(100vh - 100px);
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 9999px;
+    z-index: 999999999;
+    left: 10px;
+    font-size: 13px;
+    animation: ChatTemplateAB_fadeIn__k1iVM .75s forwards
+}
+
+@media screen and (min-width: 992px) {
+    .ChatTemplateAB_templateChatToastMessage__aut5Z {
+        width:50%;
+        left: 25%
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ChatTemplateAB_templateChatToastMessage__aut5Z {
+        width:100%;
+        left: 0;
+        border-radius: 0;
+        padding: 7px 10px
+    }
+}
+
+.ChatTemplateAB_templateChatToastMessage__aut5Z p {
+    margin: auto
+}
+
+.ChatTemplateAB_templateChatToastMessage__aut5Z .ChatTemplateAB_navigateLine__iQ2MS {
+    font-weight: 700;
+    color: #4e8bef;
+    cursor: pointer
+}
+
+@keyframes ChatTemplateAB_fadeIn__k1iVM {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: .95
+    }
+}
+
+.ChatTemplateAB_chatTempWrapper__TJHx1 {
+    margin-top: 5px
+}
+
+@media(min-width: 768px) {
+    .ChatTemplateAB_chatTempWrapper__TJHx1 {
+        margin-bottom:10px
+    }
+}
+
+.ChatTemplateAB_templateItemWrapper__R8mBS {
+    padding: 0;
+    height: auto
+}
+
+.ChatTemplateAB_titleChatTemp__x6Zq2 {
+    padding: 5px 5px 5px 0;
+    margin: 0!important;
+    border-bottom: 1px solid silver;
+    color: #595959;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.ChatTemplateAB_templateMessage__QsLHD {
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0
+}
+
+@media(min-width: 768px) {
+    .ChatTemplateAB_templateMessage__QsLHD {
+        margin:0 10px
+    }
+}
+
+.ChatTemplateAB_sent__v6ch7,.ChatTemplateAB_templateItem__wr64t {
+    border: 1px solid #f80;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    font-size: 13px;
+    color: #222;
+    background-color: #fff;
+    cursor: pointer
+}
+
+@media screen and (max-width: 767px) {
+    .ChatTemplateAB_sent__v6ch7,.ChatTemplateAB_templateItem__wr64t {
+        padding:4px 5px
+    }
+}
+
+.ChatTemplateAB_sent__v6ch7 {
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4;
+    color: #8c8c8c;
+    cursor: not-allowed
+}
+
+.ChatTemplateAB_titleChatTempVeh__DChvN {
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px
+}
+
+@media screen and (max-width: 767px) {
+    .ChatTemplateAB_titleChatTempVeh__DChvN {
+        padding:0;
+        margin-bottom: 12px!important
+    }
+}
+
+.ChatTemplateAB_templateItemVeh__JQ49O {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 6px 12px;
+    margin: 0 12px 0 0;
+    font-size: 14px
+}
+
+.ChatTemplateAB_inforItem__1E6ca {
+    display: flex;
+    align-items: center
+}
+
+.ChatTemplateAB_inforItem__1E6ca p {
+    margin-bottom: 0
+}
+
+.ChatTemplateAB_inforText__G0rky {
+    color: #8c8c8c;
+    font-size: 12px;
+    display: flex;
+    font-weight: 400
+}
+
+.ChatTemplateAB_inforText__G0rky span {
+    color: #8c8c8c
+}
+
+.ChatTemplate_templateChatToastMessage__oSldV {
+    width: calc(100% - 20px);
+    background-color: rgba(38,38,38,.95);
+    position: fixed;
+    top: calc(100vh - 100px);
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 9999px;
+    z-index: 999999999;
+    left: 10px;
+    font-size: 13px;
+    animation: ChatTemplate_fadeIn__9fwx2 .75s forwards
+}
+
+@media screen and (min-width: 992px) {
+    .ChatTemplate_templateChatToastMessage__oSldV {
+        width:50%;
+        left: 25%
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ChatTemplate_templateChatToastMessage__oSldV {
+        width:100%;
+        left: 0;
+        border-radius: 0;
+        padding: 7px 10px
+    }
+}
+
+.ChatTemplate_templateChatToastMessage__oSldV p {
+    margin: auto
+}
+
+.ChatTemplate_templateChatToastMessage__oSldV .ChatTemplate_navigateLine__3Am_f {
+    font-weight: 700;
+    color: #4a90e2;
+    cursor: pointer
+}
+
+@keyframes ChatTemplate_fadeIn__9fwx2 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: .95
+    }
+}
+
+.ChatTemplate_chatTempWrapper__uAELZ {
+    margin-top: 5px
+}
+
+@media(min-width: 768px) {
+    .ChatTemplate_chatTempWrapper__uAELZ {
+        margin-bottom:10px
+    }
+}
+
+.ChatTemplate_templateItemWrapper__AP8xV {
+    padding: 0;
+    height: auto
+}
+
+.ChatTemplate_titleChatTemp__IWGIA {
+    padding: 5px 5px 5px 0;
+    margin: 0!important;
+    border-bottom: 1px solid #cacaca;
+    color: #777;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.ChatTemplate_templateMessage__a_aks {
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0
+}
+
+@media(min-width: 768px) {
+    .ChatTemplate_templateMessage__a_aks {
+        margin:0 10px
+    }
+}
+
+.ChatTemplate_sent__bouS1,.ChatTemplate_templateItem__7p1c6 {
+    border: 1px solid #fe9900;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    font-size: 13px;
+    color: #222;
+    background-color: #fff;
+    cursor: pointer
+}
+
+@media screen and (max-width: 767px) {
+    .ChatTemplate_sent__bouS1,.ChatTemplate_templateItem__7p1c6 {
+        padding:4px 5px
+    }
+}
+
+.ChatTemplate_sent__bouS1 {
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4;
+    color: #9b9b9b;
+    cursor: not-allowed
+}
+
+.ChatTemplate_titleChatTempVeh__CcvPa {
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px
+}
+
+@media screen and (max-width: 767px) {
+    .ChatTemplate_titleChatTempVeh__CcvPa {
+        padding:0;
+        margin-bottom: 12px!important
+    }
+}
+
+.ChatTemplate_templateItemVeh__rCiXd {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 6px 12px;
+    margin: 0 12px 0 0;
+    font-size: 14px
+}
+
+.ChatTemplate_inforItem__CoFv1 {
+    display: flex;
+    align-items: center
+}
+
+.ChatTemplate_inforItem__CoFv1 p {
+    margin-bottom: 0
+}
+
+.ChatTemplate_inforText__sbLZ7 {
+    color: #9b9b9b;
+    font-size: 12px;
+    display: flex;
+    font-weight: 400
+}
+
+
+

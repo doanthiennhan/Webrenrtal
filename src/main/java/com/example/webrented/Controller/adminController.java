@@ -2,21 +2,39 @@ package com.example.webrented.Controller;
 
 import java.util.HashMap;
 import java.util.List;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import com.example.webrented.service.ListingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+<<<<<<< Updated upstream
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+<<<<<<< HEAD
+=======
+=======
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+>>>>>>> Stashed changes
+import com.example.webrented.Model.Listing;
+>>>>>>> 03885785e4384b8e2cde72cdd85f5940a8d063d8
 
 import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
 @Controller
 public class adminController {
 
@@ -24,8 +42,12 @@ public class adminController {
     private final ListingService listingService;
     private final AccountRepository accountRepository;
 
+<<<<<<< HEAD
     public adminController(ListingRepository listingRepository ,ListingService listingService ,AccountRepository accountRepository)
     {
+=======
+    public adminController(ListingRepository listingRepository, ListingService listingService) {
+>>>>>>> 03885785e4384b8e2cde72cdd85f5940a8d063d8
         this.listingRepository = listingRepository;
         this.listingService = listingService;
         this.accountRepository = accountRepository;
@@ -33,7 +55,7 @@ public class adminController {
 
     @GetMapping("/admin")
     public String admin(Model model) {
-        
+
         return "admin_trangchu.html";
     }
 
@@ -58,7 +80,6 @@ public class adminController {
         return "admin_quanlibaiviet_daduyet.html";
     }
 
-
     @PostMapping("/admin_quanlibaiviet")
     public String handleAction(@RequestParam("id") String id, @RequestParam("action") String action) {
         if ("duyet".equals(action)) {
@@ -66,7 +87,7 @@ public class adminController {
             listingService.updateListingAvailability(id, true);
         } else if ("xoa".equals(action)) {
             // Nếu hành động là "xoa", thực hiện xóa
-            
+
         }
         return "redirect:/admin_quanlibaiviet";
     }
@@ -74,7 +95,7 @@ public class adminController {
     @PostMapping("/admin_quanlibaiviet_daduyet")
     public String updateListingAvailability(@RequestParam("id") String id) {
         // Đảm bảo phương thức này được gọi khi form được submit
-        listingService.updateListingAvailability(id,false);
+        listingService.updateListingAvailability(id, false);
         // Thực hiện các thao tác cần thiết
         return "redirect:/admin_quanlibaiviet_daduyet";
     }
@@ -91,4 +112,3 @@ public class adminController {
     }
 
 }
-

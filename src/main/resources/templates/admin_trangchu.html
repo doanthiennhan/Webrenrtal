@@ -89,6 +89,7 @@
   
 </div>
 <script>
+<<<<<<< Updated upstream
     var isContentHidden1 = false;
     var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
    
@@ -145,6 +146,63 @@
     });
 
     
+=======
+     var isContentHidden1 = false;
+            var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
+           
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var content = document.getElementById('openn');
+                var content1 = document.getElementById('thongbao');
+                content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
+                content1.style.display='none'
+                isContentHidden = true; // Cập nhật biến isContentHidden
+            });
+
+            document.addEventListener('click', function (event) {
+                var content = document.getElementById('openn');
+                var button = document.getElementById('btnundefinedundefined');
+
+                // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+                if (event.target !== content && event.target !== button && !content.contains(event.target)) {
+                    if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+                        content.style.display = 'none'; // Ẩn menu đi
+                    }
+                }
+            });
+            document.addEventListener('click', function (event) {
+                var content = document.getElementById('thongbao');
+                var button = document.getElementById('btnundefinedundefined');
+
+                // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+                if (event.target !== content && event.target !== button && !content.contains(event.target)) {
+                    if (isContentHidden1) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+                        content.style.display = 'none'; // Ẩn menu đi
+                    }
+                }
+            });
+
+            // JavaScript to toggle the content when button is clicked
+            document.getElementById('btnundefinedundefined').addEventListener('click', function () {
+                var content = document.getElementById('openn');
+                if (content.style.display === 'none') {
+                    content.style.display = 'block'; // Show the content
+                    isContentHidden = false; // Cập nhật biến isContentHidden
+                } else {
+                    content.style.display = 'none'; // Hide the content
+                    isContentHidden = true; // Cập nhật biến isContentHidden
+                }
+            });
+            document.getElementById('btnundefined').addEventListener('click', function () {
+                var content = document.getElementById('thongbao');
+                if (content.style.display === 'none') {
+                    content.style.display = 'block'; // Show the content
+                } else {
+                    content.style.display = 'none'; // Hide the content
+                }
+            });
+
+>>>>>>> Stashed changes
 
 </script>
 </body>
