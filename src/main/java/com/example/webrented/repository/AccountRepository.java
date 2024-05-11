@@ -1,5 +1,7 @@
 package com.example.webrented.repository;
 
+import java.util.List;
+
 // import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -9,5 +11,6 @@ public interface AccountRepository extends MongoRepository<Account, String> {
     // Optional<Account> findById(String id);
 
     Account findByPhoneAndPassword(String phone, String password);
-
+    List<Account> findAll();
+    
 }

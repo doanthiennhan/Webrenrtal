@@ -1,5 +1,6 @@
 package com.example.webrented.Controller;
 
+import java.util.HashMap;
 import java.util.List;
 import com.example.webrented.service.ListingService;
 import org.springframework.stereotype.Controller;
@@ -7,8 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.example.webrented.Model.Listing;
 
+import com.example.webrented.Model.Account;
+import com.example.webrented.Model.Listing;
+import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 
 
@@ -19,11 +22,13 @@ public class adminController {
 
     private final ListingRepository listingRepository;
     private final ListingService listingService;
+    private final AccountRepository accountRepository;
 
-    public adminController(ListingRepository listingRepository ,ListingService listingService)
+    public adminController(ListingRepository listingRepository ,ListingService listingService ,AccountRepository accountRepository)
     {
         this.listingRepository = listingRepository;
         this.listingService = listingService;
+        this.accountRepository = accountRepository;
     }
 
     @GetMapping("/admin")
@@ -73,5 +78,18 @@ public class adminController {
         // Thực hiện các thao tác cần thiết
         return "redirect:/admin_quanlibaiviet_daduyet";
     }
+
+    @GetMapping("/admin_quanlitaikhoan")
+    public String admin_quanlitk(Model model) {
+        List<Account> accounts = accountRepository.findAll();
+        HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
+        for (Account account : accounts) {
+            idMap.put(account, listingService.accountCount(account.getId()));
+        }
+        System.out.println(idMap.toString());
+        model.addAttribute("accounts", idMap);
+        return "qltk.html";
+    }
+
 }
 
