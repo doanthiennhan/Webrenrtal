@@ -4,17 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-
-
     <link rel="stylesheet" href="CSS/qltk.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/admin_trangchu.css">
     
-
-    <link rel="stylesheet" href="/src/main/resources/static/CSS/qltk.css">
-
     <title>Table</title>
 </head>
 
@@ -82,9 +75,12 @@
                     <td th:text="${account.key.role}"></td>
                     
                     <td>
-                        <button class="xoa">xóa</button>
-                        <button class="cam">cấm</button>
-                    </td>
+                        <form th:action="@{/admin_quanlitaikhoan}" method="post">
+                            <input type="hidden" name="id" th:value="${account.key.id}">
+                            <button class="xoa"  type="submit" name="action" value="xoa" onclick="confirmDelete()" >xóa</button>
+                            <button class="cam" type="submit" name="action" value="cam" >cấm</button>
+                        </form>
+                    </td> 
                 </tr>
                 
                 <!-- Thêm các hàng và cột khác nếu cần -->
@@ -93,6 +89,15 @@
     </table>
 </div>
 <script>
+
+    function confirmDelete() {
+        var result = confirm("Bạn có muốn xóa tài khoản này không?");
+        if (result) {
+            // Nếu người dùng đồng ý, submit form
+            document.getElementById("deleteForm").submit();
+        }
+    }
+
     var isContentHidden1 = false;
     var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
    

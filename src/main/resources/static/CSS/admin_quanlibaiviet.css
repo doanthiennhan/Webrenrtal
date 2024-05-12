@@ -131,3 +131,8 @@
 .bottom6{
     margin-left: 300px;
 }
+
+.danhsachli:hover
+{
+    background-color: #D9D9D9;
+}

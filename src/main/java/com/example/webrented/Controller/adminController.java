@@ -1,8 +1,9 @@
 package com.example.webrented.Controller;
 
-import java.util.HashMap;
+// import java.util.HashMap;
 import java.util.List;
 
+import com.example.webrented.service.AccountService;
 import com.example.webrented.service.ListingService;
 
 import jakarta.servlet.http.HttpSession;
@@ -14,8 +15,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.webrented.Model.Account;
+
+
+
 import com.example.webrented.Model.Listing;
+
+
+import com.example.webrented.Model.Account;
 
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
@@ -26,12 +32,15 @@ public class adminController {
     private final ListingRepository listingRepository;
     private final ListingService listingService;
     private final AccountRepository accountRepository;
+    private final AccountService accountService;
 
-    public adminController(ListingRepository listingRepository, ListingService listingService,
-            AccountRepository accountRepository) {
+
+
+    public adminController(ListingRepository listingRepository, ListingService listingService, AccountRepository accountRepository ,AccountService accountService) {
 
         this.listingRepository = listingRepository;
         this.listingService = listingService;
+        this.accountService = accountService;
         this.accountRepository = accountRepository;
     }
 
@@ -111,4 +120,17 @@ public class adminController {
         return "qltk.html";
     }
 
+<<<<<<< HEAD
+=======
+    @PostMapping("/admin_quanlitaikhoan")
+    public String quanlibaiviet(@RequestParam("id") String id, @RequestParam("action") String action) {
+        if ("cam".equals(action)) {
+            accountService.updateAccount(id, "cấm");
+        } else if ("xoa".equals(action)) {
+            accountService.xoaAcount(id);
+        }
+        return "redirect:/admin_quanlitaikhoan";
+    }
+
+>>>>>>> ebd88a6db44d702226f6a11029b3a3adf0932f20
 }

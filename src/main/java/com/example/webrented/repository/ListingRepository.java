@@ -13,7 +13,9 @@ import com.example.webrented.Model.Listing;
 @Transactional
 public interface ListingRepository extends MongoRepository<Listing, String> {
 
+
     List<Listing> findAll();
+
 
     List<Listing> findByAvailableFalse();
 
@@ -25,4 +27,7 @@ public interface ListingRepository extends MongoRepository<Listing, String> {
 
     @Query("UPDATE Listing l SET l.available = true WHERE l.id = :id")
     void duyetBaiViet(@Param("id") String id);
+
+    
+
 }
