@@ -13,13 +13,10 @@ import com.example.webrented.Model.Listing;
 @Transactional
 public interface ListingRepository extends MongoRepository<Listing, String> {
 
-<<<<<<< Updated upstream
-    
-    List <Listing> findAll();
-=======
+
     List<Listing> findAll();
 
->>>>>>> Stashed changes
+
     List<Listing> findByAvailableFalse();
 
     List<Listing> findByAvailableTrue();
@@ -30,12 +27,7 @@ public interface ListingRepository extends MongoRepository<Listing, String> {
 
     @Query("UPDATE Listing l SET l.available = true WHERE l.id = :id")
     void duyetBaiViet(@Param("id") String id);
-<<<<<<< Updated upstream
 
-
-
-
-=======
->>>>>>> Stashed changes
+    
 
 }

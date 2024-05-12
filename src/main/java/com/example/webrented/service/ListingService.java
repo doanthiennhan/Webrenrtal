@@ -56,4 +56,8 @@ public class ListingService {
         }
         return dem;
     }
+
+    public Listing findById(String id) {
+        return listingRepository.findById(id).orElse(null);
+    }
 }

@@ -2,54 +2,42 @@ package com.example.webrented.Controller;
 
 import java.util.HashMap;
 import java.util.List;
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+import com.example.webrented.service.AccountService;
 import com.example.webrented.service.ListingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-<<<<<<< Updated upstream
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-<<<<<<< HEAD
-=======
-=======
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
->>>>>>> Stashed changes
+
+
+
 import com.example.webrented.Model.Listing;
->>>>>>> 03885785e4384b8e2cde72cdd85f5940a8d063d8
+
 
 import com.example.webrented.Model.Account;
-import com.example.webrented.Model.Listing;
+
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 
-<<<<<<< Updated upstream
-
-
-
-=======
->>>>>>> Stashed changes
 @Controller
 public class adminController {
 
     private final ListingRepository listingRepository;
     private final ListingService listingService;
     private final AccountRepository accountRepository;
+    private final AccountService accountService;
 
-<<<<<<< HEAD
-    public adminController(ListingRepository listingRepository ,ListingService listingService ,AccountRepository accountRepository)
-    {
-=======
-    public adminController(ListingRepository listingRepository, ListingService listingService) {
->>>>>>> 03885785e4384b8e2cde72cdd85f5940a8d063d8
+
+
+    public adminController(ListingRepository listingRepository, ListingService listingService, AccountRepository accountRepository ,AccountService accountService) {
+
         this.listingRepository = listingRepository;
         this.listingService = listingService;
+        this.accountService = accountService;
         this.accountRepository = accountRepository;
     }
 
@@ -109,6 +97,16 @@ public class adminController {
         }
         model.addAttribute("accounts", idMap);
         return "qltk.html";
+    }
+
+    @PostMapping("/admin_quanlitaikhoan")
+    public String quanlibaiviet(@RequestParam("id") String id, @RequestParam("action") String action) {
+        if ("cam".equals(action)) {
+            accountService.updateAccount(id, "cấm");
+        } else if ("xoa".equals(action)) {
+            accountService.xoaAcount(id);
+        }
+        return "redirect:/admin_quanlitaikhoan";
     }
 
 }
