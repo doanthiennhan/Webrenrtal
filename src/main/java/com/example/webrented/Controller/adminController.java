@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.example.webrented.service.ListingService;
+
+import jakarta.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,9 +36,26 @@ public class adminController {
     }
 
     @GetMapping("/admin")
-    public String admin(Model model) {
+    public String admin(Model model, HttpSession session) {
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
 
-        return "admin_trangchu.html";
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
+        return "admin_trangchu";
+
     }
 
     @GetMapping("/admin_quanlibaiviet")
@@ -82,15 +102,13 @@ public class adminController {
     @GetMapping("/admin_quanlitaikhoan")
     public String admin_quanlitk(Model model) {
         List<Account> accounts = accountRepository.findAll();
-        model.addAttribute("accounts", accounts);
+
+        HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
+        for (Account account : accounts) {
+            idMap.put(account, listingService.accountCount(account.getId()));
+        }
+        model.addAttribute("accounts", idMap);
         return "qltk.html";
     }
-
-    HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();for(
-    Account account:accounts)
-    {
-        idMap.put(account, listingService.accountCount(account.getId()));
-    }model.addAttribute("accounts",idMap);return"qltk.html";
-}
 
 }
