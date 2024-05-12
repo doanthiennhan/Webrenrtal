@@ -1,6 +1,6 @@
 package com.example.webrented.Controller;
 
-import java.util.HashMap;
+// import java.util.HashMap;
 import java.util.List;
 
 import com.example.webrented.service.AccountService;
@@ -91,11 +91,7 @@ public class adminController {
     @GetMapping("/admin_quanlitaikhoan")
     public String admin_quanlitk(Model model) {
         List<Account> accounts = accountRepository.findAll();
-        HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
-        for (Account account : accounts) {
-            idMap.put(account, listingService.accountCount(account.getId()));
-        }
-        model.addAttribute("accounts", idMap);
+        model.addAttribute("accounts", accounts);
         return "qltk.html";
     }
 

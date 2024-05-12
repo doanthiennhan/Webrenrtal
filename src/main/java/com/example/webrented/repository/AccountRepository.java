@@ -11,6 +11,7 @@ public interface AccountRepository extends MongoRepository<Account, String> {
     // Optional<Account> findById(String id);
 
     Account findByPhoneAndPassword(String phone, String password);
+
     List<Account> findAll();
-    
+
 }

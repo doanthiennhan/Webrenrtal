@@ -17,19 +17,19 @@ import org.springframework.ui.Model;
 
 @Controller
 public class postController {
-    private final ListingRepository listingRepository;
+    // private final ListingRepository listingRepository;
     private final ListingService listingService;
-    private final AccountRepository accountRepository;
+    // private final AccountRepository accountRepository;
     private final AccountService accountService;
 
 
 
     public postController(ListingRepository listingRepository, ListingService listingService, AccountRepository accountRepository ,AccountService accountService) {
 
-        this.listingRepository = listingRepository;
+        // this.listingRepository = listingRepository;
         this.listingService = listingService;
         this.accountService = accountService;
-        this.accountRepository = accountRepository;
+        // this.accountRepository = accountRepository;
     }
 
     @GetMapping("/post")

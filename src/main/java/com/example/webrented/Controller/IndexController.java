@@ -118,7 +118,9 @@ public class IndexController {
             // Thiết lập các thuộc tính cho đối tượng Account mới
             newAccount.setPassword(password);
             newAccount.setPhone(phone);
+            newAccount.setName(name);
             newAccount.setRole("renter");
+            newAccount.setStatus("binh thường");
             newAccount.setCreatedAt(LocalDateTime.now());
             newAccount.setUpdatedAt(LocalDateTime.now());
 

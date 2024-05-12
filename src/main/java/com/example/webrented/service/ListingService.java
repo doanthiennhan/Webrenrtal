@@ -34,6 +34,7 @@ public class ListingService {
     public void deleteListingById(String id) {
         listingRepository.deleteById(id);
     }
+
     public void updateListingAvailability(String id, Boolean available) {
 
         Optional<Listing> optionalListing = listingRepository.findById(id);
@@ -45,8 +46,7 @@ public class ListingService {
         });
     }
 
-    public int accountCount(String id)
-    {
+    public int accountCount(String id) {
         int dem = 0;
         List<Listing> list = listingRepository.findAll();
         for (Listing listing : list) {

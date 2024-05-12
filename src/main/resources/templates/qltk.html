@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     
     <title>Table</title>
 </head>
+
 <body>
     <th:block th:include="header :: header"></th:block>
 
@@ -28,24 +30,40 @@
         <a href="/admin_quanlibaiviet_daduyet">
             <button class="btn">bài viết đã duyệt</button>
         </a>
-        
     </div>
 
     <div class="table1">
         <table>
             <thead clas="tieude">
+
+                <tr>
+                    <th>STT</th>
+
                 <tr >
                     <th >STT</th>
+
                     <th>Họ Và Tên</th>
                     <th>Số Điện Thoại</th>
                     <th>Mật Khẩu</th>
                     <th>Trạng Thái</th>
                     <th>Số Bài Viết</th>
+
+                    <th>Ghi Chú</th>
+
                     <th>Vai Trò</th>
+
                     <th></th>
                 </tr>
             </thead>
             <tbody>
+                <tr th:each="accounts : ${accounts}">
+                    <td th:text="${accounts.name}"></td>
+                    <td>Cell B1</td>
+                    <td>Cell C1</td>
+                    <td>Cell A1</td>
+                    <td>Cell B1</td>
+                    <td>Cell C1</td>
+                    <td>Cell A1</td>
                 <tr th:each="account, index : ${accounts}">
                     <td th:text="${index.index + 1}"></td>
                     <td th:text="${account.key.name}"></td>
@@ -138,4 +156,5 @@
 
 </script>
 </body>
+
 </html>
