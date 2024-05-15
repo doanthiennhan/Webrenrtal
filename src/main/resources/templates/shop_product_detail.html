@@ -490,67 +490,91 @@
 
             <tr th:each="listing : ${listings}">
 
-            <div class="col-md-6">
-              
-              <div class="pro-img-details">
-                <img
-                  th:src="@{/image/__${listing.images[0]}__}"
-                  alt
-                />
-              </div>
-              <div class="pro-img-list">
-                <a href="#">
-                  <img
-                  th:src="@{/image/__${listing.images[1]}__}"
-                    alt
-                  />
-                </a>
-                <a href="#">
-                  <img
-                  th:src="@{/image/__${listing.images[0]}__}"
-                    alt
-                  />
-                </a>
-                <a href="#">
-                  <img
-                  th:src="@{/image/__${listing.images[0]}__}"
-                    alt
-                  />
-                </a>
-                <a href="#">
-                  <img
-                  th:src="@{/image/__${listing.images[0]}__}"
-                    alt 
-                  />
-                </a>
-              </div>
-            </div>
+                <div class="col-md-6">
+                    <div class="pro-img-details">
+                        <img
+                            th:src="${#lists.size(listing.images) > 0 ? '/image/' + listing.images[0] : '/image/error404.png'}"
+                            width="550"
+                            height="380"
+                            alt="Image 1"
+                        />
+                    </div>
+                    <div class="pro-img-list">
+                        <a href="#">
+                            <img
+                                th:src="${#lists.size(listing.images) > 1 ? '/image/' + listing.images[1] : '/image/error404.png'}"
+                                width="115"
+                                height="100"
+                                alt="Image 2"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                th:src="${#lists.size(listing.images) > 2 ? '/image/' + listing.images[2] : '/image/error404.png'}"
+                                width="115"
+                                height="100"
+                                alt="Image 3"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                th:src="${#lists.size(listing.images) > 3 ? '/image/' + listing.images[3] : '/image/error404.png'}"
+                                width="115"
+                                height="100"
+                                alt="Image 4"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                th:src="${#lists.size(listing.images) > 4 ? '/image/' + listing.images[4] : '/image/error404.png'}"
+                                width="115"
+                                height="100"
+                                alt="Image 5"
+                            />
+                        </a>
+                    </div>
+                </div>
+                
+                
+                
 
-            </tr>
-            <div class="col-md-6">
+            
+                <div class="col-md-6">
               <h4 class="pro-d-title" >
                 <img src="/image/taikhaon1.png" alt="" style="width: 50px; height: 50px; border: 2px solid rgb(5, 177, 245);">
-                <a href="#" class> Leopard Shirt Dress </a>
+
+                    <a href="#" th:text="${accounts.name}">Leopard Shirt Dress</a>
+                
               </h4>
-              <p>
-                Praesent ac condimentum felis. Nulla at nisl orci, at dignissim
-                dolor, The best product descriptions address your ideal buyer
-                directly and personally. The best product descriptions address
-                your ideal buyer directly and personally.
+              <h3 style="color: #007bff; font-weight: bold; text-decoration: underline;">Nội dung:</h3>
+              <p th:text="${listing.description}"> 
+                
                 
               </p>
+              <br>
               <div class="product_meta">
                 <span class="posted_in">
-                  <h5> địa chỉ : 136, phùng hưng , hòa mình đà nẵng</h5></span>
+                    <h3 style="color: #007bff; font-weight: bold; text-decoration: underline; " > địa chỉ:</h3>
+                  <h5 th:text= "${listing.address}" > </h5>
                 </span>
+                
 
                 
                 
               </div>
               <div class="m-bot15">
                 <strong>Giá : </strong> 
-                <span class="pro-price"> $300.00</span>
+                <span class="pro-price" th:text="${listing.price % 1 == 0 ? #numbers.formatDecimal(listing.price, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.price, 2, 'COMMA', 2, 'POINT')} + ' vnđ/tháng'"></span>
+
+                
               </div>
+              <div class="m-bot15">
+                <strong>Diện tích : </strong> 
+                <span class="pro-price" th:text="${listing.area % 1 == 0 ? #numbers.formatDecimal(listing.area, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.area, 2, 'COMMA', 2, 'POINT')} + ' m2'"></span>
+
+                
+              </div>
+            </tr>
               <br>
 
               
@@ -598,6 +622,7 @@
                             <div class="clearfix"></div>
                             <hr>
                             <ul class="media-list">
+                                <tr th:each="comments : ${comments}">
                                 <li class="media">
                                     <a href="#" class="pull-left">
                                         <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
@@ -606,42 +631,27 @@
                                         <span class="text-muted pull-right">
                                             <small class="text-muted">30 min ago</small>
                                         </span>
-                                        <strong class="text-success">@MartinoMont</strong>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Lorem ipsum dolor sit amet, <a href="#">#consecteturadipiscing </a>.
+                                        <strong class="text-success" th:text="'@'+${comments.value}" >@</strong>
+                                        <p th:text="${comments.key.content}" >
+                                             
                                         </p>
+                                        <div class="divcha">
+
+                                        
+                                        <div  style=" float: left; width: 50%;">
+                                            <a href="">
+                                            <img src="/image/image.png" alt="" style="width: 20px; height: 20px;">
+                                            thích</a>
+                                        </div>
+                                        <div style=" float: left; width: 50%;" >
+                                            <a href="">
+                                            <img src="/image/binhluan.jpg" alt="" style="width: 20px; height: 20px;">
+                                            trả lời</a>
+                                        </div>
+                                    </div>
                                     </div>
                                 </li>
-                                <li class="media">
-                                    <a href="#" class="pull-left">
-                                        <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
-                                    </a>
-                                    <div class="media-body">
-                                        <span class="text-muted pull-right">
-                                            <small class="text-muted">30 min ago</small>
-                                        </span>
-                                        <strong class="text-success">@LaurenceCorreil</strong>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Lorem ipsum dolor <a href="#">#ipsumdolor </a>adipiscing elit.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <a href="#" class="pull-left">
-                                        <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
-                                    </a>
-                                    <div class="media-body">
-                                        <span class="text-muted pull-right">
-                                            <small class="text-muted">30 min ago</small>
-                                        </span>
-                                        <strong class="text-success">@JohnNida</strong>
-                                        <p>
-                                            Lorem ipsum dolor <a href="#">#sitamet</a> sit amet, consectetur adipiscing elit.
-                                        </p>
-                                    </div>
-                                </li>
+                                </tr>
                             </ul>
                         </div>
                     </div>

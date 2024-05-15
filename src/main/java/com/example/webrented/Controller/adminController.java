@@ -1,10 +1,14 @@
 package com.example.webrented.Controller;
 
+import java.util.HashMap;
 // import java.util.HashMap;
 import java.util.List;
 
 import com.example.webrented.service.AccountService;
 import com.example.webrented.service.ListingService;
+
+import jakarta.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,11 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-
-
 import com.example.webrented.Model.Listing;
-
 
 import com.example.webrented.Model.Account;
 
@@ -31,9 +31,8 @@ public class adminController {
     private final AccountRepository accountRepository;
     private final AccountService accountService;
 
-
-
-    public adminController(ListingRepository listingRepository, ListingService listingService, AccountRepository accountRepository ,AccountService accountService) {
+    public adminController(ListingRepository listingRepository, ListingService listingService,
+            AccountRepository accountRepository, AccountService accountService) {
 
         this.listingRepository = listingRepository;
         this.listingService = listingService;
@@ -42,9 +41,26 @@ public class adminController {
     }
 
     @GetMapping("/admin")
-    public String admin(Model model) {
+    public String admin(Model model, HttpSession session) {
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
 
-        return "admin_trangchu.html";
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
+        return "admin_trangchu";
+
     }
 
     @GetMapping("/admin_quanlibaiviet")
@@ -91,8 +107,12 @@ public class adminController {
     @GetMapping("/admin_quanlitaikhoan")
     public String admin_quanlitk(Model model) {
         List<Account> accounts = accountRepository.findAll();
-        model.addAttribute("accounts", accounts);
-        return "qltk.html";
+        HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
+        for (Account account : accounts) {
+            idMap.put(account, listingService.accountCount(account.getId()));
+        }
+        model.addAttribute("accounts", idMap);
+        return "qltk";
     }
 
     @PostMapping("/admin_quanlitaikhoan")
