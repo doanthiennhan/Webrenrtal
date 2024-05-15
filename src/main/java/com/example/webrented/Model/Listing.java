@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 
@@ -23,7 +25,7 @@ public class Listing {
     private double price;
     private double area;
     private List<String> images;
-    private Boolean available;
+    private String available;
     private Date createdAt;
     private Date updatedAt;
 
@@ -102,11 +104,11 @@ public class Listing {
         this.images = images;
     }
 
-    public Boolean isAvailable() {
+    public String isAvailable() {
         return available;
     }
 
-    public void setAvailable(Boolean available) {
+    public void setAvailable(String available) {
         this.available = available;
     }
 
@@ -114,15 +116,15 @@ public class Listing {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
     public Date getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setCreatedAt(LocalDateTime localDateTime) {
+        this.createdAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
+    public void setUpdatedAt(LocalDateTime localDateTime) {
+        this.updatedAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 }

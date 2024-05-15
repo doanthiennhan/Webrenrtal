@@ -39,7 +39,7 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model) {
         try {
-            List<Listing> listings = listingRepository.findByAvailableTrue();
+            List<Listing> listings = listingRepository.findByAvailable("true");
             model.addAttribute("listings", listings);
             Renter renter = renterRepository.findByAccountId(idAccouts);
             if (idAccouts != "") {

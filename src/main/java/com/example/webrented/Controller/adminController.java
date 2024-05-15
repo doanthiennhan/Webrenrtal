@@ -1,5 +1,6 @@
 package com.example.webrented.Controller;
 
+import java.util.HashMap;
 // import java.util.HashMap;
 import java.util.List;
 
@@ -15,11 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-
-
 import com.example.webrented.Model.Listing;
-
 
 import com.example.webrented.Model.Account;
 
@@ -34,9 +31,8 @@ public class adminController {
     private final AccountRepository accountRepository;
     private final AccountService accountService;
 
-
-
-    public adminController(ListingRepository listingRepository, ListingService listingService, AccountRepository accountRepository ,AccountService accountService) {
+    public adminController(ListingRepository listingRepository, ListingService listingService,
+            AccountRepository accountRepository, AccountService accountService) {
 
         this.listingRepository = listingRepository;
         this.listingService = listingService;
@@ -69,21 +65,21 @@ public class adminController {
 
     @GetMapping("/admin_quanlibaiviet")
     public String admin_quanlibaiviet(Model model) {
-        List<Listing> listings = listingRepository.findByAvailableNull();
+        List<Listing> listings = listingRepository.findByAvailable("null");
         model.addAttribute("listings", listings);
         return "admin_quanlibaiviet.html";
     }
 
     @GetMapping("/admin_quanlibaiviet_daxoa")
     public String admin_quanlibaiviet_daxoa(Model model) {
-        List<Listing> listings = listingRepository.findByAvailableFalse();
+        List<Listing> listings = listingRepository.findByAvailable("false");
         model.addAttribute("listings", listings);
         return "admin_quanlibaiviet_daxoa.html";
     }
 
     @GetMapping("/admin_quanlibaiviet_daduyet")
     public String admin_quanlibaiviet_daduyet(Model model) {
-        List<Listing> listings = listingRepository.findByAvailableTrue();
+        List<Listing> listings = listingRepository.findByAvailable("true");
         model.addAttribute("listings", listings);
         return "admin_quanlibaiviet_daduyet.html";
     }
@@ -92,7 +88,7 @@ public class adminController {
     public String handleAction(@RequestParam("id") String id, @RequestParam("action") String action) {
         if ("duyet".equals(action)) {
             // Nếu hành động là "duyet", thực hiện duyệt
-            listingService.updateListingAvailability(id, true);
+            listingService.updateListingAvailability(id, "true");
         } else if ("xoa".equals(action)) {
             // Nếu hành động là "xoa", thực hiện xóa
 
@@ -103,7 +99,7 @@ public class adminController {
     @PostMapping("/admin_quanlibaiviet_daduyet")
     public String updateListingAvailability(@RequestParam("id") String id) {
         // Đảm bảo phương thức này được gọi khi form được submit
-        listingService.updateListingAvailability(id, false);
+        listingService.updateListingAvailability(id, "false");
         // Thực hiện các thao tác cần thiết
         return "redirect:/admin_quanlibaiviet_daduyet";
     }
@@ -111,17 +107,14 @@ public class adminController {
     @GetMapping("/admin_quanlitaikhoan")
     public String admin_quanlitk(Model model) {
         List<Account> accounts = accountRepository.findAll();
-
         HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
         for (Account account : accounts) {
             idMap.put(account, listingService.accountCount(account.getId()));
         }
         model.addAttribute("accounts", idMap);
-        return "qltk.html";
+        return "qltk";
     }
 
-<<<<<<< HEAD
-=======
     @PostMapping("/admin_quanlitaikhoan")
     public String quanlibaiviet(@RequestParam("id") String id, @RequestParam("action") String action) {
         if ("cam".equals(action)) {
@@ -132,5 +125,4 @@ public class adminController {
         return "redirect:/admin_quanlitaikhoan";
     }
 
->>>>>>> ebd88a6db44d702226f6a11029b3a3adf0932f20
 }

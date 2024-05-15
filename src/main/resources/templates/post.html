@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="CSS/index.css">
 
     <script></script>
-    <title>Document</title>
+    <title>Đăng bài viết</title>
 </head>
 
-<body style="margin:0;padding:0">
+<body>
     <div id="__next" data-reactroot=""><progress hidden=""></progress>
-        <div></div>
-        <div class="ct-appwrapper aw__sjqbf4c"></div>
-        <div
+
+        <div th:insert="~{header :: header}"></div>
+        <!-- <div
                     style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 999; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                     <th:block th:include="header :: header"></th:block>
-                </div>
+                </div> -->
         <div class="l1tlqmyy">
             <div class="g1gd5utk withWidth withGutter cybh37o"
                 style="--cybh37o-0:100%;--cybh37o-1:4px;--cybh37o-4:-8px;--cybh37o-5:-8px;--cybh37o-9:8px;--cybh37o-13:100%;--cybh37o-14:6px;--cybh37o-17:-12px;--cybh37o-18:-12px;--cybh37o-22:12px;--cybh37o-26:100%;--cybh37o-27:8px;--cybh37o-30:-16px;--cybh37o-31:-16px;--cybh37o-35:16px;--cybh37o-39:100%;--cybh37o-40:12px;--cybh37o-43:-24px;--cybh37o-44:-24px;--cybh37o-48:24px;--cybh37o-52:100%;--cybh37o-53:16px;--cybh37o-56:-32px;--cybh37o-57:-32px;--cybh37o-61:32px">
@@ -27,15 +27,13 @@
                     style="--sy64i72-0:initial;--sy64i72-1:initial;--sy64i72-3:initial;--sy64i72-6:initial;--sy64i72-9:initial;--sy64i72-12:initial;--sy64i72-15:initial">
                     <div class="withSpan spa2iur"
                         style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:100%;--spa2iur-4:initial;--spa2iur-6:100%;--spa2iur-8:initial;--spa2iur-10:100%;--spa2iur-12:initial;--spa2iur-14:33.33333333333333%;--spa2iur-16:initial;--spa2iur-18:33.33333333333333%;--spa2iur-20:initial">
-                        <h5>Hình ảnh và Video sản phẩm</h5>
-                        <p class="trc72lf">Xem thêm về<!-- -->&nbsp;<a
-                                href="https://trogiup.chotot.com/nguoi-ban/dang-tin/" target="_blank" rel="noreferrer"
-                                previewlistener="true">Quy định đăng tin của Chợ Tốt</a></p>
+                        <h5>Hình ảnh Trọ</h5>
+
                         <div class="ilncnob">
                             <div class="cs1az2d" role="presentation">
-                                <div class="info no-button s14yuir1"><svg data-type="monochrome"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" width="1em"
-                                        height="1em" class="t1c2rggp info">
+                                <div class="info no-button s14yuir1">
+                                    <svg data-type="monochrome" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 12 12" width="1em" height="1em" class="t1c2rggp info">
                                         <path fill="currentColor"
                                             d="M6 0a6 6 0 100 12A6 6 0 006 0zm-.693 8.59V5.843a.693.693 0 111.386 0V8.59a.693.693 0 11-1.386 0zM6 4.393a.833.833 0 110-1.666.833.833 0 010 1.666z">
                                         </path>
@@ -45,10 +43,10 @@
                             </div>
                             <div role="presentation" class="wfyigpx"
                                 style="--wfyigpx-0: pointer; --wfyigpx-1: 225px; --wfyigpx-3: 1; --wfyigpx-4: 0;"
-                                tabindex="0"><input type="file" accept="" multiple="" style="display:none"
-                                    tabindex="-1">
-                                <div class="s1sn01m8"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="39"
-                                        viewBox="0 0 53 39">
+                                tabindex="0" onclick="openFileExplorer()">
+                               
+                                <div class="s1sn01m8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="39" viewBox="0 0 53 39">
                                         <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                                             <g stroke="#FF8800" stroke-width="2" transform="translate(-255 -179)">
                                                 <g transform="translate(132 122)">
@@ -58,8 +56,10 @@
                                                 </g>
                                             </g>
                                         </g>
-                                    </svg><span class="f6ete4"><svg xmlns="http://www.w3.org/2000/svg" width="12"
-                                            height="12" viewBox="0 0 20 21">
+                                    </svg>
+                                    <span class="f6ete4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 20 21">
                                             <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                                                 <g fill="#FF8800" transform="translate(-161 -428)">
                                                     <g transform="translate(132 398)">
@@ -75,12 +75,18 @@
                                                     </g>
                                                 </g>
                                             </g>
-                                        </svg></span></div>
+                                        </svg>
+                                    </span>
+                                </div>
                                 <div class="s1sn01m8">
-                                    <p class="t1jq83vt">ĐĂNG TỪ 03 ĐẾN 12 HÌNH</p>
+                                    <p class="t1jq83vt">Click here or drag and drop images to upload</p>
                                 </div>
                             </div>
+                            <!-- Container to display uploaded images -->
+                            <div id="imageContainer"></div>
+                            <div id="imageCount" name="soanh">Number of images: 0</div>
                         </div>
+
                         <div class="t179re7t" style="--t179re7t-0:0">
                             <div class="withGutter cybh37o"
                                 style="--cybh37o-0:initial;--cybh37o-1:8px;--cybh37o-4:-16px;--cybh37o-5:-16px;--cybh37o-9:16px;--cybh37o-13:initial;--cybh37o-14:8px;--cybh37o-17:-16px;--cybh37o-18:-16px;--cybh37o-22:16px;--cybh37o-26:initial;--cybh37o-27:8px;--cybh37o-30:-16px;--cybh37o-31:-16px;--cybh37o-35:16px;--cybh37o-39:initial;--cybh37o-40:8px;--cybh37o-43:-16px;--cybh37o-44:-16px;--cybh37o-48:16px;--cybh37o-52:initial;--cybh37o-53:8px;--cybh37o-56:-16px;--cybh37o-57:-16px;--cybh37o-61:16px">
@@ -89,62 +95,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wsk6u1i" style="--wsk6u1i-0: 24px;">
-                            <div class="ilncnob">
-                                <div role="presentation" tabindex="0" class="wfyigpx"
-                                    style="--wfyigpx-0: pointer; --wfyigpx-1: 225px; --wfyigpx-3: 1; --wfyigpx-4: 0;">
-                                    <input accept="" multiple="" type="file" tabindex="-1" style="display: none;">
-                                    <div class="s1sn01m8"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="39"
-                                            fill="none" viewBox="0 0 53 39">
-                                            <path stroke="#FF8800" stroke-width="2"
-                                                d="M39.62 11.031l.013-.006.012-.006 11.707-6.042a1.329 1.329 0 01.208-.076l.007.003.128.025c.28.054.305.221.305.228v26.046a.412.412 0 01-.07.095.704.704 0 01-.203.145h-.122c-.073 0-.126 0-.176-.002h-.024l-.031-.017-11.721-6.183-.016-.008-.017-.008c-.16-.077-.41-.363-.41-.847v-12.5c0-.484.25-.77.41-.847zm11.716 20.404h.001-.001z">
-                                            </path>
-                                            <mask id="path-2-inside-1_289_1913" fill="#fff">
-                                                <path fill-rule="evenodd"
-                                                    d="M10.447 7c1.81 0 3.234 1.466 3.234 3.333 0 1.867-1.423 3.333-3.234 3.333S7.213 12.2 7.213 10.333C7.213 8.466 8.636 7 10.447 7zM28.07 36.167c4.656 0 8.537-4 8.537-8.8v-18.4c0-4.8-3.88-8.8-8.537-8.8H8.537C3.881.167 0 4.167 0 8.967v18.4c0 4.934 3.751 8.8 8.537 8.8H28.07z"
-                                                    clip-rule="evenodd"></path>
-                                            </mask>
-                                            <path fill="#FF8800"
-                                                d="M10.447 9c.65 0 1.234.513 1.234 1.333h4C15.68 7.419 13.419 5 10.447 5v4zm1.234 1.333c0 .82-.584 1.333-1.234 1.333v4c2.972 0 5.234-2.42 5.234-5.333h-4zm-1.234 1.333c-.65 0-1.234-.513-1.234-1.333h-4c0 2.914 2.262 5.333 5.234 5.333v-4zm-1.234-1.333c0-.82.584-1.333 1.234-1.333V5c-2.972 0-5.234 2.42-5.234 5.333h4zM28.07 38.167c5.818 0 10.537-4.953 10.537-10.8h-4c0 3.753-3.042 6.8-6.537 6.8v4zm10.537-10.8v-18.4h-4v18.4h4zm0-18.4c0-5.847-4.72-10.8-10.537-10.8v4c3.495 0 6.537 3.047 6.537 6.8h4zM28.07-1.833H8.537v4H28.07v-4zm-19.533 0C2.72-1.833-2 3.12-2 8.967h4c0-3.753 3.042-6.8 6.537-6.8v-4zM-2 8.967v18.4h4v-18.4h-4zm0 18.4c0 5.98 4.59 10.8 10.537 10.8v-4c-3.624 0-6.537-2.913-6.537-6.8h-4zm10.537 10.8H28.07v-4H8.537v4z"
-                                                mask="url(#path-2-inside-1_289_1913)"></path>
-                                        </svg><span class="f6ete4"><svg xmlns="http://www.w3.org/2000/svg" width="12"
-                                                height="12" viewBox="0 0 20 21">
-                                                <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                                                    <g fill="#FF8800" transform="translate(-161 -428)">
-                                                        <g transform="translate(132 398)">
-                                                            <g transform="translate(16.648 17.048)">
-                                                                <g transform="rotate(-180 16.142 16.838)">
-                                                                    <rect width="2.643" height="19.82" x="8.588" y="0"
-                                                                        rx="1.321"></rect>
-                                                                    <path
-                                                                        d="M9.91 0c.73 0 1.321.592 1.321 1.321v17.177a1.321 1.321 0 01-2.643 0V1.321C8.588.591 9.18 0 9.91 0z"
-                                                                        transform="rotate(90 9.91 9.91)"></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg></span></div>
-                                    <div class="s1sn01m8">
-                                        <p class="t1jq83vt">ĐĂNG TỐI ĐA 01 VIDEO <br> BẠN ĐÃ ĐĂNG 0/10 VIDEO TRONG THÁNG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="t8i307c" style="--t8i307c-0: 0;">
-                                <div class="withGutter cybh37o"
-                                    style="--cybh37o-0: initial; --cybh37o-1: 8px; --cybh37o-4: -16px; --cybh37o-5: -16px; --cybh37o-9: 16px; --cybh37o-13: initial; --cybh37o-14: 8px; --cybh37o-17: -16px; --cybh37o-18: -16px; --cybh37o-22: 16px; --cybh37o-26: initial; --cybh37o-27: 8px; --cybh37o-30: -16px; --cybh37o-31: -16px; --cybh37o-35: 16px; --cybh37o-39: initial; --cybh37o-40: 8px; --cybh37o-43: -16px; --cybh37o-44: -16px; --cybh37o-48: 16px; --cybh37o-52: initial; --cybh37o-53: 8px; --cybh37o-56: -16px; --cybh37o-57: -16px; --cybh37o-61: 16px;">
-                                    <div class="withRowCols sy64i72"
-                                        style="--sy64i72-0: center; --sy64i72-1: flex-start; --sy64i72-3: 100%; --sy64i72-6: 100%; --sy64i72-9: 50%; --sy64i72-12: 33.33333333333333%; --sy64i72-15: 33.33333333333333%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="withSpan spa2iur"
                         style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:100%;--spa2iur-4:initial;--spa2iur-6:100%;--spa2iur-8:initial;--spa2iur-10:100%;--spa2iur-12:initial;--spa2iur-14:66.66666666666666%;--spa2iur-16:initial;--spa2iur-18:66.66666666666666%;--spa2iur-20:initial">
                         <div class="f1wri8l5">
-                            <form>
+                            <form action="/post" method="POST" enctype="multipart/form-data">
                                 <div></div>
                                 <div>
                                     <div class="wbtmmtj"></div>
@@ -153,171 +109,7 @@
                                             style="--cybh37o-0:100%;--cybh37o-1:8px;--cybh37o-4:0px;--cybh37o-5:-16px;--cybh37o-9:0px;--cybh37o-13:100%;--cybh37o-14:8px;--cybh37o-17:0px;--cybh37o-18:-16px;--cybh37o-22:0px;--cybh37o-26:100%;--cybh37o-27:8px;--cybh37o-30:0px;--cybh37o-31:-16px;--cybh37o-35:0px;--cybh37o-39:100%;--cybh37o-40:8px;--cybh37o-43:0px;--cybh37o-44:-16px;--cybh37o-48:0px;--cybh37o-52:100%;--cybh37o-53:8px;--cybh37o-56:0px;--cybh37o-57:-16px;--cybh37o-61:0px">
                                             <div class="l1kr9d9v sy64i72"
                                                 style="--sy64i72-0:initial;--sy64i72-1:initial;--sy64i72-3:initial;--sy64i72-6:initial;--sy64i72-9:initial;--sy64i72-12:initial;--sy64i72-15:initial">
-                                                <div class="withSpan spa2iur"
-                                                    style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:100%;--spa2iur-4:initial;--spa2iur-6:100%;--spa2iur-8:initial;--spa2iur-10:100%;--spa2iur-12:initial;--spa2iur-14:100%;--spa2iur-16:initial;--spa2iur-18:100%;--spa2iur-20:initial">
-                                                    <div>
-                                                        <div>
-                                                            <div>
-                                                                <div class="cl31q19 c8lb66c" style="--c8lb66c-0:100%">
-                                                                    <div class="wrapper iqg2ugv"><select
-                                                                            class="select i1s7c94 isDropdown hasValue required">
-                                                                            <option selected="" hidden="" value="">
-                                                                            </option>
-                                                                            <option selected="" disabled="" value="">
-                                                                                Danh mục tin đăng </option>
-                                                                            <option value="1010">Bất động sản - Căn
-                                                                                hộ/Chung cư</option>
-                                                                            <option value="1020">Bất động sản - Nhà ở
-                                                                            </option>
-                                                                            <option value="1040">Bất động sản - Đất
-                                                                            </option>
-                                                                            <option value="1030">Bất động sản - Văn
-                                                                                phòng, Mặt bằng kinh doanh</option>
-                                                                            <option value="1050">Bất động sản - Phòng
-                                                                                trọ</option>
-                                                                            <option value="2010">Xe cộ - Ô tô</option>
-                                                                            <option value="2020">Xe cộ - Xe máy</option>
-                                                                            <option value="2050">Xe cộ - Xe tải, xe ben
-                                                                            </option>
-                                                                            <option value="2090">Xe cộ - Xe điện
-                                                                            </option>
-                                                                            <option value="2060">Xe cộ - Xe đạp</option>
-                                                                            <option value="2080">Xe cộ - Phương tiện
-                                                                                khác</option>
-                                                                            <option value="2030">Xe cộ - Phụ tùng xe
-                                                                            </option>
-                                                                            <option value="5010">Đồ điện tử - Điện thoại
-                                                                            </option>
-                                                                            <option value="5040">Đồ điện tử - Máy tính
-                                                                                bảng</option>
-                                                                            <option value="5030">Đồ điện tử - Laptop
-                                                                            </option>
-                                                                            <option value="5070">Đồ điện tử - Máy tính
-                                                                                để bàn</option>
-                                                                            <option value="5050">Đồ điện tử - Máy ảnh,
-                                                                                Máy quay</option>
-                                                                            <option value="5020">Đồ điện tử - Tivi, Âm
-                                                                                thanh</option>
-                                                                            <option value="5090">Đồ điện tử - Thiết bị
-                                                                                đeo thông minh</option>
-                                                                            <option value="5060">Đồ điện tử - Phụ kiện
-                                                                                (Màn hình, Chuột...)</option>
-                                                                            <option value="5080">Đồ điện tử - Linh kiện
-                                                                                (RAM, Card...)</option>
-                                                                            <option value="13010">Việc làm</option>
-                                                                            <option value="12010">Thú cưng - Gà</option>
-                                                                            <option value="12020">Thú cưng - Chó
-                                                                            </option>
-                                                                            <option value="12030">Thú cưng - Chim
-                                                                            </option>
-                                                                            <option value="12050">Thú cưng - Mèo
-                                                                            </option>
-                                                                            <option value="12060">Thú cưng - Thú cưng
-                                                                                khác</option>
-                                                                            <option value="12040">Thú cưng - Phụ kiện,
-                                                                                Thức ăn, Dịch vụ</option>
-                                                                            <option value="7010">Đồ ăn, thực phẩm và các
-                                                                                loại khác</option>
-                                                                            <option value="9030">Tủ lạnh, máy lạnh, máy
-                                                                                giặt - Tủ lạnh</option>
-                                                                            <option value="9060">Tủ lạnh, máy lạnh, máy
-                                                                                giặt - Máy lạnh, điều hoà</option>
-                                                                            <option value="9070">Tủ lạnh, máy lạnh, máy
-                                                                                giặt - Máy giặt</option>
-                                                                            <option value="14070">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Bàn ghế</option>
-                                                                            <option value="14080">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Tủ, kệ gia đình</option>
-                                                                            <option value="14030">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Giường, chăn ga gối nệm
-                                                                            </option>
-                                                                            <option value="14010">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Bếp, lò, đồ điện nhà bếp
-                                                                            </option>
-                                                                            <option value="14020">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Dụng cụ nhà bếp</option>
-                                                                            <option value="14050">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Quạt</option>
-                                                                            <option value="14060">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Đèn</option>
-                                                                            <option value="14090">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Cây cảnh, đồ trang trí
-                                                                            </option>
-                                                                            <option value="14040">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Thiết bị vệ sinh, nhà tắm
-                                                                            </option>
-                                                                            <option value="14110">Đồ gia dụng, nội thất,
-                                                                                cây cảnh - Nội thất, đồ gia dụng khác
-                                                                            </option>
-                                                                            <option value="11010">Mẹ và bé</option>
-                                                                            <option value="3030">Thời trang, Đồ dùng cá
-                                                                                nhân - Quần áo</option>
-                                                                            <option value="3050">Thời trang, Đồ dùng cá
-                                                                                nhân - Đồng hồ</option>
-                                                                            <option value="3060">Thời trang, Đồ dùng cá
-                                                                                nhân - Giày dép</option>
-                                                                            <option value="3070">Thời trang, Đồ dùng cá
-                                                                                nhân - Túi xách</option>
-                                                                            <option value="3080">Thời trang, Đồ dùng cá
-                                                                                nhân - Nước hoa</option>
-                                                                            <option value="3090">Thời trang, Đồ dùng cá
-                                                                                nhân - Phụ kiện thời trang khác</option>
-                                                                            <option value="4040">Giải trí, Thể thao, Sở
-                                                                                thích - Nhạc cụ</option>
-                                                                            <option value="4070">Giải trí, Thể thao, Sở
-                                                                                thích - Sách</option>
-                                                                            <option value="4020">Giải trí, Thể thao, Sở
-                                                                                thích - Đồ thể thao, Dã ngoại</option>
-                                                                            <option value="4010">Giải trí, Thể thao, Sở
-                                                                                thích - Đồ sưu tầm, đồ cổ</option>
-                                                                            <option value="4050">Giải trí, Thể thao, Sở
-                                                                                thích - Thiết bị chơi game</option>
-                                                                            <option value="4060">Giải trí, Thể thao, Sở
-                                                                                thích - Sở thích khác</option>
-                                                                            <option value="8010">Đồ dùng văn phòng, công
-                                                                                nông nghiệp - Đồ dùng văn phòng</option>
-                                                                            <option value="8030">Đồ dùng văn phòng, công
-                                                                                nông nghiệp - Đồ chuyên dụng, Giống nuôi
-                                                                                trồng</option>
-                                                                            <option value="6020">Dịch vụ, Du lịch - Dịch
-                                                                                vụ</option>
-                                                                            <option value="6030">Dịch vụ, Du lịch - Du
-                                                                                lịch</option>
-                                                                            <option value="1000">Bất động sản</option>
-                                                                            <option value="2000">Xe cộ</option>
-                                                                            <option value="5000">Đồ điện tử</option>
-                                                                            <option value="13000">Việc làm</option>
-                                                                            <option value="12000">Thú cưng</option>
-                                                                            <option value="7000">Đồ ăn, thực phẩm và các
-                                                                                loại khác</option>
-                                                                            <option value="9000">Tủ lạnh, máy lạnh, máy
-                                                                                giặt</option>
-                                                                            <option value="14000">Đồ gia dụng, nội thất,
-                                                                                cây cảnh</option>
-                                                                            <option value="11000">Mẹ và bé</option>
-                                                                            <option value="3000">Thời trang, Đồ dùng cá
-                                                                                nhân</option>
-                                                                            <option value="4000">Giải trí, Thể thao, Sở
-                                                                                thích</option>
-                                                                            <option value="8000">Đồ dùng văn phòng, công
-                                                                                nông nghiệp</option>
-                                                                            <option value="6000">Dịch vụ, Du lịch
-                                                                            </option>
-                                                                        </select><label class="label" for="">Danh mục
-                                                                            tin đăng </label><svg data-type="monochrome"
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            viewBox="0 0 512 512" width="1em"
-                                                                            height="1em" fill="none" class="arrow">
-                                                                            <path
-                                                                                d="M7.9 156.8l2.8 3.3 214.8 247.2c7.3 8.4 18.2 13.6 30.3 13.6 12.2 0 23.1-5.4 30.3-13.6l214.7-246.7 3.6-4.1c2.7-3.9 4.3-8.7 4.3-13.7 0-13.7-11.7-25-26.2-25h-453c-14.5 0-26.2 11.2-26.2 25 0 5.2 1.7 10.1 4.6 14z"
-                                                                                fill="currentColor"></path>
-                                                                        </svg></div>
-                                                                    <p class="helptext p5j4mea"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                                 <div class="withSpan spa2iur"
                                                     style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:100%;--spa2iur-4:initial;--spa2iur-6:100%;--spa2iur-8:initial;--spa2iur-10:100%;--spa2iur-12:initial;--spa2iur-14:100%;--spa2iur-16:initial;--spa2iur-18:100%;--spa2iur-20:initial">
                                                     <div>
@@ -338,7 +130,7 @@
                                         </div>
                                     </div>
                                     <div id="pty-project-onboarding" class="l1kr9d9v">
-                                        <div class="c34gpa3">Địa chỉ BĐS và Hình ảnh</div>
+                                        <div class="c34gpa3">Địa chỉ và Hình ảnh</div>
                                         <div class="l1kr9d9v withWidth withGutter cybh37o"
                                             style="--cybh37o-0: 100%; --cybh37o-1: 8px; --cybh37o-4: 0px; --cybh37o-5: -16px; --cybh37o-9: 0px; --cybh37o-13: 100%; --cybh37o-14: 8px; --cybh37o-17: 0px; --cybh37o-18: -16px; --cybh37o-22: 0px; --cybh37o-26: 100%; --cybh37o-27: 8px; --cybh37o-30: 0px; --cybh37o-31: -16px; --cybh37o-35: 0px; --cybh37o-39: 100%; --cybh37o-40: 8px; --cybh37o-43: 0px; --cybh37o-44: -16px; --cybh37o-48: 0px; --cybh37o-52: 100%; --cybh37o-53: 8px; --cybh37o-56: 0px; --cybh37o-57: -16px; --cybh37o-61: 0px;">
                                             <div class="l1kr9d9v sy64i72"
@@ -350,21 +142,75 @@
                                                             <div>
                                                                 <div>
                                                                     <div class="c8lb66c" style="--c8lb66c-0: 100%;">
-                                                                        <div class="wrapper iqg2ugv"><select
-                                                                                class="select i1s7c94 isDropdown required">
-                                                                                <option hidden="" value=""></option>
-                                                                                <option disabled="" value="">Địa chỉ
+                                                                        <div class="wrapper iqg2ugv">
+                                                                            <select
+                                                                                class="select i1s7c94 isDropdown required"
+                                                                                id="addressSelect">
+
+
                                                                                 </option>
-                                                                                <option value=""></option>
-                                                                            </select><label class="label" for="">Địa
-                                                                                chỉ</label><svg data-type="monochrome"
+                                                                                <option value="" hidden>Chọn quận, huyện
+                                                                                </option>
+                                                                                <option value="Hải Châu">Hải Châu
+                                                                                </option>
+                                                                                <option value="Thanh Khê">Thanh Khê
+                                                                                </option>
+                                                                                <option value="Sơn Trà">Sơn Trà</option>
+                                                                                <option value="Ngũ Hành Sơn">Ngũ Hành
+                                                                                    Sơn</option>
+                                                                                <option value="Liên Chiểu">Liên Chiểu
+                                                                                </option>
+                                                                                <option value="Cẩm Lệ">Cẩm Lệ</option>
+                                                                                <option value="Hòa Vang">Hòa Vang
+                                                                                </option>
+                                                                            </select>
+
+                                                                            <svg data-type="monochrome"
                                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                                 viewBox="0 0 512 512" width="1em"
                                                                                 height="1em" fill="none" class="arrow">
                                                                                 <path
                                                                                     d="M7.9 156.8l2.8 3.3 214.8 247.2c7.3 8.4 18.2 13.6 30.3 13.6 12.2 0 23.1-5.4 30.3-13.6l214.7-246.7 3.6-4.1c2.7-3.9 4.3-8.7 4.3-13.7 0-13.7-11.7-25-26.2-25h-453c-14.5 0-26.2 11.2-26.2 25 0 5.2 1.7 10.1 4.6 14z"
                                                                                     fill="currentColor"></path>
-                                                                            </svg></div>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <p class="helptext p5j4mea"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="l1kr9d9v withWidth withGutter cybh37o"
+                                            style="--cybh37o-0: 100%; --cybh37o-1: 8px; --cybh37o-4: 0px; --cybh37o-5: -16px; --cybh37o-9: 0px; --cybh37o-13: 100%; --cybh37o-14: 8px; --cybh37o-17: 0px; --cybh37o-18: -16px; --cybh37o-22: 0px; --cybh37o-26: 100%; --cybh37o-27: 8px; --cybh37o-30: 0px; --cybh37o-31: -16px; --cybh37o-35: 0px; --cybh37o-39: 100%; --cybh37o-40: 8px; --cybh37o-43: 0px; --cybh37o-44: -16px; --cybh37o-48: 0px; --cybh37o-52: 100%; --cybh37o-53: 8px; --cybh37o-56: 0px; --cybh37o-57: -16px; --cybh37o-61: 0px;">
+                                            <div class="l1kr9d9v sy64i72"
+                                                style="--sy64i72-0: initial; --sy64i72-1: initial; --sy64i72-3: initial; --sy64i72-6: initial; --sy64i72-9: initial; --sy64i72-12: initial; --sy64i72-15: initial;">
+                                                <div class="withSpan spa2iur"
+                                                    style="--spa2iur-0: initial; --spa2iur-1: initial; --spa2iur-2: 100%; --spa2iur-4: initial; --spa2iur-6: 100%; --spa2iur-8: initial; --spa2iur-10: 100%; --spa2iur-12: initial; --spa2iur-14: 100%; --spa2iur-16: initial; --spa2iur-18: 100%; --spa2iur-20: initial;">
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <div class="c8lb66c" style="--c8lb66c-0: 100%;">
+                                                                        <div class="wrapper iqg2ugv">
+
+                                                                            <div class="imu1rqy"><input type="text"
+                                                                                    inputmode="decimal"
+                                                                                    class="i115ivth i10rss85 required"
+                                                                                    id="sonha" name="numberhouse"
+                                                                                    value=""><label
+                                                                                    for="numberhouse">tên đường và số
+                                                                                    nhà</label></div>
+                                                                            <svg data-type="monochrome"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 512 512" width="1em"
+                                                                                height="1em" fill="none" class="arrow">
+
+                                                                            </svg>
+                                                                        </div>
                                                                         <p class="helptext p5j4mea"></p>
                                                                     </div>
                                                                 </div>
@@ -375,36 +221,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="" class="l1kr9d9v">
-                                        <div class="c34gpa3">Thông tin khác</div>
-                                        <div class="l1kr9d9v withWidth withGutter cybh37o"
-                                            style="--cybh37o-0: 100%; --cybh37o-1: 8px; --cybh37o-4: 0px; --cybh37o-5: -16px; --cybh37o-9: 0px; --cybh37o-13: 100%; --cybh37o-14: 8px; --cybh37o-17: 0px; --cybh37o-18: -16px; --cybh37o-22: 0px; --cybh37o-26: 100%; --cybh37o-27: 8px; --cybh37o-30: 0px; --cybh37o-31: -16px; --cybh37o-35: 0px; --cybh37o-39: 100%; --cybh37o-40: 8px; --cybh37o-43: 0px; --cybh37o-44: -16px; --cybh37o-48: 0px; --cybh37o-52: 100%; --cybh37o-53: 8px; --cybh37o-56: 0px; --cybh37o-57: -16px; --cybh37o-61: 0px;">
-                                            <div class="l1kr9d9v sy64i72"
-                                                style="--sy64i72-0: initial; --sy64i72-1: initial; --sy64i72-3: initial; --sy64i72-6: initial; --sy64i72-9: initial; --sy64i72-12: initial; --sy64i72-15: initial;">
-                                                <div class="withSpan spa2iur"
-                                                    style="--spa2iur-0: initial; --spa2iur-1: initial; --spa2iur-2: 50%; --spa2iur-4: initial; --spa2iur-6: 50%; --spa2iur-8: initial; --spa2iur-10: 50%; --spa2iur-12: initial; --spa2iur-14: 50%; --spa2iur-16: initial; --spa2iur-18: 50%; --spa2iur-20: initial;">
-                                                    <div>
-                                                        <div>
-                                                            <div>
-                                                                <div id="furnishing_rent" role="combobox" tabindex="0"
-                                                                    aria-haspopup="listbox" aria-expanded="false"
-                                                                    aria-controls="search-input-listbox">
-                                                                    <div class="crswihc" style="--crswihc-0: 100%;">
-                                                                        <div class="i1x0q5ym"><input
-                                                                                class="i1pbvj0j ipt13la" type="text"
-                                                                                inputmode="text" name="furnishing_rent"
-                                                                                value=""><label for="">Tình trạng nội
-                                                                                thất</label></div>
-                                                                        <p class="p1lb3co8"></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+                                    <div class="address-display" id="displayAddress"></div>
+
                                     <div id="" class="l1kr9d9v">
                                         <div class="c34gpa3">Diện tích &amp; giá</div>
                                         <div class="l1kr9d9v withWidth withGutter cybh37o"
@@ -418,9 +238,10 @@
                                                             <div>
                                                                 <div class="c8lb66c" style="--c8lb66c-0: 100%;">
                                                                     <div class="iqg2ugv"><input
-                                                                            class="i1s7c94 i4vwqrf required" type="text"
-                                                                            inputmode="decimal" id="size" name="size"
-                                                                            value=""><label for="size">Diện tích</label>
+                                                                            class="i1s7c94 i4vwqrf required"
+                                                                            type="number" inputmode="decimal" id="size"
+                                                                            name="size" value=""><label for="size">Diện
+                                                                            tích</label>
                                                                     </div>
                                                                     <p class="p5j4mea"></p>
                                                                 </div>
@@ -434,7 +255,7 @@
                                                         <div>
                                                             <div>
                                                                 <div class="clryqov" style="--clryqov-0: 100%;">
-                                                                    <div class="imu1rqy"><input type="text"
+                                                                    <div class="imu1rqy"><input type="number"
                                                                             inputmode="decimal"
                                                                             class="i115ivth i10rss85 required"
                                                                             id="price" name="price" value=""><label
@@ -445,23 +266,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="withSpan spa2iur"
-                                                    style="--spa2iur-0: initial; --spa2iur-1: initial; --spa2iur-2: 100%; --spa2iur-4: initial; --spa2iur-6: 100%; --spa2iur-8: initial; --spa2iur-10: 100%; --spa2iur-12: initial; --spa2iur-14: 100%; --spa2iur-16: initial; --spa2iur-18: 100%; --spa2iur-20: initial;">
-                                                    <div>
-                                                        <div>
-                                                            <div>
-                                                                <div class="clryqov" style="--clryqov-0: 100%;">
-                                                                    <div class="imu1rqy"><input type="text"
-                                                                            inputmode="decimal"
-                                                                            class="i115ivth i10rss85" id="deposit"
-                                                                            name="deposit" value=""><label
-                                                                            for="deposit">Số tiền cọc</label></div>
-                                                                    <p class="p10kkm8y"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -502,8 +307,8 @@
                                                                         <div class="focus-capture"></div><textarea
                                                                             class="required s9w19u2" inputmode="text"
                                                                             id="body" name="body" placeholder="Nên có: loại Phòng trọ, vị trí, tiện ích, diện tích, tình trạng nội thất, v.v.
-
-Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất đầy đủ."></textarea><label for="body">Mô tả chi
+        
+        Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất đầy đủ."></textarea><label for="body">Mô tả chi
                                                                             tiết</label>
                                                                     </div>
                                                                     <p class="p1eugmrs"></p>
@@ -519,53 +324,29 @@ Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất 
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="" class="l1kr9d9v">
-                                        <div class="c34gpa3">Bạn là</div>
-                                        <div class="l1kr9d9v withWidth withGutter cybh37o"
-                                            style="--cybh37o-0: 100%; --cybh37o-1: 8px; --cybh37o-4: 0px; --cybh37o-5: -16px; --cybh37o-9: 0px; --cybh37o-13: 100%; --cybh37o-14: 8px; --cybh37o-17: 0px; --cybh37o-18: -16px; --cybh37o-22: 0px; --cybh37o-26: 100%; --cybh37o-27: 8px; --cybh37o-30: 0px; --cybh37o-31: -16px; --cybh37o-35: 0px; --cybh37o-39: 100%; --cybh37o-40: 8px; --cybh37o-43: 0px; --cybh37o-44: -16px; --cybh37o-48: 0px; --cybh37o-52: 100%; --cybh37o-53: 8px; --cybh37o-56: 0px; --cybh37o-57: -16px; --cybh37o-61: 0px;">
-                                            <div class="l1kr9d9v sy64i72"
-                                                style="--sy64i72-0: initial; --sy64i72-1: initial; --sy64i72-3: initial; --sy64i72-6: initial; --sy64i72-9: initial; --sy64i72-12: initial; --sy64i72-15: initial;">
-                                                <div class="withSpan spa2iur"
-                                                    style="--spa2iur-0: initial; --spa2iur-1: initial; --spa2iur-2: 100%; --spa2iur-4: initial; --spa2iur-6: 100%; --spa2iur-8: initial; --spa2iur-10: 100%; --spa2iur-12: initial; --spa2iur-14: 100%; --spa2iur-16: initial; --spa2iur-18: 100%; --spa2iur-20: initial;">
-                                                    <div>
-                                                        <div>
-                                                            <div>
-                                                                <div class="c14gw4h s17tb7hl"><label
-                                                                        class="required s1rh32xb">Cá nhân/Môi
-                                                                        giới</label>
-                                                                    <div class="chip-wrapper"><button type="button"
-                                                                            class="active chq956w s1mz1h0u"
-                                                                            font-size="sm"
-                                                                            style="--s1mz1h0u-1: 32px; --s1mz1h0u-6: 0.875rem; --s1mz1h0u-7: initial;">Cá
-                                                                            nhân</button><button type="button"
-                                                                            class="chq956w s1mz1h0u" font-size="sm"
-                                                                            style="--s1mz1h0u-1: 32px; --s1mz1h0u-6: 0.875rem; --s1mz1h0u-7: initial;">Môi
-                                                                            giới</button></div>
-                                                                    <p class="ps2wqq2" style="--ps2wqq2-0: #8C8C8C;">
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <div class="l6ks4td">
                                     <div class="withGutter cybh37o"
                                         style="--cybh37o-0:initial;--cybh37o-1:8px;--cybh37o-4:-16px;--cybh37o-5:-16px;--cybh37o-9:16px;--cybh37o-13:initial;--cybh37o-14:8px;--cybh37o-17:-16px;--cybh37o-18:-16px;--cybh37o-22:16px;--cybh37o-26:initial;--cybh37o-27:8px;--cybh37o-30:-16px;--cybh37o-31:-16px;--cybh37o-35:16px;--cybh37o-39:initial;--cybh37o-40:8px;--cybh37o-43:-16px;--cybh37o-44:-16px;--cybh37o-48:16px;--cybh37o-52:initial;--cybh37o-53:8px;--cybh37o-56:-16px;--cybh37o-57:-16px;--cybh37o-61:16px">
                                         <div class="sy64i72"
                                             style="--sy64i72-0:center;--sy64i72-1:initial;--sy64i72-3:initial;--sy64i72-6:initial;--sy64i72-9:initial;--sy64i72-12:initial;--sy64i72-15:initial">
+                                            <input type="hidden" name="id" th:value="${session.account.id}">
                                             <div class="spa2iur"
                                                 style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:initial;--spa2iur-4:initial;--spa2iur-6:initial;--spa2iur-8:initial;--spa2iur-10:initial;--spa2iur-12:initial;--spa2iur-14:initial;--spa2iur-16:initial;--spa2iur-18:initial;--spa2iur-20:initial">
-                                                <button
-                                                    class="bgcbfpj outline o-primary r-normal large w-normal i-left stretch"
-                                                    type="button">XEM TRƯỚC</button></div>
-                                            <div class="spa2iur"
-                                                style="--spa2iur-0:initial;--spa2iur-1:initial;--spa2iur-2:initial;--spa2iur-4:initial;--spa2iur-6:initial;--spa2iur-8:initial;--spa2iur-10:initial;--spa2iur-12:initial;--spa2iur-14:initial;--spa2iur-16:initial;--spa2iur-18:initial;--spa2iur-20:initial">
+                                                <input type="hidden" id="district" name="district" value="">
+                                                
+
+
                                                 <button class="bgcbfpj primary r-normal large w-normal i-left stretch"
-                                                    type="button">ĐĂNG TIN</button></div>
+                                                    type="submit">ĐĂNG TIN</button>
+
+                                                    <input type="file" id="fileInput" name="images" accept="image/*" multiple style="display:none"
+                                                    tabindex="-1">  
+
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -576,80 +357,26 @@ Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất 
             </div>
         </div>
     </div>
-    <script>window.BASE_DOMAIN = 'com'; window.ENV = 'prod'; window.GTM_CONTAINER = 'GTM-NZKHXF7'; window.ASSET_DOMAIN = 'https://static.chotot.com/storage/CT_WEB_UNI_INSERT_AD'; window.VERSION = '1.21.0'; window.LOCATION_DEBOUNCE_TIME = '50'; window.IPQS_KEY = 'LY3trlXwfRqzGpwOJOiaammdlTpZmn91Rhz62UJG7945kAYELdpAxID9H9MnwX1AZSr1RwAXXALkKSHwE4V1r2Ls5aX7dDy5oukXIhCPup0lBgPQvmoqwwxm35B8RuQ4fSytA41AAxX6kEEYHf986qlmkqU3MbIg74HrUhK7FMtNQIeKOLfHu6pOze2sfyPxtsanGyvzA0YYU8z21NLQtRKdabMTX9fKo37dnckPwyuH41IaFvZqoGcNDmc2eNT0'; window.ENABLE_IPQS = 'true';</script>
-    <script id="__NEXT_DATA__"
-        type="application/json">{"props":{"pageProps":{"viewMode":"0","pageName":"one-page-form","configForm":{"u":{"maxImages":{"company":12,"private":12},"minImages":{"company":3,"private":3},"params":[{"groupLabel":"details","groupTitle":"Địa chỉ BĐS và Hình ảnh","params":[{"components":[{"editable":false,"label":"Chọn tỉnh, thành phố","param":"region_v2","require":true,"type":"dropdown"},{"dependence":["region_v2"],"editable":false,"label":"Chọn quận, huyện, thị xã","param":"area_v2","require":true,"type":"dropdown"},{"dependence":["area_v2"],"editable":false,"label":"Chọn phường, xã, thị trấn","param":"ward","require":true,"type":"dropdown"},{"editable":false,"label":"Tên đường","param":"street_name","require":true,"type":"suggestion"},{"label":"Số nhà","param":"street_number","require":false,"type":"string"},{"label":"Hiển thị số nhà trong tin rao","param":"streetnumber_display","require":false,"type":"checkbox"}],"label":"Địa chỉ","param":"location","require":true,"type":"location"}]},{"groupLabel":"other","groupTitle":"Thông tin khác","params":[{"label":"Tình trạng nội thất","line_id":1,"options":[{"id":"1","label":"Nội thất cao cấp"},{"id":"2","label":"Nội thất đầy đủ"},{"id":"3","label":"Nhà trống"}],"param":"furnishing_rent","require":false,"type":"dropdown"}]},{"groupLabel":"area_price","groupTitle":"Diện tích \u0026 giá","params":[{"keyboard":"decimal","label":"Diện tích","param":"size","require":true,"suffix":"m²","type":"string","validation":{"max_length":12,"min_value":10}},{"keyboard":"number","label":"Giá thuê","param":"price","require":true,"suffix":"đ","type":"currency","validation":{"max_length":12,"min_price":100000}},{"keyboard":"number","label":"Số tiền cọc","param":"deposit","require":false,"suffix":"đ","type":"currency","validation":{"max_length":12}}]},{"groupLabel":"title","groupTitle":"Tiêu đề tin đăng và Mô tả chi tiết","params":[{"label":"Tiêu đề tin đăng","param":"subject","require":true,"tooltip":{"detail":"Loại Phòng trọ  + Diện tích + Tên dự án/ Tên đường, Quận\nVí dụ: \n- Phòng trọ 30m2 đường Nguyễn Xí, Q.Bình Thạnh","title":"Tiêu đề tốt nên có:"},"type":"string","validation":{"max_length":70}},{"hint":{"company":"Nên có: loại Phòng trọ, vị trí, tiện ích, diện tích, tình trạng nội thất, v.v.\n\nVí dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất đầy đủ.","private":"Nên có: loại Phòng trọ, vị trí, tiện ích, diện tích, tình trạng nội thất, v.v.\n\nVí dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất đầy đủ."},"label":"Mô tả chi tiết","param":"body","require":true,"tooltip":{"detail":"- Sản phẩm cấm, hạn chế hoặc giả/nhái.\n- Thông tin trùng lặp với tin đăng đang hiển thị.\n- Chứa số điện thoại và website, các từ “nhất”, “duy nhất”, “tốt nhất”, “số một”, ...","title":"Không cho phép:"},"type":"textarea","validation":{"min_word":10}}]},{"groupLabel":"whois","groupTitle":"Bạn là","params":[{"editable":false,"label":"Cá nhân/Môi giới","options":[{"id":"0","label":"Cá nhân"},{"id":"1","label":"Môi giới"}],"order":1,"param":"company_ad","require":true,"type":"chip"}]}],"price":{"min":100000},"tooltipImages":[{"detail":"Hình thật và đẹp của bất động sản sẽ tạo được niềm tin với người xem và có tương tác cao.","image_url":"https://static.chotot.com/storage/LIGHT_AD/tooltip/PTY/pty-check-4.jpg","title":"✅ NÊN"},{"detail":"Sử dụng ảnh trùng lặp với tin đăng cũ.","image_url":"https://static.chotot.com/storage/LIGHT_AD/tooltip/PTY/pty-no-5.jpg","title":"⛔ KHÔNG cho phép"},{"detail":"Chứa đường link liên kết, số điện thoại, chữ, tên cửa hàng/công ty, chứa đường viền/khung tự trang trí.","image_url":"https://static.chotot.com/storage/LIGHT_AD/tooltip/PTY/pty-no-6.jpg","title":"⛔ KHÔNG cho phép"},{"detail":"Dung lượng mỗi hình không quá 5MB.","title":"⛔ KHÔNG cho phép"}]}},"query":{"category":"1050","utmSource":""},"adInfo":{"ad":{},"images":{}},"chapyProConf":{"appWrapperVersion":{"integration_v2":"685973ab","v1":"1.0.49","v2":"2.0.69","v3":"3.22.16"},"features":{"cv_for_job.category.enable":[13010,13000],"cv_for_job.enable":true,"cv_for_job.listing.desc":"Tạo hồ sơ xin việc miễn phí ngay!","cv_for_job.listing.is_repeat":true,"cv_for_job.listing.position":20,"cv_for_job.listing.title":"Ứng tuyển nhanh chóng. Tìm việc hiệu quả. Nhận thông báo khi có công việc phù hợp","cv_for_job.login_required.lead":2,"delivery.category.enable":[0],"delivery.enable":false,"delivery.location.enable":[0],"delivery.max_price":2000000000,"display_rating.enable":true,"display_rating.enable.category":[1000,2000,5000,12000,9000,11000,4000,3000,8000,7000,14000],"empty_state":{"desktop":{"404_error":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/404_error.png","text":"Trang bạn đang tìm không tồn tại. Vui lòng kiểm tra lại đường dẫn hoặc bấm \"Quay về trang chủ\"","title":"Lỗi: Không tìm thấy trang"},"ad_not_found":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/ad_not_found.png","text":"Tin đăng này đã hết hạn, đã bán hoặc bị ẩn. Hãy tiếp tục xem những tin đăng khác.","title":"Tin đăng không tồn tại hoặc bị ẩn"},"maintenance":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/maintenance.png","text":"Chúng tôi đang cố gắng nâng cấp để mang đến cho bạn trải nghiệm tốt hơn, vui lòng quay lại sau.","title":"Rất tiếc, trang này đang được bảo trì"},"network_error":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/empty_state/desktop/network_error.png","text":"Hãy kiểm tra lại internet/ wifi của bạn.","title":"Lỗi: Kết nối mạng internet"},"request_timeout":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/empty_state/desktop/request_timeout.png","text":"Rất tiếc, đã có lỗi xảy ra. Vui lòng bấm \"Thử lại\"","title":"Lỗi: Không thể kết nối đến máy chủ"},"search_no_found_filter":{"button_text":"Bỏ lọc","image":"https://static.chotot.com/storage/empty_state/desktop/search_no_found_filter.png","text":"Không tìm thấy tin đăng cho những gì bạn đã lọc. Hãy thay đổi tiêu chí Lọc hoặc Bỏ lọc.","title":"Không có kết quả cho bộ lọc đã chọn"},"search_no_found_keyword":{"button_text":"Xoá từ khoá","image":"https://static.chotot.com/storage/empty_state/desktop/search_no_found_keyword.png","text":"Hãy chắc chắn từ khóa đã nhập đúng chính tả. Hãy thử những từ khóa khác hoặc những từ khóa chung hơn.","title":"Không tìm thấy kết quả từ khóa đã nhập"}},"mobile":{"404_error":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/404_error.png","text":"Trang bạn đang tìm không tồn tại. Vui lòng kiểm tra lại đường dẫn hoặc bấm \"Quay về trang chủ\"","title":"Lỗi: Không tìm thấy trang"},"ad_not_found":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/ad_not_found.png","text":"Tin đăng này đã hết hạn, đã bán hoặc bị ẩn. Hãy tiếp tục xem những tin đăng khác.","title":"Tin đăng không tồn tại hoặc bị ẩn"},"maintenance":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/maintenance.png","text":"Chúng tôi đang cố gắng nâng cấp để mang đến cho bạn trải nghiệm tốt hơn, vui lòng quay lại sau.","title":"Rất tiếc, trang này đang được bảo trì"},"network_error":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/mobile/network_error.png","text":"Hãy kiểm tra lại internet/ wifi của bạn.","title":"Lỗi: Kết nối mạng internet"},"request_timeout":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/mobile/request_timeout.png","text":"Rất tiếc, đã có lỗi xảy ra. Vui lòng bấm \"Thử lại\" ","title":"Lỗi: Không thể kết nối đến máy chủ"},"search_no_found_filter":{"button_text":"Bỏ lọc","image":"https://static.chotot.com/storage/mobile/search_no_found_filter.png","text":"Không tìm thấy tin đăng cho những gì bạn đã lọc. Hãy thay đổi tiêu chí Lọc hoặc Bỏ lọc.","title":"Không có kết quả cho bộ lọc đã chọn"},"search_no_found_keyword":{"button_text":"Xoá từ khoá","image":"https://static.chotot.com/storage/mobile/search_no_found_keyword.png","text":"Hãy chắc chắn từ khóa đã nhập đúng chính tả. Hãy thử những từ khóa khác hoặc những từ khóa chung hơn.","title":"Không tìm thấy kết quả từ khóa đã nhập"}}},"rating.enable":true,"rating.enable.category":[1000,2000,5000,12000,9000,11000,4000,3000,8000,7000,14000],"reward.enable":true,"reward.floating_button_app.image":"https://cdn.chotot.com/admincentre/1713947415852_Floating.png","reward.floating_button_app.url":"chotot-app://www.chotot.com/buyer_collection?url=https://chuongtrinhxe.chotot.com/thu-cu-doi-moi-oto-vinfast\u0026app=true\u0026utm_source=floating_button\u0026utm_medium=landing_page\u0026utm_campaign=\bthucudoimoiotovinfast","reward.floating_button_web.image":"https://cdn.chotot.com/admincentre/1713947395196_Floating.png","reward.floating_button_web.url":"https://chuongtrinhxe.chotot.com/thu-cu-doi-moi-oto-vinfast?utm_source=floating_button\u0026utm_medium=landing_page\u0026utm_campaign=\bthucudoimoiotovinfast","reward.homepage":"https://static.chotot.com/storage/reward/JUNE/float-button-large-3.png","reward.homepage_web":"https://static.chotot.com/storage/reward/floating_button_chia_se.png","tool_utils.category.enable":[2010],"tool_utils.enable":true,"tool_utils.listing.position":20,"video.category.enable":[1010,1020,1030,1040,1050,2010,2020,2030,2050,2080,2090,3030,3050,3060,3070,3080,3090,4010,4020,4040,4050,4060,4070,5010,5020,5030,5040,5050,5060,5070,5080,5090,6020,6030,7010,8010,8030,9030,9060,9070,11010,12010,12020,12030,12040,12050,12060,14010,14020,14030,14040,14050,14060,14070,14080,14090],"video.location.enable":[13000,12000,2011,2013,5032],"video.max_duration":180,"video.max_size":200,"video.max_video_per_month":10},"ptyProjectForm":{"project_form":"https://docs.google.com/forms/d/e/1FAIpQLSc23kUkk5dMjNYwX5bzsGLAFLo0CbaNg7Ny7hJ4DGk_P_j9JA/viewform"},"loading":false,"error":null},"auth":{"loaded":false,"authenticated":false,"user":null,"shop":null},"clientInfo":{"user_id":"26916437","country_code":"VN","is_staff":null,"is_anonymous":false,"session_id":"2006340399.1713787840","client_id":"06427983-9a69-4714-abaa-370ca42896e7","platform":"WEB","finger_print":"06427983-9a69-4714-abaa-370ca42896e7","account_id":"26916437","category":"1050"},"queryObj":{"category":"1050","service":"flashad","utm_source":""},"manifest":{"$id":"https://static.chotot.com/storage/APP_WRAPPER/manifests/manifest-uni.json","$schema":"https://www.chotot.com/app-wrapper.schema.json","headerjs":"https://static.chotot.com/storage/APP_WRAPPER/v4/4.20.0/header.js","headercss":"https://static.chotot.com/storage/APP_WRAPPER/v4/4.20.0/header.css","footerjs":"https://static.chotot.com/storage/APP_WRAPPER/v4/4.20.0/footer.js","footercss":"https://static.chotot.com/storage/APP_WRAPPER/v4/4.20.0/footer.css","headerjsfallback":"https://static.chotot.com/storage/APP_WRAPPER/v4/4.20.0/header.js","site":"uni","config":{"logoUrl":"https://www.chotot.com/","logoImg":"https://static.chotot.com/storage/APP_WRAPPER/logo/chotot-logo-appwrapper.png","logoSrcset":[{"type":"image/webp","src":"https://static.chotot.com/storage/APP_WRAPPER/logo/chotot-logo-appwrapper.png"}],"chatEnable":true,"showFooter":true,"safetyNote":{"showDesktop":true,"showMobile":true,"desktop":"Chợ Tốt chỉ cung cấp dịch vụ \u0026 chương trình trên các trang chính thức. Hãy cảnh giác với các hình thức liên hệ dưới tên Chợ Tốt!","mobile":"Cảnh giác các hình thức liên hệ dưới tên Chợ Tốt","seeMoreUrl":"https://trogiup.chotot.com/nguoi-mua/canh-bao-lua-dao-mao-danh-cong-ty-cho-tot/"},"navigation":["notification","chat","orders","order-mgt","menu-more"],"categoryMenu":[{"label":"Bất động sản","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_batdongsan.png","url":"https://www.nhatot.com","children":[{"label":"Mua bán","url":"https://www.nhatot.com/mua-ban-bat-dong-san"},{"label":"Cho thuê","url":"https://www.nhatot.com/thue-bat-dong-san"},{"label":"Dự án","url":"https://www.nhatot.com/du-an-bat-dong-san"}]},{"label":"Xe cộ","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_xe.png","url":"https://xe.chotot.com","children":[{"label":"Ô tô","url":"https://xe.chotot.com/mua-ban-oto"},{"label":"Xe máy","url":"https://xe.chotot.com/mua-ban-xe-may"},{"label":"Xe tải, xe ben","url":"https://xe.chotot.com/mua-ban-xe-tai-xe-ben"},{"label":"Xe điện","url":"https://xe.chotot.com/mua-ban-xe-dien"},{"label":"Xe đạp","url":"https://xe.chotot.com/mua-ban-xe-dap"},{"label":"Phương tiện khác","url":"https://xe.chotot.com/mua-ban-phuong-tien-khac"},{"label":"Phụ tùng xe","url":"https://xe.chotot.com/mua-ban-phu-tung-xe"}]},{"label":"Đồ điện tử","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_dodientu.png","url":"https://www.chotot.com/do-dien-tu","children":[{"label":"Điện thoại","url":"https://www.chotot.com/mua-ban-dien-thoai"},{"label":"Máy tính bảng","url":"https://www.chotot.com/mua-ban-may-tinh-bang"},{"label":"Laptop","url":"https://www.chotot.com/mua-ban-laptop"},{"label":"Máy tính để bàn","url":"https://www.chotot.com/mua-ban-may-tinh-de-ban"},{"label":"Máy ảnh, Máy quay","url":"https://www.chotot.com/mua-ban-may-anh-may-quay"},{"label":"Tivi, Âm thanh","url":"https://www.chotot.com/mua-ban-tivi-am-thanh"},{"label":"Thiết bị đeo thông minh","url":"https://www.chotot.com/mua-ban-thiet-bi-deo-thong-minh"},{"label":"Phụ kiện (Màn hình, Chuột,... )","url":"https://www.chotot.com/mua-ban-phu-kien"},{"label":"Linh kiện (RAM, Card,... )","url":"https://www.chotot.com/mua-ban-linh-kien"}]},{"label":"Việc làm","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_vieclam.png","url":"https://www.vieclamtot.com","children":[{"label":"Bán hàng","url":"https://www.vieclamtot.com/viec-lam-ban-hang-sdjt2"},{"label":"Nhân viên phục vụ","url":"https://www.vieclamtot.com/viec-lam-nhan-vien-phuc-vu-sdjt27"},{"label":"Tài xế giao hàng xe máy","url":"https://www.vieclamtot.com/viec-lam-giao-hang-sdjt24"},{"label":"Tạp vụ","url":"https://www.vieclamtot.com/viec-lam-tap-vu-sdjt30"},{"label":"Pha chế","url":"https://www.vieclamtot.com/viec-lam-nhan-vien-pha-che-sdjt36"},{"label":"Phụ bếp","url":"https://www.vieclamtot.com/viec-lam-phu-bep-sdjt33"},{"label":"Nhân viên kinh doanh","url":"https://www.vieclamtot.com/viec-lam-nhan-vien-kinh-doanh-sdjt15"},{"label":"Công nhân","url":"https://www.vieclamtot.com/viec-lam-cong-nhan-nha-may-sdjt17"},{"label":"Nhân viên kho vận","url":"https://www.vieclamtot.com/viec-lam-nhan-vien-kho-sdjt29"},{"label":"Bảo vệ","url":"https://www.vieclamtot.com/viec-lam-bao-ve-sdjt7"},{"label":"Chăm sóc khách hàng","url":"https://www.vieclamtot.com/viec-lam-cham-soc-khach-hang-sdjt6"},{"label":"Công việc khác","url":"https://www.vieclamtot.com/viec-lam-cong-viec-khac-sdjt18"},{"label":"Xem thêm","url":"https://www.vieclamtot.com/viec-lam?showModal=job_type"}]},{"label":"Thú cưng","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_thucung.png","url":"https://www.chotot.com/mua-ban-thu-cung","children":[{"label":"Gà","url":"https://www.chotot.com/mua-ban-ga"},{"label":"Chó","url":"https://www.chotot.com/mua-ban-cho"},{"label":"Chim","url":"https://www.chotot.com/mua-ban-chim"},{"label":"Mèo","url":"https://www.chotot.com/mua-ban-meo"},{"label":"Thú cưng khác","url":"https://www.chotot.com/mua-ban-thu-cung-khac"},{"label":"Phụ kiện, Thức ăn, Dịch vụ","url":"https://www.chotot.com/mua-ban-phu-kien-thuc-an-dich-vu"}]},{"label":"Đồ ăn, thực phẩm, và các loại khác","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_doan.png","url":"https://www.chotot.com/mua-ban-do-an-thuc-pham-va-cac-loai-khac"},{"label":"Tủ lạnh, máy lạnh, máy giặt","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_tulanh.png","url":"https://www.chotot.com/mua-ban-tu-lanh-may-lanh-may-giat","children":[{"label":"Tủ lạnh","url":"https://www.chotot.com/mua-ban-tu-lanh"},{"label":"Máy lạnh, điều hoà","url":"https://www.chotot.com/mua-ban-tu-lanh-may-lanh-may-giat"},{"label":"Máy giặt","url":"https://www.chotot.com/mua-ban-tu-lanh-may-lanh-may-giat"}]},{"label":"Đồ gia dụng, nội thất, cây cảnh","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_dogiadung.png","url":"https://www.chotot.com/mua-ban-do-gia-dung-noi-that-cay-canh","children":[{"label":"Bàn ghế","url":"https://www.chotot.com/mua-ban-ban-ghe"},{"label":"Tủ, kệ gia đình","url":"https://www.chotot.com/mua-ban-tu-ke-gia-dinh"},{"label":"Giường, chăn ga gối nệm","url":"https://www.chotot.com/mua-ban-giuong-chan-ga-goi-nem"},{"label":"Bếp, lò, đồ điện nhà bếp","url":"https://www.chotot.com/mua-ban-bep-lo-do-dien-nha-bep"},{"label":"Dụng cụ nhà bếp","url":"https://www.chotot.com/mua-ban-dung-cu-nha-bep"},{"label":"Quạt","url":"https://www.chotot.com/mua-ban-quat"},{"label":"Đèn","url":"https://www.chotot.com/mua-ban-den"},{"label":"Cây cảnh, đồ trang trí","url":"https://www.chotot.com/mua-ban-cay-canh-do-trang-tri"},{"label":"Thiết bị vệ sinh, nhà tắm","url":"https://www.chotot.com/mua-ban-thiet-bi-ve-sinh-nha-tam"},{"label":"Nội thất, đồ gia dụng khác","url":"https://www.chotot.com/mua-ban-noi-that-do-gia-dung-khac"}]},{"label":"Mẹ và bé","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_mevabe.png","url":"https://www.chotot.com/mua-ban-do-dung-me-va-be"},{"label":"Thời trang, đồ dùng cá nhân","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_thoitrang.png","url":"https://www.chotot.com/mua-ban-thoi-trang-do-dung-ca-nhan","children":[{"label":"Quần áo","url":"https://www.chotot.com/mua-ban-quan-ao"},{"label":"Đồng hồ","url":"https://www.chotot.com/mua-ban-dong-ho"},{"label":"Giày dép","url":"https://www.chotot.com/mua-ban-giay-dep"},{"label":"Túi xách","url":"https://www.chotot.com/mua-ban-tui-xach"},{"label":"Nước hoa","url":"https://www.chotot.com/mua-ban-nuoc-hoa"},{"label":"Phụ kiện thời trang khác","url":"https://www.chotot.com/mua-ban-phu-kien-thoi-trang-khac"}]},{"label":"Giải trí, Thể thao, Sở thích","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_giaitri.png","url":"https://www.chotot.com/mua-ban-giai-tri-the-thao-so-thich","children":[{"label":"Nhạc cụ","url":"https://www.chotot.com/mua-ban-nhac-cu"},{"label":"Sách","url":"https://www.chotot.com/mua-ban-sach"},{"label":"Đồ thể thao, Dã ngoại","url":"https://www.chotot.com/mua-ban-do-the-thao-da-ngoai"},{"label":"Đồ sưu tầm, đồ cổ","url":"https://www.chotot.com/mua-ban-do-suu-tam-do-co"},{"label":"Thiết bị chơi game","url":"https://www.chotot.com/mua-ban-thiet-bi-choi-game"},{"label":"Sở thích khác","url":"https://www.chotot.com/mua-ban-so-thich-khac"}]},{"label":"Đồ dùng văn phòng, công nông nghiệp","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_dodungvanphong.png","url":"https://www.chotot.com/mua-ban-do-dung-van-phong-cong-nong-nghiep","children":[{"label":"Đồ dùng văn phòng","url":"https://www.chotot.com/mua-ban-do-dung-van-phong"},{"label":"Đồ chuyên dụng, Giống nuôi trồng","url":"https://www.chotot.com/mua-ban-do-chuyen-dung-giong-nuoi-trong"}]},{"label":"Dịch vụ, du lịch","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_lv1_cat_dichvu.png","url":"https://www.chotot.com/dich-vu-du-lich","children":[{"label":"Dịch vụ","url":"https://www.chotot.com/dich-vu"},{"label":"Du lịch","url":"https://www.chotot.com/du-lich"}]}],"featuredMenu":{"label":"Dành cho người bán","backgroundColor":"#FFF4E0","color":"#222222","children":[{"label":"Quản lý tin","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_seller_entry_quanlytin.png","url":"https://www.chotot.com/dashboard/ads"},{"label":"Gói Pro","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_seller_entry_goipro.png","url":"https://www.chotot.com/goi-pro"},{"label":"Dành cho Đối tác","icon":"https://static.chotot.com/storage/APP_WRAPPER/icons/GDS_seller_entry_doitac.png","url":"https://www.chotot.com/chuong-trinh/danh-cho-doi-tac"}]}}},"isMobile":false,"location":{"pathname":"/dang-tin","query":{"_gl":"1*15amb5*_gcl_au*MTAyNzQwNTUzNS4xNzEzNzg3ODQy*_ga*MjAwNjM0MDM5OS4xNzEzNzg3ODQw*_ga_XQVN5K27XX*MTcxNTQzMzU0NS41My4wLjE3MTU0MzM1NDUuNjAuMC4w","_ga":"2.149488630.1781531765.1714925392-2006340399.1713787840","category":"1050"}},"isServer":true},"isServer":true,"initialState":{"auth":{"loaded":false,"authenticated":false,"user":null,"shop":null},"lightAd":{"submittingAd":false,"config":{},"error":{"message":""},"isGiving":false,"locations":{},"clientInfor":null,"draftInfo":{},"isBackFromPreview":false},"imageUploader":{"images":[],"errors":""},"logoUploader":{"logo":{},"errors":""},"imageConstraint":{"constraints":{"minImages":1,"maxImages":6}},"imageSection":{"isToggleLogo":false},"updateProfiler":{"toggle":false,"data":{},"dataInfo":{}},"videoUploader":{"videos":[],"errors":"","uploading":false},"videoConstraint":{"constraints":{"current_video":-1}},"projectSuggestions":{"projectSuggesstion":{}},"priceSuggestion":{"priceSuggestion":{}},"projectImage":{"images":[],"errors":""},"chototConfig":{"appWrapperVersion":{"integration_v2":"685973ab","v1":"1.0.49","v2":"2.0.69","v3":"3.22.16"},"features":{"cv_for_job.category.enable":[13010,13000],"cv_for_job.enable":true,"cv_for_job.listing.desc":"Tạo hồ sơ xin việc miễn phí ngay!","cv_for_job.listing.is_repeat":true,"cv_for_job.listing.position":20,"cv_for_job.listing.title":"Ứng tuyển nhanh chóng. Tìm việc hiệu quả. Nhận thông báo khi có công việc phù hợp","cv_for_job.login_required.lead":2,"delivery.category.enable":[0],"delivery.enable":false,"delivery.location.enable":[0],"delivery.max_price":2000000000,"display_rating.enable":true,"display_rating.enable.category":[1000,2000,5000,12000,9000,11000,4000,3000,8000,7000,14000],"empty_state":{"desktop":{"404_error":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/404_error.png","text":"Trang bạn đang tìm không tồn tại. Vui lòng kiểm tra lại đường dẫn hoặc bấm \"Quay về trang chủ\"","title":"Lỗi: Không tìm thấy trang"},"ad_not_found":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/ad_not_found.png","text":"Tin đăng này đã hết hạn, đã bán hoặc bị ẩn. Hãy tiếp tục xem những tin đăng khác.","title":"Tin đăng không tồn tại hoặc bị ẩn"},"maintenance":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/empty_state/desktop/maintenance.png","text":"Chúng tôi đang cố gắng nâng cấp để mang đến cho bạn trải nghiệm tốt hơn, vui lòng quay lại sau.","title":"Rất tiếc, trang này đang được bảo trì"},"network_error":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/empty_state/desktop/network_error.png","text":"Hãy kiểm tra lại internet/ wifi của bạn.","title":"Lỗi: Kết nối mạng internet"},"request_timeout":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/empty_state/desktop/request_timeout.png","text":"Rất tiếc, đã có lỗi xảy ra. Vui lòng bấm \"Thử lại\"","title":"Lỗi: Không thể kết nối đến máy chủ"},"search_no_found_filter":{"button_text":"Bỏ lọc","image":"https://static.chotot.com/storage/empty_state/desktop/search_no_found_filter.png","text":"Không tìm thấy tin đăng cho những gì bạn đã lọc. Hãy thay đổi tiêu chí Lọc hoặc Bỏ lọc.","title":"Không có kết quả cho bộ lọc đã chọn"},"search_no_found_keyword":{"button_text":"Xoá từ khoá","image":"https://static.chotot.com/storage/empty_state/desktop/search_no_found_keyword.png","text":"Hãy chắc chắn từ khóa đã nhập đúng chính tả. Hãy thử những từ khóa khác hoặc những từ khóa chung hơn.","title":"Không tìm thấy kết quả từ khóa đã nhập"}},"mobile":{"404_error":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/404_error.png","text":"Trang bạn đang tìm không tồn tại. Vui lòng kiểm tra lại đường dẫn hoặc bấm \"Quay về trang chủ\"","title":"Lỗi: Không tìm thấy trang"},"ad_not_found":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/ad_not_found.png","text":"Tin đăng này đã hết hạn, đã bán hoặc bị ẩn. Hãy tiếp tục xem những tin đăng khác.","title":"Tin đăng không tồn tại hoặc bị ẩn"},"maintenance":{"button_text":"Về trang chủ","image":"https://static.chotot.com/storage/mobile/maintenance.png","text":"Chúng tôi đang cố gắng nâng cấp để mang đến cho bạn trải nghiệm tốt hơn, vui lòng quay lại sau.","title":"Rất tiếc, trang này đang được bảo trì"},"network_error":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/mobile/network_error.png","text":"Hãy kiểm tra lại internet/ wifi của bạn.","title":"Lỗi: Kết nối mạng internet"},"request_timeout":{"button_text":"Thử lại","image":"https://static.chotot.com/storage/mobile/request_timeout.png","text":"Rất tiếc, đã có lỗi xảy ra. Vui lòng bấm \"Thử lại\" ","title":"Lỗi: Không thể kết nối đến máy chủ"},"search_no_found_filter":{"button_text":"Bỏ lọc","image":"https://static.chotot.com/storage/mobile/search_no_found_filter.png","text":"Không tìm thấy tin đăng cho những gì bạn đã lọc. Hãy thay đổi tiêu chí Lọc hoặc Bỏ lọc.","title":"Không có kết quả cho bộ lọc đã chọn"},"search_no_found_keyword":{"button_text":"Xoá từ khoá","image":"https://static.chotot.com/storage/mobile/search_no_found_keyword.png","text":"Hãy chắc chắn từ khóa đã nhập đúng chính tả. Hãy thử những từ khóa khác hoặc những từ khóa chung hơn.","title":"Không tìm thấy kết quả từ khóa đã nhập"}}},"rating.enable":true,"rating.enable.category":[1000,2000,5000,12000,9000,11000,4000,3000,8000,7000,14000],"reward.enable":true,"reward.floating_button_app.image":"https://cdn.chotot.com/admincentre/1713947415852_Floating.png","reward.floating_button_app.url":"chotot-app://www.chotot.com/buyer_collection?url=https://chuongtrinhxe.chotot.com/thu-cu-doi-moi-oto-vinfast\u0026app=true\u0026utm_source=floating_button\u0026utm_medium=landing_page\u0026utm_campaign=\bthucudoimoiotovinfast","reward.floating_button_web.image":"https://cdn.chotot.com/admincentre/1713947395196_Floating.png","reward.floating_button_web.url":"https://chuongtrinhxe.chotot.com/thu-cu-doi-moi-oto-vinfast?utm_source=floating_button\u0026utm_medium=landing_page\u0026utm_campaign=\bthucudoimoiotovinfast","reward.homepage":"https://static.chotot.com/storage/reward/JUNE/float-button-large-3.png","reward.homepage_web":"https://static.chotot.com/storage/reward/floating_button_chia_se.png","tool_utils.category.enable":[2010],"tool_utils.enable":true,"tool_utils.listing.position":20,"video.category.enable":[1010,1020,1030,1040,1050,2010,2020,2030,2050,2080,2090,3030,3050,3060,3070,3080,3090,4010,4020,4040,4050,4060,4070,5010,5020,5030,5040,5050,5060,5070,5080,5090,6020,6030,7010,8010,8030,9030,9060,9070,11010,12010,12020,12030,12040,12050,12060,14010,14020,14030,14040,14050,14060,14070,14080,14090],"video.location.enable":[13000,12000,2011,2013,5032],"video.max_duration":180,"video.max_size":200,"video.max_video_per_month":10},"ptyProjectForm":{"project_form":"https://docs.google.com/forms/d/e/1FAIpQLSc23kUkk5dMjNYwX5bzsGLAFLo0CbaNg7Ny7hJ4DGk_P_j9JA/viewform"},"loading":false,"error":null},"autoFillParams":{"data":[]},"recommendCompanyLogos":{"logos":[],"logoSelected":null}}},"page":"/one-page-form","query":{"_gl":"1*15amb5*_gcl_au*MTAyNzQwNTUzNS4xNzEzNzg3ODQy*_ga*MjAwNjM0MDM5OS4xNzEzNzg3ODQw*_ga_XQVN5K27XX*MTcxNTQzMzU0NS41My4wLjE3MTU0MzM1NDUuNjAuMC4w","_ga":"2.149488630.1781531765.1714925392-2006340399.1713787840","category":"1050"},"buildId":"D7LvVFBEDOZZKdxlYXfKd","assetPrefix":"https://static.chotot.com/storage/CT_WEB_UNI_INSERT_AD/7a4fe6c1","isFallback":false,"dynamicIds":[19067,36292,34059,35495],"gip":true,"appGip":true,"scriptLoader":[]}</script>
-    <script defer="" type="text/javascript" src="https://static.accesstrade.vn/js/trackingtag/tracking.min.js"></script>
-    <script defer=""
-        src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
-        integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
-        data-cf-beacon="{&quot;rayId&quot;:&quot;88230674e8641059&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;token&quot;:&quot;474565292dc4485fa41e51388d2f8c79&quot;}"
-        crossorigin="anonymous"></script>
-    <next-route-announcer>
-        <p aria-live="assertive" id="__next-route-announcer__" role="alert"
-            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
-        </p>
-    </next-route-announcer>
-    <script src="https://static.chotot.com/storage/staging/chat_sdk_lite.js" defer=""></script>
-    <script type="text/javascript" id=""
-        charset="">function setPersistentCookie(a, b, c) { var d = "localhost" !== location.hostname ? location.hostname.replace(/^www|xe|nha\./i, "") : "localhost"; a = a + "\x3d" + b + "; path\x3d/; domain\x3d" + d; "undefined" !== typeof c && (b = new Date, b.setTime(b.getTime() + 864E5 * c), a += "; expires\x3d" + b.toUTCString()); document.cookie = a } function setSessionCookie(a, b) { a = a + "\x3d" + b + "; path\x3d/; domain\x3d." + location.hostname.replace(/^www\./i, ""); document.cookie = a }
-            function getCookie(a) { for (var b = document.cookie.split(";"), c, d = 0; d < b.length; d++) { var e = b[d].trim(); 0 === e.indexOf(a + "\x3d") && (c = e.substring((a + "\x3d").length, e.length)) } return c };</script>
-    <script type="text/javascript" id=""
-        charset="">function generateUUID() { var a = (new Date).getTime(); "undefined" !== typeof performance && "function" === typeof performance.now && (a += performance.now()); return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) { var b = (a + 16 * Math.random()) % 16 | 0; a = Math.floor(a / 16); return ("x" === c ? b : b & 3 | 8).toString(16) }) } if (!getCookie("ctfp")) { var uuid = generateUUID(); setPersistentCookie("ctfp", uuid, 3650) };</script>
-    <script type="text/javascript" id=""
-        charset="">window.fbq || (!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.defer = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://static.chotot.com/storage/production/sdk/fbevents.js"), fbq("init", google_tag_manager["rm"]["11779069"](11))); fbq("track", "PageView");</script>
 
-    <script id="" text="" charset="" type="text/javascript"
-        src="https://btloader.com/tag?o=4600937392898048&amp;upapi=true"></script>
-    <script type="text/javascript" id=""
-        charset="">setTimeout(function () {
-                (function (a, b, g, e, m, h, k, l, c, f) { if (!a[e] || !a[e]._q) { for (; l < k.length;)m(h, k[l++]); c = b.createElement(g); c.defer = 1; c.src = "https://static.chotot.com/storage/production/sdk/branch-latest.min.js"; f = b.getElementsByTagName(g)[0]; f.parentNode.insertBefore(c, f); a[e] = h } })(window, document, "script", "branch", function (a, b) { a[b] = function () { a._q.push([b, arguments]) } }, { _q: [], _v: 1 }, "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "),
-                    0); branch.init("key_live_ggRnI3MjIwKeTDlAvtnTvhehtwclvcCG"); var d = /www.chotot|nha.chotot|xe.chotot/g.test(location.hostname), n = /^\/(dashboard|bookmark|ssa|chuong-trinh|uu-dai|dangtin|user)/g.test(location.pathname); if (d = d && !n) d = location.href.replace(/http(s)/g, "chotot-app").replace(/#.*/g, ""), branch.setBranchViewData({ data: { $deeplink_path: d } })
-            }, 5E3);</script>
-    <script type="text/javascript" id=""
-        charset="">var s = document.createElement("script"); s.type = "text/javascript"; s.src = "//anymind360.com/js/1333/ats.js"; s.async = !0; document.head.appendChild(s);</script>
-    <img src="https://ad-delivery.net/px.gif?ch=2"
-        style="display: none !important; width: 1px !important; height: 1px !important;"><img
-        src="https://ad.doubleclick.net/favicon.ico?ad=300x250&amp;ad_box_=1&amp;adnet=1&amp;showad=1&amp;size=250x250"
-        style="display: none !important; width: 1px !important; height: 1px !important;"><img
-        src="https://ad-delivery.net/px.gif?ch=1&amp;e=0.4882718761056566"
-        style="display: none !important; width: 1px !important; height: 1px !important;">
-    <script type="text/javascript" id=""
-        charset="">!function (d, g, e) {
-                d.TiktokAnalyticsObject = e; var a = d[e] = d[e] || []; a.methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" "); a.setAndDefer = function (b, c) { b[c] = function () { b.push([c].concat(Array.prototype.slice.call(arguments, 0))) } }; for (d = 0; d < a.methods.length; d++)a.setAndDefer(a, a.methods[d]); a.instance = function (b) { b = a._i[b] || []; for (var c = 0; c < a.methods.length; c++)a.setAndDefer(b, a.methods[c]); return b }; a.load = function (b, c) {
-                    var f = "https://static.chotot.com/storage/production/sdk/ttqevents.js";
-                    a._i = a._i || {}; a._i[b] = []; a._i[b]._u = f; a._t = a._t || {}; a._t[b] = +new Date; a._o = a._o || {}; a._o[b] = c || {}; c = document.createElement("script"); c.type = "text/javascript"; c.defer = !0; c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e; b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b)
-                }; a.load("C08IODCBPACVH56ATV10"); a.page()
-            }(window, document, "ttq");</script>
-    <iframe src="https://static.btloader.com/safeFrame.html?upapi=true"
-        style="width: 0px; height: 0px; display: none !important;"></iframe><iframe src="/robots.txt?upapi=true"
-        style="width: 0px; height: 0px; display: none;"></iframe>
-    <script type="text/javascript" id=""
-        charset="">(function (a, b, f, d, l, g, h, k, c, e) { if (!a[d] || !a[d]._q) { for (; k < h.length;)l(g, h[k++]); c = b.createElement(f); c.async = 1; c.src = "https://cdn.branch.io/branch-latest.min.js"; e = b.getElementsByTagName(f)[0]; e.parentNode.insertBefore(c, e); a[d] = g } })(window, document, "script", "branch", function (a, b) { a[b] = function () { a._q.push([b, arguments]) } }, { _q: [], _v: 1 }, "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "),
-                0); branch.init("key_live_ggRnI3MjIwKeTDlAvtnTvhehtwclvcCG"); var custom_data = { category_id: google_tag_manager["rm"]["11779069"](27), sub_category_id: google_tag_manager["rm"]["11779069"](28), seller_type: google_tag_manager["rm"]["11779069"](29) }; function doTrackBranchIO() { branch && branch.logEvent("ad_insertion_init", custom_data, function (a) { console.log(a) }) } branch ? doTrackBranchIO() : setTimeout(function () { doTrackBranchIO() }, 5E3);</script>
-    <script type="text/javascript" id=""
-        charset="">function doTrackFacebookPixel() { window.fbq && window.fbq("track", "ad_insertion_init", { category_id: google_tag_manager["rm"]["11779069"](30), sub_category_id: google_tag_manager["rm"]["11779069"](31), seller_type: google_tag_manager["rm"]["11779069"](32) }) } window.fbq ? doTrackFacebookPixel() : setTimeout(function () { doTrackFacebookPixel() }, 5E3);</script>
-    <iframe name="googlefcPresent"
-        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
-        name="__tcfapiLocator" src="about:blank"
-        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
-        name="googlefcInactive" src="about:blank"
-        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe
-        name="googlefcLoaded" src="about:blank"
-        style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
-    <script type="text/javascript" id="generate-uuid"
-        charset="">function generateUUID() { var a = (new Date).getTime(); "undefined" !== typeof performance && "function" === typeof performance.now && (a += performance.now()); return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (b) { var c = (a + 16 * Math.random()) % 16 | 0; a = Math.floor(a / 16); return ("x" === b ? c : c & 3 | 8).toString(16) }) }
-            function setPersistentCookie(a, b, c) { var d = "localhost" !== location.hostname ? location.hostname.replace(/^www|xe|nha\./i, "") : "localhost"; a = a + "\x3d" + b + "; path\x3d/; domain\x3d" + d; "undefined" !== typeof c && (b = new Date, b.setTime(b.getTime() + 864E5 * c), a += "; expires\x3d" + b.toUTCString()); document.cookie = a } function setSessionCookie(a, b) { a = a + "\x3d" + b + "; path\x3d/; domain\x3d." + location.hostname.replace(/^www\./i, ""); document.cookie = a }
-            function getCookie(a) { for (var b = document.cookie.split(";"), c, d = 0; d < b.length; d++) { var e = b[d].trim(); 0 === e.indexOf(a + "\x3d") && (c = e.substring((a + "\x3d").length, e.length)) } return c } if (!getCookie("ctfp")) { var uuid = generateUUID(); setPersistentCookie("ctfp", uuid, 3650) } (function (a) { if (a) { var b = "function" === typeof a.pubads && a.pubads(), c = getCookie("ctfp"); "function" === typeof b.setPublisherProvidedId && "string" === typeof c && a.pubads().setPublisherProvidedId(c) } })(window.googletag);</script>
-    <script type="text/javascript" id=""
-        charset="">setTimeout(function () { function e(b, c) { return new Promise(function (f, d) { var a = document.createElement("script"); a.src = b; a.async = !0; a.onload = function () { window[c] ? f() : d(Error("Failed to set global variable: " + c)) }; a.onerror = function () { d(Error("Failed to load script from CDN: " + b)) }; document.body.appendChild(a) }) } e("https://static.chotot.com/storage/CT_WEB_COMMUNICATION_SDK/latest/dist/onflow-sdk.min-v0.0.4.js", "OnFlow") }, 1500);</script>
-    <script src="https://static.chotot.com/storage/CT_WEB_COMMUNICATION_SDK/latest/dist/onflow-sdk.min-v0.0.4.js"
-        async=""></script>
+
 </body>
 
 <script>
+    var selectElement = document.getElementById('addressSelect');
+    selectElement.addEventListener('change', function () {
+        var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+        document.getElementById('district').value = selectedOption;
+    });
+
+
+    function openFileExplorer() {
+        document.getElementById('fileInput').click();
+    }
+
     document.getElementById('fileInput').addEventListener('change', function (event) {
         var files = event.target.files; // Lấy danh sách các file ảnh từ máy chọn
+        var imageContainer = document.getElementById('imageContainer');
+        imageContainer.innerHTML = ''; // Xóa nội dung hiện tại của container
 
         for (var i = 0; i < files.length; i++) {
             var file = files[i]; // Lấy mỗi file ảnh
@@ -658,9 +385,25 @@ Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất 
             reader.onload = (function (file) {
                 return function (e) {
                     // Khi FileReader đã đọc file thành công
+                    var wrapper = document.createElement('div');
+                    wrapper.className = 'image-wrapper';
+
                     var image = new Image(); // Tạo một phần tử hình ảnh mới
                     image.src = e.target.result; // Gán đường dẫn của ảnh cho phần tử hình ảnh
-                    document.getElementById('imageContainer').appendChild(image); // Thêm phần tử hình ảnh vào phần tử container
+
+                    var deleteButton = document.createElement('button');
+                    deleteButton.className = 'delete-button';
+                    deleteButton.innerHTML = '&times;';
+                    deleteButton.onclick = function () {
+                        wrapper.remove(); // Xóa phần tử hình ảnh khỏi container
+                        updateImageCount(); // Cập nhật số lượng ảnh
+                    };
+
+                    wrapper.appendChild(image);
+                    wrapper.appendChild(deleteButton);
+                    imageContainer.appendChild(wrapper);
+
+                    updateImageCount(); // Cập nhật số lượng ảnh
                 };
             })(file);
 
@@ -668,6 +411,12 @@ Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất 
             reader.readAsDataURL(file);
         }
     });
+
+    function updateImageCount() {
+        var count = document.querySelectorAll('#imageContainer .image-wrapper').length;
+        document.getElementById('imageCount').innerText = 'Number of images: ' + count;
+    }
+
 
     var isContentHidden1 = false;
     var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
@@ -721,6 +470,50 @@ Ví dụ: Phòng trọ 30m2 đường Nguyễn Xí, Bình Thạnh, nội thất 
             content.style.display = 'block'; // Show the content
         } else {
             content.style.display = 'none'; // Hide the content
+        }
+    });
+
+    // Lấy các trường cần kiểm tra
+    const requiredFields = document.querySelectorAll('.required');
+
+    // Hàm hiển thị thông báo lỗi trong vòng 3 giây
+    function displayErrorMessage() {
+        const errorElement = document.createElement('p');
+        errorElement.textContent = 'Vui lòng nhập đầy đủ thông tin.';
+        errorElement.classList.add('error-message');
+        const form = document.querySelector('form');
+        form.parentNode.insertBefore(errorElement, form);
+
+        // Loại bỏ thông báo sau 3 giây
+        setTimeout(function () {
+            errorElement.remove();
+        }, 3000);
+    }
+
+    // Hàm kiểm tra các trường và hiển thị thông báo lỗi
+    function validateForm() {
+        let isValid = true;
+        requiredFields.forEach(field => {
+            if (field.value.trim() === '') {
+                isValid = false;
+                field.classList.add('error');
+            } else {
+                field.classList.remove('error');
+            }
+        });
+
+        if (!isValid) {
+            displayErrorMessage();
+        }
+
+        return isValid;
+    }
+
+    // Xử lý sự kiện khi người dùng gửi biểu mẫu
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        if (!validateForm()) {
+            event.preventDefault();
         }
     });
 

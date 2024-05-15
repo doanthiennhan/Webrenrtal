@@ -35,7 +35,7 @@ public class ListingService {
         listingRepository.deleteById(id);
     }
 
-    public void updateListingAvailability(String id, Boolean available) {
+    public void updateListingAvailability(String id, String available) {
 
         Optional<Listing> optionalListing = listingRepository.findById(id);
 
@@ -59,5 +59,10 @@ public class ListingService {
 
     public Listing findById(String id) {
         return listingRepository.findById(id).orElse(null);
+    }
+
+    public void addListing(Listing list) {
+        listingRepository.save(list);
+
     }
 }
