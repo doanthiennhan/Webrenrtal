@@ -15,12 +15,6 @@ public interface ListingRepository extends MongoRepository<Listing, String> {
 
     List<Listing> findAll();
 
-    List<Listing> findByAvailableFalse();
-
-    List<Listing> findByAvailableTrue();
-
-    List<Listing> findByAvailableNull();
-
     List<Listing> findByAvailable(String available);
 
     @Query("UPDATE Listing l SET l.available = true WHERE l.id = :id")

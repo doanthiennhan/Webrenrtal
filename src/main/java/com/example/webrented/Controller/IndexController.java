@@ -38,84 +38,98 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        List<Listing> listings = listingRepository.findByAvailableTrue();
-        model.addAttribute("listings", listings);
-        Renter renter = renterRepository.findByAccountId(idAccouts);
-        if (idAccouts != "") {
-
-            model.addAttribute("renter", renter);
+        try {
+            List<Listing> listings = listingRepository.findByAvailable("true");
+            model.addAttribute("listings", listings);
+            Renter renter = renterRepository.findByAccountId(idAccouts);
+            if (idAccouts != "") {
+                model.addAttribute("renter", renter);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
         }
-
         return "index";
     }
 
     @GetMapping("/login")
     public String Login(Model model, HttpSession session) {
-        // Kiểm tra xem người dùng đã đăng nhập hay chưa
-
-        if (session.getAttribute("account") != null) {
-
-            // Nếu đã đăng nhập, chuyển hướng đến trang chủ
-
-            return "redirect:/";
+        try {
+            if (session.getAttribute("account") != null) {
+                return "redirect:/";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
         }
-
-        // Nếu chưa đăng nhập, hiển thị trang đăng nhập bình thường
         return "login";
     }
 
     @PostMapping("/login")
     public String login(@RequestParam("phone") String phone, @RequestParam("password") String password, Model model,
             HttpSession session) {
-        // Kiểm tra xem có bản ghi nào trong cơ sở dữ liệu khớp với số điện thoại và mật
-        // khẩu được cung cấp không
-        Account account = accountRepository.findByPhoneAndPassword(phone, password);
 
-        // Renter renter = renterRepository.findByAccountId(account.getId());
-        // model.addAttribute("renter", renter);
+        try {
+            Account account = accountRepository.findByPhoneAndPassword(phone, password);
 
-        if (account != null) {
-            // Nếu có bản ghi khớp, đăng nhập thành công
-            // Lưu thông tin Account vào session
-            session.setAttribute("account", account);
-            idAccouts = account.getId();
+            if (account != null) {
+                if (account.getStatus().equals("cấm")) {
+                    model.addAttribute("error", "Tài khoản của bạn đã bị cấm");
+                    return "login";
+                }
 
-            return "redirect:/"; // Chuyển hướng đến trang chủ
-        } else {
-            // Xử lý khi đăng nhập không thành công
-            model.addAttribute("error", "Số điện thoại hoặc mật khẩu không chính xác");
+                session.setAttribute("account", account);
+                idAccouts = account.getId();
 
+                if (account.getRole().equals("admin")) {
+                    return "redirect:/admin";
+                } else {
+                    return "redirect:/";
+                }
+            } else {
+                model.addAttribute("error", "Số điện thoại hoặc mật khẩu không chính xác");
+                return "login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
             return "login";
         }
-
     }
 
     @GetMapping("/logout")
     public String postMethodName(HttpSession session, Model model) {
-
-        session.removeAttribute("account");
-        if (session.getAttribute("account") != null) {
-            idAccouts = "";
-            System.out.println("Oke ĐĂng xuất được rồi ");
+        try {
+            session.removeAttribute("account");
+            if (session.getAttribute("account") != null) {
+                idAccouts = "";
+                System.out.println("Oke ĐĂng xuất được rồi ");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
         }
         return "redirect:/login";
     }
 
     @GetMapping("/register")
     public String Register(Model model) {
-
         return "register";
     }
 
     @PostMapping("/register")
-    public String register(@RequestParam("phone") String phone,
-            @RequestParam("password") String password,
+    public String register(@RequestParam("phone") String phone, @RequestParam("password") String password,
             @RequestParam("name") String name, Model model) {
         try {
-            // Tạo một đối tượng Account mới
-            Account newAccount = new Account();
 
-            // Thiết lập các thuộc tính cho đối tượng Account mới
+            List<Account> account1 = accountRepository.findAll();
+            for (Account account2 : account1) {
+                if (account2.getPhone().equals(phone)) {
+                    model.addAttribute("error", "Số điện thoại đã được đăng kí");
+                    return "register";
+                }
+            }
+            Account newAccount = new Account();
             newAccount.setPassword(password);
             newAccount.setPhone(phone);
             newAccount.setName(name);
@@ -123,61 +137,19 @@ public class IndexController {
             newAccount.setStatus("binh thường");
             newAccount.setCreatedAt(LocalDateTime.now());
             newAccount.setUpdatedAt(LocalDateTime.now());
-
-            // Lưu đối tượng Account mới vào cơ sở dữ liệu
             accountRepository.save(newAccount);
             String accountId = newAccount.getId();
-            System.out.println("ID của account mới là " + newAccount.getId());
-
-            // Tạo một đối tượng Renter mới
             Renter newRenter = new Renter();
-            newRenter.setAccountId(accountId); // Sử dụng id của Account mới lưu
+            newRenter.setAccountId(accountId);
             newRenter.setFullName(name);
             newRenter.setPhoneNumber(phone);
             newRenter.setAddress("");
-
-            // Lưu đối tượng Renter mới vào cơ sở dữ liệu
             renterRepository.save(newRenter);
-
-            return "redirect:/login"; // Chuyển hướng đến trang đăng nhập
-
+            return "redirect:/login";
         } catch (Exception e) {
-            // Xử lý ngoại lệ: in ra thông báo lỗi và chuyển hướng về trang đăng ký
             e.printStackTrace();
-
             model.addAttribute("errorMessage", "Đã xảy ra lỗi. Vui lòng thử lại sau.");
             return "register";
         }
     }
-
-    // @GetMapping("/admin")
-    // public String admin(Model model) {
-    // @GetMapping("/admin")
-    // public String admin(Model model) {
-
-    // return "admin_trangchu";
-    // }
-
-    // @GetMapping("/admin_quanlibaiviet")
-    // public String admin_quanlibaiviet(Model model) {
-
-    // return "admin_quanlibaiviet";
-
-    // }
-
-    // return "admin_quanlibaiviet";
-    // }
-
-    // @GetMapping("/admin_quanlibaiviet_daxoa")
-    // public String admin_quanlibaiviet_daxoa(Model model) {
-
-    // return "admin_quanlibaiviet_daxoa";
-    // }
-
-    // @GetMapping("/admin_quanlibaiviet_daduyet")
-    // public String admin_quanlibaiviet_daduyet(Model model) {
-
-    // return "admin_quanlibaiviet_daduyet";
-    // }
-
 }

@@ -1,7 +1,13 @@
 package com.example.webrented.Controller;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +25,13 @@ import com.example.webrented.service.ListingService;
 
 import org.springframework.ui.Model;
 
+// import ch.qos.logback.core.model.Model;
+import jakarta.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.PostMapping;
+// import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
 // import com.example.webrented.repository.ListingRepository;
 
 @Controller
@@ -29,8 +42,10 @@ public class postController {
     private final ListingService listingService;
     // private final AccountRepository accountRepository;
     private final AccountService accountService;
+    private static final String UPLOAD_DIR = "src/main/resources/static/image/";
 
     public postController(ListingRepository listingRepository, ListingService listingService,
+
             AccountRepository accountRepository, AccountService accountService, CommentRepository commentRepository,
             CommentService commentService) {
 
@@ -43,8 +58,69 @@ public class postController {
     }
 
     @GetMapping("/post")
-    public String post() {
-        return "post";
+    public String post(Model model, HttpSession session) {
+        try {
+            if (session.getAttribute("account") != null) {
+                return "post";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+        }
+        return "redirect:/login";
+    }
+
+    @PostMapping("/post")
+    public String post(@RequestParam("id") String id,
+            @RequestParam("numberhouse") String numberhouse, @RequestParam("size") String size,
+            @RequestParam("price") String price, @RequestParam("subject") String subject,
+            @RequestParam("body") String body, @RequestParam("district") String district,
+            @RequestParam("images") MultipartFile[] images
+
+    ) {
+
+        System.out.println(id + numberhouse + size + price + subject + body + district +
+                "");
+        Listing newlisting = new Listing();
+        List<String> anh = new ArrayList<>();
+
+        try {
+            newlisting.setAccountId(id);
+            newlisting.setAddress(numberhouse + ", " + district);
+            double s = Double.parseDouble(size);
+            double gia = Double.parseDouble(price);
+            newlisting.setArea(s);
+            newlisting.setPrice(gia);
+            newlisting.setCreatedAt(LocalDateTime.now());
+            newlisting.setUpdatedAt(LocalDateTime.now());
+            newlisting.setAvailable("null");
+            newlisting.setTitle(subject);
+            newlisting.setDescription(body);
+
+            for (MultipartFile image : images) {
+                String randomFileName = UUID.randomUUID().toString() + getFileExtension(image.getOriginalFilename());
+                byte[] bytes = image.getBytes();
+                Path path = Paths.get(UPLOAD_DIR + randomFileName);
+                Files.write(path, bytes);
+                anh.add(randomFileName);
+
+            }
+            newlisting.setImages(anh);
+            listingService.addListing(newlisting);
+            return "post";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Đăng tin thất bại!";
+        }
+
+    }
+
+    private String getFileExtension(String fileName) {
+        int lastIndex = fileName.lastIndexOf('.');
+        if (lastIndex > 0) {
+            return fileName.substring(lastIndex);
+        }
+        return "";
     }
 
     @GetMapping("/postDetail")
@@ -75,7 +151,9 @@ public class postController {
                 // Đưa dữ liệu vào model
                 model.addAttribute("listings", listings);
                 model.addAttribute("accounts", accounts);
+
                 model.addAttribute("comments", imap);
+
                 return "shop_product_detail";
             }
         }
