@@ -87,7 +87,7 @@ public class postController {
 
         try {
             newlisting.setAccountId(id);
-            newlisting.setAddress(numberhouse + ", " + district);
+            newlisting.setAddress(numberhouse + ", " + district + ", Đà nẵng");
             double s = Double.parseDouble(size);
             double gia = Double.parseDouble(price);
             newlisting.setArea(s);
@@ -96,6 +96,7 @@ public class postController {
             newlisting.setUpdatedAt(LocalDateTime.now());
             newlisting.setAvailable("null");
             newlisting.setTitle(subject);
+            newlisting.setDistrict(district);
             newlisting.setDescription(body);
 
             for (MultipartFile image : images) {

@@ -112,6 +112,11 @@ public class IndexController {
         return "redirect:/login";
     }
 
+    @GetMapping("/forget-password")
+    public String getforgetpassword(Model model) {
+        return "mk";
+    }
+
     @GetMapping("/register")
     public String Register(Model model) {
         return "register";
