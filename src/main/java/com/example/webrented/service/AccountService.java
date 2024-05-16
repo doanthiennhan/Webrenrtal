@@ -25,7 +25,6 @@ public class AccountService {
     public void updateAccount(String id, String trangThai) {
 
         Optional<Account> optionalAccount = accountRepository.findById(id);
-        
 
         if (optionalAccount.isPresent()) {
             Account account = optionalAccount.get();
@@ -42,4 +41,5 @@ public class AccountService {
     public Account findById(String accountId) {
         return accountRepository.findById(accountId).orElse(null);
     }
+
 }

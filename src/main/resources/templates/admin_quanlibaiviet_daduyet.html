@@ -1,157 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/admin_quanlibaiviet.css">
-    <link rel="stylesheet" href="CSS/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/admin_quanlibaiviet.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <th:block th:include="header :: header"></th:block>
     <div class="narvar">
-        <a href="/admin">
-            <button class="btn chon">Trang chủ</button>
-        </a>
-        <a href="/admin_quanlibaiviet">
-            <button class="btn">quản lí bài viết</button>
-        </a>
-        <a href="/admin_quanlitaikhoan">
-            <button class="btn">quản li tài khoản</button>
-        </a>
-        <a href="/admin_quanlibaiviet_daxoa">
-            <button class="btn">bài viết đã xóa</button>
-        </a>
-        <a href="/admin_quanlibaiviet_daduyet">
-            <button class="btn">bài viết đã duyệt</button>
-        </a>
-        
+      <a href="/admin">
+        <button class="btn chon">Trang chủ</button>
+      </a>
+      <a href="/admin_quanlibaiviet">
+        <button class="btn">quản lí bài viết</button>
+      </a>
+      <a href="/admin_quanlitaikhoan">
+        <button class="btn">quản li tài khoản</button>
+      </a>
+      <a href="/admin_quanlibaiviet_daxoa">
+        <button class="btn">bài viết đã xóa</button>
+      </a>
+      <a href="/admin_quanlibaiviet_daduyet">
+        <button class="btn">bài viết đã duyệt</button>
+      </a>
     </div>
-    
+
     <div class="danhsach">
-        <ul>
-            <tr th:each="listing : ${listings}">
-            <li> 
-                <a th:href="'/postDetail/' + ${listing.id}" style="text-decoration: none;">
-            <div class="danhsachli">
+      <ul>
+        <tr th:each="listing : ${listings}">
+          <li>
+            <a
+              th:href="'/postDetail/' + ${listing.id}"
+              style="text-decoration: none"
+            >
+              <div class="danhsachli">
                 <div class="dautien">
-                    <div class="img1">
-                        <img class="img" th:src="@{/image/__${listing.images[0]}__}" alt="">
+                  <div class="img1">
+                    <img
+                      class="img"
+                      th:src="@{/image/__${listing.images[0]}__}"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content">
+                    <h3 class="titel"><td th:text="${listing.title}"></td></h3>
+                    <div class="dientich">
+                      <td th:text="${listing.area}"></td>
+                      m2
                     </div>
-                    <div class="content">
-                        <h3 class="titel"><td th:text="${listing.title}"></td></h3>
-                        <div class="dientich"> <td th:text="${listing.area}"></td> m2</div>
-                        <div class="gia"><td th:text="${listing.price}"></td>/tháng</div>
-                        <div class="bottom">
-                            <div class = "bottom1">
-                                <div class="bottom2">
-                                    <a href="" class="bottom3">
-                                        <div class="bottom4">
-                                            <img src="https://static.chotot.com/storage/icons/owner/pro.svg" alt="" height="16" width="16">
-                                        </div>
-                                        <div class="bottom5"> mô giới </div>
-                                    </a>
-                                </div>
+                    <div class="gia">
+                      <td th:text="${listing.price}"></td>
+                      /tháng
+                    </div>
+                    <div class="bottom">
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3">
+                            <div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
                             </div>
-                            
-                            <div class = "bottom1">
-                                <div class="bottom2">
-                                    <a href="" class="bottom3">
-                                        <div class="bottom4">
-                                            <img src="https://static.chotot.com/storage/icons/owner/pro.svg" alt="" height="16" width="16">
-                                        </div>
-                                        <div class="bottom5">mô giới</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class = "bottom1">
-                                <div class="bottom2">
-                                    <a href="" class="bottom3">
-                                        <div class="bottom4">
-                                            <img src="https://static.chotot.com/storage/icons/owner/pro.svg" alt="" height="16" width="16">
-                                        </div>
-                                        <div class="bottom5"> mô giới </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="bottom6">
-                                <img src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg" alt="" >
-                            </button>
+                            <div class="bottom5">mô giới</div>
+                          </a>
                         </div>
+                      </div>
+
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3">
+                            <div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
+                            </div>
+                            <div class="bottom5">mô giới</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3">
+                            <div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
+                            </div>
+                            <div class="bottom5">mô giới</div>
+                          </a>
+                        </div>
+                      </div>
+                      <button class="bottom6">
+                        <img
+                          src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg"
+                          alt=""
+                        />
+                      </button>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="du_lieu">
+              </div>
+              <div class="du_lieu">
                 <form th:action="@{/admin_quanlibaiviet_daduyet}" method="post">
-                    <input type="hidden" name="id" th:value="${listing.id}">
-                    <button class="xoa" type="submit" name="action" value="xoa" th:id="${listing.id}" previewlistener="true">XÓA</button>
-            </form>
-            </div>
+                  <input type="hidden" name="id" th:value="${listing.id}" />
+                  <button
+                    class="xoa"
+                    type="submit"
+                    name="action"
+                    value="xoa"
+                    th:id="${listing.id}"
+                    previewlistener="true"
+                  >
+                    XÓA
+                  </button>
+                </form>
+              </div>
+            </a>
+          </li>
+        </tr>
+      </ul>
+    </div>
+    <script>
+      var isContentHidden1 = false;
+      var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
 
-        </a>
-            </li>
-            </tr>
-            
-        </ul>
-
-</div>
-<script>
-    var isContentHidden1 = false;
-    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
-   
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var content = document.getElementById('openn');
-        var content1 = document.getElementById('thongbao');
-        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
-        content1.style.display='none'
+      document.addEventListener("DOMContentLoaded", function () {
+        var content = document.getElementById("openn");
+        var content1 = document.getElementById("thongbao");
+        content.style.display = "none"; // Ẩn menu đi khi trang web được tải lên
+        content1.style.display = "none";
         isContentHidden = true; // Cập nhật biến isContentHidden
-    });
+      });
 
-            document.addEventListener('click', function (event) {
-                var content = document.getElementById('openn');
-                var button = document.getElementById('btnundefinedundefined');
-
-        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
-        }
-    });
-    document.addEventListener('click', function (event) {
-        var content = document.getElementById('thongbao');
-        var button = document.getElementById('btnundefinedundefined');
+      document.addEventListener("click", function (event) {
+        var content = document.getElementById("openn");
+        var button = document.getElementById("btnundefinedundefined");
 
         // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden1) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
+        if (
+          event.target !== content &&
+          event.target !== button &&
+          !content.contains(event.target)
+        ) {
+          if (isContentHidden) {
+            // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+            content.style.display = "none"; // Ẩn menu đi
+          }
         }
-    });
+      });
+      document.addEventListener("click", function (event) {
+        var content = document.getElementById("thongbao");
+        var button = document.getElementById("btnundefinedundefined");
 
-    // JavaScript to toggle the content when button is clicked
-    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
-        var content = document.getElementById('openn');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
+        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
+        if (
+          event.target !== content &&
+          event.target !== button &&
+          !content.contains(event.target)
+        ) {
+          if (isContentHidden1) {
+            // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
+            content.style.display = "none"; // Ẩn menu đi
+          }
+        }
+      });
+
+      // JavaScript to toggle the content when button is clicked
+      document
+        .getElementById("btnundefinedundefined")
+        .addEventListener("click", function () {
+          var content = document.getElementById("openn");
+          if (content.style.display === "none") {
+            content.style.display = "block"; // Show the content
             isContentHidden = false; // Cập nhật biến isContentHidden
-        } else {
-            content.style.display = 'none'; // Hide the content
+          } else {
+            content.style.display = "none"; // Hide the content
             isContentHidden = true; // Cập nhật biến isContentHidden
-        }
-    });
-    document.getElementById('btnundefined').addEventListener('click', function () {
-        var content = document.getElementById('thongbao');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-        } else {
-            content.style.display = 'none'; // Hide the content
-        }
-    });
-
-
-</script>
-    </body>
+          }
+        });
+      document
+        .getElementById("btnundefined")
+        .addEventListener("click", function () {
+          var content = document.getElementById("thongbao");
+          if (content.style.display === "none") {
+            content.style.display = "block"; // Show the content
+          } else {
+            content.style.display = "none"; // Hide the content
+          }
+        });
+    </script>
+  </body>
 </html>
