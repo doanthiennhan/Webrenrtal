@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.RequestBody;
 
 // import com.example.webrented.repository.ListingRepository;
 
@@ -160,4 +161,21 @@ public class postController {
 
         return "error";
     }
+
+    @PostMapping("/postDetail/{id}")
+    public String commentbaiviet(@PathVariable("id") String id, Model model, HttpSession session) {
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+                System.out.println(account.getId());
+            } else {
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        return id;
+    }
+
 }
