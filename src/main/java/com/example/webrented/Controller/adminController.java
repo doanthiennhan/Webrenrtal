@@ -64,23 +64,77 @@ public class adminController {
     }
 
     @GetMapping("/admin_quanlibaiviet")
-    public String admin_quanlibaiviet(Model model) {
+    public String admin_quanlibaiviet(Model model, HttpSession session) {
         List<Listing> listings = listingRepository.findByAvailable("null");
-        model.addAttribute("listings", listings);
+
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+                model.addAttribute("listings", listings);
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
         return "admin_quanlibaiviet.html";
     }
 
     @GetMapping("/admin_quanlibaiviet_daxoa")
-    public String admin_quanlibaiviet_daxoa(Model model) {
+    public String admin_quanlibaiviet_daxoa(Model model, HttpSession session) {
         List<Listing> listings = listingRepository.findByAvailable("false");
-        model.addAttribute("listings", listings);
+
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+                model.addAttribute("listings", listings);
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
         return "admin_quanlibaiviet_daxoa.html";
     }
 
     @GetMapping("/admin_quanlibaiviet_daduyet")
-    public String admin_quanlibaiviet_daduyet(Model model) {
+    public String admin_quanlibaiviet_daduyet(Model model, HttpSession session) {
         List<Listing> listings = listingRepository.findByAvailable("true");
-        model.addAttribute("listings", listings);
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+                model.addAttribute("listings", listings);
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
+
         return "admin_quanlibaiviet_daduyet.html";
     }
 
@@ -105,13 +159,31 @@ public class adminController {
     }
 
     @GetMapping("/admin_quanlitaikhoan")
-    public String admin_quanlitk(Model model) {
+    public String admin_quanlitk(Model model, HttpSession session) {
         List<Account> accounts = accountRepository.findAll();
         HashMap<Account, Integer> idMap = new HashMap<Account, Integer>();
         for (Account account : accounts) {
             idMap.put(account, listingService.accountCount(account.getId()));
         }
-        model.addAttribute("accounts", idMap);
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+                model.addAttribute("accounts", idMap);
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
+
         return "qltk";
     }
 
