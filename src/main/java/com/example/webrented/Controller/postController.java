@@ -164,19 +164,30 @@ public class postController {
     }
 
     @PostMapping("/postDetail/{id}")
-    public String commentbaiviet(@PathVariable("id") String id, Model model, HttpSession session) {
+    public String commentbaiviet(@PathVariable("id") String id, Model model, HttpSession session,
+            @RequestParam("noidung") String noidung) {
         try {
             Account account = (Account) session.getAttribute("account");
-            if (session.getAttribute("account") != null) {
+            if (account != null) {
+                System.out.println("tam ha");
                 System.out.println(account.getId());
+                System.out.println(noidung);
+                Comment comment = new Comment();
+                comment.setListingId(id);
+                comment.setContent(noidung);
+                comment.setUserId(account.getId());
+                comment.setCreatedAt(LocalDateTime.now());
+                comment.setUpdatedAt(LocalDateTime.now());
+                commentService.addComment(comment);
+                // Add logic for handling the comment if needed
+                return "redirect:/postDetail/" + id; // Correctly use the id variable
             } else {
                 return "redirect:/login";
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            return "redirect:/error"; // Redirect to a specific error page or handle the error appropriately
         }
-
-        return id;
     }
 
 }
