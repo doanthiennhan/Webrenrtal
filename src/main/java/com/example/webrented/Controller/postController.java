@@ -140,10 +140,10 @@ public class postController {
 
             List<Comment> comments = commentRepository.findByListingId(listings.getId());
 
-            HashMap<Comment, String> imap = new HashMap<Comment, String>();
+            HashMap<Comment, Account> imap = new HashMap<Comment, Account>();
             for (Comment comment : comments) {
                 System.out.println(comment.getId());
-                imap.put(comment, accountService.findById(comment.getUserId()).getName());
+                imap.put(comment, accountService.findById(comment.getUserId()));
                 System.out.println(accountService.findById(comment.getUserId()).getName());
             }
             Account accounts = accountService.findById(accountId);

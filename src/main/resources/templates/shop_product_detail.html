@@ -543,7 +543,7 @@
               <h4 class="pro-d-title" >
                 <img src="/image/taikhaon1.png" alt="" style="width: 50px; height: 50px; border: 2px solid rgb(5, 177, 245);">
 
-                    <a href="#" th:text="${accounts.name}">Leopard Shirt Dress</a>
+                    <a th:href="'/userProfile/' + ${accounts.id}" th:text="${accounts.name}"></a>
                 
               </h4>
               <h3 style="color: #007bff; font-weight: bold; text-decoration: underline;">Nội dung:</h3>
@@ -631,14 +631,14 @@
                             <ul class="media-list">
                                 <tr th:each="comments : ${comments}">
                                 <li class="media">
-                                    <a href="#" class="pull-left">
+                                    <a th:href="@{'/userProfile/' + ${comments.value.id}}" class="pull-left">
                                         <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
                                     </a>
                                     <div class="media-body">
                                         <span class="text-muted pull-right">
                                             <small class="text-muted" th:text="${comments.key.createdAt}">30 min ago</small>
                                         </span>
-                                        <strong class="text-success" th:text="'@'+${comments.value}" >@</strong>
+                                        <strong class="text-success" th:text="${comments.value.name}">@</strong>
                                         <p th:text="${comments.key.content}" >
                                              
                                         </p>
