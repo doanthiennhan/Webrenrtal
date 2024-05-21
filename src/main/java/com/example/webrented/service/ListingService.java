@@ -4,6 +4,8 @@ import com.example.webrented.Model.Listing;
 import com.example.webrented.repository.ListingRepository;
 
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -64,5 +66,18 @@ public class ListingService {
     public void addListing(Listing list) {
         listingRepository.save(list);
 
+    }
+
+    public List<Listing> findAllbaivietdaduyetByAccountId(String accountId) {
+        List<Listing> list = listingRepository.findAll();
+        List<Listing> list1 = new ArrayList<>(); // Khởi tạo list1
+
+        for (Listing listing : list) {
+            if (listing.getAccountId().equals(accountId) && listing.getAvailable().equals("true")) {
+                list1.add(listing);
+            }
+        }
+
+        return list1;
     }
 }
