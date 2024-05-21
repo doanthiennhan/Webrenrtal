@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/account.css">
+    <link rel="stylesheet" href="CSS/header.css">
+
+
+
+</head>
+
+<body>
+
+    
+        <th:block th:include="header :: header"></th:block>
+
+    
+    <div class="container w1vptnmj">
+
+        <h1 class="mocked-styled-13 s16n22hf">Thông tin cá nhân</h1>
+        <div class="mocked-styled-14 so576wg">
+            <div class="mocked-styled-11 wk1yfkh">
+                <ul class="mocked-styled-8 lyrvpa7">
+                    <li><a class="a3evchh" onclick="loadContent('personalInfo')">Thông tin cá nhân</a></li>
+                    <li><a class="inqzd6w" onclick="loadContent('accountSettings')">Cài đặt tài khoản</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div id="personalInfo" class="content-section" style="display: block;">
+                <th:block th:include="thongTinCaNhan :: thongTinCaNhan"></th:block>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+<script src="/js/file1.js" defer></script>
+</body>
+ 
+</html>

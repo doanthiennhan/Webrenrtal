@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>shop product detail - Bootdey.com</title>
+    <title>Bài đăng chi tiết</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
@@ -616,9 +616,16 @@
                             Comment panel
                         </div>
                         <div class="panel-body">
-                            <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+                            <tr th:each="listing : ${listings}">
+                            <form th:action="'/postDetail/' + ${listing.id}" method="POST">
+                            <textarea class="form-control" placeholder="write a comment..." rows="3" name="noidung"></textarea>
                             <br>
-                            <button type="button" class="btn btn-info pull-right">Post</button>
+                            
+                            
+                                <!-- Other form fields as needed -->
+                                <button type="submit" class="btn btn-info pull-right">Post</button>
+                            </form>
+                            </tr>
                             <div class="clearfix"></div>
                             <hr>
                             <ul class="media-list">
@@ -629,7 +636,7 @@
                                     </a>
                                     <div class="media-body">
                                         <span class="text-muted pull-right">
-                                            <small class="text-muted">30 min ago</small>
+                                            <small class="text-muted" th:text="${comments.key.createdAt}">30 min ago</small>
                                         </span>
                                         <strong class="text-success" th:text="'@'+${comments.value}" >@</strong>
                                         <p th:text="${comments.key.content}" >

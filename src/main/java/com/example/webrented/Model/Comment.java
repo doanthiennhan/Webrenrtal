@@ -1,5 +1,7 @@
 package com.example.webrented.Model;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -67,15 +69,15 @@ public class Comment {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
     public Date getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setCreatedAt(LocalDateTime localDateTime) {
+        this.createdAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
+    public void setUpdatedAt(LocalDateTime localDateTime) {
+        this.updatedAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 }

@@ -8,8 +8,8 @@ import lombok.Data;
 
 @Data
 @EntityScan
-@Document(collection = "Tenants")
-public class Tenant {
+@Document(collection = "Renter")
+public class User {
     @Id
     private String id;
     private String accountId;
@@ -17,10 +17,10 @@ public class Tenant {
     private String phoneNumber;
     private String address;
 
-    public Tenant() {
+    public User() {
     }
 
-    public Tenant(String accountId, String fullName, String phoneNumber, String address) {
+    public User(String accountId, String fullName, String phoneNumber, String address) {
         this.accountId = accountId;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;

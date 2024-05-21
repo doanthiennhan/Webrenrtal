@@ -2,15 +2,15 @@ package com.example.webrented.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.example.webrented.Model.Tenant;
+import com.example.webrented.Model.User;
 // import java.util.List;
 import java.util.List;
 // import java.util.Optional;
 
-public interface TennantRepository extends MongoRepository<Tenant, String> {
-    List<Tenant> findAll();
+public interface UserRepository extends MongoRepository<User, String> {
+    List<User> findAll();
 
-    Tenant findByAccountId(String accountId);
+    User findByAccountId(String accountId);
 
     // Optional<Tenant> findById(String id);
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="CSS/header.css">
     <title>Document</title>
 </head>
+
 <body>
     <th:block th:include="header :: header"></th:block>
     <div class="narvar">
@@ -25,127 +27,64 @@
         <a href="/admin_quanlibaiviet_daduyet">
             <button class="btn">bài viết đã duyệt</button>
         </a>
-        
+
     </div>
 
     <div class="khoitaikhaon">
-    <div class="accont">
-        <a href="#" class="accont-link">
-            <div class="sotaikhaong">999</div>
-            <div class="anhtaikhaong">
-                <img class="anhtaikhaong1" src="image/taikhaon1.png" alt="">
+        <div class="accont">
+            <a href="#" class="accont-link">
+                <div class="sotaikhaong" th:text="${allAccount}"></div>
+                <div class="anhtaikhaong">
+                    <img class="anhtaikhaong1" src="image/taikhaon1.png" alt="">
+                </div>
+            </a>
+        </div>
+
+        <div class="chartaccount"
+            th:style="'--design: ' + ${list.get(0)} + '%; --frond-end: ' + ${list.get(1)} + '%; --back-end: ' +  0 + '%;'">
+        </div>
+
+        <div class="solieuchar">
+            <div class="khacvanlai">
+                <div class="xanhduong"></div>
+
             </div>
-        </a>
-    </div>
+        </div>
 
-    <div class="chartaccount" style="
-        --design: 50%;
-        --frond-end: 10%;
-        --back-end: 40%;
-    "></div>
-
-    <div class = "solieuchar">
-        <div class="khacvanlai">
-            <div class="xanhduong"></div>
-            
+        <div class="chutichchar">
+            <ul>
+                <li><span class="color yellow"></span> tài khoản còn hoạt động</li>
+                <li><span class="color red"></span> Tài khoản bị cấm</li>
+            </ul>
         </div>
     </div>
 
-    <div class="chutichchar">
-        <ul>
-            <li><span class="color yellow"></span> Khách vãng lai</li>
-            <li><span class="color red"></span> Tài khoản bị cấm</li>
-            <li><span class="color blue"></span> Chủ trọ</li>
-        </ul>
+    <div class="khoibaiviet">
+        <div class="baiviet">
+            <a href="/admin_quanlibaiviet" class="baiviet-link">
+                <div class="sobaiviet" th:text="${all}"></div>
+                <div class="anhbaiviet">
+                    <img class="anhbaiviet1" src="image/baiviet.jpg" alt="">
+                </div>
+            </a>
+        </div>
+
+
+        <div class="chartbaiviet" 
+        th:style="'--design: ' + ${list.get(2)} + '%; --frond-end: ' + ${list.get(3)} + '%; --back-end: ' +  ${list.get(4)} + '%;'"></div>
+
+
+        <div class="chutichcharbaiviet">
+            <ul>
+                <li><span class="color yellow"></span> đã duyệt</li>
+                <li><span class="color red"></span> đã xóa</li>
+                <li><span class="color blue"></span> chưa duyệt</li>
+            </ul>
+        </div>
     </div>
+
     </div>
-
-<div class="khoibaiviet">
-    <div class="baiviet">
-        <a href="/admin_quanlibaiviet" class="baiviet-link">
-            <div class="sobaiviet">999</div>
-            <div class="anhbaiviet">
-                <img class="anhbaiviet1" src="image/baiviet.jpg" alt="">
-            </div>
-        </a>
-    </div>
-
-
-    <div class="chartbaiviet" style="
-        --design: 30%;
-        --frond-end: 45%;
-        --back-end: 25%;
-    "></div>
-
-
-    <div class="chutichcharbaiviet">
-        <ul>
-            <li><span class="color yellow"></span> đã duyệt</li>
-            <li><span class="color red"></span> chưa duyệt</li>
-            <li><span class="color blue"></span> đã xóa</li>
-        </ul>
-    </div>
-</div>
-  
-</div>
-<script>
-    var isContentHidden1 = false;
-    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
-   
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var content = document.getElementById('openn');
-        var content1 = document.getElementById('thongbao');
-        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
-        content1.style.display='none'
-        isContentHidden = true; // Cập nhật biến isContentHidden
-    });
-
-    document.addEventListener('click', function (event) {
-        var content = document.getElementById('openn');
-        var button = document.getElementById('btnundefinedundefined');
-
-        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
-        }
-    });
-    document.addEventListener('click', function (event) {
-        var content = document.getElementById('thongbao');
-        var button = document.getElementById('btnundefinedundefined');
-
-        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden1) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
-        }
-    });
-
-    // JavaScript to toggle the content when button is clicked
-    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
-        var content = document.getElementById('openn');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-            isContentHidden = false; // Cập nhật biến isContentHidden
-        } else {
-            content.style.display = 'none'; // Hide the content
-            isContentHidden = true; // Cập nhật biến isContentHidden
-        }
-    });
-    document.getElementById('btnundefined').addEventListener('click', function () {
-        var content = document.getElementById('thongbao');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-        } else {
-            content.style.display = 'none'; // Hide the content
-        }
-    });
-
-    
-
-</script>
+    <script src="/js/file1.js" defer></script>
 </body>
+
 </html>

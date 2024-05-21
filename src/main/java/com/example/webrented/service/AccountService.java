@@ -1,5 +1,6 @@
 package com.example.webrented.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -36,6 +37,17 @@ public class AccountService {
 
             throw new RuntimeException("Không tìm thấy tài khoản với ID: " + id);
         }
+    }
+
+    public int countUser(String a) {
+        int dem = 0;
+        List<Account> accounts = accountRepository.findAll();
+        for (Account account : accounts) {
+            if (account.getStatus().equals("cấm")) {
+                dem++;
+            }
+        }
+        return dem;
     }
 
     public Account findById(String accountId) {

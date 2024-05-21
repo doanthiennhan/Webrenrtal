@@ -1,5 +1,6 @@
 package com.example.webrented.Controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 // import java.util.HashMap;
 import java.util.List;
@@ -42,11 +43,13 @@ public class adminController {
 
     @GetMapping("/admin")
     public String admin(Model model, HttpSession session) {
+        List<Double> list = new ArrayList<>();
         try {
             Account account = (Account) session.getAttribute("account");
             if (session.getAttribute("account") != null) {
 
                 if (account.getRole().equals("admin") == false) {
+
                     return "redirect:/";
                 }
 
@@ -59,6 +62,32 @@ public class adminController {
             // Xử lý ngoại lệ ở đây
             return "redirect:/";
         }
+        double allUser = (double) accountRepository.findAll().size();
+
+        double User = (double) accountService.countUser("bình thường");
+        double cam = (User / allUser) * 100;
+        list.add(100 - cam);
+        list.add(cam);
+        int allAccount = accountRepository.findAll().size();
+        model.addAttribute("allAccount", allAccount);
+
+        double alllist = (double) listingRepository.findAll().size();
+        double acceptList = (double) listingService.availableCount("true");
+        double canceltList = (double) listingService.availableCount("false");
+        double newtList = (double) listingService.availableCount("null");
+
+        list.add((acceptList / alllist) * 100);
+        list.add((canceltList / alllist) * 100);
+        list.add((100 - (list.get(2) - list.get(3))));
+        System.out.println(alllist + " " + acceptList + " " + canceltList + " " + newtList + " "
+                + ((canceltList / alllist) * 100) + " " +
+                +(100 - (list.get(2) - list.get(3))));
+        int all = listingRepository.findAll().size();
+        model.addAttribute("allAccount", allAccount);
+
+        model.addAttribute("list", list);
+        model.addAttribute("all", all);
+
         return "admin_trangchu";
 
     }

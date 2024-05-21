@@ -10,4 +10,9 @@ public class userController {
         return "userProfile";
     }
 
+    @GetMapping("/account")
+    public String getAcount() {
+        return "account";
+    }
+
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
 
 </head>
 
@@ -177,7 +178,8 @@
                                                     th:each="listing : ${listings}">
                                                     <meta itemprop="position" content="3"
                                                         th:data-title="${listing.title}">
-                                                    <a th:href="'/postDetail/' + ${listing.id}" class="AdItem_adItem__gDDQT" itemprop="item">
+                                                    <a th:href="'/postDetail/' + ${listing.id}"
+                                                        class="AdItem_adItem__gDDQT" itemprop="item">
                                                         <div class="Layout_left__fZNg_">
                                                             <div
                                                                 class="AdThumbnail_AdThumbnail__WQgS0 false AdThumbnail_big__L2IsU false">
@@ -392,86 +394,8 @@
             </footer>
         </div>
     </div>
+    <script src="/js/file1.js" defer></script>
+    <script src="/js/sse_Received.js" defer></script>
+
 </body>
-<script>
-    
-     // Kiểm tra nếu session.account không phải là null
-     
-    document.querySelector('.aw__p1vnrcrb').addEventListener('click', function () {
-        var query = document.getElementById('searchInput').value.toLowerCase();
-        console.log(query);
-        var items = document.querySelectorAll('#listings li'); // Chọn tất cả các thẻ <li> trong #listings
-        items.forEach(function (item) {
-            item.style.display = ''; // Hiển thị lại tất cả các mục danh sách nếu không có chuỗi tìm kiếm
-        });
-
-        items.forEach(function (item) {
-            var content = item.textContent.toLowerCase(); // Lấy nội dung của mỗi mục danh sách và chuyển đổi thành chữ thường
-            if (content.includes(query)) {
-                item.style.display = ''; // Hiển thị mục danh sách nếu nội dung chứa chuỗi query
-            } else {
-                item.style.display = 'none'; // Ẩn mục danh sách nếu nội dung không chứa chuỗi query
-            }
-        });
-
-
-    });
-    var isContentHidden1 = false;
-    var isContentHidden = false; // Biến để kiểm tra xem nội dung đã được ẩn khi trang được tải lên hay không
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var content = document.getElementById('openn');
-        var content1 = document.getElementById('thongbao');
-        content.style.display = 'none'; // Ẩn menu đi khi trang web được tải lên
-        content1.style.display = 'none'
-        isContentHidden = true; // Cập nhật biến isContentHidden
-    });
-
-    document.addEventListener('click', function (event) {
-        var content = document.getElementById('openn');
-        var button = document.getElementById('btnundefinedundefined');
-
-        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
-        }
-    });
-    document.addEventListener('click', function (event) {
-        var content = document.getElementById('thongbao');
-        var button = document.getElementById('btnundefinedundefined');
-
-        // Kiểm tra xem phần tử được click có phải là button hoặc nằm trong phần tử content không
-        if (event.target !== content && event.target !== button && !content.contains(event.target)) {
-            if (isContentHidden1) { // Kiểm tra xem nội dung đã được ẩn khi trang được tải lên chưa
-                content.style.display = 'none'; // Ẩn menu đi
-            }
-        }
-    });
-
-    // JavaScript to toggle the content when button is clicked
-    document.getElementById('btnundefinedundefined').addEventListener('click', function () {
-        var content = document.getElementById('openn');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-            isContentHidden = false; // Cập nhật biến isContentHidden
-        } else {
-            content.style.display = 'none'; // Hide the content
-            isContentHidden = true; // Cập nhật biến isContentHidden
-        }
-    });
-    document.getElementById('btnundefined').addEventListener('click', function () {
-        var content = document.getElementById('thongbao');
-        if (content.style.display === 'none') {
-            content.style.display = 'block'; // Show the content
-        } else {
-            content.style.display = 'none'; // Hide the content
-        }
-    });
-
-
-</script>
-
 </html>

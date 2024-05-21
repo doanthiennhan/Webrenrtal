@@ -57,6 +57,17 @@ public class ListingService {
         return dem;
     }
 
+    public int availableCount(String av) {
+        int dem = 0;
+        List<Listing> list = listingRepository.findAll();
+        for (Listing listing : list) {
+            if (listing.getAvailable().equals(av)) {
+                dem++;
+            }
+        }
+        return dem;
+    }
+
     public Listing findById(String id) {
         return listingRepository.findById(id).orElse(null);
     }

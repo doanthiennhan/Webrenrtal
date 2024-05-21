@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 
 import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
-import com.example.webrented.Model.Renter;
+import com.example.webrented.Model.User;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +17,7 @@ import org.springframework.ui.Model;
 
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
-import com.example.webrented.repository.RenterRepository;
+import com.example.webrented.repository.UserRepository;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -25,14 +25,14 @@ import jakarta.servlet.http.HttpSession;
 public class IndexController {
     private final ListingRepository listingRepository;
     private final AccountRepository accountRepository;
-    private final RenterRepository renterRepository;
+    private final UserRepository userRepository;
     String idAccouts = "";
 
     public IndexController(ListingRepository listingRepository, AccountRepository accountRepository,
-            RenterRepository renterRepository) {
+            UserRepository userRepository) {
         this.listingRepository = listingRepository;
         this.accountRepository = accountRepository;
-        this.renterRepository = renterRepository;
+        this.userRepository = userRepository;
 
     }
 
@@ -41,7 +41,7 @@ public class IndexController {
         try {
             List<Listing> listings = listingRepository.findByAvailable("true");
             model.addAttribute("listings", listings);
-            Renter renter = renterRepository.findByAccountId(idAccouts);
+            User renter = userRepository.findByAccountId(idAccouts);
             if (idAccouts != "") {
                 model.addAttribute("renter", renter);
             }
@@ -122,6 +122,11 @@ public class IndexController {
         return "register";
     }
 
+    @GetMapping("/test")
+    public String getTest(Model model) {
+        return "test";
+    }
+
     @PostMapping("/register")
     public String register(@RequestParam("phone") String phone, @RequestParam("password") String password,
             @RequestParam("name") String name, Model model) {
@@ -144,12 +149,12 @@ public class IndexController {
             newAccount.setUpdatedAt(LocalDateTime.now());
             accountRepository.save(newAccount);
             String accountId = newAccount.getId();
-            Renter newRenter = new Renter();
-            newRenter.setAccountId(accountId);
-            newRenter.setFullName(name);
-            newRenter.setPhoneNumber(phone);
-            newRenter.setAddress("");
-            renterRepository.save(newRenter);
+            User newUser = new User();
+            newUser.setAccountId(accountId);
+            newUser.setFullName(name);
+            newUser.setPhoneNumber(phone);
+            newUser.setAddress("");
+            userRepository.save(newUser);
             return "redirect:/login";
         } catch (Exception e) {
             e.printStackTrace();

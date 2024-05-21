@@ -48,7 +48,7 @@ public class Account {
         this.id = id;
     }
 
-    public String getStstus() {
+    public String getStatus() {
         return status;
     }
 
