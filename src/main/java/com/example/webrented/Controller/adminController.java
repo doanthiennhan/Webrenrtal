@@ -23,6 +23,7 @@ import com.example.webrented.Model.Account;
 
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class adminController {
@@ -142,6 +143,19 @@ public class adminController {
         return "admin_quanlibaiviet_daxoa.html";
     }
 
+    @PostMapping("/admin_quanlibaiviet_daxoa")
+    public String postMethodName(@RequestParam("id") String id, @RequestParam("action") String action) {
+        if ("khoiphuc".equals(action)) {
+            // Nếu hành động là "duyet", thực hiện duyệt
+            listingService.updateListingAvailability(id, "true");
+        } else if ("xoa".equals(action)) {
+            // Nếu hành động là "xoa", thực hiện xóa
+            listingService.deleteListingById(id);
+        }
+
+        return "redirect:/admin_quanlibaiviet_daxoa";
+    }
+
     @GetMapping("/admin_quanlibaiviet_daduyet")
     public String admin_quanlibaiviet_daduyet(Model model, HttpSession session) {
         List<Listing> listings = listingRepository.findByAvailable("true");
@@ -174,7 +188,7 @@ public class adminController {
             listingService.updateListingAvailability(id, "true");
         } else if ("xoa".equals(action)) {
             // Nếu hành động là "xoa", thực hiện xóa
-
+            listingService.updateListingAvailability(id, "false");
         }
         return "redirect:/admin_quanlibaiviet";
     }

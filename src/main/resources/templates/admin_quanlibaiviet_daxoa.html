@@ -115,8 +115,29 @@
                 </div>
               </div>
               <div class="du_lieu">
-                <button class="duyet" style="width: 100px">Khôi phục</button>
-                <button class="xoa" style="width: 100px">Xóa vĩnh viễn</button>
+                <form th:action="@{/admin_quanlibaiviet_daxoa}" method="post">
+                  <input type="hidden" name="id" th:value="${listing.id}" />
+                  <button
+                    id="reloadButton"
+                    class="duyet"
+                    type="submit"
+                    name="action"
+                    value="khoiphuc"
+                  >
+                    khôi phục
+                  </button>
+                  <button
+                    id="reloadButton"
+                    class="xoa"
+                    type="submit"
+                    name="action"
+                    value="xoa"
+                    th:id="${listing.id}"
+                    previewlistener="true"
+                  >
+                    XÓA VV
+                  </button>
+                </form>
               </div>
             </a>
           </li>
