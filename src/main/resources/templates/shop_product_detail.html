@@ -1,610 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
 
     <title>Bài đăng chi tiết</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      body {
-        margin-top: 20px;
-        background: #eee;
-    }
-    
-    /*panel*/
-    .panel {
-        border: none;
-        box-shadow: none;
-    }
-    
-    .panel-heading {
-        border-color: #eff2f7;
-        font-size: 16px;
-        font-weight: 300;
-    }
-    
-    .panel-title {
-        color: #2a3542;
-        font-size: 14px;
-        font-weight: 400;
-        margin-bottom: 0;
-        margin-top: 0;
-        font-family: "Open Sans", sans-serif;
-    }
-    
-    /*product list*/
-    
-    .prod-cat li a {
-        border-bottom: 1px dashed #d9d9d9;
-    }
-    
-    .prod-cat li a {
-        color: #3b3b3b;
-    }
-    
-    .prod-cat li ul {
-        margin-left: 30px;
-    }
-    
-    .prod-cat li ul li a {
-        border-bottom: none;
-    }
-    
-    .prod-cat li ul li a:hover,
-    .prod-cat li ul li a:focus,
-    .prod-cat li ul li.active a,
-    .prod-cat li a:hover,
-    .prod-cat li a:focus,
-    .prod-cat li a.active {
-        background: none;
-        color: #ff7261;
-    }
-    
-    .pro-lab {
-        margin-right: 20px;
-        font-weight: normal;
-    }
-    
-    .pro-sort {
-        padding-right: 20px;
-        float: left;
-    }
-    
-    .pro-page-list {
-        margin: 5px 0 0 0;
-    }
-    
-    .product-list img {
-        width: 100%;
-        border-radius: 4px 4px 0 0;
-        -webkit-border-radius: 4px 4px 0 0;
-    }
-    
-    .product-list .pro-img-box {
-        position: relative;
-    }
-    
-    .adtocart {
-        background: #fc5959;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        color: #fff;
-        display: inline-block;
-        text-align: center;
-        border: 3px solid #fff;
-        left: 45%;
-        bottom: -25px;
-        position: absolute;
-    }
-    
-    .adtocart i {
-        color: #fff;
-        font-size: 25px;
-        line-height: 42px;
-    }
-    
-    .pro-title {
-        color: #5a5a5a;
-        display: inline-block;
-        margin-top: 20px;
-        font-size: 16px;
-    }
-    
-    .product-list .price {
-        color: #fc5959;
-        font-size: 15px;
-    }
-    
-    .pro-img-details {
-        margin-left: -15px;
-    }
-    
-    .pro-img-details img {
-        width: 100%;
-    }
-    
-    .pro-d-title {
-        font-size: 16px;
-        margin-top: 0;
-    }
-    
-    .product_meta {
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-        padding: 10px 0;
-        margin: 15px 0;
-    }
-    
-    .product_meta span {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .product_meta a,
-    .pro-price {
-        color: #fc5959;
-    }
-    
-    .pro-price,
-    .amount-old {
-        font-size: 18px;
-        padding: 0 10px;
-    }
-    
-    .amount-old {
-        text-decoration: line-through;
-    }
-    
-    .quantity {
-        width: 120px;
-    }
-    
-    .pro-img-list {
-        margin: 10px 0 0 -15px;
-        width: 100%;
-        display: inline-block;
-    }
-    
-    .pro-img-list a {
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .pro-d-head {
-        font-size: 18px;
-        font-weight: 300;
-    }
-    
-    /* comment */
-    
-    .comment-wrapper .panel-body {
-        max-height: 650px;
-        overflow: auto;
-    }
-    
-    .comment-wrapper .media-list .media img {
-        width: 64px;
-        height: 64px;
-        border: 2px solid #e5e7e8;
-    }
-    
-    .comment-wrapper .media-list .media {
-        border-bottom: 1px dashed #efefef;
-        margin-bottom: 25px;
-    }
-    
-    
-    
-    @media only screen and (min-width: 768px)and (max-width:991px) {
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
-            position:fixed;
-            bottom: 0;
-            z-index: 9;
-            left: 0;
+        body {
+            margin-top: 20px;
+            background: #eee;
+        }
+
+        /*panel*/
+        .panel {
+            border: none;
+            box-shadow: none;
+        }
+
+        .panel-heading {
+            border-color: #eff2f7;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .panel-title {
+            color: #2a3542;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /*product list*/
+
+        .prod-cat li a {
+            border-bottom: 1px dashed #d9d9d9;
+        }
+
+        .prod-cat li a {
+            color: #3b3b3b;
+        }
+
+        .prod-cat li ul {
+            margin-left: 30px;
+        }
+
+        .prod-cat li ul li a {
+            border-bottom: none;
+        }
+
+        .prod-cat li ul li a:hover,
+        .prod-cat li ul li a:focus,
+        .prod-cat li ul li.active a,
+        .prod-cat li a:hover,
+        .prod-cat li a:focus,
+        .prod-cat li a.active {
+            background: none;
+            color: #ff7261;
+        }
+
+        .pro-lab {
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        .pro-sort {
+            padding-right: 20px;
+            float: left;
+        }
+
+        .pro-page-list {
+            margin: 5px 0 0 0;
+        }
+
+        .product-list img {
             width: 100%;
+            border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+        }
+
+        .product-list .pro-img-box {
+            position: relative;
+        }
+
+        .adtocart {
+            background: #fc5959;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            border: 3px solid #fff;
+            left: 45%;
+            bottom: -25px;
+            position: absolute;
+        }
+
+        .adtocart i {
+            color: #fff;
+            font-size: 25px;
+            line-height: 42px;
+        }
+
+        .pro-title {
+            color: #5a5a5a;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .product-list .price {
+            color: #fc5959;
+            font-size: 15px;
+        }
+
+        .pro-img-details {
+            margin-left: -15px;
+        }
+
+        .pro-img-details img {
+            width: 100%;
+        }
+
+        .pro-d-title {
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        .product_meta {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            margin: 15px 0;
+        }
+
+        .product_meta span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .product_meta a,
+        .pro-price {
+            color: #fc5959;
+        }
+
+        .pro-price,
+        .amount-old {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        .amount-old {
+            text-decoration: line-through;
+        }
+
+        .quantity {
+            width: 120px;
+        }
+
+        .pro-img-list {
+            margin: 10px 0 0 -15px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .pro-img-list a {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .pro-d-head {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        /* comment */
+
+        .comment-wrapper .panel-body {
+            max-height: 650px;
+            overflow: auto;
+        }
+
+        .comment-wrapper .media-list .media img {
+            width: 64px;
+            height: 64px;
+            border: 2px solid #e5e7e8;
+        }
+
+        .comment-wrapper .media-list .media {
+            border-bottom: 1px dashed #efefef;
+            margin-bottom: 25px;
+        }
+
+
+
+        @media only screen and (min-width: 768px)and (max-width:991px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
+                position: fixed;
+                bottom: 0;
+                z-index: 9;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #e5e5e5;
+                background-color: #fff
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
+                display: none
+            }
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
+            cursor: pointer;
+            padding: 8px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #fff !important;
+            background-color: #589f39;
+            font-weight: 600;
+            text-align: center;
             display: flex;
             align-items: center;
-            border-top: 1px solid #e5e5e5;
+            justify-content: center;
+            position: relative
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz:hover {
+            background-color: #3c763d
+        }
+
+        @media(max-width: 992px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
+                height: 50px
+            }
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9,
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #589f39;
+            background-color: #fff;
+            font-weight: 700;
+            text-align: center
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9:hover,
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
+            background-color: #e6e6e6
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9>img,
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw>img {
+            display: inline-block;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
+            justify-content: center;
+            background: #589f39;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            color: #fff
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
+            background-color: #33a837
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl {
+            background-color: #589f39;
+            color: #fff !important
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl:hover {
+            background-color: #3b8122
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             background-color: #fff
         }
-    }
-    
-    @media only screen and (max-width: 767px) {
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
-            display:none
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK:hover {
+            background-color: #e6e6e6
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
-        cursor: pointer;
-        padding: 8px 10px;
-        border-radius: 4px;
-        font-size: 13px;
-        color: #fff!important;
-        background-color: #589f39;
-        font-weight: 600;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz:hover {
-        background-color: #3c763d
-    }
-    
-    @media(max-width: 992px) {
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
-            height:50px
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK span {
+            font-weight: 700;
+            font-size: 14px
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        border: 1px solid #ccc;
-        padding: 8px 10px;
-        border-radius: 4px;
-        font-size: 16px;
-        color: #589f39;
-        background-color: #fff;
-        font-weight: 700;
-        text-align: center
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9:hover,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
-        background-color: #e6e6e6
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9>img,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw>img {
-        display: inline-block;
-        height: 24px;
-        vertical-align: middle;
-        margin-right: 10px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
-        justify-content: center;
-        background: #589f39;
-        border: 1px solid #fff;
-        border-radius: 4px;
-        color: #fff
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
-        background-color: #33a837
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl {
-        background-color: #589f39;
-        color: #fff!important
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl:hover {
-        background-color: #3b8122
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
-        margin-bottom: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        background-color: #fff
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK:hover {
-        background-color: #e6e6e6
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK span {
-        font-weight: 700;
-        font-size: 14px
-    }
-    
-    @media(max-width: 992px) {
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
-            margin-bottom:0;
-            height: 50px;
-            width: 100%
+
+        @media(max-width: 992px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
+                margin-bottom: 0;
+                height: 50px;
+                width: 100%
+            }
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK div {
-        background-color: hsla(0,0%,100%,0);
-        color: #3c763d
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK img {
-        content: url(https://static.chotot.com/storage/chotot-icons/png/call-green.png)
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
-        margin-bottom: 8px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH span {
-        font-weight: 700;
-        font-size: 14px
-    }
-    
-    @media(max-width: 992px) {
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK div {
+            background-color: hsla(0, 0%, 100%, 0);
+            color: #3c763d
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK img {
+            content: url(https://static.chotot.com/storage/chotot-icons/png/call-green.png)
+        }
+
         .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
-            margin:0;
-            height: 50px;
-            width: 100%
+            margin-bottom: 8px
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div {
-        background-color: #589f39;
-        color: #fff!important
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div:hover {
-        background-color: #3b8122
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div>div>span>img {
-        content: url(https://static.chotot.com/storage/icons/svg/phone-call.svg)
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
-        color: #3c763d!important;
-        background-color: #fff!important;
-        border: 1px solid #cacaca!important
-    }
-    
-    @media(max-width: 992px) {
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH span {
+            font-weight: 700;
+            font-size: 14px
+        }
+
+        @media(max-width: 992px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
+                margin: 0;
+                height: 50px;
+                width: 100%
+            }
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div {
+            background-color: #589f39;
+            color: #fff !important
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div:hover {
+            background-color: #3b8122
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div>div>span>img {
+            content: url(https://static.chotot.com/storage/icons/svg/phone-call.svg)
+        }
+
         .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
-            border-top:none!important
+            color: #3c763d !important;
+            background-color: #fff !important;
+            border: 1px solid #cacaca !important
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div:hover {
-        background-color: #e6e6e6!important
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx {
-        margin-bottom: 12px;
-        background-color: #33a837;
-        border: 1px solid #33a837;
-        border-radius: 4px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx:hover {
-        background-color: #3b8122
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx a,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx div {
-        background-color: rgba(51,168,55,0);
-        color: #fff;
-        border: none
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx img {
-        content: url(https://static.chotot.com/storage/chotot-icons/png/apply_cv_green.png)
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
-        margin-bottom: 8px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg span {
-        font-weight: 700;
-        font-size: 14px
-    }
-    
-    @media(max-width: 991px) {
+
+        @media(max-width: 992px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
+                border-top: none !important
+            }
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div:hover {
+            background-color: #e6e6e6 !important
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx {
+            margin-bottom: 12px;
+            background-color: #33a837;
+            border: 1px solid #33a837;
+            border-radius: 4px
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx:hover {
+            background-color: #3b8122
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx a,
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx div {
+            background-color: rgba(51, 168, 55, 0);
+            color: #fff;
+            border: none
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx img {
+            content: url(https://static.chotot.com/storage/chotot-icons/png/apply_cv_green.png)
+        }
+
         .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
-            width:100%
+            margin-bottom: 8px
         }
-    
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a {
-            border-radius: 0;
-            border: none
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg span {
+            font-weight: 700;
+            font-size: 14px
         }
-    
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a>div {
-            padding: 5px;
-            display: inline-block
+
+        @media(max-width: 991px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
+                width: 100%
+            }
+
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a {
+                border-radius: 0;
+                border: none
+            }
+
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a>div {
+                padding: 5px;
+                display: inline-block
+            }
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
-        margin-bottom: 8px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
-        font-weight: 700;
-        font-size: 14px
-    }
-    
-    @media(max-width: 991px) {
+
         .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
-            width:100%
+            margin-bottom: 8px
         }
-    
+
         .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
-            border-radius: 0;
-            border: none
+            font-weight: 700;
+            font-size: 14px
         }
-    
-        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span>div {
-            padding: 5px;
-            display: inline-block
+
+        @media(max-width: 991px) {
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
+                width: 100%
+            }
+
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
+                border-radius: 0;
+                border: none
+            }
+
+            .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span>div {
+                padding: 5px;
+                display: inline-block
+            }
         }
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_loanButton__Qx2zR {
-        margin-top: 4px
-    }
-    
-    .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_onlyChatDesciption__JsKi4 {
-        font-style: italic;
-        color: #595959;
-        text-align: center;
-        line-height: 20px
-    }
-    
-    .ShowPhoneButton_phoneButton__p5Cvt {
-        display: block;
-        margin-bottom: 0;
-        text-align: center; /* Căn chỉnh văn bản trong phần tử theo chiều ngang */
-        touch-action: manipulation;
-        cursor: pointer;
-        background-image: none;
-        border: 1px solid transparent;
-        white-space: nowrap;
-        padding: 8px 10px;
-        line-height: 1.42857;
-        border-radius: 4px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        font-size: 13px;
-        transition: background-color .2s ease-in-out;
-        height: 42px;
-    }
-    
-    
-    @media(max-width: 991px) {
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_loanButton__Qx2zR {
+            margin-top: 4px
+        }
+
+        .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_onlyChatDesciption__JsKi4 {
+            font-style: italic;
+            color: #595959;
+            text-align: center;
+            line-height: 20px
+        }
+
         .ShowPhoneButton_phoneButton__p5Cvt {
-            height:50px;
-            border-radius: 0;
-            font-weight: 600
+            display: block;
+            margin-bottom: 0;
+            text-align: center;
+            /* Căn chỉnh văn bản trong phần tử theo chiều ngang */
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 8px 10px;
+            line-height: 1.42857;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            font-size: 13px;
+            transition: background-color .2s ease-in-out;
+            height: 42px;
         }
-    }
+
+
+        @media(max-width: 991px) {
+            .ShowPhoneButton_phoneButton__p5Cvt {
+                height: 50px;
+                border-radius: 0;
+                font-weight: 600
+            }
+        }
     </style>
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div class="container bootdey">
-      <div class="col-md-12">
-        <section class="panel">
-          <div class="panel-body">
+        <div class="col-md-12">
+            <section class="panel">
+                <div class="panel-body">
 
-            <tr th:each="listing : ${listings}">
+                    <tr th:each="listing : ${listings}">
 
-                <div class="col-md-6">
-                    <div class="pro-img-details">
-                        <img
-                            th:src="${#lists.size(listing.images) > 0 ? '/image/' + listing.images[0] : '/image/error404.png'}"
-                            width="550"
-                            height="380"
-                            alt="Image 1"
-                        />
-                    </div>
-                    <div class="pro-img-list">
-                        <a href="#">
-                            <img
-                                th:src="${#lists.size(listing.images) > 1 ? '/image/' + listing.images[1] : '/image/error404.png'}"
-                                width="115"
-                                height="100"
-                                alt="Image 2"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                th:src="${#lists.size(listing.images) > 2 ? '/image/' + listing.images[2] : '/image/error404.png'}"
-                                width="115"
-                                height="100"
-                                alt="Image 3"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                th:src="${#lists.size(listing.images) > 3 ? '/image/' + listing.images[3] : '/image/error404.png'}"
-                                width="115"
-                                height="100"
-                                alt="Image 4"
-                            />
-                        </a>
-                        <a href="#">
-                            <img
-                                th:src="${#lists.size(listing.images) > 4 ? '/image/' + listing.images[4] : '/image/error404.png'}"
-                                width="115"
-                                height="100"
-                                alt="Image 5"
-                            />
-                        </a>
-                    </div>
-                </div>
-                
-                
-                
-
-            
-                <div class="col-md-6">
-              <h4 class="pro-d-title" >
-                <img src="/image/taikhaon1.png" alt="" style="width: 50px; height: 50px; border: 2px solid rgb(5, 177, 245);">
-
-                    <a th:href="'/userProfile/' + ${accounts.id}" th:text="${accounts.name}"></a>
-                
-              </h4>
-              <h3 style="color: #007bff; font-weight: bold; text-decoration: underline;">Nội dung:</h3>
-              <p th:text="${listing.description}"> 
-                
-                
-              </p>
-              <br>
-              <div class="product_meta">
-                <span class="posted_in">
-                    <h3 style="color: #007bff; font-weight: bold; text-decoration: underline; " > địa chỉ:</h3>
-                  <h5 th:text= "${listing.address}" > </h5>
-                </span>
-                
-
-                
-                
-              </div>
-              <div class="m-bot15">
-                <strong>Giá : </strong> 
-                <span class="pro-price" th:text="${listing.price % 1 == 0 ? #numbers.formatDecimal(listing.price, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.price, 2, 'COMMA', 2, 'POINT')} + ' vnđ/tháng'"></span>
-
-                
-              </div>
-              <div class="m-bot15">
-                <strong>Diện tích : </strong> 
-                <span class="pro-price" th:text="${listing.area % 1 == 0 ? #numbers.formatDecimal(listing.area, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.area, 2, 'COMMA', 2, 'POINT')} + ' m2'"></span>
-
-                
-              </div>
-            </tr>
-              <br>
-
-              
-              <div class="LeadButton_wrapperLeadButtonDesktop__SVKE8" style="padding: 8px 12px;">
-                <div
-                    class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM">
-                    <div class="ShowPhoneButton_wrapper__B627I ">
-                        <div
-                            class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
-                            <div class="ShowPhoneButton_flexDiv__3qpNj"><span><img
-                                        alt="loadingIcon" class="ShowPhoneButton_icon__wsnZ5"
-                                        src="https://static.chotot.com/storage/chotot-icons/svg/white-phone.svg">079360
-                                    ***</span>&nbsp;&nbsp;<span>BẤM ĐỂ HIỆN SỐ</span></div>
+                        <div class="col-md-6">
+                            <div class="pro-img-details">
+                                <img th:src="${#lists.size(listing.images) > 0 ? '/image/' + listing.images[0] : '/image/error404.png'}"
+                                    width="550" height="380" alt="Image 1" />
+                            </div>
+                            <div class="pro-img-list">
+                                <a href="#">
+                                    <img th:src="${#lists.size(listing.images) > 1 ? '/image/' + listing.images[1] : '/image/error404.png'}"
+                                        width="115" height="100" alt="Image 2" />
+                                </a>
+                                <a href="#">
+                                    <img th:src="${#lists.size(listing.images) > 2 ? '/image/' + listing.images[2] : '/image/error404.png'}"
+                                        width="115" height="100" alt="Image 3" />
+                                </a>
+                                <a href="#">
+                                    <img th:src="${#lists.size(listing.images) > 3 ? '/image/' + listing.images[3] : '/image/error404.png'}"
+                                        width="115" height="100" alt="Image 4" />
+                                </a>
+                                <a href="#">
+                                    <img th:src="${#lists.size(listing.images) > 4 ? '/image/' + listing.images[4] : '/image/error404.png'}"
+                                        width="115" height="100" alt="Image 5" />
+                                </a>
+                            </div>
                         </div>
+
+
+
+
+
+                        <div class="col-md-6">
+                            <h4 class="pro-d-title">
+                                <img src="/image/taikhaon1.png" alt=""
+                                    style="width: 50px; height: 50px; border: 2px solid rgb(5, 177, 245);">
+
+                                <a th:href="'/userProfile/' + ${accounts.id}" th:text="${accounts.name}"></a>
+
+                            </h4>
+                            <h3 style="color: #007bff; font-weight: bold; text-decoration: underline;">Nội dung:</h3>
+                            <p th:text="${listing.description}">
+
+                            </p>
+                            <br>
+                            <div class="product_meta">
+                                <span class="posted_in">
+                                    <h3 style="color: #007bff; font-weight: bold; text-decoration: underline; "> địa
+                                        chỉ:</h3>
+                                    <h5 th:text="${listing.address}"> </h5>
+                                </span>
+
+
+
+
+                            </div>
+                            <div class="m-bot15">
+                                <strong>Giá : </strong>
+                                <span class="pro-price"
+                                    th:text="${listing.price % 1 == 0 ? #numbers.formatDecimal(listing.price, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.price, 2, 'COMMA', 2, 'POINT')} + ' vnđ/tháng'"></span>
+
+
+                            </div>
+                            <div class="m-bot15">
+                                <strong>Diện tích : </strong>
+                                <span class="pro-price"
+                                    th:text="${listing.area % 1 == 0 ? #numbers.formatDecimal(listing.area, 0, 'COMMA', 0, 'POINT') : #numbers.formatDecimal(listing.area, 2, 'COMMA', 2, 'POINT')} + ' m2'"></span>
+
+
+                            </div>
+                    </tr>
+                    <br>
+
+
+                    <div class="LeadButton_wrapperLeadButtonDesktop__SVKE8" style="padding: 8px 12px;">
+                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
+                            th:if="${listOfUser}">
+                            <div class="ShowPhoneButton_wrapper__B627I ">
+                                <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
+                                    <div class="ShowPhoneButton_flexDiv__3qpNj">&nbsp;&nbsp;<span>Chỉnh Sửa bài
+                                            viết</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM">
+                            <div class="ShowPhoneButton_wrapper__B627I ">
+                                <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
+                                    <div class="ShowPhoneButton_flexDiv__3qpNj"><span><img alt="loadingIcon"
+                                                class="ShowPhoneButton_icon__wsnZ5"
+                                                src="https://static.chotot.com/storage/chotot-icons/svg/white-phone.svg">079360
+                                            ***</span>&nbsp;&nbsp;<span>BẤM ĐỂ HIỆN SỐ</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a th:href="'/bookroom/' + ${listings.id}">
+                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
+                            th:unless="${listOfUser}">
+
+                            <div class="ShowPhoneButton_wrapper__B627I ">
+                                <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
+                                    <div class="ShowPhoneButton_flexDiv__3qpNj">&nbsp;&nbsp;<span>Thuê Trọ</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        </a>
+                        <div class="LeadButton_chatDesktopButton__HSQyg"><a
+                                href="https://chat.chotot.com/chatroom/join/MjI3MjY4M3wxMTU5NzIyMzA="
+                                class="btn LeadButton_buttonChatDesktop__gbYM9" rel="nofollow"
+                                previewlistener="true"><img
+                                    src="https://static.chotot.com/storage/chotot-icons/png/chat_green.png"
+                                    alt="chat"><span class="text-success"><span>CHAT VỚI NGƯỜI
+                                        BÁN</span></span></a></div>
                     </div>
+
+                    </p>
                 </div>
-                <div class="LeadButton_chatDesktopButton__HSQyg"><a
-                        href="https://chat.chotot.com/chatroom/join/MjI3MjY4M3wxMTU5NzIyMzA="
-                        class="btn LeadButton_buttonChatDesktop__gbYM9" rel="nofollow"
-                        previewlistener="true"><img
-                            src="https://static.chotot.com/storage/chotot-icons/png/chat_green.png"
-                            alt="chat"><span class="text-success"><span>CHAT VỚI NGƯỜI
-                                BÁN</span></span></a></div>
-            </div>
-              
-              </p>
-            </div>
-          </div>
+        </div>
         </section>
-      </div>
+    </div>
     </div>
 
     <div class="container">
@@ -617,56 +626,61 @@
                         </div>
                         <div class="panel-body">
                             <tr th:each="listing : ${listings}">
-                            <form th:action="'/postDetail/' + ${listing.id}" method="POST">
-                            <textarea class="form-control" placeholder="write a comment..." rows="3" name="noidung"></textarea>
-                            <br>
-                            
-                            
-                                <!-- Other form fields as needed -->
-                                <button type="submit" class="btn btn-info pull-right">Post</button>
-                            </form>
+                                <form th:action="'/postDetail/' + ${listing.id}" method="POST">
+                                    <textarea class="form-control" placeholder="write a comment..." rows="3"
+                                        name="noidung"></textarea>
+                                    <br>
+
+
+                                    <!-- Other form fields as needed -->
+                                    <button type="submit" class="btn btn-info pull-right">Post</button>
+                                </form>
                             </tr>
                             <div class="clearfix"></div>
                             <hr>
                             <ul class="media-list">
                                 <tr th:each="comments : ${comments}">
-                                <li class="media">
-                                    <a th:href="@{'/userProfile/' + ${comments.value.id}}" class="pull-left">
-                                        <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
-                                    </a>
-                                    <div class="media-body">
-                                        <span class="text-muted pull-right">
-                                            <small class="text-muted" th:text="${comments.key.createdAt}">30 min ago</small>
-                                        </span>
-                                        <strong class="text-success" th:text="${comments.value.name}">@</strong>
-                                        <p th:text="${comments.key.content}" >
-                                             
-                                        </p>
-                                        <div class="divcha">
+                                    <li class="media">
+                                        <a th:href="@{'/userProfile/' + ${comments.value.id}}" class="pull-left">
+                                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt=""
+                                                class="img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="text-muted pull-right">
+                                                <small class="text-muted" th:text="${comments.key.createdAt}">30 min
+                                                    ago</small>
+                                            </span>
+                                            <strong class="text-success" th:text="${comments.value.name}">@</strong>
+                                            <p th:text="${comments.key.content}">
 
-                                        
-                                        <div  style=" float: left; width: 50%;">
-                                            <a href="">
-                                            <img src="/image/image.png" alt="" style="width: 20px; height: 20px;">
-                                            thích</a>
+                                            </p>
+                                            <div class="divcha">
+
+
+                                                <div style=" float: left; width: 50%;">
+                                                    <a href="">
+                                                        <img src="/image/image.png" alt=""
+                                                            style="width: 20px; height: 20px;">
+                                                        thích</a>
+                                                </div>
+                                                <div style=" float: left; width: 50%;">
+                                                    <a href="">
+                                                        <img src="/image/binhluan.jpg" alt=""
+                                                            style="width: 20px; height: 20px;">
+                                                        trả lời</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div style=" float: left; width: 50%;" >
-                                            <a href="">
-                                            <img src="/image/binhluan.jpg" alt="" style="width: 20px; height: 20px;">
-                                            trả lời</a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </li>
+                                    </li>
                                 </tr>
                             </ul>
                         </div>
                     </div>
                 </div>
-        
+
             </div>
         </div>
-        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -675,5 +689,6 @@
     <link rel="stylesheet" href="CSS/shop_product_detail.css">
 
     <script src='https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
-  </body>
+</body>
+
 </html>

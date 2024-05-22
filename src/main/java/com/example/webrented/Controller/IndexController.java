@@ -13,6 +13,7 @@ import com.example.webrented.Model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.ui.Model;
 
 import com.example.webrented.repository.AccountRepository;
@@ -67,7 +68,7 @@ public class IndexController {
 
     @PostMapping("/login")
     public String login(@RequestParam("phone") String phone, @RequestParam("password") String password, Model model,
-            HttpSession session) {
+            HttpSession session, RedirectAttributes redirectAttributes) {
 
         try {
             Account account = accountRepository.findByPhoneAndPassword(phone, password);
@@ -82,8 +83,12 @@ public class IndexController {
                 idAccouts = account.getId();
 
                 if (account.getRole().equals("admin")) {
+                    redirectAttributes.addFlashAttribute("type", "success");
+                    redirectAttributes.addFlashAttribute("Message", "Đăng nhập thành công");
                     return "redirect:/admin";
                 } else {
+                    redirectAttributes.addFlashAttribute("type", "success");
+                    redirectAttributes.addFlashAttribute("Message", "Đăng nhập thành công");
                     return "redirect:/";
                 }
             } else {

@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/admin_quanlibaiviet.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/header.css">
     <title>Document</title>
 </head>
 
 <body>
-    <th:block th:insert="~{header :: header}"></th:block>
+    <div
+        style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 999; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <th:block th:include="header :: header"></th:block>
+    </div>
     <div class="narvar">
         <a href="/admin">
             <button class="btn chon">Trang chủ</button>
@@ -31,9 +35,9 @@
     </div>
 
     <div class="danhsach">
-        <ul>
-            <tr th:each="listing : ${listings}">
-                <li>
+        <ul id="listings">
+            <tr >
+                <li th:each="listing : ${listings}">
                     <div class="danhsachli">
                         <div class="dautien">
                             <div class="img1">
@@ -64,54 +68,57 @@
 
                                     <div class="bottom1">
                                         <div class="bottom2">
-                                            <a href="" class="bottom3"><div class="bottom4">
-                                                <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
-                                                    alt="" height="16" width="16">
-                                            </div>
-                                            <div class="bottom5">mô giới</div>
-                                        </a>
+                                            <a href="" class="bottom3">
+                                                <div class="bottom4">
+                                                    <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                                        alt="" height="16" width="16">
+                                                </div>
+                                                <div class="bottom5">mô giới</div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="bottom1">
-                                    <div class="bottom2">
-                                        <a href="" class="bottom3">
-                                            <div class="bottom4">
-                                                <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
-                                                    alt="" height="16" width="16">
-                                            </div>
-                                            <div class="bottom5"> mô giới </div>
-                                        </a>
+                                    <div class="bottom1">
+                                        <div class="bottom2">
+                                            <a href="" class="bottom3">
+                                                <div class="bottom4">
+                                                    <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                                        alt="" height="16" width="16">
+                                                </div>
+                                                <div class="bottom5"> mô giới </div>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <button class="bottom6">
+                                        <img src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg" alt="">
+                                    </button>
                                 </div>
-                                <button  class="bottom6">
-                                    <img src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg" alt="">
-                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="du_lieu">
-                    <form th:action="@{/admin_quanlibaiviet}" method="post">
-                        <input type="hidden" name="id" th:value="${listing.id}">
-                        <button id="reloadButton" class="duyet" type="submit" name="action" value="duyet">DUYỆT</button>
-                        <button id="reloadButton" class="xoa" type="submit" name="action" value="xoa" th:id="${listing.id}"
-                            previewlistener="true">XÓA</button>
-                    </form>
-
-
-                </div>
+                    <div class="du_lieu">
+                        <form th:action="@{/admin_quanlibaiviet}" method="post">
+                            <input type="hidden" name="id" th:value="${listing.id}">
+                            <button id="reloadButton" class="duyet" onclick="showConfirmDialog()" type="submit"
+                                name="action" value="duyet">DUYỆT</button>
+                            <button id="reloadButton" class="xoa" onclick="showConfirmDialog()" type="submit"
+                                name="action" value="xoa" th:id="${listing.id}" previewlistener="true">XÓA</button>
+                        </form>
 
 
+                    </div>
 
 
-        </tr>
-    </ul>
 
-</div>
-<script src="/js/file1.js" defer></script>
-<script src="/js/sse_Received.js" defer></script>
-<script src="/js/sse_Send.js" defer></script>
+
+            </tr>
+        </ul>
+
+    </div>
+    <script src="/js/file1.js" defer></script>
+    <script src="/js/sse_Received.js" defer></script>
+    <script src="/js/sse_Send.js" defer></script>
+    <script src="/js/comfirm.js" defer></script>
 </body>
 
 </html>

@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/admin_trangchu.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/header.css">
     <title>Document</title>
 </head>
 
 <body>
-    <th:block th:include="header :: header"></th:block>
+    <div
+        style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 999; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <th:block th:include="header :: header"></th:block>
+    </div>
     <div class="narvar">
         <a href="/admin">
             <button class="btn chon">Trang chủ</button>
@@ -18,7 +22,7 @@
         <a href="/admin_quanlibaiviet">
             <button class="btn">quản lí bài viết</button>
         </a>
-        <a href="#">
+        <a href="/admin_quanlitaikhoan">
             <button class="btn">quản li tài khoản</button>
         </a>
         <a href="/admin_quanlibaiviet_daxoa">
@@ -70,8 +74,9 @@
         </div>
 
 
-        <div class="chartbaiviet" 
-        th:style="'--design: ' + ${list.get(2)} + '%; --frond-end: ' + ${list.get(3)} + '%; --back-end: ' +  ${list.get(4)} + '%;'"></div>
+        <div class="chartbaiviet"
+            th:style="'--design: ' + ${list.get(2)} + '%; --frond-end: ' + ${list.get(3)} + '%; --back-end: ' +  ${list.get(4)} + '%;'">
+        </div>
 
 
         <div class="chutichcharbaiviet">
@@ -85,6 +90,7 @@
 
     </div>
     <script src="/js/file1.js" defer></script>
+    <script src="/js/comfirm.js" defer></script>
 </body>
 
 </html>

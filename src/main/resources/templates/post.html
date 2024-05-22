@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/post.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/thongbao.css">
 
     <script></script>
     <title>Đăng bài viết</title>
@@ -338,7 +339,7 @@
                                                 
 
 
-                                                <button class="bgcbfpj primary r-normal large w-normal i-left stretch"
+                                                <button class="bgcbfpj primary r-normal large w-normal i-left stretch" onclick="showConfirmDialog()"
                                                     type="submit">ĐĂNG TIN</button>
 
                                                     <input type="file" id="fileInput" name="images" accept="image/*" multiple style="display:none"
@@ -356,6 +357,8 @@
                 </div>
             </div>
         </div>
+        <div class="notifications"></div>
+        <input type="hidden" id="hiddenMessage" name="Message" th:value="${Message}" />
     </div>
 
 <script src="/js/file1.js" defer></script>
@@ -363,6 +366,8 @@
 <script src="/js/send_Form.js" defer></script>
 <script src="/js/pick_Image.js" defer></script>
 <script src="/js/sse_Send.js" defer></script>
+<script src="/js/notifications.js" defer></script>
+<script src="/js/comfirm.js"></script>
 </body>
 
 

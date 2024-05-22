@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 // import com.example.webrented.repository.ListingRepository;
 
@@ -75,7 +76,7 @@ public class postController {
             @RequestParam("numberhouse") String numberhouse, @RequestParam("size") String size,
             @RequestParam("price") String price, @RequestParam("subject") String subject,
             @RequestParam("body") String body, @RequestParam("district") String district,
-            @RequestParam("images") MultipartFile[] images
+            @RequestParam("images") MultipartFile[] images, Model model, RedirectAttributes redirectAttributes
 
     ) {
 
@@ -108,7 +109,9 @@ public class postController {
             }
             newlisting.setImages(anh);
             listingService.addListing(newlisting);
-            return "post";
+            redirectAttributes.addFlashAttribute("type", "success");
+            redirectAttributes.addFlashAttribute("Message", "Đăng Tin thành công");
+            return "redirect:/";
         } catch (Exception e) {
             e.printStackTrace();
             return "Đăng tin thất bại!";
@@ -124,14 +127,9 @@ public class postController {
         return "";
     }
 
-    @GetMapping("/postDetail")
-    public String postDetail() {
-        return "shop_product_detail";
-    }
-
     @GetMapping("/postDetail/{id}")
-    public String postDetail(@PathVariable("id") String id, Model model) {
-
+    public String postDetail(@PathVariable("id") String id, Model model, HttpSession session) {
+        Account account1 = (Account) session.getAttribute("account");
         Listing listings = listingService.findById(id);
         System.out.println(listings.toString());
         if (listings != null) {
@@ -147,13 +145,19 @@ public class postController {
                 System.out.println(accountService.findById(comment.getUserId()).getName());
             }
             Account accounts = accountService.findById(accountId);
-
+            boolean listOfUser = false;
             if (accounts != null) {
                 // Đưa dữ liệu vào model
+                if (account1 != null) {
+                    if (account1.getId().equals(accounts.getId())) {
+                        listOfUser = true;
+                    }
+                }
                 model.addAttribute("listings", listings);
                 model.addAttribute("accounts", accounts);
 
                 model.addAttribute("comments", imap);
+                model.addAttribute("listOfUser", listOfUser);
 
                 return "shop_product_detail";
             }

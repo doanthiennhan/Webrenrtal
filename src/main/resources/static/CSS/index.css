@@ -9382,19 +9382,8 @@ img:hover{
     
 }
 
-/* Định dạng cho thông báo */
-.notification img {
-    height: 24px;
-    width: 24px;
-    font-size: 28px;
-    line-height: 45px;
-}
-.a_notification{
-    height: 24px;
-    width: 45px;
-    padding: 8px;
-   
-}
+
+
 .AdItem_wrapperAdItem__S6qPH:last-child,.AdItem_wrapperOwnerAdItem__Cfy5_:last-child {
     margin-bottom: 0
 }

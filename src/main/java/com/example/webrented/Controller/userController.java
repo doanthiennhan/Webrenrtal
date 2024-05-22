@@ -12,6 +12,8 @@ import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
 import com.example.webrented.service.AccountService;
 import com.example.webrented.service.ListingService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class userController {
@@ -41,6 +43,12 @@ public class userController {
         model.addAttribute("lists", lists);
         model.addAttribute("name", name);
         return "userProfile";
+    }
+
+    @PostMapping("path")
+    public String postBookRoom(@RequestBody String entity) {
+
+        return entity;
     }
 
 }

@@ -4,8 +4,10 @@
         var query = document.getElementById('searchInput').value.toLowerCase();
         console.log(query);
         var items = document.querySelectorAll('#listings li');
+        
         items.forEach(function (item) {
             item.style.display = '';
+           
         });
 
         items.forEach(function (item) {

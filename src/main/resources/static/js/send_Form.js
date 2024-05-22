@@ -2,17 +2,22 @@
 const requiredFields = document.querySelectorAll('.required');
 
 // Hàm hiển thị thông báo lỗi trong vòng 3 giây
-function displayErrorMessage() {
-    const errorElement = document.createElement('p');
-    errorElement.textContent = 'Vui lòng nhập đầy đủ thông tin.';
-    errorElement.classList.add('error-message');
-    const form = document.querySelector('form');
-    form.parentNode.insertBefore(errorElement, form);
-
-    // Loại bỏ thông báo sau 3 giây
-    setTimeout(function () {
-        errorElement.remove();
-    }, 3000);
+function displayErrorMessage(type, icon, title, text) {
+    if (text !== 'null') {
+        let newToast = document.createElement('div');
+        newToast.innerHTML = `
+             <div class="toast ${type}">
+                 <i class="${icon}"></i>
+                 <div class="content">
+                     <div class="title">${title}</div>
+                     <span>${text}</span>
+                 </div>
+                 <i class="fa-solid fa-xmark" onclick="(this.parentElement).remove()"></i>
+             </div>`;
+        notifications.appendChild(newToast);
+        console.log("đã thông báo");
+        newToast.timeOut = setTimeout(() => newToast.remove(), 3000);
+    }
 }
 
 // Hàm kiểm tra các trường và hiển thị thông báo lỗi
@@ -28,7 +33,7 @@ function validateForm() {
     });
 
     if (!isValid) {
-        displayErrorMessage();
+        displayErrorMessage('warning','fa-solid fa-triangle-exclamation','Warning','vui lòng nhập đầy đủ thông tin');
     }
 
     return isValid;
