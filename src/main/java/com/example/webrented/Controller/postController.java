@@ -5,6 +5,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
@@ -191,5 +192,59 @@ public class postController {
             System.out.println(e.getMessage());
             return "redirect:/error"; // Redirect to a specific error page or handle the error appropriately
         }
+    }
+
+    @GetMapping("/postEdit1/{id}")
+    public String post1(@PathVariable("id") String id, Model model, HttpSession session) {
+        Listing listing = listingService.findById(id);
+        model.addAttribute("listing", listing);
+        System.out.println("----------------------------------------------------");
+        System.out.println(listing.getDistrict());
+        System.out.println("----------------------------------------------------");
+        return "postEdit"; // Chuyển hướng đến /postEdit/{id}
+    }
+
+    @PostMapping("/postEdit1/{id}")
+    public String postEdit(@RequestParam("id") String id, @PathVariable("id") String id1,
+            @RequestParam("numberhouse") String numberhouse, @RequestParam("size") String size,
+            @RequestParam("price") String price, @RequestParam("subject") String subject,
+            @RequestParam("body") String body, @RequestParam("district") String district,
+            @RequestParam("images") MultipartFile[] images) {
+
+        System.out.println(id + numberhouse + size + price + subject + body + district +
+                "");
+        Listing newlisting = listingService.findById(id1);
+        List<String> anh = new ArrayList<>();
+
+        try {
+            newlisting.setAccountId(id);
+            newlisting.setAddress(numberhouse + ", " + district + ", Đà nẵng");
+            double s = Double.parseDouble(size);
+            double gia = Double.parseDouble(price);
+            newlisting.setArea(s);
+            newlisting.setPrice(gia);
+            newlisting.setCreatedAt(LocalDateTime.now());
+            newlisting.setUpdatedAt(LocalDateTime.now());
+            newlisting.setAvailable("null");
+            newlisting.setTitle(subject);
+            newlisting.setDistrict(district);
+            newlisting.setDescription(body);
+
+            for (MultipartFile image : images) {
+                String randomFileName = UUID.randomUUID().toString() + getFileExtension(image.getOriginalFilename());
+                byte[] bytes = image.getBytes();
+                Path path = Paths.get(UPLOAD_DIR + randomFileName);
+                Files.write(path, bytes);
+                anh.add(randomFileName);
+
+            }
+            newlisting.setImages(anh);
+            listingService.saveOrUpdateListing(newlisting);
+            return "post";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "cập nhật thất bại!";
+        }
+
     }
 }

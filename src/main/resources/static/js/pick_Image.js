@@ -12,7 +12,7 @@ function openFileExplorer() {
 document.getElementById('fileInput').addEventListener('change', function (event) {
     var files = event.target.files; // Lấy danh sách các file ảnh từ máy chọn
     var imageContainer = document.getElementById('imageContainer');
-    imageContainer.innerHTML = ''; // Xóa nội dung hiện tại của container
+    // imageContainer.innerHTML = ''; // Xóa nội dung hiện tại của container
 
     for (var i = 0; i < files.length; i++) {
         var file = files[i]; // Lấy mỗi file ảnh
@@ -51,4 +51,12 @@ document.getElementById('fileInput').addEventListener('change', function (event)
 function updateImageCount() {
     var count = document.querySelectorAll('#imageContainer .image-wrapper').length;
     document.getElementById('imageCount').innerText = 'Number of images: ' + count;
+}
+
+function deleteImage(button) {
+    // Xác định phần tử cha (.image-wrapper) của nút xóa
+    var wrapper = button.parentElement;
+    
+    // Xóa phần tử cha
+    wrapper.remove();
 }

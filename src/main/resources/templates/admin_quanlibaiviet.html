@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/header.css">
     <title>Document</title>
-</head>
+  </head>
 
 <body>
     <div
@@ -16,84 +16,105 @@
         <th:block th:include="header :: header"></th:block>
     </div>
     <div class="narvar">
-        <a href="/admin">
-            <button class="btn chon">Trang chủ</button>
-        </a>
-        <a href="/admin_quanlibaiviet">
-            <button class="btn">quản lí bài viết</button>
-        </a>
-        <a href="/admin_quanlitaikhoan">
-            <button class="btn">quản li tài khoản</button>
-        </a>
-        <a href="/admin_quanlibaiviet_daxoa">
-            <button class="btn">bài viết đã xóa</button>
-        </a>
-        <a href="/admin_quanlibaiviet_daduyet">
-            <button class="btn">bài viết đã duyệt</button>
-        </a>
-
+      <a href="/admin">
+        <button class="btn">Trang chủ</button>
+      </a>
+      <a href="/admin_quanlibaiviet">
+        <button class="btn chon">quản lí bài viết</button>
+      </a>
+      <a href="/admin_quanlitaikhoan">
+        <button class="btn">quản li tài khoản</button>
+      </a>
+      <a href="/admin_quanlibaiviet_daxoa">
+        <button class="btn">bài viết đã xóa</button>
+      </a>
+      <a href="/admin_quanlibaiviet_daduyet">
+        <button class="btn">bài viết đã duyệt</button>
+      </a>
     </div>
 
     <div class="danhsach">
-        <ul id="listings">
-            <tr >
-                <li th:each="listing : ${listings}">
-                    <div class="danhsachli">
-                        <div class="dautien">
-                            <div class="img1">
-                                <img class="img" th:src="@{/image/__${listing.images[0]}__}" alt="">
+      <ul>
+        <tr th:each="listing : ${listings}">
+          <li>
+            <a
+              th:href="'/postDetail/' + ${listing.id}"
+              style="text-decoration: none"
+            >
+              <div class="danhsachli">
+                <div class="dautien">
+                  <div class="img1">
+                    <img
+                      class="img"
+                      th:src="@{/image/__${listing.images[0]}__}"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content">
+                    <h3 class="titel">
+                      <td th:text="${listing.title}"></td>
+                    </h3>
+                    <div class="dientich">
+                      <td th:text="${listing.area}"></td>
+                      m2
+                    </div>
+                    <div class="gia">
+                      <td th:text="${listing.price}"></td>
+                      /tháng
+                    </div>
+                    <div class="bottom">
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3">
+                            <div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
                             </div>
-                            <div class="content">
-                                <h3 class="titel">
-                                    <td th:text="${listing.title}"></td>
-                                </h3>
-                                <div class="dientich">
-                                    <td th:text="${listing.area}"></td> m2
-                                </div>
-                                <div class="gia">
-                                    <td th:text="${listing.price}"></td>/tháng
-                                </div>
-                                <div class="bottom">
-                                    <div class="bottom1">
-                                        <div class="bottom2">
-                                            <a href="" class="bottom3">
-                                                <div class="bottom4">
-                                                    <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
-                                                        alt="" height="16" width="16">
-                                                </div>
-                                                <div class="bottom5"> mô giới </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="bottom1">
-                                        <div class="bottom2">
-                                            <a href="" class="bottom3">
-                                                <div class="bottom4">
-                                                    <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
-                                                        alt="" height="16" width="16">
-                                                </div>
-                                                <div class="bottom5">mô giới</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="bottom1">
-                                        <div class="bottom2">
-                                            <a href="" class="bottom3">
-                                                <div class="bottom4">
-                                                    <img src="https://static.chotot.com/storage/icons/owner/pro.svg"
-                                                        alt="" height="16" width="16">
-                                                </div>
-                                                <div class="bottom5"> mô giới </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <button class="bottom6">
-                                        <img src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
+                            <div class="bottom5">mô giới</div>
+                          </a>
                         </div>
+                      </div>
+
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3"
+                            ><div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
+                            </div>
+                            <div class="bottom5">mô giới</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="bottom1">
+                        <div class="bottom2">
+                          <a href="" class="bottom3">
+                            <div class="bottom4">
+                              <img
+                                src="https://static.chotot.com/storage/icons/owner/pro.svg"
+                                alt=""
+                                height="16"
+                                width="16"
+                              />
+                            </div>
+                            <div class="bottom5">mô giới</div>
+                          </a>
+                        </div>
+                      </div>
+                      <button class="bottom6">
+                        <img
+                          src="https://static.chotot.com/storage/icons/saveAd/save-ad.svg"
+                          alt=""
+                        />
+                      </button>
                     </div>
 
                     <div class="du_lieu">

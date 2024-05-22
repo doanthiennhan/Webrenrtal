@@ -6,6 +6,27 @@
     color: #4e8bef
 }
 
+.divcha1 {
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+.c34gpa3.divcon1 {
+    margin-right: 10px; /* Khoảng cách giữa hai phần tử */
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
 .t1c2rggp.warning {
     color: #f80
 }
