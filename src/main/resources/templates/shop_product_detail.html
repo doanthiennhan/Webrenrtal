@@ -574,11 +574,23 @@
 
                 
               </div>
-            </tr>
+            
               <br>
-
+                
               
               <div class="LeadButton_wrapperLeadButtonDesktop__SVKE8" style="padding: 8px 12px;">
+                <a th:href="@{/postEdit1/{id}(id=${listing.id})}">
+                <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
+                            th:if="${listOfUser}">
+                            <div class="ShowPhoneButton_wrapper__B627I ">
+                                <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
+                                    <div class="ShowPhoneButton_flexDiv__3qpNj">&nbsp;&nbsp;<span>Chỉnh Sửa bài
+                                            viết</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </tr>
                 <div
                     class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM">
                     <div class="ShowPhoneButton_wrapper__B627I ">
