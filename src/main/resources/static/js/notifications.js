@@ -18,7 +18,7 @@ function createToast(type, icon, title, text) {
              </div>`;
         notifications.appendChild(newToast);
         console.log("đã thông báo");
-        newToast.timeOut = setTimeout(() => newToast.remove(), 3000);
+        newToast.timeOut = setTimeout(() => newToast.remove(), 1500);
     }
 }
 

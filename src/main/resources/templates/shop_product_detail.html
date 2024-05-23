@@ -608,18 +608,19 @@
                                         src="https://static.chotot.com/storage/chotot-icons/svg/white-phone.svg">079360
                                     ***</span>&nbsp;&nbsp;<span>BẤM ĐỂ HIỆN SỐ</span></div>
                         </div>
-                        <a th:href="'/bookroom/' + ${listings.id}">
-                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
-                            th:unless="${listOfUser}">
-
-                            <div class="ShowPhoneButton_wrapper__B627I ">
-                                <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
-                                    <div class="ShowPhoneButton_flexDiv__3qpNj">&nbsp;&nbsp;<span>Thuê Trọ</span></div>
+                        <form th:action="@{'/bookroom/' + ${listings.id}}" method="post">
+                            <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
+                                 th:unless="${listOfUser}" onclick="this.closest('form').submit();">
+                                <div class="ShowPhoneButton_wrapper__B627I ">
+                                    <div class="ShowPhoneButton_phoneButton__p5Cvt ShowPhoneButton_phoneNotClicked__dlQn_">
+                                        <div class="ShowPhoneButton_flexDiv__3qpNj">&nbsp;&nbsp;<span>Thuê Trọ</span></div>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        </a>
+                            <button type="submit" style="display: none;"></button>
+                        </form>
+                        
+                        
                         <div class="LeadButton_chatDesktopButton__HSQyg"><a
                                 href="https://chat.chotot.com/chatroom/join/MjI3MjY4M3wxMTU5NzIyMzA="
                                 class="btn LeadButton_buttonChatDesktop__gbYM9" rel="nofollow"

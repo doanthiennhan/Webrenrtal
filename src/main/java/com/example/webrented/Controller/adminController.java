@@ -23,7 +23,6 @@ import com.example.webrented.Model.Account;
 
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class adminController {

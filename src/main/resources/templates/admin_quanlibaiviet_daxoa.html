@@ -95,23 +95,6 @@
                   </div>
                 </div>
               </div>
-<<<<<<< HEAD
-            </div>
-            <div  class="du_lieu">
-              <button  class="duyet" onclick="showConfirmDialog()" style="width: 150px">Khôi phục</button>
-              <button class="xoa" onclick="showConfirmDialog()" style="width: 150px">Xóa vĩnh viễn</button>
-            </div>
-          </a>
-        </li>
-      </tr>
-    </ul>
-  </div>
-  <script src="/js/file1.js" defer></script>
-  <script src="/js/comfirm.js" defer></script>
-</body>
-
-</html>
-=======
               <div class="du_lieu">
                 <form th:action="@{/admin_quanlibaiviet_daxoa}" method="post">
                   <input type="hidden" name="id" th:value="${listing.id}" />
@@ -121,6 +104,7 @@
                     type="submit"
                     name="action"
                     value="khoiphuc"
+                    onclick="showConfirmDialog()" style="width: 150px"
                   >
                     khôi phục
                   </button>
@@ -130,10 +114,11 @@
                     type="submit"
                     name="action"
                     value="xoa"
+                    onclick="showConfirmDialog()" style="width: 150px"
                     th:id="${listing.id}"
                     previewlistener="true"
                   >
-                    XÓA VV
+                    XÓA vĩnh viễn
                   </button>
                 </form>
               </div>
@@ -145,4 +130,3 @@
     <script src="/js/file1.js" defer></script>
   </body>
 </html>
->>>>>>> d0feec1207d1a268873fbe4adccca641523b0985

@@ -17,7 +17,7 @@ public class Notification {
     @Id
     private String id;
     private String userId;
-    private String listingId;
+
     private String content;
     private Date createdAt;
     private Date updatedAt;
@@ -25,9 +25,9 @@ public class Notification {
     public Notification() {
     }
 
-    public Notification(String userId, String listingId, String content, Date createdAt, Date updatedAt) {
+    public Notification(String userId, String content, Date createdAt, Date updatedAt) {
         this.userId = userId;
-        this.listingId = listingId;
+
         this.content = content;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -47,14 +47,6 @@ public class Notification {
 
     public void setUserId(String userId) {
         this.userId = userId;
-    }
-
-    public String getListingId() {
-        return listingId;
-    }
-
-    public void setListingId(String listingId) {
-        this.listingId = listingId;
     }
 
     public String getContent() {
