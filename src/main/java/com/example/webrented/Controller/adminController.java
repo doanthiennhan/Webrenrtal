@@ -146,8 +146,11 @@ public class adminController {
     @PostMapping("/admin_quanlibaiviet_daxoa")
     public String postMethodName(@RequestParam("id") String id, @RequestParam("action") String action) {
         if ("khoiphuc".equals(action)) {
+            System.out.println("dshạkdsaghdjsahdksahdjksakdjsahkdjsa");
             // Nếu hành động là "duyet", thực hiện duyệt
             listingService.updateListingAvailability(id, "true");
+            System.out.println(id);
+            System.out.println("dshạkdsaghdjsahdksahdjksakdjsahkdjsa");
         } else if ("xoa".equals(action)) {
             // Nếu hành động là "xoa", thực hiện xóa
             listingService.deleteListingById(id);
