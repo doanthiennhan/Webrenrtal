@@ -122,4 +122,8 @@ public class User {
     public void setGiothieu(String giothieu) {
         this.giothieu = giothieu;
     }
+
+    public void setBirtday1(java.util.Date a) {
+        this.birtday = a;
+    }
 }
