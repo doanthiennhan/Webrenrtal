@@ -7,6 +7,7 @@ body {
 .panel {
     border: none;
     box-shadow: none;
+
 }
 
 .panel-heading {
@@ -192,7 +193,7 @@ body {
 
 @media only screen and (min-width: 768px)and (max-width:991px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
-        position:fixed;
+        position: fixed;
         bottom: 0;
         z-index: 9;
         left: 0;
@@ -206,7 +207,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 {
-        display:none
+        display: none
     }
 }
 
@@ -215,7 +216,7 @@ body {
     padding: 8px 10px;
     border-radius: 4px;
     font-size: 13px;
-    color: #fff!important;
+    color: #fff !important;
     background-color: #589f39;
     font-weight: 600;
     text-align: center;
@@ -231,11 +232,12 @@ body {
 
 @media(max-width: 992px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_depositButtonDesktop__nPePz {
-        height:50px
+        height: 50px
     }
 }
 
-.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9,
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,11 +252,13 @@ body {
     text-align: center
 }
 
-.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9:hover,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9:hover,
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw:hover {
     background-color: #e6e6e6
 }
 
-.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9>img,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw>img {
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktop__gbYM9>img,
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonOnlyChatDesktop__PzaRw>img {
     display: inline-block;
     height: 24px;
     vertical-align: middle;
@@ -275,7 +279,7 @@ body {
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl {
     background-color: #589f39;
-    color: #fff!important
+    color: #fff !important
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_buttonChatDesktopVeh__ezGJl:hover {
@@ -300,14 +304,14 @@ body {
 
 @media(max-width: 992px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK {
-        margin-bottom:0;
+        margin-bottom: 0;
         height: 50px;
         width: 100%
     }
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonJob__F3_DK div {
-    background-color: hsla(0,0%,100%,0);
+    background-color: hsla(0, 0%, 100%, 0);
     color: #3c763d
 }
 
@@ -326,7 +330,7 @@ body {
 
 @media(max-width: 992px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButton__1BIwH {
-        margin:0;
+        margin: 0;
         height: 50px;
         width: 100%
     }
@@ -334,7 +338,7 @@ body {
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div {
     background-color: #589f39;
-    color: #fff!important
+    color: #fff !important
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonVeh__54zfM>div>div:hover {
@@ -346,19 +350,19 @@ body {
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
-    color: #3c763d!important;
-    background-color: #fff!important;
-    border: 1px solid #cacaca!important
+    color: #3c763d !important;
+    background-color: #fff !important;
+    border: 1px solid #cacaca !important
 }
 
 @media(max-width: 992px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div {
-        border-top:none!important
+        border-top: none !important
     }
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_showPhoneButtonDeposit__a2kkh>div>div:hover {
-    background-color: #e6e6e6!important
+    background-color: #e6e6e6 !important
 }
 
 .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx {
@@ -372,8 +376,9 @@ body {
     background-color: #3b8122
 }
 
-.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx a,.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx div {
-    background-color: rgba(51,168,55,0);
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx a,
+.LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_applyCVButton__ywkYx div {
+    background-color: rgba(51, 168, 55, 0);
     color: #fff;
     border: none
 }
@@ -393,7 +398,7 @@ body {
 
 @media(max-width: 991px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg {
-        width:100%
+        width: 100%
     }
 
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_chatDesktopButton__HSQyg a {
@@ -418,7 +423,7 @@ body {
 
 @media(max-width: 991px) {
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy {
-        width:100%
+        width: 100%
     }
 
     .LeadButton_wrapperLeadButtonDesktop__SVKE8 .LeadButton_supportDesktopButton__OpnPy span {
@@ -446,7 +451,8 @@ body {
 .ShowPhoneButton_phoneButton__p5Cvt {
     display: block;
     margin-bottom: 0;
-    text-align: center; /* Căn chỉnh văn bản trong phần tử theo chiều ngang */
+    text-align: center;
+    /* Căn chỉnh văn bản trong phần tử theo chiều ngang */
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
@@ -466,7 +472,7 @@ body {
 
 @media(max-width: 991px) {
     .ShowPhoneButton_phoneButton__p5Cvt {
-        height:50px;
+        height: 50px;
         border-radius: 0;
         font-weight: 600
     }
