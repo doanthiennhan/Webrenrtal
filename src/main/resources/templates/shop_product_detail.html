@@ -26,6 +26,7 @@
     flex-direction: column;">
 
         <th:block th:include="header :: header"></th:block>
+       
         <div class="container bootdey">
 
 
@@ -124,8 +125,8 @@
                                         </div>
                                     </a>
                         </tr>
-                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM">
-                            <form th:action="@{'/notification/' + ${listings.id}}" method="post">
+                        <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM" onclick="showConfirmDialog()">
+                            <form th:action="@{'/notification/' + ${listings.id}}" method="post" >
                                 <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
                                     th:unless="${listOfUser}" onclick="this.closest('form').submit();">
                                     <div class="ShowPhoneButton_wrapper__B627I ">

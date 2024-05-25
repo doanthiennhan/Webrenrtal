@@ -67,7 +67,7 @@ public class bookRoomController {
 
         }
 
-        return "redirect:/postDetail/{id}";
+        return "redirect:/";
     }
 
 }
