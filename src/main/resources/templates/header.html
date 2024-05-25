@@ -60,15 +60,15 @@
 
                                         <div value="" class="aw__ah4jb82"
                                             style="--ah4jb82-2: undefined; --ah4jb82-6: 35px;">
-                                            <button
-                                                aria-label="Search Button Desktop" class="aw__p1vnrcrb aw__cm4yjvg">
+                                            <button aria-label="Search Button Desktop" class="aw__p1vnrcrb aw__cm4yjvg">
                                                 <svg xmlns="http://www.w3.org/2000/svg" data-type="monochrome"
                                                     viewBox="0 0 16 16" width="1em" height="1em" fill="none">
                                                     <path fill="currentColor"
                                                         d="M6.4 0a6.369 6.369 0 00-4.525 1.873A6.425 6.425 0 00.502 3.906v.002A6.383 6.383 0 000 6.398a6.372 6.372 0 001.875 4.524 6.385 6.385 0 008.428.537l-.006.006 4.295 4.293a.827.827 0 001.166-1.166l-4.295-4.295a6.368 6.368 0 00-.537-8.424A6.372 6.372 0 006.4 0zm0 1.615a4.75 4.75 0 013.383 1.4c.44.44.785.95 1.028 1.522h-.002c.249.59.377 1.214.377 1.861 0 .648-.128 1.27-.377 1.862h.002a4.783 4.783 0 01-2.55 2.545c-.59.25-1.213.377-1.86.377a4.761 4.761 0 01-1.864-.377A4.749 4.749 0 013.016 9.78c-.44-.44-.783-.95-1.024-1.521a4.735 4.735 0 01-.377-1.862c0-.647.127-1.272.377-1.863a4.75 4.75 0 011.024-1.52 4.754 4.754 0 013.384-1.4z">
                                                     </path>
-                                                </svg></button></div><input autocomplete="off" placeholder="Nhà Trọ"
-                                            id="searchInput" type="text" class="aw__t16o28i7" value=""
+                                                </svg></button>
+                                        </div><input autocomplete="off" placeholder="Nhà Trọ" id="searchInput"
+                                            type="text" class="aw__t16o28i7" value=""
                                             style="--t16o28i7-3: 36px; --t16o28i7-5: #f4f4f4; --t16o28i7-6: 35px;">
                                     </div>
                                 </div>
@@ -113,20 +113,30 @@
                                             <div class="aw__c4xob3k">
                                                 <div>
                                                     <ul class="aw__tx9tvdd" aria-label="notification" role="tablist">
-                                                        <li class="aw__t1if84jm active"><span class="aw__ix37719"
-                                                                tabindex="-1" role="tab">HOẠT ĐỘNG</span></li>
+
                                                         <li class="aw__t1if84jm"><span class="aw__ix37719" tabindex="-1"
                                                                 role="tab">TIN MỚI</span></li>
+
                                                     </ul>
                                                     <div>
-                                                        <div>
-                                                            <div class="aw__n1elbry2" role="tabpanel">
-                                                                <div class="aw__i1dlje55 more-content"></div>
-                                                                <div class="aw__c1ph837u">Bạn chưa có hoạt động nào.
-                                                                </div>
+                                                        <div class="aw__n1elbry2" role="tabpanel">
+                                                            <div class="aw__i1dlje55 more-content"></div>
+                                                            
+                                                            <!-- Nếu không có thông báo -->
+                                                            <div class="aw__c1ph837u" th:if="${#lists.isEmpty(thongbao)}">
+                                                                Bạn chưa có hoạt động nào.
                                                             </div>
+                                                            
+                                                            <!-- Nếu có thông báo -->
+                                                            <ul class="aw__c1ph837u" th:if="${!#lists.isEmpty(thongbao)}">
+                                                                <li th:each="notification : ${thongbao}" class="notification-item">
+                                                                    <i class="fas fa-bell"></i> <!-- Biểu tượng thông báo -->
+                                                                    <span class="notification-content" th:text="${notification.content}">Notification content</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -155,7 +165,7 @@
                             <div class="aw__bhbktvj"><span class="aw__bxyv27i" id="chat-unread-count"
                                     style="display: none;">0</span></div>
                         </a></div>
-                    <div class="aw__njogxfr"><a href="https://www.chotot.com/dashboard/ads" color="#222222"
+                    <div class="aw__njogxfr"><a href="#" color="#222222"
                             rel="nofollow" class="aw__iwanj6m" style="--iwanj6m-0: #222222; --iwanj6m-7: #222222;"
                             previewlistener="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" class="aw__irp38gy">
@@ -200,18 +210,16 @@
                                 <div style="display: none;" class="aw__m1n72bce" id="openn">
                                     <div class="aw__ntc1674" style="--ntc1674-2: 124px;"><a href="/login" rel="nofollow"
                                             previewlistener="true"><span class="aw__nrouw61"
-                                                style="--nrouw61-3: 48px;"></span><span id="userSpan" class="aw__n171wcvy"
-                                                style="--n171wcvy-0: 8px; --n171wcvy-1: 14px;"
-                                                th:if="${session.account != null}"
-                                                th:text="${session.account.name}">
+                                                style="--nrouw61-3: 48px;"></span><span id="userSpan"
+                                                class="aw__n171wcvy" style="--n171wcvy-0: 8px; --n171wcvy-1: 14px;"
+                                                th:if="${session.account != null}" th:text="${session.account.name}">
                                                 Đăng nhập / Đăng ký
-                                          </span>
-                                          <span id="userSpan" class="aw__n171wcvy"
-                                          style="--n171wcvy-0: 8px; --n171wcvy-1: 14px;"
-                                          th:if="${session.account == null}"
-                                          >Đăng Nhập/ Đăng ký
-                                        
-                                    </span></a>
+                                            </span>
+                                            <span id="userSpan" class="aw__n171wcvy"
+                                                style="--n171wcvy-0: 8px; --n171wcvy-1: 14px;"
+                                                th:if="${session.account == null}">Đăng Nhập/ Đăng ký
+
+                                            </span></a>
 
                                         <div class="aw__c180s9yn"></div>
                                     </div>
@@ -244,7 +252,7 @@
                                             style="--d15qd39x-0: 38px; --d15qd39x-1: #f5f5f5; --d15qd39x-2: 10px 0 10px 12px; --d15qd39x-3: 0;">
                                             <span>Khác</span>
                                         </div>
-                                        <div class="aw__l1txzw95"><a class="aw__iys36jq" href="" target="_self"
+                                        <div class="aw__l1txzw95"><a class="aw__iys36jq"  th:if="${session.account != null}" th:href="'/chitiettaikhoan/'+ ${session.account.id}" target="_self"
                                                 rel="noreferrer" previewlistener="true">
                                                 <div class="aw__l1uq3g0v"><img class="aw__i1x7vrum"
                                                         src="https://static.chotot.com/storage/icons/svg/setting.svg"

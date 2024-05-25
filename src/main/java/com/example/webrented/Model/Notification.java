@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @EntityScan
-@Document(collection = "Message")
+@Document(collection = "Notification")
 public class Notification {
     @Id
     private String id;

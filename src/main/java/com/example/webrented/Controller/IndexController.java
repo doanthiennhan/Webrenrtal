@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 
 import com.example.webrented.Model.Account;
 import com.example.webrented.Model.Listing;
+import com.example.webrented.Model.Notification;
 import com.example.webrented.Model.User;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,7 @@ import org.springframework.ui.Model;
 import com.example.webrented.repository.AccountRepository;
 import com.example.webrented.repository.ListingRepository;
 import com.example.webrented.repository.UserRepository;
+import com.example.webrented.service.NotificationService;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -27,13 +29,15 @@ public class IndexController {
     private final ListingRepository listingRepository;
     private final AccountRepository accountRepository;
     private final UserRepository userRepository;
+    private final NotificationService notificationService;
     String idAccouts = "";
 
     public IndexController(ListingRepository listingRepository, AccountRepository accountRepository,
-            UserRepository userRepository) {
+            UserRepository userRepository, NotificationService notificationService) {
         this.listingRepository = listingRepository;
         this.accountRepository = accountRepository;
         this.userRepository = userRepository;
+        this.notificationService = notificationService;
 
     }
 
@@ -42,9 +46,12 @@ public class IndexController {
         try {
             List<Listing> listings = listingRepository.findByAvailable("true");
             model.addAttribute("listings", listings);
-            User renter = userRepository.findByAccountId(idAccouts);
+
+            User user = userRepository.findByAccountId(idAccouts);
+
             if (idAccouts != "") {
-                model.addAttribute("renter", renter);
+                model.addAttribute("renter", user);
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -159,12 +166,38 @@ public class IndexController {
             newUser.setFullName(name);
             newUser.setPhoneNumber(phone);
             newUser.setAddress("");
+            newUser.setCccd("");
+            newUser.setEmail("");
+            newUser.setGiotinh("");
+            newUser.setBirtday(LocalDateTime.now());
             userRepository.save(newUser);
+            newUser.setGiothieu("");
             return "redirect:/login";
         } catch (Exception e) {
             e.printStackTrace();
             model.addAttribute("errorMessage", "Đã xảy ra lỗi. Vui lòng thử lại sau.");
             return "register";
         }
+    }
+
+    @GetMapping("/postUser")
+    public String postUser(Model model, HttpSession session) {
+        try {
+            List<Listing> listings = listingRepository.findByAvailable("true");
+            model.addAttribute("listings", listings);
+
+            User user = userRepository.findByAccountId(idAccouts);
+
+            List<Notification> notifications = notificationService.findListUserId(idAccouts);
+            System.out.println("---------------------------------------------------------------------" + notifications);
+            if (idAccouts != "") {
+                model.addAttribute("renter", user);
+                model.addAttribute("thongbao", notifications);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+        }
+        return "quan_li_bai_dang";
     }
 }

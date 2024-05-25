@@ -1,26 +1,58 @@
 package com.example.webrented.Controller;
 
+import java.time.LocalDateTime;
+
 import org.springframework.stereotype.Controller;
 
-import com.example.webrented.repository.BookingRepository;
+import com.example.webrented.Model.Account;
+import com.example.webrented.Model.Listing;
+import com.example.webrented.Model.Notification;
+import com.example.webrented.service.BookingService;
+import com.example.webrented.service.ListingService;
+import com.example.webrented.service.NotificationService;
 
 import ch.qos.logback.core.model.Model;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class bookRoomController {
-    private final BookingRepository bookingRepository;
+    private final BookingService bookingService;
+    private final NotificationService notificationService;
+    private final ListingService listingService;
 
-    public bookRoomController(BookingRepository bookingRepository) {
-        this.bookingRepository = bookingRepository;
+    public bookRoomController(BookingService bookingService, NotificationService notificationService,
+            ListingService listingService) {
+        this.bookingService = bookingService;
+        this.notificationService = notificationService;
+        this.listingService = listingService;
     }
 
-    @PostMapping("/bookroom/{id}")
-    public String postBooking(@PathVariable("id") String id, Model model) {
+    @PostMapping("/notification/{id}")
+    public String postBooking(@PathVariable("id") String id, Model model, HttpSession session) {
+        Account account = (Account) session.getAttribute("account");
+        if (account == null) {
+            return "redirect:/login";
+        } else {
 
-        return "redirect:/postDetail    /{id}";
+            Listing list = listingService.findById(id);
+            String userid = list.getAccountId();
+            listingService.updateListingAvailability(id, "dathue");
+            System.out.println(
+                    list.getAvailable() + " ########################################################################");
+            Notification thongbao = new Notification();
+            thongbao.setUserId(userid);
+            thongbao.setContent(
+                    "người dùng " + account.getName() + " muốn thuê trọ của bạn. Bấm vào để biết thêm chi tiết ");
+            thongbao.setCreatedAt(LocalDateTime.now());
+            thongbao.setUpdatedAt(LocalDateTime.now());
+            notificationService.saveOrUpdateListing(thongbao);
+
+        }
+
+        return "redirect:/postDetail/{id}";
     }
 
 }

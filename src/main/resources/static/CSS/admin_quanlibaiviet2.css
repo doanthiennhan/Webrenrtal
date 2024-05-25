@@ -1,0 +1,125 @@
+.narvar {
+    position: absolute;
+    width: 173px;
+    height: 500px;
+    left: 95px;
+    top: 200px;
+    border: 2px solid orange;
+    background-color: #90EE90;
+}
+
+.btn {
+    width: 100%;
+    height: 43px;
+    margin-top: 25px;
+    background-color: #D9D9D9;
+    border: 2px solid #000; /* Màu và độ dày của viền */
+    border-radius: 10px; /* Độ cong của góc viền */
+}
+.btn:hover {
+    background-color: #FFD361;
+}
+.chon {
+    background-color: #FFD361;
+}
+
+.danhsach {
+    position: absolute;
+    left: 350px;
+    top: 200px;
+}
+
+.danhsachli {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.dautien {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img1, .content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img {
+    width: 128px;
+    height: 128px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 586px;
+    margin-left: 10px;
+}
+
+.titel {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.dientich, .gia {
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.gia {
+    color: #c90927;
+    margin-bottom: 4px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.bottom1 {
+    margin-right: 10px;
+}
+
+.bottom6 {
+    margin-left: auto;
+}
+
+.du_lieu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.duyet, .xoa {
+    width: 80px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.duyet {
+    background-color: chartreuse;
+}
+
+.duyet:hover, .xoa:hover {
+    background-color: aqua;
+}
+
+.xoa {
+    background-color: red;
+}
+
+.danhsach li {
+    list-style-type: none;
+}
+
+.danhsachli:hover {
+    background-color: #D9D9D9;
+}

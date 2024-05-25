@@ -1865,11 +1865,8 @@ html {
     }
 }
 
-@charset "UTF-8";
 
-/*
-! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
-*/
+
 *,
 :after,
 :before {
@@ -23153,4 +23150,3 @@ h6 {
         padding-left: 0
     }
 }
-

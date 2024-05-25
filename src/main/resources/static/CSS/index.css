@@ -6222,13 +6222,29 @@
         overflow: auto;
     }
 }
+.notification-item {
 
+    align-items: center;
+    padding: 8px 12px;
+    margin: 10px 0; /* Thêm khoảng cách nhỏ giữa các mục */
+    border-bottom: 1px solid #eee;
+}
 .aw__c1ph837u {
     margin-top: 8px;
     margin-bottom: 8px;
     text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333; /* Đặt màu chữ để dễ đọc hơn */
+    max-height: 400px;
+    overflow-y: auto; /* Kích hoạt tính năng cuộn dọc */
 }
-
+.notification-item:hover {
+    background-color: #baced1; /* Màu nền khi hover, bạn có thể thay đổi theo ý thích */
+}
 .aw__t8lgh8j {
     text-align: center;
     padding-bottom: 8px;
@@ -6359,7 +6375,12 @@
         min-width:400px;
     }
 }
-
+.notification-content {
+    font-weight: bold; /* Làm chữ in đậm */
+    padding: 8px;
+    margin: 8px;
+    color: red;
+}
 .aw__n1dpqln2 {
     background-color: #FFFFFF;
     box-shadow: none;
@@ -10283,7 +10304,7 @@ canvas {
     }
 
     .col-md-8 {
-        width: 66.66666667%
+        width: 100%;
     }
 
     .col-md-7 {
@@ -10299,7 +10320,7 @@ canvas {
     }
 
     .col-md-4 {
-        width: 33.33333333%
+        width: 20%
     }
 
     .col-md-3 {
@@ -12739,7 +12760,7 @@ a,a:hover {
     }
 
     .ct-m-x-636 {
-        max-width: 636px
+        max-width: 900px
     }
 
     .ct-m-300 {
