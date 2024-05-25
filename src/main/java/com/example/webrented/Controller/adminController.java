@@ -243,4 +243,38 @@ public class adminController {
         return "redirect:/admin_quanlitaikhoan";
     }
 
+    @GetMapping("admin_quanlibaiviet_dachothue")
+    public String getMethodName(Model model, HttpSession session) {
+
+        List<Listing> listings = listingRepository.findByAvailable("dathue");
+
+        try {
+            Account account = (Account) session.getAttribute("account");
+            if (session.getAttribute("account") != null) {
+
+                if (account.getRole().equals("admin") == false) {
+                    return "redirect:/";
+                }
+                model.addAttribute("listings", listings);
+
+            } else {
+
+                return "redirect:/login";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Xử lý ngoại lệ ở đây
+            return "redirect:/";
+        }
+        return "admin_quanlibaiviet_dachothue";
+    }
+
+    @PostMapping("/admin_quanlibaiviet_dachothue")
+    public String updateListingAvailabilityaa(@RequestParam("id") String id) {
+        // Đảm bảo phương thức này được gọi khi form được submit
+        listingService.deleteListingById(id);
+        // Thực hiện các thao tác cần thiết
+        return "redirect:/admin_quanlibaiviet_dachothue";
+    }
+
 }

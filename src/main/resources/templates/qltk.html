@@ -15,6 +15,7 @@
 <div id="__next" data-reactroot=""><progress hidden=""></progress>
 
     <body>
+        
         <th:block th:include="header :: header"></th:block>
 
         <div class="narvar">
@@ -33,14 +34,14 @@
             <a href="/admin_quanlibaiviet_daduyet">
                 <button class="btn">bài viết đã duyệt</button>
             </a>
+            <a href="admin_quanlibaiviet_dachothue">
+                <button class="btn">bài viết đã cho thuê</button>
+              </a>
         </div>
 
         <div class="table1">
             <table>
                 <thead clas="tieude">
-
-
-
                     <tr>
                         <th>STT</th>
 
@@ -59,26 +60,32 @@
                 </thead>
                 <tbody>
                     <tr th:each="account, index : ${accounts}">
-                        <td th:text="${index.index + 1}"></td>
-                        <td th:text="${account.key.name}"></td>
-                        <td th:text="${account.key.phone}"></td>
-                        <td th:text="${account.key.password}"></td>
-                        <td th:text="${account.key.status}"></td>
+                        
+                            <td th:text="${index.index + 1}"></td>
+                            <td th:text="${account.key.name}"></td>
+                            <td th:text="${account.key.phone}"></td>
+                            <td th:text="${account.key.password}"></td>
+                            <td th:text="${account.key.status}"></td>
 
-                        <td th:text="${account.value}"></td>
-                        <td th:text="${account.key.role}"></td>
-
-                        <td>
-                            <form th:action="@{/admin_quanlitaikhoan}" method="post">
-                                <input type="hidden" name="id" th:value="${account.key.id}">
-                                <button class="xoa" type="submit" name="action" value="xoa"
-                                    onclick="confirmDelete()">xóa</button>
-                                <button class="cam" type="submit" name="action" value="cam">cấm</button>
-                            </form>
-                        </td>
+                            <td th:text="${account.value}"></td>
+                            <td th:text="${account.key.role}"></td>
+                        
+                            <td class="tam1">
+                                <div class="actions">
+                                    <form th:action="@{/admin_quanlitaikhoan}" method="post" class="inline-form">
+                                        <input type="hidden" name="id" th:value="${account.key.id}">
+                                        <button class="xoa" type="submit" name="action" value="xoa" onclick="confirmDelete()">xóa</button>
+                                        <button class="cam" type="submit" name="action" value="cam">cấm</button>
+                                    </form>
+                                    <a th:href="@{'/chitiettaikhoan/' + ${account.key.id}}" class="details-link">
+                                        <button type="button">chi tiết</button>
+                                    </a>
+                                </div>
+                            </td>
+                        
                     </tr>
 
-                    <!-- Thêm các hàng và cột khác nếu cần -->
+
                 </tbody>
             </table>
             </table>

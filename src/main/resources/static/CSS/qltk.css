@@ -1,4 +1,4 @@
-.table1{
+.table1 {
   position: absolute;
   left: 300px;
   top: 200px;
@@ -9,18 +9,19 @@
   background-color: aqua;
 
 }
-table {
-  width: 100%;
-  
-  border-collapse: collapse;
-}
 
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th, td {
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
@@ -45,10 +46,41 @@ tr:hover {
   background-color: #ddd;
 }
 
-.xoa{
+.xoa {
   background-color: #7F8BF8;
 }
 
-.cam{
+.cam {
   background-color: #F75B5B;
+}
+
+/* styles.css */
+/* styles.css */
+.actions {
+  display: flex;
+
+
+  align-items: center;
+  gap: 10px;
+
+}
+
+.inline-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.inline-form button {
+  margin-right: 10px;
+  /* Khoảng cách giữa các nút trong form, nếu cần */
+}
+
+.details-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: -10px;
+}
+
+.tam1 {
+  width: 155px;
 }

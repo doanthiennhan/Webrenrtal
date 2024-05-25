@@ -159,6 +159,10 @@ public class IndexController {
             newUser.setFullName(name);
             newUser.setPhoneNumber(phone);
             newUser.setAddress("");
+            newUser.setCccd("");
+            newUser.setEmail("");
+            newUser.setGiotinh("");
+            newUser.setBirtday(LocalDateTime.now());
             userRepository.save(newUser);
             return "redirect:/login";
         } catch (Exception e) {
@@ -167,4 +171,5 @@ public class IndexController {
             return "register";
         }
     }
+
 }
