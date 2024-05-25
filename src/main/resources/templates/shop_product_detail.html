@@ -12,7 +12,8 @@
     <script type="text/javascript"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/CSS/shop_product_detail.css">
-    <link rel="stylesheet" href="/CSS/index.css">
+    <!-- <link rel="stylesheet" href="/CSS/index.css"> -->
+    <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/thongbao.css">
 
 
@@ -108,7 +109,7 @@
 
 
                                 <div class="LeadButton_wrapperLeadButtonDesktop__SVKE8" style="padding: 8px 12px;">
-                                    <a th:href="@{/postEdit1/{id}(id=${listing.id})}">
+                                    <a th:href="@{/postEdit1/{id}(id=${listing.id})}" onclick="showConfirmDialog()">
                                         <div class="LeadButton_showPhoneButton__1BIwH LeadButton_showPhoneButtonVeh__54zfM"
                                             th:if="${listOfUser}">
                                             <div class="ShowPhoneButton_wrapper__B627I ">
@@ -233,7 +234,7 @@
     </div>
     <script src="/js/file1.js" defer></script>
     <script src="/js/sse_Received.js" defer></script>
-
+    <script src="/js/comfirm.js"></script>
     <script src="/js/notifications.js" defer></script>
 
 </body>

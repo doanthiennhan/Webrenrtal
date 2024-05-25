@@ -146,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="aw__njogxfr"><a class="aw__n1u3b0ub" href="https://chat.chotot.com/chat" rel="nofollow"
+                    <div class="aw__njogxfr"><a class="aw__n1u3b0ub" href="#" rel="nofollow"
                             aria-label="chat" previewlistener="true"><svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__ih32wb2">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -165,7 +165,7 @@
                             <div class="aw__bhbktvj"><span class="aw__bxyv27i" id="chat-unread-count"
                                     style="display: none;">0</span></div>
                         </a></div>
-                    <div class="aw__njogxfr"><a href="#" color="#222222"
+                    <div class="aw__njogxfr"><a th:if="${session.account != null}" th:href="'/userProfile/'+${session.account.id}" color="#222222"
                             rel="nofollow" class="aw__iwanj6m" style="--iwanj6m-0: #222222; --iwanj6m-7: #222222;"
                             previewlistener="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" class="aw__irp38gy">

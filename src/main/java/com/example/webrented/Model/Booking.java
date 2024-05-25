@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 
 @EntityScan
@@ -54,16 +56,16 @@ public class Booking {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setStartDate(LocalDateTime localDateTime) {
+        this.startDate = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
     public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setEndDate(LocalDateTime localDateTime) {
+        this.endDate = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
     public String getStatus() {
@@ -78,15 +80,15 @@ public class Booking {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedAt(LocalDateTime localDateTime) {
+        this.createdAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
     public Date getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdatedAt(LocalDateTime localDateTime) {
+        this.updatedAt = java.util.Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 }
